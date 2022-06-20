@@ -1,0 +1,545 @@
+﻿[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: 0
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+ScaledBorderAndShadow: Yes
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI Semibold,22,&H00FFFFFF,&H00FFFFFF,&H55000000,&H55000000,0,0,0,0,100,100,0,0,1,0.6,0.3,2,10,10,20,1
+Style: Verdana [WHITE],Arial,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:07.26,0:00:09.27,Default,,0,0,0,,Boob world, boob world.
+Dialogue: 0,0:00:09.31,0:00:12.05,Default,,0,0,0,,It's a world for you,\Nbut it's actually two.
+Dialogue: 0,0:00:12.09,0:00:14.10,Default,,0,0,0,,Boob World!
+Dialogue: 0,0:00:15.75,0:00:17.51,Default,,0,0,0,,I gotta say, Morty, it's weird\Nthat you wanted me to come,
+Dialogue: 0,0:00:17.53,0:00:19.36,Default,,0,0,0,,but I'm actually\Nexstyched about it --
+Dialogue: 0,0:00:19.41,0:00:20.64,Default,,0,0,0,,that's excited,\Nstoked, and psyched.
+Dialogue: 0,0:00:20.67,0:00:22.21,Default,,0,0,0,,I didn't want you to\Ncome. Talk to Rick.
+Dialogue: 0,0:00:22.23,0:00:24.08,Default,,0,0,0,,Truth is, Summer, Boob\NWorld's been at the center
+Dialogue: 0,0:00:24.11,0:00:26.20,Default,,0,0,0,,of a few protests\Nevery day for 30 years,
+Dialogue: 0,0:00:26.24,0:00:29.50,Default,,0,0,0,,so they've recently rebranded as\Na boob empowerment experience,
+Dialogue: 0,0:00:29.55,0:00:31.18,Default,,0,0,0,,and if we bring a\Nfemale, we get in for free.
+Dialogue: 0,0:00:31.20,0:00:33.64,Default,,0,0,0,,So, I'm, like, what, a Coke\Ncan you're taking to Six Flags?
+Dialogue: 0,0:00:33.68,0:00:35.29,Default,,0,0,0,,No, 'cause once\Nyou get into Six Flags,
+Dialogue: 0,0:00:35.33,0:00:36.94,Default,,0,0,0,,you can throw your\NCoke can away.
+Dialogue: 0,0:00:36.99,0:00:38.08,Default,,0,0,0,,No fucking way.
+Dialogue: 0,0:00:38.12,0:00:39.69,Default,,0,0,0,,It can't be.
+Dialogue: 0,0:00:41.78,0:00:44.08,Default,,0,0,0,,Holy shit, holy shit,\Nholy shit. Oh, look at that.
+Dialogue: 0,0:00:44.13,0:00:45.61,Default,,0,0,0,,- What is it?\N- It's a GoTron ferret.
+Dialogue: 0,0:00:45.65,0:00:47.52,Default,,0,0,0,,It's not a GoTron ferret, Morty.
+Dialogue: 0,0:00:47.56,0:00:50.35,Default,,0,0,0,,It's the blue GoTron ferret.
+Dialogue: 0,0:00:51.79,0:00:53.83,Default,,0,0,0,,- Boob World is canceled.\N- No, Rick, no.
+Dialogue: 0,0:00:53.87,0:00:55.62,Default,,0,0,0,,You promised.\NYou always do this.
+Dialogue: 0,0:00:55.66,0:00:57.20,Default,,0,0,0,,Tell you what, Morty,\NI'll let you choose.
+Dialogue: 0,0:00:57.23,0:00:58.46,Default,,0,0,0,,Do you really think Boob World -
+Dialogue: 0,0:00:58.49,0:01:00.10,Default,,0,0,0,,- Yes.\N- Let me finish.
+Dialogue: 0,0:01:00.14,0:01:01.10,Default,,0,0,0,,Is more important --Yes.
+Dialogue: 0,0:01:01.14,0:01:02.80,Default,,0,0,0,,Let me finish!\NThan have all five
+Dialogue: 0,0:01:02.84,0:01:05.19,Default,,0,0,0,,of the only five GoTron\Nferrets in the universe?
+Dialogue: 0,0:01:05.23,0:01:07.28,Default,,0,0,0,,Are you finished?\NYes. So, let's go.
+Dialogue: 0,0:01:07.32,0:01:09.17,Default,,0,0,0,,Summer, help me hook\Nthe winch up to the ferret.
+Dialogue: 0,0:01:09.19,0:01:10.28,Default,,0,0,0,,- Sure.\N- What the hell?!
+Dialogue: 0,0:01:10.33,0:01:11.65,Default,,0,0,0,,You said you were\Nletting me choose.
+Dialogue: 0,0:01:11.68,0:01:13.81,Default,,0,0,0,,Yeah, whether to\Nbreak my fucking heart.
+Dialogue: 0,0:01:13.85,0:01:15.20,Default,,0,0,0,,You chose badly.
+Dialogue: 0,0:01:15.24,0:01:16.90,Default,,0,0,0,,{\i1}That's how it all began.
+Dialogue: 0,0:01:16.94,0:01:18.90,Default,,0,0,0,,{\i1}To my sister, it was\Njust another game.
+Dialogue: 0,0:01:18.94,0:01:20.47,Default,,0,0,0,,{\i1}But what she didn't know --
+Dialogue: 0,0:01:20.51,0:01:22.16,Default,,0,0,0,,{\i1}That was the moment\Neverything changed.
+Dialogue: 0,0:01:22.21,0:01:23.77,Default,,0,0,0,,{\i1}Wait. What?
+Dialogue: 0,0:01:23.82,0:01:25.88,Default,,0,0,0,,I had gotten my first taste of\Nrespect and my first voiceover.
+Dialogue: 0,0:01:25.91,0:01:27.43,Default,,0,0,0,,{\i1}I can hear you. Can you hear me?
+Dialogue: 0,0:01:27.47,0:01:29.78,Default,,0,0,0,,{\i1}And I knew then and\Nthere I wanted more of both.
+Dialogue: 0,0:01:29.82,0:01:31.04,Default,,0,0,0,,{\i1}Hello?
+Dialogue: 0,0:02:03.07,0:02:04.82,Default,,0,0,0,,Beth, Jerry, do\Nsomething fun with us.
+Dialogue: 0,0:02:04.86,0:02:06.88,Default,,0,0,0,,A giant monster is attacking\Nin the Nibblenug system.
+Dialogue: 0,0:02:06.90,0:02:08.34,Default,,0,0,0,,Your suits are in the bathroom.
+Dialogue: 0,0:02:08.38,0:02:09.39,Default,,0,0,0,,Mine smells skeletony.
+Dialogue: 0,0:02:09.43,0:02:10.82,Default,,0,0,0,,I have a chiropractor\Nappointment.
+Dialogue: 0,0:02:10.86,0:02:12.17,Default,,0,0,0,,What are you involving us in?
+Dialogue: 0,0:02:12.21,0:02:13.95,Default,,0,0,0,,Rick's been collecting\NGoTron ferrets,
+Dialogue: 0,0:02:14.00,0:02:15.76,Default,,0,0,0,,and now that he has all five,\Nwe can combine them into --
+Dialogue: 0,0:02:15.78,0:02:17.22,Default,,0,0,0,,Morty, for Christ's\Nsake spoilers.
+Dialogue: 0,0:02:17.26,0:02:18.35,Default,,0,0,0,,Spoilers, Morty.
+Dialogue: 0,0:02:18.39,0:02:19.63,Default,,0,0,0,,WE don't need to\Nsell this to anyone.
+Dialogue: 0,0:02:19.66,0:02:21.31,Default,,0,0,0,,There's a giant\Nmonster attacking.
+Dialogue: 0,0:02:21.35,0:02:23.23,Default,,0,0,0,,In the Nibblenug system.
+Dialogue: 0,0:02:23.27,0:02:25.23,Default,,0,0,0,,Since when does this\Nhouse care about alien lives.
+Dialogue: 0,0:02:25.27,0:02:27.05,Default,,0,0,0,,We don't even watch\NBritish television.
+Dialogue: 0,0:02:27.10,0:02:28.77,Default,,0,0,0,,Told you. Let's just\Nget Gene from next door
+Dialogue: 0,0:02:28.80,0:02:30.32,Default,,0,0,0,,- and a homeless guy.\N- No. Hold on.
+Dialogue: 0,0:02:30.36,0:02:31.84,Default,,0,0,0,,Fuck Gene. Fuck the homeless.
+Dialogue: 0,0:02:31.89,0:02:34.06,Default,,0,0,0,,Your kids and their\Ngrandpa are asking you to do
+Dialogue: 0,0:02:34.11,0:02:35.45,Default,,0,0,0,,an activity with them.
+Dialogue: 0,0:02:35.50,0:02:36.87,Default,,0,0,0,,When did that stop being\Na parent's wettest dream?
+Dialogue: 0,0:02:36.89,0:02:38.76,Default,,0,0,0,,I guess around the\Ntime our family created
+Dialogue: 0,0:02:38.81,0:02:40.68,Default,,0,0,0,,a giant incest baby,\Nand the government
+Dialogue: 0,0:02:40.72,0:02:42.07,Default,,0,0,0,,launched it into space.
+Dialogue: 0,0:02:42.11,0:02:43.85,Default,,0,0,0,,Oh my God, we made\Na giant incest baby.
+Dialogue: 0,0:02:43.90,0:02:45.42,Default,,0,0,0,,Oh my God, you might be a clone.
+Dialogue: 0,0:02:45.46,0:02:47.34,Default,,0,0,0,,I exist because you\Nguys failed to abort me.
+Dialogue: 0,0:02:47.38,0:02:49.43,Default,,0,0,0,,We get the family we\Nget, not the one we want.
+Dialogue: 0,0:02:49.47,0:02:50.97,Default,,0,0,0,,And if you want to\Nkeep the one you got,
+Dialogue: 0,0:02:50.99,0:02:53.78,Default,,0,0,0,,get your asses into\Nsome anime spacesuits.
+Dialogue: 0,0:02:54.26,0:02:55.56,Default,,0,0,0,,- Fair enough.\N- Okay.
+Dialogue: 0,0:02:55.61,0:02:56.89,Default,,0,0,0,,- Good work, Summer Camp.\N- Yeah.
+Dialogue: 0,0:02:56.91,0:02:59.00,Default,,0,0,0,,I'm exci-toked about this.
+Dialogue: 0,0:02:59.04,0:03:01.05,Default,,0,0,0,,Sure you are -- now.
+Dialogue: 0,0:03:01.09,0:03:03.53,Default,,0,0,0,,{\i1}Something new was forming,\Nand I was at the bottom of it.
+Dialogue: 0,0:03:03.57,0:03:06.66,Default,,0,0,0,,{\i1}- I let Morty have his voiceover.\N- It's really all he had left.
+Dialogue: 0,0:03:06.70,0:03:08.14,Default,,0,0,0,,{\i1}Okay, can you hear me or not?
+Dialogue: 0,0:03:08.18,0:03:09.66,Default,,0,0,0,,{\i1}Do you mean can I,\NSummer, hear you?
+Dialogue: 0,0:03:09.71,0:03:11.49,Default,,0,0,0,,{\i1}No. My voiceover can\Nhear your voiceover.
+Dialogue: 0,0:03:11.53,0:03:12.75,Default,,0,0,0,,{\i1}What's the difference?
+Dialogue: 0,0:03:12.80,0:03:14.49,Default,,0,0,0,,{\i1}One would be telepathy, dumbass.
+Dialogue: 0,0:03:14.54,0:03:16.10,Default,,0,0,0,,{\i1}Now what?
+Dialogue: 0,0:03:16.15,0:03:17.41,Default,,0,0,0,,Now, we --
+Dialogue: 0,0:03:17.45,0:03:19.02,Default,,0,0,0,,Go, Team GoTron!
+Dialogue: 0,0:03:24.29,0:03:27.94,Default,,0,0,0,,Where are we zip-lining through\Nfuturistic metallic tunnels to?
+Dialogue: 0,0:03:27.99,0:03:30.12,Default,,0,0,0,,Each robot ferret is at a\Ndifferent location on Earth.
+Dialogue: 0,0:03:30.16,0:03:32.29,Default,,0,0,0,,You're going to the\Ncenter of a volcano.
+Dialogue: 0,0:03:32.34,0:03:33.34,Default,,0,0,0,,Thank you?
+Dialogue: 0,0:04:03.98,0:04:06.15,Default,,0,0,0,,Okay, well, this isn't not fun.
+Dialogue: 0,0:04:06.20,0:04:07.24,Default,,0,0,0,,Regroup on me.
+Dialogue: 0,0:04:07.29,0:04:08.72,Default,,0,0,0,,I'll shoot a portal\Nto Nibblenug.
+Dialogue: 0,0:04:08.77,0:04:10.44,Default,,0,0,0,,Did I just monorail from\Nmy kitchen to Hawaii
+Dialogue: 0,0:04:10.46,0:04:12.34,Default,,0,0,0,,just to regroup in outer\Nspace above my kitchen?
+Dialogue: 0,0:04:12.38,0:04:14.38,Default,,0,0,0,,- Uh, Summer?\N- It's cool, Dad. Shut up.
+Dialogue: 0,0:04:22.56,0:04:23.84,Default,,0,0,0,,Everybody, attack one at a time!
+Dialogue: 0,0:04:23.87,0:04:25.22,Default,,0,0,0,,Is that the best way to --
+Dialogue: 0,0:04:25.26,0:04:30.96,Default,,0,0,0,,Tee up something\Nawesome? Yes. Follow me.
+Dialogue: 0,0:04:31.00,0:04:33.49,Default,,0,0,0,,Guys, we did our best,\Nbut there's only one hope.
+Dialogue: 0,0:04:33.53,0:04:34.92,Default,,0,0,0,,Activating link-dock.
+Dialogue: 0,0:04:34.97,0:04:37.88,Default,,0,0,0,,Inter-Morphs -- rad-ified.\NPostiTrinos -- maximized.
+Dialogue: 0,0:04:46.59,0:04:48.76,Default,,0,0,0,,Holy shit, I-I can't\Nbelieve this is working.
+Dialogue: 0,0:04:48.81,0:04:51.02,Default,,0,0,0,,Go, go, team! It's GoTron time!
+Dialogue: 0,0:04:55.46,0:04:57.99,Default,,0,0,0,,Oh, my God. Hell yes!
+Dialogue: 0,0:04:58.03,0:04:59.29,Default,,0,0,0,,This is amazing!
+Dialogue: 0,0:04:59.34,0:05:00.71,Default,,0,0,0,,Okay, now we can\Nknock it around a little bit,
+Dialogue: 0,0:05:00.73,0:05:02.01,Default,,0,0,0,,but trust me, we're still\Nbuilding to something.
+Dialogue: 0,0:05:02.04,0:05:03.43,Default,,0,0,0,,How do we --Just hit buttons.
+Dialogue: 0,0:05:03.47,0:05:04.47,Default,,0,0,0,,we're too big to fail.
+Dialogue: 0,0:05:07.74,0:05:09.52,Default,,0,0,0,,I kicked him! That\Nwas me, right?
+Dialogue: 0,0:05:09.57,0:05:10.91,Default,,0,0,0,,Uppercut!
+Dialogue: 0,0:05:10.96,0:05:13.00,Default,,0,0,0,,I can't believe I almost\Nwent to the chiropractor!
+Dialogue: 0,0:05:13.05,0:05:14.79,Default,,0,0,0,,I've been waiting\Na long time for this.
+Dialogue: 0,0:05:14.83,0:05:18.01,Default,,0,0,0,,Form Luminous Energy Sword!
+Dialogue: 0,0:05:18.05,0:05:20.62,Default,,0,0,0,,That's your ass, Mamma Jamma.
+Dialogue: 0,0:05:33.89,0:05:35.42,Default,,0,0,0,,{\i1}These were the good times,
+Dialogue: 0,0:05:35.46,0:05:37.46,Default,,0,0,0,,{\i1}when we felt like\Nwe could do anything.
+Dialogue: 0,0:05:37.51,0:05:40.29,Default,,0,0,0,,{\i1}But anything is\Nnever quite everything.
+Dialogue: 0,0:05:40.34,0:05:42.03,Default,,0,0,0,,{\i1}And pretty soon...
+Dialogue: 0,0:05:42.08,0:05:44.18,Default,,0,0,0,,That was nothing -- nothing\Ncompared to what we can do.
+Dialogue: 0,0:05:44.21,0:05:47.25,Default,,0,0,0,,There are infinite universes\Nwhere I still don't have all five ferrets.
+Dialogue: 0,0:05:47.30,0:05:48.97,Default,,0,0,0,,Th-th-those versions\Nof me would do anything
+Dialogue: 0,0:05:49.00,0:05:50.52,Default,,0,0,0,,to complete their collections.
+Dialogue: 0,0:05:50.56,0:05:52.67,Default,,0,0,0,,Okay, but Rick, remember\Nwhat you told me to remind you?
+Dialogue: 0,0:05:52.70,0:05:54.17,Default,,0,0,0,,Sometimes, enough is...
+Dialogue: 0,0:05:54.22,0:05:55.87,Default,,0,0,0,,Sometimes, enough is enough.
+Dialogue: 0,0:05:55.92,0:05:57.40,Default,,0,0,0,,Morty, what are you doing?
+Dialogue: 0,0:05:57.44,0:05:58.57,Default,,0,0,0,,He gets obsessed, Summer -
+Dialogue: 0,0:05:58.61,0:05:59.77,Default,,0,0,0,,When are you going\Nto find your shame?
+Dialogue: 0,0:05:59.79,0:06:01.36,Default,,0,0,0,,- I have more.\N- Grandpa just gave
+Dialogue: 0,0:06:01.40,0:06:03.27,Default,,0,0,0,,everybody the high\Npoint of their lives,
+Dialogue: 0,0:06:03.31,0:06:05.32,Default,,0,0,0,,and before he did,\Nevery single one of you
+Dialogue: 0,0:06:05.36,0:06:06.64,Default,,0,0,0,,was trying to\Ntalk him out of it.
+Dialogue: 0,0:06:06.67,0:06:08.28,Default,,0,0,0,,Wait. Yeah.\NWha-wha-what the fuck!
+Dialogue: 0,0:06:08.32,0:06:10.84,Default,,0,0,0,,Now, he says we can go\Nhigher, and big surprise,
+Dialogue: 0,0:06:10.89,0:06:12.08,Default,,0,0,0,,it's time to drag\Nhim down again.
+Dialogue: 0,0:06:12.11,0:06:13.59,Default,,0,0,0,,Well, I vote --No voting.
+Dialogue: 0,0:06:13.63,0:06:14.93,Default,,0,0,0,,No debate. It's not a democracy.
+Dialogue: 0,0:06:14.98,0:06:16.76,Default,,0,0,0,,It's a Rickpublic.\NYou're in or you're out.
+Dialogue: 0,0:06:16.81,0:06:18.72,Default,,0,0,0,,Obviously, I'm in. I\Nnever said I wasn't in.
+Dialogue: 0,0:06:18.76,0:06:20.72,Default,,0,0,0,,Me, neither. Tell us\Nwhat we're doing next.
+Dialogue: 0,0:06:20.77,0:06:22.46,Default,,0,0,0,,Uh, I want to put\Ntogether a cookout.
+Dialogue: 0,0:06:22.51,0:06:24.90,Default,,0,0,0,,That's it? I was honestly\Nprepared to blow someone.
+Dialogue: 0,0:06:24.94,0:06:27.64,Default,,0,0,0,,- Jerry.\N- I said "prepared" and "someone."
+Dialogue: 0,0:06:33.78,0:06:35.56,Default,,0,0,0,,{\i1}Rick invited five\Nversions of our family
+Dialogue: 0,0:06:35.61,0:06:38.31,Default,,0,0,0,,{\i1}from different universes,\Neach with incomplete GoTrons.
+Dialogue: 0,0:06:38.35,0:06:40.00,Default,,0,0,0,,{\i1}I didn't have anyone to talk to,
+Dialogue: 0,0:06:40.05,0:06:42.09,Default,,0,0,0,,{\i1}since the other four Mortys\Nhad been to Boob World.
+Dialogue: 0,0:06:42.14,0:06:43.62,Default,,0,0,0,,Did you walk on the beach?
+Dialogue: 0,0:06:43.66,0:06:44.68,Default,,0,0,0,,The beach that's all boobs?
+Dialogue: 0,0:06:44.70,0:06:46.18,Default,,0,0,0,,No, the beach that's all sand.
+Dialogue: 0,0:06:46.23,0:06:47.92,Default,,0,0,0,,Yes, the boob one!
+Dialogue: 0,0:06:47.97,0:06:50.21,Default,,0,0,0,,{\i1}Rick was in the garage with\Nthe heads of the five families.
+Dialogue: 0,0:06:50.23,0:06:51.45,Default,,0,0,0,,Ugh, and Summer.
+Dialogue: 0,0:06:51.49,0:06:52.67,Default,,0,0,0,,{\i1}In that first sit-down,
+Dialogue: 0,0:06:52.71,0:06:53.93,Default,,0,0,0,,{\i1}it was Big Fat Rick,
+Dialogue: 0,0:06:53.97,0:06:55.67,Default,,0,0,0,,{\i1}Ricardo Montaya,\NHot Head Rick --
+Dialogue: 0,0:06:55.71,0:06:58.46,Default,,0,0,0,,{\i1}he got that name because he\Nwas prone to dramatic outbursts -
+Dialogue: 0,0:06:58.50,0:06:59.98,Default,,0,0,0,,{\i1}and Lil' Ricky Wrap-it-Up,
+Dialogue: 0,0:07:00.02,0:07:01.48,Default,,0,0,0,,{\i1}who was always great\Nat the end of a meeting.
+Dialogue: 0,0:07:01.50,0:07:03.59,Default,,0,0,0,,{\i1}At the head of it all,\Nme and Grandpa Rick.
+Dialogue: 0,0:07:03.64,0:07:05.81,Default,,0,0,0,,Now, don't get me wrong, C137,
+Dialogue: 0,0:07:05.86,0:07:07.51,Default,,0,0,0,,we're happy for\Nyour good fortune.
+Dialogue: 0,0:07:07.55,0:07:09.21,Default,,0,0,0,,But we did not\Ntravel to your universe
+Dialogue: 0,0:07:09.25,0:07:10.77,Default,,0,0,0,,just to have it\Nrubbed in our faces.
+Dialogue: 0,0:07:10.82,0:07:12.51,Default,,0,0,0,,Come on, Big Fat\NRick, you know your face
+Dialogue: 0,0:07:12.56,0:07:13.95,Default,,0,0,0,,is too small to rub anything on.
+Dialogue: 0,0:07:13.99,0:07:16.34,Default,,0,0,0,,My face is the\Nsame size as yours.
+Dialogue: 0,0:07:16.39,0:07:18.43,Default,,0,0,0,,Wow. Huh. Hold on.
+Dialogue: 0,0:07:18.48,0:07:19.61,Default,,0,0,0,,I'll be damned.
+Dialogue: 0,0:07:19.65,0:07:21.52,Default,,0,0,0,,You're so fat you're\Nan optical illusion.
+Dialogue: 0,0:07:21.57,0:07:22.83,Default,,0,0,0,,Summer, give 'em the pitch.
+Dialogue: 0,0:07:22.87,0:07:24.24,Default,,0,0,0,,We're offering to help\Neach of your families
+Dialogue: 0,0:07:24.26,0:07:26.57,Default,,0,0,0,,complete their full GoTrons.
+Dialogue: 0,0:07:26.62,0:07:28.44,Default,,0,0,0,,In exchange for\Nsome concessions.
+Dialogue: 0,0:07:28.49,0:07:30.71,Default,,0,0,0,,Ever since I was a\Nlittle boy in the slums,
+Dialogue: 0,0:07:30.75,0:07:32.62,Default,,0,0,0,,I have dreamed of\Nhaving a complete GoTron.
+Dialogue: 0,0:07:32.66,0:07:33.97,Default,,0,0,0,,But concessions?
+Dialogue: 0,0:07:34.01,0:07:36.15,Default,,0,0,0,,I hope you mean the\Nkind from a counter.
+Dialogue: 0,0:07:36.19,0:07:38.02,Default,,0,0,0,,I hope she means ice cream!
+Dialogue: 0,0:07:38.06,0:07:39.93,Default,,0,0,0,,We'd like you to\Nrelocate your families
+Dialogue: 0,0:07:39.98,0:07:41.59,Default,,0,0,0,,to this universe, and\Nlet me make some
+Dialogue: 0,0:07:41.63,0:07:42.98,Default,,0,0,0,,modifications to the GoTrons --
+Dialogue: 0,0:07:43.02,0:07:44.94,Default,,0,0,0,,in the interest of us\Nall working together.
+Dialogue: 0,0:07:44.98,0:07:46.59,Default,,0,0,0,,Want to know what I think?
+Dialogue: 0,0:07:46.64,0:07:48.57,Default,,0,0,0,,Sure, Hothead Rick, just don't\Nunexpectedly fly off the handle.
+Dialogue: 0,0:07:48.59,0:07:51.60,Default,,0,0,0,,I think you guys got a lot of\Nnerve acting better than us!
+Dialogue: 0,0:07:51.64,0:07:53.73,Default,,0,0,0,,This is the family that\Nmade a giant incest baby!
+Dialogue: 0,0:07:53.77,0:07:55.60,Default,,0,0,0,,Had the government\Nlaunch it into space!
+Dialogue: 0,0:07:55.64,0:07:57.48,Default,,0,0,0,,It's still floatin' around\Nout there somewhere!
+Dialogue: 0,0:07:57.52,0:07:59.17,Default,,0,0,0,,Are we ever gonna\Nlive that down?
+Dialogue: 0,0:07:59.21,0:08:01.41,Default,,0,0,0,,If I get a full GoTron, it\Nwon't be by kissing your ass,
+Dialogue: 0,0:08:01.43,0:08:04.57,Default,,0,0,0,,it'll be by taking\Nwhat's mine -- yours!
+Dialogue: 0,0:08:04.61,0:08:06.39,Default,,0,0,0,,Hey! Gross! No need.
+Dialogue: 0,0:08:06.44,0:08:08.66,Default,,0,0,0,,And you were\Ndriving... a ferret?
+Dialogue: 0,0:08:08.70,0:08:10.88,Default,,0,0,0,,We all are, moron! Give me key!
+Dialogue: 0,0:08:13.49,0:08:16.06,Default,,0,0,0,,You'll regret this, you\Nlevel-headed fucks.
+Dialogue: 0,0:08:20.63,0:08:22.41,Default,,0,0,0,,Obviously, we predicted\Nthat might happen,
+Dialogue: 0,0:08:22.45,0:08:24.32,Default,,0,0,0,,which is why we have\NYo-Yo Rick on standby.
+Dialogue: 0,0:08:24.37,0:08:25.54,Default,,0,0,0,,Anybody got beef with Yo-Yo?
+Dialogue: 0,0:08:26.89,0:08:28.30,Default,,0,0,0,,Some people think\Nhe's lame, but to me,
+Dialogue: 0,0:08:28.33,0:08:30.20,Default,,0,0,0,,he's lame in a cool\Nway because he owns it.
+Dialogue: 0,0:08:30.24,0:08:32.86,Default,,0,0,0,,Cool. That concludes\Nbusiness. Lil' Ricky Wrap it Up?
+Dialogue: 0,0:08:32.90,0:08:35.47,Default,,0,0,0,,Raise 'em up, boys! Oh-pah!
+Dialogue: 0,0:08:35.51,0:08:38.25,Default,,0,0,0,,{\i1}And so, we helped our\Npeople find their ferrets.
+Dialogue: 0,0:08:38.30,0:08:40.65,Default,,0,0,0,,{\i1}How they got them,\Nnot our problem.
+Dialogue: 0,0:08:40.69,0:08:42.13,Default,,0,0,0,,{\i1}Then, we got down to business.
+Dialogue: 0,0:08:42.17,0:08:43.69,Default,,0,0,0,,{\i1}Here's how it worked --
+Dialogue: 0,0:08:43.74,0:08:45.65,Default,,0,0,0,,{\i1}if a giant monster\Nattacked your planet,
+Dialogue: 0,0:08:45.69,0:08:46.91,Default,,0,0,0,,{\i1}we all got the alert.
+Dialogue: 0,0:08:46.96,0:08:48.83,Default,,0,0,0,,♪ Hey, hey, mama mia's
+Dialogue: 0,0:08:48.87,0:08:51.26,Default,,0,0,0,,♪ Got a plate of\Nspaghetti for the takin' ♪
+Dialogue: 0,0:08:51.31,0:08:55.36,Default,,0,0,0,,♪ Papa pia's got a great\Nbig robot that he's makin' ♪
+Dialogue: 0,0:08:55.40,0:08:58.71,Default,,0,0,0,,♪ I got the moon\Nin both my eyes ♪
+Dialogue: 0,0:08:58.75,0:09:01.23,Default,,0,0,0,,♪ You got a bowl\Nof pizza pie, hey! ♪
+Dialogue: 0,0:09:01.27,0:09:05.45,Default,,0,0,0,,♪ A bit of pasta with some\Nanime combined, yeah ♪
+Dialogue: 0,0:09:05.50,0:09:07.63,Default,,0,0,0,,{\i1}We formed five GoTrons.
+Dialogue: 0,0:09:07.67,0:09:10.02,Default,,0,0,0,,{\i1}And those GoTrons\Nformed the GoGoTron.
+Dialogue: 0,0:09:10.07,0:09:11.72,Default,,0,0,0,,Go, GoGoTron!
+Dialogue: 0,0:09:13.77,0:09:15.03,Default,,0,0,0,,♪ Take it away, boys!
+Dialogue: 0,0:09:15.07,0:09:16.90,Default,,0,0,0,,I will never get sick of this!
+Dialogue: 0,0:09:16.94,0:09:19.73,Default,,0,0,0,,{\i1}If you were a giant monster\Nat that time, in our universe,
+Dialogue: 0,0:09:19.77,0:09:21.51,Default,,0,0,0,,{\i1}you never had a chance.
+Dialogue: 0,0:09:21.56,0:09:25.65,Default,,0,0,0,,♪ A bit of pasta with\Nsome anime combined ♪
+Dialogue: 0,0:09:25.69,0:09:28.74,Default,,0,0,0,,♪ 'Cause we're two genres, but\Neach one is intertwined, yeah ♪
+Dialogue: 0,0:09:28.78,0:09:30.26,Default,,0,0,0,,Mine needs a\Nweapon like a Yo-Yo.
+Dialogue: 0,0:09:30.30,0:09:32.52,Default,,0,0,0,,And a Yo-Yo on the chest.\NAre you listening to me?
+Dialogue: 0,0:09:32.57,0:09:34.26,Default,,0,0,0,,I-I need you to\Nrespect this partnership.
+Dialogue: 0,0:09:34.31,0:09:35.92,Default,,0,0,0,,{\i1}I kept Rick removed\Nfrom the ugly stuff.
+Dialogue: 0,0:09:35.96,0:09:39.27,Default,,0,0,0,,{\i1}If you got in his way, I\Ngot you out of the way.
+Dialogue: 0,0:09:39.31,0:09:41.05,Default,,0,0,0,,{\i1}And that made more\Nroom to move up.
+Dialogue: 0,0:09:41.10,0:09:42.79,Default,,0,0,0,,The head of my right arm.
+Dialogue: 0,0:09:43.80,0:09:46.54,Default,,0,0,0,,{\i1}Me? I ended up the\Nleft foot of the left foot --
+Dialogue: 0,0:09:46.58,0:09:48.97,Default,,0,0,0,,{\i1}I guess because our robot\Ndidn't have an asshole.
+Dialogue: 0,0:09:49.02,0:09:50.50,Default,,0,0,0,,{\i1}Well, it had one.
+Dialogue: 0,0:09:50.54,0:09:52.67,Default,,0,0,0,,Bitch! When are you gonna\Nstop breaking my balls?
+Dialogue: 0,0:09:52.72,0:09:54.11,Default,,0,0,0,,You win, okay?
+Dialogue: 0,0:09:54.15,0:09:55.83,Default,,0,0,0,,We're not competing, Morty.\NAnd there's your answer.
+Dialogue: 0,0:09:55.85,0:09:57.92,Default,,0,0,0,,I could move you up if I could\Ntrust you to put family first.
+Dialogue: 0,0:09:57.94,0:09:59.81,Default,,0,0,0,,H-how is that\Nputting family first?
+Dialogue: 0,0:09:59.86,0:10:02.07,Default,,0,0,0,,Show me all the blueprints!\NShow me all the blueprints!
+Dialogue: 0,0:10:02.12,0:10:03.99,Default,,0,0,0,,I agree. That's an issue.
+Dialogue: 0,0:10:04.03,0:10:06.91,Default,,0,0,0,,Big Fat Rick, his flask stays full\Nor your locker gets empty. Thanks.
+Dialogue: 0,0:10:06.95,0:10:08.69,Default,,0,0,0,,I know it feels good\Nwhen he likes you,
+Dialogue: 0,0:10:08.73,0:10:10.78,Default,,0,0,0,,but that doesn't mean him\Nliking you makes you good.
+Dialogue: 0,0:10:10.82,0:10:13.87,Default,,0,0,0,,Solid babble, Morty -- like a\Nfortune cookie written by Borat.
+Dialogue: 0,0:10:13.91,0:10:15.31,Default,,0,0,0,,Yeah, I'm not as smart as you.
+Dialogue: 0,0:10:15.35,0:10:16.72,Default,,0,0,0,,That's why I know\Nyou know what I mean.
+Dialogue: 0,0:10:16.74,0:10:18.53,Default,,0,0,0,,You mean, if I really\Nloved my family,
+Dialogue: 0,0:10:18.57,0:10:20.83,Default,,0,0,0,,I'd give control of it\Nback to your jealous ass.
+Dialogue: 0,0:10:20.88,0:10:23.36,Default,,0,0,0,,Green Ferret Four needs a\Nwash, and we're out of detergent.
+Dialogue: 0,0:10:23.40,0:10:24.92,Default,,0,0,0,,I just bought a box.
+Dialogue: 0,0:10:24.97,0:10:27.62,Default,,0,0,0,,And Grandpa snorted it because\Nyou make him feel fenced in.
+Dialogue: 0,0:10:27.67,0:10:29.15,Default,,0,0,0,,Sum-Sum?
+Dialogue: 0,0:10:30.58,0:10:31.80,Default,,0,0,0,,Get two boxes.
+Dialogue: 0,0:10:34.89,0:10:37.24,Default,,0,0,0,,{\i1}We evacuated one of\Nthe planets we saved,
+Dialogue: 0,0:10:37.28,0:10:38.64,Default,,0,0,0,,{\i1}and built a secret\Nnightclub on it,
+Dialogue: 0,0:10:38.68,0:10:39.91,Default,,0,0,0,,{\i1}a place no enemies\Ncould find us --
+Dialogue: 0,0:10:39.94,0:10:41.55,Default,,0,0,0,,{\i1}unless you count my brother.
+Dialogue: 0,0:10:41.59,0:10:42.96,Default,,0,0,0,,{\i1}I didn't even have my\Nown ferret anymore.
+Dialogue: 0,0:10:42.99,0:10:44.46,Default,,0,0,0,,{\i1}Summer made me something called
+Dialogue: 0,0:10:44.51,0:10:45.81,Default,,0,0,0,,{\i1}an "associate security chief" --
+Dialogue: 0,0:10:45.86,0:10:47.12,Default,,0,0,0,,{\i1}whatever the hell that means.
+Dialogue: 0,0:10:47.16,0:10:48.73,Default,,0,0,0,,Look at this guy.
+Dialogue: 0,0:10:48.77,0:10:50.91,Default,,0,0,0,,And look at this guy.\NLook-look at this guy over here.
+Dialogue: 0,0:10:53.47,0:10:55.69,Default,,0,0,0,,Oh, there she is!\NMy Baby Princess!
+Dialogue: 0,0:10:55.74,0:10:57.83,Default,,0,0,0,,Get up here. Stop the music.
+Dialogue: 0,0:10:57.87,0:11:01.96,Default,,0,0,0,,This. Is. Our. Queef\N-- O-our Queen.
+Dialogue: 0,0:11:02.00,0:11:04.57,Default,,0,0,0,,She saved my life.\NShe-she set me free.
+Dialogue: 0,0:11:04.62,0:11:07.40,Default,,0,0,0,,We wouldn't have what we\Nhave without this crazy bitch.
+Dialogue: 0,0:11:07.44,0:11:08.97,Default,,0,0,0,,And she's got a\Nspecial announcement.
+Dialogue: 0,0:11:09.01,0:11:10.80,Default,,0,0,0,,Summer, tell 'em\Nwha-what we talked about.
+Dialogue: 0,0:11:10.84,0:11:12.06,Default,,0,0,0,,Now? I don't think --
+Dialogue: 0,0:11:12.10,0:11:13.71,Default,,0,0,0,,Okay, I'll do it. God damn.
+Dialogue: 0,0:11:13.76,0:11:15.50,Default,,0,0,0,,{\i1}The new job did\Nhave some perks --
+Dialogue: 0,0:11:15.54,0:11:17.72,Default,,0,0,0,,{\i1}like, I got to be around\Nthe night Summer realized
+Dialogue: 0,0:11:17.76,0:11:19.37,Default,,0,0,0,,{\i1}she was in over her head.
+Dialogue: 0,0:11:19.41,0:11:22.63,Default,,0,0,0,,Okay, I've got 90 extra ferrets,\Nwhich means I need 10 more,
+Dialogue: 0,0:11:22.68,0:11:25.85,Default,,0,0,0,,and then four of you\Nget your own GoGoTron,
+Dialogue: 0,0:11:25.90,0:11:27.94,Default,,0,0,0,,and 20%of you get a GoTron,
+Dialogue: 0,0:11:27.99,0:11:32.47,Default,,0,0,0,,'cause we're all gonna\Nhave a fucking GoGoGoTron.
+Dialogue: 0,0:11:32.51,0:11:34.73,Default,,0,0,0,,He's very excited. Um...
+Dialogue: 0,0:11:34.78,0:11:36.43,Default,,0,0,0,,Oh-pah!
+Dialogue: 0,0:11:39.08,0:11:40.74,Default,,0,0,0,,I hate my family.
+Dialogue: 0,0:11:40.78,0:11:42.52,Default,,0,0,0,,You should.
+Dialogue: 0,0:11:42.57,0:11:43.96,Default,,0,0,0,,Get in.
+Dialogue: 0,0:11:44.00,0:11:45.96,Default,,0,0,0,,How's it going with your\Ngrandpa's compulsiveness?
+Dialogue: 0,0:11:46.00,0:11:48.66,Default,,0,0,0,,Is your sister still\Nenabling it? Huh?
+Dialogue: 0,0:11:48.70,0:11:50.31,Default,,0,0,0,,Who are you people?
+Dialogue: 0,0:11:50.36,0:11:52.25,Default,,0,0,0,,Let's just say we're the\Nrightful owners of these ferrets.
+Dialogue: 0,0:11:52.27,0:11:54.69,Default,,0,0,0,,Then, why were they scattered,\Nand buried across the universe?
+Dialogue: 0,0:11:54.71,0:11:57.67,Default,,0,0,0,,We mean in a more\Ngeneral, cultural sense. Arrrgh!
+Dialogue: 0,0:11:57.71,0:11:59.89,Default,,0,0,0,,What your Grandpa did\Nis called "appropriation."
+Dialogue: 0,0:11:59.93,0:12:01.80,Default,,0,0,0,,Not cool! Hunnnnngh!
+Dialogue: 0,0:12:01.85,0:12:03.24,Default,,0,0,0,,Look, Morty, we've\Nbeen watching.
+Dialogue: 0,0:12:03.28,0:12:05.08,Default,,0,0,0,,We know you're the one\Nthat knows what's best.
+Dialogue: 0,0:12:05.11,0:12:06.76,Default,,0,0,0,,Work with us from the inside.
+Dialogue: 0,0:12:06.81,0:12:08.68,Default,,0,0,0,,Help us take over\Nthis operation.
+Dialogue: 0,0:12:08.72,0:12:11.12,Default,,0,0,0,,We're literally designed\Nfor it. Mm-hmmmmmm!
+Dialogue: 0,0:12:11.16,0:12:12.51,Default,,0,0,0,,Nobody will know it was you.
+Dialogue: 0,0:12:12.55,0:12:14.99,Default,,0,0,0,,Then, you can get\Nback to what's important.
+Dialogue: 0,0:12:15.03,0:12:16.56,Default,,0,0,0,,Are those Boob Bucks?
+Dialogue: 0,0:12:16.60,0:12:20.82,Default,,0,0,0,,Legal tender at every\Nkiosk and ride! Huuunh!
+Dialogue: 0,0:12:20.87,0:12:22.65,Default,,0,0,0,,I can't.
+Dialogue: 0,0:12:22.69,0:12:24.97,Default,,0,0,0,,Summer's treating me like\Nshit, but she's still my sister.
+Dialogue: 0,0:12:25.00,0:12:26.57,Default,,0,0,0,,That's really noble, Morty.
+Dialogue: 0,0:12:26.61,0:12:28.54,Default,,0,0,0,,If you were in our family,\Nyour loyalty would be rewarded.
+Dialogue: 0,0:12:28.57,0:12:31.44,Default,,0,0,0,,But you're not in our family,\Nwhich means we can kill you.
+Dialogue: 0,0:12:31.48,0:12:32.75,Default,,0,0,0,,Oh, yeah?
+Dialogue: 0,0:12:40.41,0:12:42.89,Default,,0,0,0,,{\i1}And sure enough, just\Nwhen I stuck my neck out
+Dialogue: 0,0:12:42.93,0:12:45.98,Default,,0,0,0,,{\i1}for the family, it got\Nstomped on anyway.
+Dialogue: 0,0:12:47.11,0:12:49.07,Default,,0,0,0,,- Dad!\N- Mom! Dad!
+Dialogue: 0,0:12:54.03,0:12:55.99,Default,,0,0,0,,Hothead Rick, baby!
+Dialogue: 0,0:12:57.08,0:12:58.69,Default,,0,0,0,,I set myself up for that!
+Dialogue: 0,0:12:59.90,0:13:01.36,Default,,0,0,0,,- What the hell happened?!\N- Hothead Rick.
+Dialogue: 0,0:13:01.38,0:13:02.69,Default,,0,0,0,,How did he get so close to us?
+Dialogue: 0,0:13:02.73,0:13:04.05,Default,,0,0,0,,Morty was supposed\Nto be security!
+Dialogue: 0,0:13:04.08,0:13:06.17,Default,,0,0,0,,- Morty?\N- I-I-I stepped away, alright?
+Dialogue: 0,0:13:06.22,0:13:07.56,Default,,0,0,0,,But-but not to let that happen!
+Dialogue: 0,0:13:07.61,0:13:09.52,Default,,0,0,0,,Morty, we're not\Nattractive strangers
+Dialogue: 0,0:13:09.57,0:13:10.87,Default,,0,0,0,,next to you on\Na flight to Paris,
+Dialogue: 0,0:13:10.92,0:13:12.92,Default,,0,0,0,,traveling alone to\Nget over a breakup,
+Dialogue: 0,0:13:12.96,0:13:14.40,Default,,0,0,0,,so this is no time to be coy!
+Dialogue: 0,0:13:14.44,0:13:16.92,Default,,0,0,0,,- Oh... pah.\N- Lil' Ricky.
+Dialogue: 0,0:13:16.97,0:13:18.40,Default,,0,0,0,,I'm all wrapped up, Summer.
+Dialogue: 0,0:13:18.44,0:13:21.40,Default,,0,0,0,,Guys, I know you don't trust\Nme, but what have we become?
+Dialogue: 0,0:13:21.45,0:13:22.97,Default,,0,0,0,,Why are we doing this anymore?
+Dialogue: 0,0:13:23.01,0:13:24.62,Default,,0,0,0,,Because it's\Nfun, you little rat.
+Dialogue: 0,0:13:24.67,0:13:26.19,Default,,0,0,0,,Now go home, and\Nplay video games
+Dialogue: 0,0:13:26.24,0:13:27.98,Default,,0,0,0,,while we clean up these bodies,
+Dialogue: 0,0:13:28.02,0:13:29.65,Default,,0,0,0,,or your mother and I will hire\Npeople to break your knees!
+Dialogue: 0,0:13:29.67,0:13:32.15,Default,,0,0,0,,This is $16,000 we\Ngot from the deep state
+Dialogue: 0,0:13:32.20,0:13:33.85,Default,,0,0,0,,for stepping on\Nthat trailer park.
+Dialogue: 0,0:13:33.90,0:13:35.92,Default,,0,0,0,,That should be enough for\Nschool lunch and home repairs.
+Dialogue: 0,0:13:35.94,0:13:37.55,Default,,0,0,0,,Now, I gotta turn\Nmy back on you.
+Dialogue: 0,0:13:37.59,0:13:39.47,Default,,0,0,0,,No!
+Dialogue: 0,0:13:39.51,0:13:41.51,Default,,0,0,0,,{\i1}With Morty out of the\Nway, things were looking up.
+Dialogue: 0,0:13:41.55,0:13:43.34,Default,,0,0,0,,{\i1}But looks aren't everything.
+Dialogue: 0,0:13:45.34,0:13:48.43,Default,,0,0,0,,Hi, Summer. Um, my\Ncockpit's not getting Wi-Fi.
+Dialogue: 0,0:13:48.47,0:13:50.15,Default,,0,0,0,,Dad, you know that's\Nnot what I do around here.
+Dialogue: 0,0:13:50.17,0:13:52.22,Default,,0,0,0,,Oh, I'm not your Dad.\NI'm a version of him.
+Dialogue: 0,0:13:52.26,0:13:53.61,Default,,0,0,0,,This is my first day here,
+Dialogue: 0,0:13:53.65,0:13:55.33,Default,,0,0,0,,and I-I'm not sure what\Nyou do around here.
+Dialogue: 0,0:13:55.35,0:13:57.53,Default,,0,0,0,,- Then fuck off.\N- Oh, fuck you.
+Dialogue: 0,0:13:57.57,0:13:59.70,Default,,0,0,0,,Excuse me? I want your ID.
+Dialogue: 0,0:14:01.49,0:14:04.45,Default,,0,0,0,,Mom. Are you Mom? Can\Nyou control your rookie Jerrys.
+Dialogue: 0,0:14:04.49,0:14:06.58,Default,,0,0,0,,Sweetie, we're all a\Nlittle overwhelmed -
+Dialogue: 0,0:14:06.62,0:14:08.67,Default,,0,0,0,,Good point. You're\Nnot a war-time Mom.
+Dialogue: 0,0:14:08.71,0:14:10.24,Default,,0,0,0,,Why don't you find\Nyour version of Dad,
+Dialogue: 0,0:14:10.28,0:14:13.02,Default,,0,0,0,,and take a break,\Ntake a holiday.
+Dialogue: 0,0:14:13.06,0:14:14.94,Default,,0,0,0,,I don't have time to\Nwait for your confirmation,
+Dialogue: 0,0:14:14.98,0:14:16.83,Default,,0,0,0,,so let's just say, if\Nyou're here in 10 minutes,
+Dialogue: 0,0:14:16.85,0:14:18.46,Default,,0,0,0,,I'll have you removed.
+Dialogue: 0,0:14:18.50,0:14:20.38,Default,,0,0,0,,And then, the GoTrons
+Dialogue: 0,0:14:20.42,0:14:22.73,Default,,0,0,0,,make the GoTrons,\Nmake the GoTrons.
+Dialogue: 0,0:14:23.81,0:14:26.69,Default,,0,0,0,,Couple of snags, but I\Nknow how to speed things up.
+Dialogue: 0,0:14:26.73,0:14:28.93,Default,,0,0,0,,Remember when we talked about\Nhow the best thing we could do
+Dialogue: 0,0:14:28.95,0:14:31.04,Default,,0,0,0,,for the family is to\Nrecruit outside the family?
+Dialogue: 0,0:14:31.08,0:14:32.34,Default,,0,0,0,,Yes. Way ahead of you.
+Dialogue: 0,0:14:32.39,0:14:34.00,Default,,0,0,0,,Summer, I want\Nyou to meet Kendra.
+Dialogue: 0,0:14:34.04,0:14:35.35,Default,,0,0,0,,She's from a temp agency.
+Dialogue: 0,0:14:35.39,0:14:37.35,Default,,0,0,0,,She's got an entire\Nworkforce ready to go,
+Dialogue: 0,0:14:37.39,0:14:40.18,Default,,0,0,0,,and all of them have previous\Ngiant robot pilot experience.
+Dialogue: 0,0:14:40.22,0:14:42.05,Default,,0,0,0,,So, we'll be ready to\Ngo ahead of schedule.
+Dialogue: 0,0:14:42.09,0:14:43.97,Default,,0,0,0,,Well, I don't know\Nabout that but --
+Dialogue: 0,0:14:44.01,0:14:45.92,Default,,0,0,0,,Well, Kendra knows. So...
+Dialogue: 0,0:14:45.97,0:14:47.62,Default,,0,0,0,,So...
+Dialogue: 0,0:14:52.06,0:14:53.28,Default,,0,0,0,,You here to break my legs?
+Dialogue: 0,0:14:53.32,0:14:55.37,Default,,0,0,0,,No. We're here to talk\Nshit about your sister,
+Dialogue: 0,0:14:55.41,0:14:56.67,Default,,0,0,0,,because she just fired us.
+Dialogue: 0,0:14:56.72,0:14:58.37,Default,,0,0,0,,- You're kidding.\N- Arrogant little bitch.
+Dialogue: 0,0:14:58.41,0:15:00.44,Default,,0,0,0,,- Should we clip her?\N- No. She's not worth doing time.
+Dialogue: 0,0:15:00.46,0:15:03.03,Default,,0,0,0,,You wouldn't do time. You\Nbrought her into the world.
+Dialogue: 0,0:15:03.07,0:15:04.38,Default,,0,0,0,,So, I can take her out.
+Dialogue: 0,0:15:04.42,0:15:05.66,Default,,0,0,0,,You thought there\Nwas an actual law?
+Dialogue: 0,0:15:05.68,0:15:07.25,Default,,0,0,0,,It's a joke mothers say.
+Dialogue: 0,0:15:07.29,0:15:09.18,Default,,0,0,0,,What kind of fucked up\Nworld have you been living in?
+Dialogue: 0,0:15:09.21,0:15:11.04,Default,,0,0,0,,Uh, one where your\Nmother murdering you
+Dialogue: 0,0:15:11.08,0:15:12.47,Default,,0,0,0,,isn't a comedic premise?
+Dialogue: 0,0:15:12.52,0:15:14.26,Default,,0,0,0,,Guys, there's a little\Nadjustment period,
+Dialogue: 0,0:15:14.30,0:15:15.97,Default,,0,0,0,,but pretty soon, you're\Ngonna to return to normal,
+Dialogue: 0,0:15:16.00,0:15:17.28,Default,,0,0,0,,and you're not going\Nto want to kill Summer.
+Dialogue: 0,0:15:17.30,0:15:18.54,Default,,0,0,0,,You're not even\Ngonna be mad at her.
+Dialogue: 0,0:15:18.56,0:15:20.09,Default,,0,0,0,,Nah, fuck her. She's my enemy.
+Dialogue: 0,0:15:20.13,0:15:22.20,Default,,0,0,0,,Should we kill ourselves, so\Nwe can get to hell before her,
+Dialogue: 0,0:15:22.22,0:15:23.83,Default,,0,0,0,,and hide near the entrance?
+Dialogue: 0,0:15:23.87,0:15:26.05,Default,,0,0,0,,I like that.
+Dialogue: 0,0:15:26.09,0:15:27.97,Default,,0,0,0,,Rick fired me.
+Dialogue: 0,0:15:29.92,0:15:31.10,Default,,0,0,0,,I'm sorry.
+Dialogue: 0,0:15:31.14,0:15:33.32,Default,,0,0,0,,Are you okay, baby?\NWhat happened to us?
+Dialogue: 0,0:15:33.36,0:15:34.93,Default,,0,0,0,,We lost our minds.
+Dialogue: 0,0:15:34.97,0:15:36.41,Default,,0,0,0,,I did it. Morty was right.
+Dialogue: 0,0:15:36.45,0:15:38.45,Default,,0,0,0,,I got addicted to\Nmaking Grandpa happy.
+Dialogue: 0,0:15:38.50,0:15:39.85,Default,,0,0,0,,It's only because your Grandpa
+Dialogue: 0,0:15:39.89,0:15:41.33,Default,,0,0,0,,inflates the value\Nof his happiness.
+Dialogue: 0,0:15:41.37,0:15:42.94,Default,,0,0,0,,That's a good point.\NI mean, look at me.
+Dialogue: 0,0:15:42.98,0:15:44.98,Default,,0,0,0,,I'm easy to make\Nhappy, which is why
+Dialogue: 0,0:15:45.03,0:15:46.77,Default,,0,0,0,,nobody gives a shit if I am.
+Dialogue: 0,0:15:46.81,0:15:49.42,Default,,0,0,0,,I appreciate it, but\Nthere's something else too.
+Dialogue: 0,0:15:49.47,0:15:51.95,Default,,0,0,0,,I've been really sensitive\Nabout family lately
+Dialogue: 0,0:15:51.99,0:15:54.21,Default,,0,0,0,,because of something\NI've been keeping secret.
+Dialogue: 0,0:15:54.25,0:15:55.56,Default,,0,0,0,,Okay. Who's on\Nthe Supreme Court,
+Dialogue: 0,0:15:55.60,0:15:57.04,Default,,0,0,0,,and what state do we live in?
+Dialogue: 0,0:15:57.08,0:15:58.32,Default,,0,0,0,,It's been years since\NI've thought about this.
+Dialogue: 0,0:15:58.34,0:16:00.13,Default,,0,0,0,,No, I'm not pregnant.
+Dialogue: 0,0:16:00.17,0:16:02.67,Default,,0,0,0,,But as you guys recall, and as\Na lot of people keep bringing up,
+Dialogue: 0,0:16:02.70,0:16:05.70,Default,,0,0,0,,Morty and I did accidentally\Ncreate a giant incest baby,
+Dialogue: 0,0:16:05.74,0:16:07.53,Default,,0,0,0,,which the government\Ndid launch into space.
+Dialogue: 0,0:16:07.57,0:16:09.70,Default,,0,0,0,,And I'm not sure\Nhow to tell you this,
+Dialogue: 0,0:16:09.75,0:16:13.23,Default,,0,0,0,,but it is still alive, and I\Nhave been in contact with it.
+Dialogue: 0,0:16:13.27,0:16:15.97,Default,,0,0,0,,There were soldiers waiting\Nfor me outside school last month.
+Dialogue: 0,0:16:16.01,0:16:18.06,Default,,0,0,0,,They took me to the\NPentagon, and briefed me.
+Dialogue: 0,0:16:18.10,0:16:20.45,Default,,0,0,0,,And from there, I was shuttled\Nto a secret base on Mars.
+Dialogue: 0,0:16:20.50,0:16:22.45,Default,,0,0,0,,They had captured\Nhim, and wanted to see
+Dialogue: 0,0:16:22.50,0:16:25.76,Default,,0,0,0,,if he'd respond to me,\Ninstinctively, being his mother.
+Dialogue: 0,0:16:25.81,0:16:27.33,Default,,0,0,0,,And he sure did.
+Dialogue: 0,0:16:27.37,0:16:29.39,Default,,0,0,0,,But what they didn't expect\Nwas that I'd respond to him.
+Dialogue: 0,0:16:29.42,0:16:31.03,Default,,0,0,0,,I was supposed to\Nhelp discipline him,
+Dialogue: 0,0:16:31.07,0:16:33.20,Default,,0,0,0,,so they could turn him\Ninto the ultimate weapon.
+Dialogue: 0,0:16:33.25,0:16:36.73,Default,,0,0,0,,Instead, I trained him to\Nlove, to believe in himself,
+Dialogue: 0,0:16:36.77,0:16:38.91,Default,,0,0,0,,and finally, to escape.
+Dialogue: 0,0:16:38.95,0:16:41.69,Default,,0,0,0,,The government doesn't want\Nanyone to know it happened,
+Dialogue: 0,0:16:41.73,0:16:44.17,Default,,0,0,0,,but it's only a matter of time\Nbefore the story comes out.
+Dialogue: 0,0:16:44.22,0:16:47.09,Default,,0,0,0,,And when it does, all we're\Ngoing to have is each other.
+Dialogue: 0,0:16:47.13,0:16:50.09,Default,,0,0,0,,And you guys are a\Ncouple, and Rick has Morty,
+Dialogue: 0,0:16:50.13,0:16:51.48,Default,,0,0,0,,but I'm the odd one out
+Dialogue: 0,0:16:51.53,0:16:54.05,Default,,0,0,0,,So, I wanted to make\Nsure we stuck together.
+Dialogue: 0,0:16:54.10,0:16:57.49,Default,,0,0,0,,But instead, I drove us\Napart, and Rick replaced me
+Dialogue: 0,0:16:57.53,0:17:00.71,Default,,0,0,0,,with an anime girl,\Nso all I've got is myself
+Dialogue: 0,0:17:00.75,0:17:03.50,Default,,0,0,0,,and my giant, tortured,\Ngovernment-trained rogue
+Dialogue: 0,0:17:03.54,0:17:07.11,Default,,0,0,0,,incest monster baby out\Nthere in space somewhere.
+Dialogue: 0,0:17:07.15,0:17:09.11,Default,,0,0,0,,Oh, baby. What the fuck.
+Dialogue: 0,0:17:09.15,0:17:12.29,Default,,0,0,0,,And then, you have to wonder, what\Nelse are they doing with our taxes?
+Dialogue: 0,0:17:12.33,0:17:14.20,Default,,0,0,0,,Wait. Summer,\Nwhat did you just say?
+Dialogue: 0,0:17:14.25,0:17:15.25,Default,,0,0,0,,Morty, a lot.
+Dialogue: 0,0:17:15.29,0:17:16.77,Default,,0,0,0,,He replaced you\Nwith an anime girl?
+Dialogue: 0,0:17:16.81,0:17:18.42,Default,,0,0,0,,Big eyes? Plus signs for teeth?
+Dialogue: 0,0:17:18.47,0:17:20.51,Default,,0,0,0,,Ends sentences with\Nweird sounds that don't fit?
+Dialogue: 0,0:17:20.56,0:17:22.19,Default,,0,0,0,,Yeah. That's going to\Nbe his whole crew now.
+Dialogue: 0,0:17:22.21,0:17:24.95,Default,,0,0,0,,And they're about to run their\Nfirst test on the GoGoGoTron.
+Dialogue: 0,0:17:25.00,0:17:26.74,Default,,0,0,0,,Those people want\Nto steal the robots.
+Dialogue: 0,0:17:26.78,0:17:28.74,Default,,0,0,0,,Th-they're gonna kill\NRick. He's all alone.
+Dialogue: 0,0:17:28.78,0:17:30.09,Default,,0,0,0,,We-we-we've got to go save him.
+Dialogue: 0,0:17:30.13,0:17:32.00,Default,,0,0,0,,Right. Or... you know, fuck him.
+Dialogue: 0,0:17:32.05,0:17:33.83,Default,,0,0,0,,- I'm good with that.\N- Yeah, fuck him.
+Dialogue: 0,0:17:33.87,0:17:37.27,Default,,0,0,0,,Guys, a great leader once told\Nme you get the family you get.
+Dialogue: 0,0:17:43.19,0:17:46.23,Default,,0,0,0,,Alright. It works. Now, we\Njust got to find a giant monster.
+Dialogue: 0,0:17:46.28,0:17:48.11,Default,,0,0,0,,My sensors have\Npicked one up, Rick.
+Dialogue: 0,0:17:48.15,0:17:49.76,Default,,0,0,0,,Okay. Okay Lock\Nonto its location.
+Dialogue: 0,0:17:49.80,0:17:51.02,Default,,0,0,0,,Yeah, got it.
+Dialogue: 0,0:17:51.07,0:17:52.28,Default,,0,0,0,,Oh, it's you!
+Dialogue: 0,0:17:52.33,0:17:54.37,Default,,0,0,0,,Huh?
+Dialogue: 0,0:17:54.42,0:17:55.90,Default,,0,0,0,,What the hell is this?
+Dialogue: 0,0:17:55.94,0:17:58.25,Default,,0,0,0,,Thanks for making the\Nbiggest robot ever, Rick.
+Dialogue: 0,0:17:58.29,0:18:00.16,Default,,0,0,0,,We'll take it from here.
+Dialogue: 0,0:18:00.20,0:18:03.12,Default,,0,0,0,,You little assholes!
+Dialogue: 0,0:18:03.16,0:18:04.64,Default,,0,0,0,,You son of a bitch!
+Dialogue: 0,0:18:09.30,0:18:11.43,Default,,0,0,0,,Lock a load, boys.
+Dialogue: 0,0:18:15.35,0:18:17.00,Default,,0,0,0,,Say "hello" to my little me.
+Dialogue: 0,0:18:23.84,0:18:26.67,Default,,0,0,0,,Give up, old man.\NThe G3 is ours.
+Dialogue: 0,0:18:26.71,0:18:28.89,Default,,0,0,0,,And last I checked,\Nyour "family"
+Dialogue: 0,0:18:28.93,0:18:30.71,Default,,0,0,0,,wasn't coming to save you, hmm?
+Dialogue: 0,0:18:30.76,0:18:33.41,Default,,0,0,0,,Go go goo goo.
+Dialogue: 0,0:18:33.46,0:18:36.15,Default,,0,0,0,,Holy mother of mercy!
+Dialogue: 0,0:18:36.20,0:18:38.29,Default,,0,0,0,,My God. It's beautiful.
+Dialogue: 0,0:18:43.20,0:18:46.16,Default,,0,0,0,,Yeah! Family!
+Dialogue: 0,0:18:46.21,0:18:48.05,Default,,0,0,0,,-Is that -- -It's exactly\Nwhat it looks like. Yes.
+Dialogue: 0,0:18:48.08,0:18:50.04,Default,,0,0,0,,Congrats, man. I\Nsee the resemblance.
+Dialogue: 0,0:18:50.08,0:18:54.22,Default,,0,0,0,,Form the Energy Sword!\NActivate the Goddamn sword!
+Dialogue: 0,0:18:54.26,0:18:56.28,Default,,0,0,0,,Oh, man, the sword. Maybe\Nwe didn't think this through.
+Dialogue: 0,0:18:56.30,0:18:58.83,Default,,0,0,0,,They're not actually gonna\Nattack a space baby, are they?
+Dialogue: 0,0:18:58.87,0:19:00.41,Default,,0,0,0,,I never thought I'd\Nbe the one to say this,
+Dialogue: 0,0:19:00.44,0:19:02.27,Default,,0,0,0,,but you need to watch\Nmore anime, Mom.
+Dialogue: 0,0:19:02.31,0:19:05.18,Default,,0,0,0,,Whoa, easy now, Naruto.
+Dialogue: 0,0:19:08.23,0:19:11.32,Default,,0,0,0,,Bahbah go bye-bye!
+Dialogue: 0,0:19:15.15,0:19:17.11,Default,,0,0,0,,What the hell is wrong\Nwith you people?!
+Dialogue: 0,0:19:17.15,0:19:20.46,Default,,0,0,0,,You just have an incest space\Nmonster in your back pocket, huh?
+Dialogue: 0,0:19:20.50,0:19:23.07,Default,,0,0,0,,Welcome to the Smith family.
+Dialogue: 0,0:19:24.72,0:19:26.70,Default,,0,0,0,,Shit. Put that down, Naruto.\NYour great-grandpa is in there.
+Dialogue: 0,0:19:26.73,0:19:29.12,Default,,0,0,0,,What do you say?\NOne last zipline?
+Dialogue: 0,0:19:37.13,0:19:39.83,Default,,0,0,0,,Incest space baby. Nicely done.
+Dialogue: 0,0:19:40.70,0:19:43.70,Default,,0,0,0,,{\i1}After that, things pretty\Nmuch went back to normal --
+Dialogue: 0,0:19:43.74,0:19:45.35,Default,,0,0,0,,{\i1}some version of it, anyway.
+Dialogue: 0,0:19:45.40,0:19:47.88,Default,,0,0,0,,Rick said GoTrons were\Nlame little kid bullshit,
+Dialogue: 0,0:19:47.92,0:19:49.92,Default,,0,0,0,,and we never talked\Nabout them again.
+Dialogue: 0,0:19:49.97,0:19:52.41,Default,,0,0,0,,{\i1}Except all those gigantic space\Nbugs were still runnin' loose,
+Dialogue: 0,0:19:52.45,0:19:54.97,Default,,0,0,0,,{\i1}and there were no\NGoTrons left to fight them.
+Dialogue: 0,0:19:55.01,0:19:57.28,Default,,0,0,0,,{\i1}Yeah, millions die every day.
+Dialogue: 0,0:19:57.32,0:19:59.28,Default,,0,0,0,,{\i1}But you want to know\Nwhat they could never kill?
+Dialogue: 0,0:19:59.32,0:20:00.54,Default,,0,0,0,,{\i1}Family.
+Dialogue: 0,0:20:00.59,0:20:02.24,Default,,0,0,0,,- Where's Jerry?\N- Help!
+Dialogue: 0,0:20:02.28,0:20:04.33,Default,,0,0,0,,Help! I'm still out here!
+Dialogue: 0,0:20:06.03,0:20:07.55,Default,,0,0,0,,{\i1}Yep, nothing's\Nmore important than--
+Dialogue: 0,0:20:07.59,0:20:09.29,Default,,0,0,0,,Hey! Hey! Whoa-whoa-whoa!
+Dialogue: 0,0:20:09.33,0:20:10.81,Default,,0,0,0,,Ugh!
+Dialogue: 0,0:20:12.64,0:20:15.47,Default,,0,0,0,,{\i1}And just like that, I knew\Nour goose was as cooked as --
+Dialogue: 0,0:20:15.51,0:20:19.00,Default,,0,0,0,,Voiceovarians. Ugh.
+Dialogue: 0,0:20:19.21,0:20:21.21,Default,,0,0,0,,{\an5\c&H51ab2b&}Improved by{\c&Hf8fc03&} {\b1}KID{\b0} {\c}\N\N{\an5\c&H51ab2b&}Resynced by{\c&Hf8fc03&} {\b1}KID{\b0} {\c}\N\N{\an5\c&H51ab2b&}Enjoy the movie(s) / show(s)
+Dialogue: 0,0:20:21.95,0:20:25.26,Default,,0,0,0,,♪ Come day or night,\Nand feel around ♪
+Dialogue: 0,0:20:25.31,0:20:28.18,Default,,0,0,0,,♪ This is the world for you ♪
+Dialogue: 0,0:20:29.79,0:20:33.14,Default,,0,0,0,,♪ No matter where\Nyou've ever been ♪
+Dialogue: 0,0:20:33.18,0:20:38.49,Default,,0,0,0,,♪ This is the place\Nyour life begiii-i-ins ♪
+Dialogue: 0,0:20:38.54,0:20:41.80,Default,,0,0,0,,♪ Boob World ♪
+Dialogue: 0,0:20:41.84,0:20:45.28,Default,,0,0,0,,♪ It's a world for you,\Nbut it's actually two ♪
+Dialogue: 0,0:20:45.33,0:20:48.24,Default,,0,0,0,,♪ Boob Wo-o-orld ♪
+Dialogue: 0,0:20:49.46,0:20:50.42,Default,,0,0,0,,Samansky, you're late!
+Dialogue: 0,0:20:50.46,0:20:51.72,Default,,0,0,0,,Won't happen again, sir!
+Dialogue: 0,0:20:53.20,0:20:55.60,Default,,0,0,0,,Bugs. Look to your left.\NNow, look to your right.
+Dialogue: 0,0:20:55.64,0:20:58.16,Default,,0,0,0,,None of you are\Ncoming back. Not one.
+Dialogue: 0,0:20:58.21,0:21:00.43,Default,,0,0,0,,In the entire history\Nof this program,
+Dialogue: 0,0:21:00.47,0:21:01.67,Default,,0,0,0,,not a single bug has returned.
+Dialogue: 0,0:21:01.69,0:21:03.17,Default,,0,0,0,,Alright. Bring it in!
+Dialogue: 0,0:21:03.21,0:21:05.04,Default,,0,0,0,,What are we?\N- Normal-sized bugs!
+Dialogue: 0,0:21:05.08,0:21:07.17,Default,,0,0,0,,- What do we do?\N- Travel through an interdimensional
+Dialogue: 0,0:21:07.22,0:21:09.09,Default,,0,0,0,,gateway to a planet\Nwith tiny people!
+Dialogue: 0,0:21:09.13,0:21:11.79,Default,,0,0,0,,- Why do we do it?\N- To spread the cure for AIDS!
+Dialogue: 0,0:21:11.83,0:21:14.09,Default,,0,0,0,,Hey, Sarge, how do we\Nknow if these little people
+Dialogue: 0,0:21:14.14,0:21:15.27,Default,,0,0,0,,can understand us?
+Dialogue: 0,0:21:15.31,0:21:17.10,Default,,0,0,0,,I mean, do these\Neven speak Buganese?
+Dialogue: 0,0:21:17.14,0:21:20.27,Default,,0,0,0,,Funny, Palicki. That's\Nwhy we say it very loud.
+Dialogue: 0,0:21:20.32,0:21:23.54,Default,,0,0,0,,Guys, you'll still be the same\Ncivilized bug on their side.
+Dialogue: 0,0:21:23.58,0:21:25.19,Default,,0,0,0,,It's not like\Ninterdimensional travel
+Dialogue: 0,0:21:25.24,0:21:27.89,Default,,0,0,0,,strips us of our clothes, and\Nmakes us screaming monsters.
+Dialogue: 0,0:21:27.93,0:21:30.07,Default,,0,0,0,,Or maybe it does.\NIt's impossible to know.
+Dialogue: 0,0:21:30.11,0:21:31.42,Default,,0,0,0,,Now, get out of here!
+Dialogue: 0,0:21:35.33,0:21:37.94,Default,,0,0,0,,{\i1}My clothes -- where'd they go?
+Dialogue: 0,0:21:51.96,0:21:53.96,Default,,0,0,0,,Did you get any of that?

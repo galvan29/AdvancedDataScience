@@ -1,0 +1,576 @@
+﻿[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: 0
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+ScaledBorderAndShadow: Yes
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI Semibold,22,&H00FFFFFF,&H00FFFFFF,&H55000000,&H55000000,0,0,0,0,100,100,0,0,1,0.6,0.3,2,10,10,20,1
+Style: Verdana [WHITE],Arial,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:13.14,0:00:15.33,Default,,0,0,0,,Are we -- are we gonna put it\Nback when we're done with it?
+Dialogue: 0,0:00:15.36,0:00:17.88,Default,,0,0,0,,Why? The only thing of value\Non it is the secret treasure map.
+Dialogue: 0,0:00:17.93,0:00:19.51,Default,,0,0,0,,The rest is just instructions\Nfor running a country,
+Dialogue: 0,0:00:19.54,0:00:20.93,Default,,0,0,0,,and I'm pretty\Nsure they're online.
+Dialogue: 0,0:00:20.97,0:00:22.45,Default,,0,0,0,,It just feels a little wrong --
+Dialogue: 0,0:00:22.50,0:00:24.00,Default,,0,0,0,,Morty, are you gonna\Nbe a fucking America nerd
+Dialogue: 0,0:00:24.02,0:00:25.28,Default,,0,0,0,,or are you gonna be cool
+Dialogue: 0,0:00:25.32,0:00:26.93,Default,,0,0,0,,and steal the\NConstitution with Grandpa?
+Dialogue: 0,0:00:29.68,0:00:31.52,Default,,0,0,0,,Here, hold this while I\Ncrack the hermetic seal.
+Dialogue: 0,0:00:31.55,0:00:34.38,Default,,0,0,0,,W-Why not just use this again?
+Dialogue: 0,0:00:40.86,0:00:42.60,Default,,0,0,0,,Morty! You just\Ndestroyed the map
+Dialogue: 0,0:00:42.65,0:00:44.75,Default,,0,0,0,,and activated the giant assassin\Nhidden in the Statue of Liberty!
+Dialogue: 0,0:00:44.78,0:00:46.43,Default,,0,0,0,,I'm sorry -- w-wait, what?
+Dialogue: 0,0:00:46.48,0:00:48.61,Default,,0,0,0,,It was a Trojan horse,\NMorty. Never trust the French.
+Dialogue: 0,0:00:48.65,0:00:50.33,Default,,0,0,0,,Alright, fun's fun, but now\Nthe federal government's
+Dialogue: 0,0:00:50.35,0:00:52.22,Default,,0,0,0,,gonna be pissed\Nagain. Way to go.
+Dialogue: 0,0:00:52.26,0:00:53.70,Default,,0,0,0,,And on America's birthday
+Dialogue: 0,0:00:53.74,0:00:55.40,Default,,0,0,0,,or whatever the\Nfuck Thanksgiving is.
+Dialogue: 0,0:01:28.95,0:01:30.17,Default,,0,0,0,,Rick and Morty!
+Dialogue: 0,0:01:30.22,0:01:31.54,Default,,0,0,0,,You are under\Narrest and surrounded
+Dialogue: 0,0:01:31.56,0:01:33.09,Default,,0,0,0,,by an anti-portal shimmer!
+Dialogue: 0,0:01:33.13,0:01:34.24,Default,,0,0,0,,Come out with your hands up!
+Dialogue: 0,0:01:34.26,0:01:36.40,Default,,0,0,0,,Well, Happy Thanksgiving to me.
+Dialogue: 0,0:01:36.44,0:01:38.88,Default,,0,0,0,,Can't wait to see what a\N"shimmer" does to my prostate.
+Dialogue: 0,0:01:38.92,0:01:41.01,Default,,0,0,0,,Dad, can you please\Njust end whatever this is --
+Dialogue: 0,0:01:41.05,0:01:42.84,Default,,0,0,0,,I understand you're\Nupset, Mr. President.
+Dialogue: 0,0:01:42.88,0:01:44.53,Default,,0,0,0,,It's honestly all Morty's fault.
+Dialogue: 0,0:01:44.58,0:01:46.29,Default,,0,0,0,,But in the meantime, you\Nreally want to keep your army
+Dialogue: 0,0:01:46.32,0:01:48.80,Default,,0,0,0,,of pointlessly camouflaged\NEagle Scouts off my lawn.
+Dialogue: 0,0:01:48.84,0:01:50.67,Default,,0,0,0,,Don't tell me what I\Nwant, you anti-American
+Dialogue: 0,0:01:50.71,0:01:52.02,Default,,0,0,0,,piece of shit, you terrorist!
+Dialogue: 0,0:01:52.06,0:01:53.50,Default,,0,0,0,,You know, you use\Nthat word so much
+Dialogue: 0,0:01:53.54,0:01:55.07,Default,,0,0,0,,it's lost all meaning, Mr. P.
+Dialogue: 0,0:01:55.11,0:01:56.70,Default,,0,0,0,,It's like, at this point,\Nwhat's a terrorist?
+Dialogue: 0,0:01:56.72,0:01:58.29,Default,,0,0,0,,It's a guy you\Ndon't like. Big deal.
+Dialogue: 0,0:01:58.33,0:01:59.72,Default,,0,0,0,,Hoo-rah!
+Dialogue: 0,0:02:03.86,0:02:05.16,Default,,0,0,0,,Told you to stand down.
+Dialogue: 0,0:02:05.21,0:02:07.60,Default,,0,0,0,,You just lost two soldiers\Nover here. Good men.
+Dialogue: 0,0:02:07.64,0:02:09.19,Default,,0,0,0,,Might be time to look at\Nthe terrorist in the mirror.
+Dialogue: 0,0:02:09.21,0:02:10.86,Default,,0,0,0,,You want a war?!
+Dialogue: 0,0:02:10.91,0:02:13.06,Default,,0,0,0,,I'll put your outer-space ass\Nin a goddamn Phantom Zone
+Dialogue: 0,0:02:13.08,0:02:14.76,Default,,0,0,0,,with a bar of kryptonite\Nsoap around your neck.
+Dialogue: 0,0:02:14.78,0:02:16.70,Default,,0,0,0,,You're done,\NSanchez! You hear me?
+Dialogue: 0,0:02:16.74,0:02:18.39,Default,,0,0,0,,Oof. He's really\Npissed this time.
+Dialogue: 0,0:02:18.44,0:02:19.94,Default,,0,0,0,,Why don't you guys just\Nfuck and get it over with.
+Dialogue: 0,0:02:19.96,0:02:21.18,Default,,0,0,0,,Okay, well thank you, Summer,
+Dialogue: 0,0:02:21.22,0:02:22.64,Default,,0,0,0,,but I think I've\Ngot a better option.
+Dialogue: 0,0:02:22.66,0:02:23.83,Default,,0,0,0,,Dad, no. Ehh...
+Dialogue: 0,0:02:23.88,0:02:25.53,Default,,0,0,0,,hands are tied, sweetie.
+Dialogue: 0,0:02:25.58,0:02:27.21,Default,,0,0,0,,I have to turn myself into a\Nturkey and trick the President
+Dialogue: 0,0:02:27.23,0:02:29.01,Default,,0,0,0,,into giving me a\NPresidential turkey pardon.
+Dialogue: 0,0:02:29.06,0:02:31.23,Default,,0,0,0,,Again? How many\Ntimes have you done this?
+Dialogue: 0,0:02:31.28,0:02:32.73,Default,,0,0,0,,I don't know, Jerry, how\Nmany years have I lived here?
+Dialogue: 0,0:02:32.76,0:02:34.24,Default,,0,0,0,,Careful how you answer that.
+Dialogue: 0,0:02:34.28,0:02:36.11,Default,,0,0,0,,Geez, Rick, y'know,\Ny-you've done this a lot.
+Dialogue: 0,0:02:36.15,0:02:38.09,Default,,0,0,0,,Don't you think the President\Nmight see it coming this time?
+Dialogue: 0,0:02:38.11,0:02:40.81,Default,,0,0,0,,He probably will, Morty.\NThat's all part of the dance.
+Dialogue: 0,0:02:40.85,0:02:42.24,Default,,0,0,0,,In the past, I've\Ninserted myself
+Dialogue: 0,0:02:42.29,0:02:44.33,Default,,0,0,0,,into the potential turkey\Npardonee population
+Dialogue: 0,0:02:44.38,0:02:45.79,Default,,0,0,0,,by brainwashing the\Npresidential turkey wrangler
+Dialogue: 0,0:02:45.81,0:02:47.34,Default,,0,0,0,,prior to the ceremony.
+Dialogue: 0,0:02:47.38,0:02:49.56,Default,,0,0,0,,But this time, the turkey\Nwrangler's been euthanized
+Dialogue: 0,0:02:49.60,0:02:50.92,Default,,0,0,0,,and the turkeys\Nwill be transported
+Dialogue: 0,0:02:50.95,0:02:52.69,Default,,0,0,0,,by armored military vehicles.
+Dialogue: 0,0:02:52.73,0:02:56.04,Default,,0,0,0,,Vehicles manufactured by\Nghost corporations that I control.
+Dialogue: 0,0:02:56.08,0:02:58.48,Default,,0,0,0,,- Which we have audited.\N- Allowing me access to...
+Dialogue: 0,0:02:58.52,0:03:00.02,Default,,0,0,0,,- Central computers...\N- To track the...
+Dialogue: 0,0:03:00.04,0:03:02.22,Default,,0,0,0,,Real armored transports,\Nwhich he can never...
+Dialogue: 0,0:03:02.26,0:03:03.66,Default,,0,0,0,,Totally track and sneak aboard.
+Dialogue: 0,0:03:03.70,0:03:05.27,Default,,0,0,0,,And even if he does,\Nhe'll be on a truck
+Dialogue: 0,0:03:05.31,0:03:07.57,Default,,0,0,0,,full of turkeys and\Nfully armed marines.
+Dialogue: 0,0:03:07.62,0:03:09.53,Default,,0,0,0,,Who won't recognize me\Nbecause the human eye
+Dialogue: 0,0:03:09.58,0:03:11.36,Default,,0,0,0,,is inherently face\Nblind to turkeys.
+Dialogue: 0,0:03:11.40,0:03:14.23,Default,,0,0,0,,Fortunately, those marines\Nwon't have human eyes.
+Dialogue: 0,0:03:14.28,0:03:15.84,Default,,0,0,0,,They'll have turkey eyes.
+Dialogue: 0,0:03:15.89,0:03:17.93,Default,,0,0,0,,Jesus ever-loving\NChrist, why don't you two
+Dialogue: 0,0:03:17.98,0:03:19.76,Default,,0,0,0,,just fuck and get it over with?
+Dialogue: 0,0:03:19.80,0:03:21.54,Default,,0,0,0,,Careful, Dwayne.\NYou're only Vice President
+Dialogue: 0,0:03:21.59,0:03:23.37,Default,,0,0,0,,because I need\N10% of the white vote.
+Dialogue: 0,0:03:23.42,0:03:26.07,Default,,0,0,0,,There's a giant French\Nassassin attacking New York,
+Dialogue: 0,0:03:26.11,0:03:28.29,Default,,0,0,0,,and you're using the war\Nroom to measure dicks
+Dialogue: 0,0:03:28.33,0:03:30.29,Default,,0,0,0,,with your alcoholic\Nsci-fi boyfriend?
+Dialogue: 0,0:03:30.34,0:03:31.99,Default,,0,0,0,,Rick Sanchez is more dangerous
+Dialogue: 0,0:03:32.03,0:03:34.03,Default,,0,0,0,,than some steam-powered\NFrench bitch,
+Dialogue: 0,0:03:34.08,0:03:36.21,Default,,0,0,0,,and New York can handle\Nits own global emergencies.
+Dialogue: 0,0:03:36.25,0:03:38.47,Default,,0,0,0,,General? Initiate\NOperation Deep Gobble.
+Dialogue: 0,0:03:41.65,0:03:43.48,Default,,0,0,0,,Coop, not on Thanksgiving.
+Dialogue: 0,0:03:43.52,0:03:44.96,Default,,0,0,0,,It's what I trained\Nfor, Mary Lou.
+Dialogue: 0,0:03:45.00,0:03:46.83,Default,,0,0,0,,- It ain't our fight.\N- Baby.
+Dialogue: 0,0:03:46.87,0:03:49.44,Default,,0,0,0,,That little race car driver\Nyou got bakin' in your belly.
+Dialogue: 0,0:03:49.49,0:03:51.27,Default,,0,0,0,,What world you\Nwant him rearin' up in?
+Dialogue: 0,0:03:51.31,0:03:53.66,Default,,0,0,0,,One where some...\Nspiky-haired Doctor Who
+Dialogue: 0,0:03:53.71,0:03:55.97,Default,,0,0,0,,in a lab coat can change\Nthe color of the sky?
+Dialogue: 0,0:03:56.01,0:03:58.32,Default,,0,0,0,,Or a world where he can\Nfill his pickup with hot dogs
+Dialogue: 0,0:03:58.36,0:03:59.97,Default,,0,0,0,,and drive it to a jukebox
+Dialogue: 0,0:04:00.02,0:04:02.28,Default,,0,0,0,,full of our demographic's\Ncurrent favorite music?
+Dialogue: 0,0:04:02.32,0:04:03.98,Default,,0,0,0,,Obviously the latter, but --
+Dialogue: 0,0:04:04.02,0:04:06.28,Default,,0,0,0,,Well, that world, Mary Lou,\Nthe one with those meals,
+Dialogue: 0,0:04:06.33,0:04:09.46,Default,,0,0,0,,vehicles, and songs people\Nin this 30-mile area prefer...
+Dialogue: 0,0:04:09.51,0:04:11.16,Default,,0,0,0,,that world needs a few good men.
+Dialogue: 0,0:04:11.20,0:04:12.86,Default,,0,0,0,,In a secret Pentagon lab.
+Dialogue: 0,0:04:12.90,0:04:14.38,Default,,0,0,0,,Turning into turkeys.
+Dialogue: 0,0:04:14.42,0:04:16.56,Default,,0,0,0,,You come back\Nwithout feathers, Coop.
+Dialogue: 0,0:04:18.60,0:04:20.26,Default,,0,0,0,,God, I love this country.
+Dialogue: 0,0:04:21.91,0:04:23.48,Default,,0,0,0,,Hoooo-ah!
+Dialogue: 0,0:04:23.52,0:04:25.87,Default,,0,0,0,,♪ I got a pregnant girl\Nand a pickup truck ♪
+Dialogue: 0,0:04:25.91,0:04:28.00,Default,,0,0,0,,♪ I got one by choice\Nand the other by luck ♪
+Dialogue: 0,0:04:28.05,0:04:32.22,Default,,0,0,0,,♪ But now it's time\Nto turn into a turkey ♪
+Dialogue: 0,0:04:32.27,0:04:34.53,Default,,0,0,0,,♪ I hope there can\Nbe peace one day ♪
+Dialogue: 0,0:04:34.57,0:04:36.58,Default,,0,0,0,,♪ Till then, I pray my DNA
+Dialogue: 0,0:04:36.62,0:04:38.19,Default,,0,0,0,,♪ Gets backed up
+Dialogue: 0,0:04:38.23,0:04:40.45,Default,,0,0,0,,These pills contain\Ntracking chips
+Dialogue: 0,0:04:40.49,0:04:42.67,Default,,0,0,0,,that identify each\Nof you as individuals.
+Dialogue: 0,0:04:42.71,0:04:45.67,Default,,0,0,0,,That will be important later.
+Dialogue: 0,0:04:45.72,0:04:50.37,Default,,0,0,0,,♪ Gobble, gobble
+Dialogue: 0,0:04:50.42,0:04:54.77,Default,,0,0,0,,♪ When I turn into a turkey
+Dialogue: 0,0:05:01.12,0:05:02.86,Default,,0,0,0,,Alright, boys,\Nsearch every bird.
+Dialogue: 0,0:05:02.91,0:05:05.34,Default,,0,0,0,,If Sanchez is here, I\Nwanna hear you gobblin'.
+Dialogue: 0,0:05:05.39,0:05:06.82,Default,,0,0,0,,Let me look at you, scum.
+Dialogue: 0,0:05:06.87,0:05:08.35,Default,,0,0,0,,Get outta here, you wobbleneck.
+Dialogue: 0,0:05:08.39,0:05:10.91,Default,,0,0,0,,Sarge, this -- this ain't\Nlike the simulation, man.
+Dialogue: 0,0:05:10.96,0:05:12.74,Default,,0,0,0,,I don't like it -Keep\Nit together, Martinez.
+Dialogue: 0,0:05:12.79,0:05:14.35,Default,,0,0,0,,Eyes are on the ground, sir.
+Dialogue: 0,0:05:14.40,0:05:16.53,Default,,0,0,0,,- {\i1}No sign of Einstein.\N- Stay frosty, gentlemen.
+Dialogue: 0,0:05:16.57,0:05:19.97,Default,,0,0,0,,I want this pardoning\Npipeline airtight.
+Dialogue: 0,0:05:20.01,0:05:21.75,Default,,0,0,0,,Sir! We have hacked\Nthe garage door.
+Dialogue: 0,0:05:21.79,0:05:23.49,Default,,0,0,0,,We are in. Eyes on the bogey.
+Dialogue: 0,0:05:23.54,0:05:25.23,Default,,0,0,0,,Or you've got eyes on a robot.
+Dialogue: 0,0:05:25.28,0:05:27.67,Default,,0,0,0,,All due respect, sir, I\Nknow flesh when I see it!
+Dialogue: 0,0:05:27.71,0:05:30.28,Default,,0,0,0,,Those flesh-covered robots\Nshould buy us some time.
+Dialogue: 0,0:05:30.33,0:05:32.46,Default,,0,0,0,,The pardonable turkeys\Nshould be on that truck.
+Dialogue: 0,0:05:32.50,0:05:34.81,Default,,0,0,0,,Ship, go stealth.
+Dialogue: 0,0:05:34.85,0:05:37.38,Default,,0,0,0,,Rodriguez, Fincher.\NGet eyes on that.
+Dialogue: 0,0:05:37.42,0:05:39.46,Default,,0,0,0,,Huh. Turkey Marines.
+Dialogue: 0,0:05:39.51,0:05:41.12,Default,,0,0,0,,The President came to play.
+Dialogue: 0,0:05:41.16,0:05:42.12,Default,,0,0,0,,Jam those two radios.
+Dialogue: 0,0:05:42.16,0:05:43.25,Default,,0,0,0,,{\i1}Confirmed.
+Dialogue: 0,0:05:43.29,0:05:45.12,Default,,0,0,0,,Ah! Geez!
+Dialogue: 0,0:05:54.65,0:05:56.44,Default,,0,0,0,,Fincher, Rodriguez, come in!
+Dialogue: 0,0:05:56.48,0:05:58.14,Default,,0,0,0,,{\i1}Copy, copy, tango, all good.
+Dialogue: 0,0:05:58.18,0:06:00.79,Default,,0,0,0,,Just a couple of\Nbranches on the roof.
+Dialogue: 0,0:06:00.83,0:06:02.79,Default,,0,0,0,,Don't ever turn\Nyour radio off again.
+Dialogue: 0,0:06:02.84,0:06:04.34,Default,,0,0,0,,{\i1}- We will not surrender.\N- We will never surrender.
+Dialogue: 0,0:06:04.36,0:06:05.80,Default,,0,0,0,,{\i1}- We will not surrender.\N- Oh, yeah?
+Dialogue: 0,0:06:05.84,0:06:07.93,Default,,0,0,0,,Bring in the David Blaine box.
+Dialogue: 0,0:06:09.89,0:06:11.67,Default,,0,0,0,,Damn, is that a\NDavid Blaine box?
+Dialogue: 0,0:06:11.71,0:06:13.95,Default,,0,0,0,,I told you we should have\Njust gone to my parents' house.
+Dialogue: 0,0:06:13.98,0:06:15.96,Default,,0,0,0,,- No, you didn't.\N- Well, I didn't say it out loud,
+Dialogue: 0,0:06:15.98,0:06:17.46,Default,,0,0,0,,but it should be\Nwell known by now
+Dialogue: 0,0:06:17.50,0:06:19.20,Default,,0,0,0,,that I'd always rather be there.
+Dialogue: 0,0:06:19.24,0:06:20.64,Default,,0,0,0,,{\i1}- Oh, God, oh no!\N- Aw, geez, Rick!
+Dialogue: 0,0:06:20.68,0:06:22.59,Default,,0,0,0,,Sir, we've got Rick and\NMorty inside the box!
+Dialogue: 0,0:06:22.64,0:06:24.16,Default,,0,0,0,,- Then that confirms it.\N- Sir?
+Dialogue: 0,0:06:24.20,0:06:26.82,Default,,0,0,0,,No David Blaine box\Ncan hold Rick Sanchez.
+Dialogue: 0,0:06:26.86,0:06:28.08,Default,,0,0,0,,Scan the turkey truck!
+Dialogue: 0,0:06:28.12,0:06:29.47,Default,,0,0,0,,Huh. That's weird.
+Dialogue: 0,0:06:29.51,0:06:31.52,Default,,0,0,0,,ID chips for Fincher and\NRodriguez are glitching.
+Dialogue: 0,0:06:31.56,0:06:32.74,Default,,0,0,0,,Sanchez...
+Dialogue: 0,0:06:32.78,0:06:34.61,Default,,0,0,0,,I'll deal with this\Nbastard myself.
+Dialogue: 0,0:06:34.65,0:06:35.74,Default,,0,0,0,,Sir, don't be a cowboy.
+Dialogue: 0,0:06:35.78,0:06:37.35,Default,,0,0,0,,You can't get re-elected dead.
+Dialogue: 0,0:06:37.39,0:06:39.09,Default,,0,0,0,,System is calibrated, sir.
+Dialogue: 0,0:06:39.13,0:06:40.98,Default,,0,0,0,,That pill contains a tracking\Nchip that will identify --
+Dialogue: 0,0:06:41.00,0:06:43.01,Default,,0,0,0,,I know, it'll be\Nimportant later!
+Dialogue: 0,0:06:43.05,0:06:44.62,Default,,0,0,0,,Do it.
+Dialogue: 0,0:06:47.53,0:06:49.01,Default,,0,0,0,,Moments from now,
+Dialogue: 0,0:06:49.06,0:06:51.10,Default,,0,0,0,,the President will be\Npardoning a turkey...
+Dialogue: 0,0:06:53.67,0:06:55.06,Default,,0,0,0,,Home stretch, Morty.
+Dialogue: 0,0:06:55.11,0:06:57.02,Default,,0,0,0,,Here comes dip shit\Nright on schedule.
+Dialogue: 0,0:06:57.06,0:06:59.59,Default,,0,0,0,,Nothing can go wrong now.
+Dialogue: 0,0:06:59.63,0:07:00.85,Default,,0,0,0,,Jesus, is that --Oh, shit.
+Dialogue: 0,0:07:00.89,0:07:02.20,Default,,0,0,0,,The President\Nhas the upper hand.
+Dialogue: 0,0:07:02.24,0:07:03.72,Default,,0,0,0,,G-Grandpa fucked\Nup. Sunglasses on.
+Dialogue: 0,0:07:03.77,0:07:05.53,Default,,0,0,0,,Act like a turkey. What?\NWha-- Are you scared?
+Dialogue: 0,0:07:05.55,0:07:07.20,Default,,0,0,0,,Act like a turkey!
+Dialogue: 0,0:07:09.55,0:07:11.16,Default,,0,0,0,,That's Rodriguez\Nand Fincher, sir.
+Dialogue: 0,0:07:11.21,0:07:13.86,Default,,0,0,0,,It's Rick and Morty, you\Nuseless fucking stump humper!
+Dialogue: 0,0:07:13.91,0:07:16.34,Default,,0,0,0,,Sorry, don't tell 10% of\Nyour friends I called you that.
+Dialogue: 0,0:07:16.39,0:07:17.48,Default,,0,0,0,,Mr. President.
+Dialogue: 0,0:07:17.52,0:07:19.35,Default,,0,0,0,,Sanchez, admit it. You lose.
+Dialogue: 0,0:07:19.39,0:07:21.22,Default,,0,0,0,,Say it and I'll let\Nyour loser ass go.
+Dialogue: 0,0:07:22.83,0:07:24.68,Default,,0,0,0,,Did you just try to spit in\Nmy face with no saliva gland?
+Dialogue: 0,0:07:24.70,0:07:26.66,Default,,0,0,0,,- Just pardon me, dick.\N- Why the hell would I?
+Dialogue: 0,0:07:26.70,0:07:28.31,Default,,0,0,0,,Oh, I dunno, 'cause\Nif I move to Canada,
+Dialogue: 0,0:07:28.36,0:07:29.57,Default,,0,0,0,,they'll be the best country!
+Dialogue: 0,0:07:29.62,0:07:31.49,Default,,0,0,0,,I'll peck your Goddamn eyes out!
+Dialogue: 0,0:07:31.53,0:07:32.80,Default,,0,0,0,,Ow! Hey!
+Dialogue: 0,0:07:32.84,0:07:34.49,Default,,0,0,0,,Shit! My plume!
+Dialogue: 0,0:07:34.54,0:07:36.54,Default,,0,0,0,,Hey, back off!
+Dialogue: 0,0:07:36.58,0:07:38.89,Default,,0,0,0,,Blueberries! We\Ngot blueberries down!
+Dialogue: 0,0:07:38.93,0:07:40.89,Default,,0,0,0,,Hold your positions,\Nit's a feeding frenzy!
+Dialogue: 0,0:07:40.93,0:07:42.20,Default,,0,0,0,,I-I can't see.
+Dialogue: 0,0:07:42.24,0:07:43.50,Default,,0,0,0,,I mean, I can see.
+Dialogue: 0,0:07:43.55,0:07:47.90,Default,,0,0,0,,270 degrees -- it's\Ntoo many degrees!
+Dialogue: 0,0:07:47.94,0:07:50.25,Default,,0,0,0,,Sir, we are losing the\Nmental game down here.
+Dialogue: 0,0:07:50.29,0:07:51.47,Default,,0,0,0,,{\i1}Keep it together, soldier!
+Dialogue: 0,0:07:51.51,0:07:53.21,Default,,0,0,0,,{\i1}POTUS is still in that pen --
+Dialogue: 0,0:08:00.00,0:08:01.91,Default,,0,0,0,,We just lost New York to France!
+Dialogue: 0,0:08:01.95,0:08:03.52,Default,,0,0,0,,Pull out the\NPresident right now!
+Dialogue: 0,0:08:03.57,0:08:05.74,Default,,0,0,0,,Gobble Tango -- I want\NPOTUS out of that pen!
+Dialogue: 0,0:08:05.78,0:08:08.13,Default,,0,0,0,,{\i1}That is an order! Locate\Nthe president's chip!
+Dialogue: 0,0:08:08.18,0:08:09.70,Default,,0,0,0,,Roger, roger.
+Dialogue: 0,0:08:09.75,0:08:11.05,Default,,0,0,0,,There he is, I got him.
+Dialogue: 0,0:08:11.09,0:08:13.27,Default,,0,0,0,,Let's go, boys! Let's\Nfly out the Eagle!
+Dialogue: 0,0:08:15.14,0:08:16.23,Default,,0,0,0,,Hey, that's not me!
+Dialogue: 0,0:08:16.27,0:08:19.84,Default,,0,0,0,,Package is secure. Pull us out.
+Dialogue: 0,0:08:19.89,0:08:23.24,Default,,0,0,0,,{\i1}Reinjecting subject DNA.
+Dialogue: 0,0:08:30.77,0:08:33.46,Default,,0,0,0,,Hoppin' Jehovah, you\Nlook like five pounds of shit
+Dialogue: 0,0:08:33.51,0:08:35.03,Default,,0,0,0,,in a whore's lunchbox.
+Dialogue: 0,0:08:35.07,0:08:36.90,Default,,0,0,0,,You alright, Mr. President?
+Dialogue: 0,0:08:36.95,0:08:38.56,Default,,0,0,0,,Yes. I am...
+Dialogue: 0,0:08:38.60,0:08:39.99,Default,,0,0,0,,the President.
+Dialogue: 0,0:08:40.04,0:08:42.30,Default,,0,0,0,,Clean his ass up and\Nget him to the War Room.
+Dialogue: 0,0:08:42.34,0:08:43.65,Default,,0,0,0,,Hey! Gobble Squad!
+Dialogue: 0,0:08:43.69,0:08:45.35,Default,,0,0,0,,You got the wrong\Nguy, you morons!
+Dialogue: 0,0:08:46.83,0:08:48.70,Default,,0,0,0,,Look at this dumb piece\Nof shit. Gobbling away.
+Dialogue: 0,0:08:48.74,0:08:50.61,Default,,0,0,0,,Get back in there!
+Dialogue: 0,0:08:50.66,0:08:53.53,Default,,0,0,0,,Alright boys, you heard\Nthe VP. Pardon is tits up.
+Dialogue: 0,0:08:53.57,0:08:55.05,Default,,0,0,0,,{\i1}Pack up and ship out!
+Dialogue: 0,0:08:57.79,0:08:59.88,Default,,0,0,0,,As for you, Sanchez...
+Dialogue: 0,0:08:59.93,0:09:01.54,Default,,0,0,0,,bon appétit.
+Dialogue: 0,0:09:04.36,0:09:05.93,Default,,0,0,0,,Where is this elevator going?
+Dialogue: 0,0:09:05.98,0:09:08.19,Default,,0,0,0,,Where all the\Nunchosen turkeys go.
+Dialogue: 0,0:09:08.24,0:09:10.07,Default,,0,0,0,,The feeding chamber.
+Dialogue: 0,0:09:13.59,0:09:15.07,Default,,0,0,0,,What the fuck is that?
+Dialogue: 0,0:09:15.11,0:09:17.16,Default,,0,0,0,,Not what... who.
+Dialogue: 0,0:09:17.20,0:09:20.21,Default,,0,0,0,,The only thing to fear is... me!
+Dialogue: 0,0:09:20.25,0:09:21.60,Default,,0,0,0,,How the fuck does\Nthe White House
+Dialogue: 0,0:09:21.64,0:09:23.51,Default,,0,0,0,,have a cloned spider of FDR?
+Dialogue: 0,0:09:23.56,0:09:24.99,Default,,0,0,0,,It's no clone, it's FDR.
+Dialogue: 0,0:09:25.04,0:09:26.69,Default,,0,0,0,,He was a guinea pig\Nfor the polio vaccine.
+Dialogue: 0,0:09:26.74,0:09:29.04,Default,,0,0,0,,We asked ourselves\N"What walks the most?"
+Dialogue: 0,0:09:29.09,0:09:30.78,Default,,0,0,0,,"We?" You're\Ntaking credit for this?
+Dialogue: 0,0:09:30.83,0:09:33.96,Default,,0,0,0,,The office comes\Nwith baggage, Morty.
+Dialogue: 0,0:09:34.00,0:09:35.22,Default,,0,0,0,,Rick, I'm afraid to die!
+Dialogue: 0,0:09:35.27,0:09:36.68,Default,,0,0,0,,You won't have to\Nbe for long, Morty!
+Dialogue: 0,0:09:36.70,0:09:37.94,Default,,0,0,0,,We're due to return to\Nhuman form any second!
+Dialogue: 0,0:09:37.96,0:09:39.36,Default,,0,0,0,,Then what?
+Dialogue: 0,0:09:39.40,0:09:41.07,Default,,0,0,0,,Then we just have to not\Nget eaten by the spider!
+Dialogue: 0,0:09:41.10,0:09:42.84,Default,,0,0,0,,Oh, so in other\Nwords, be afraid to die?
+Dialogue: 0,0:09:42.88,0:09:44.42,Default,,0,0,0,,Morty, if winning an argument\Nis that important to you,
+Dialogue: 0,0:09:44.45,0:09:45.62,Default,,0,0,0,,you were never alive!
+Dialogue: 0,0:09:45.67,0:09:48.28,Default,,0,0,0,,Time for a New Deal... Murder!
+Dialogue: 0,0:09:48.32,0:09:50.45,Default,,0,0,0,,I'm sick of hearing\Nhow iconic you were!
+Dialogue: 0,0:09:50.50,0:09:54.02,Default,,0,0,0,,Try having an historical\Nadministration after Facebook
+Dialogue: 0,0:09:54.07,0:09:57.37,Default,,0,0,0,,goes online, you\Nold-timey bitch!
+Dialogue: 0,0:09:57.42,0:09:59.81,Default,,0,0,0,,Morty, tear open that panel!
+Dialogue: 0,0:09:59.86,0:10:02.07,Default,,0,0,0,,How's this for a fireside chat?
+Dialogue: 0,0:10:05.21,0:10:06.51,Default,,0,0,0,,Woof. You just killed FDR.
+Dialogue: 0,0:10:06.56,0:10:07.95,Default,,0,0,0,,He was a monster, though.
+Dialogue: 0,0:10:07.99,0:10:09.91,Default,,0,0,0,,Don't mythologize\Nhim. He was a politician.
+Dialogue: 0,0:10:09.95,0:10:12.08,Default,,0,0,0,,Speaking of, you kind\Nof saved our bacon there,
+Dialogue: 0,0:10:12.13,0:10:13.39,Default,,0,0,0,,so I'll make you a deal.
+Dialogue: 0,0:10:13.43,0:10:15.17,Default,,0,0,0,,You pardon us and\NI'll make you human.
+Dialogue: 0,0:10:15.22,0:10:16.65,Default,,0,0,0,,Wrong turkey.
+Dialogue: 0,0:10:16.70,0:10:18.44,Default,,0,0,0,,Man, the face blindness is real.
+Dialogue: 0,0:10:20.31,0:10:22.05,Default,,0,0,0,,I'd like these... men...
+Dialogue: 0,0:10:22.09,0:10:23.84,Default,,0,0,0,,turned back into humans, please.
+Dialogue: 0,0:10:23.88,0:10:25.53,Default,,0,0,0,,Uh, yes, of course,\NMr. President.
+Dialogue: 0,0:10:25.58,0:10:27.71,Default,,0,0,0,,But I thought we\Nalready rehumanized
+Dialogue: 0,0:10:27.75,0:10:29.10,Default,,0,0,0,,all the turkified marines.
+Dialogue: 0,0:10:29.15,0:10:32.06,Default,,0,0,0,,I'd like these men\Nturned back into humans.
+Dialogue: 0,0:10:32.10,0:10:33.24,Default,,0,0,0,,I am the President.
+Dialogue: 0,0:10:33.28,0:10:34.54,Default,,0,0,0,,Yes, sir. Uh, sure thing.
+Dialogue: 0,0:10:34.59,0:10:38.98,Default,,0,0,0,,Increase their\Nstrength by 1,000%.
+Dialogue: 0,0:10:39.02,0:10:41.37,Default,,0,0,0,,But... that wouldn't be human.
+Dialogue: 0,0:10:41.42,0:10:45.55,Default,,0,0,0,,Turkeys have always\Nbeen more than human.
+Dialogue: 0,0:10:45.60,0:10:48.73,Default,,0,0,0,,Okay, uh, so right there,\Nnow I'm starting to --
+Dialogue: 0,0:10:50.21,0:10:54.74,Default,,0,0,0,,I am selling New York to France.
+Dialogue: 0,0:10:54.78,0:10:57.91,Default,,0,0,0,,And giving all of the\Nmoney to Congress.
+Dialogue: 0,0:10:59.52,0:11:00.70,Default,,0,0,0,,Now that's how you do it!
+Dialogue: 0,0:11:00.74,0:11:02.53,Default,,0,0,0,,He became President today.
+Dialogue: 0,0:11:04.88,0:11:06.27,Default,,0,0,0,,That's right, murmur!
+Dialogue: 0,0:11:06.31,0:11:07.92,Default,,0,0,0,,And when you're done,\Nget me some pants.
+Dialogue: 0,0:11:07.97,0:11:10.36,Default,,0,0,0,,If you're the President,\Nwho the hell have we been
+Dialogue: 0,0:11:10.40,0:11:12.80,Default,,0,0,0,,governing the country\Nwith for the last three hours?
+Dialogue: 0,0:11:12.84,0:11:14.54,Default,,0,0,0,,An impostor, you\Ngood for nothing idiot!
+Dialogue: 0,0:11:14.58,0:11:16.45,Default,,0,0,0,,You humanized the wrong turkey!
+Dialogue: 0,0:11:16.50,0:11:17.80,Default,,0,0,0,,It's possible.
+Dialogue: 0,0:11:17.85,0:11:20.07,Default,,0,0,0,,We shouldn't leave\Nanything to chance.
+Dialogue: 0,0:11:20.11,0:11:23.90,Default,,0,0,0,,Wouldn't want Congress\Nworking with the wrong president.
+Dialogue: 0,0:11:23.94,0:11:26.55,Default,,0,0,0,,A very good point,\NMr. President.
+Dialogue: 0,0:11:26.59,0:11:28.29,Default,,0,0,0,,Do we believe\Nthis fine feathered,
+Dialogue: 0,0:11:28.33,0:11:30.77,Default,,0,0,0,,collaborative gentleman to\Nbe our commander-in-chief?
+Dialogue: 0,0:11:30.82,0:11:34.17,Default,,0,0,0,,Or are we gonna let "Mr.\NCash Bar at the Christmas Party"
+Dialogue: 0,0:11:34.21,0:11:35.47,Default,,0,0,0,,stay in office?
+Dialogue: 0,0:11:35.52,0:11:38.13,Default,,0,0,0,,All in favor of\NTurkey President?
+Dialogue: 0,0:11:38.17,0:11:39.39,Default,,0,0,0,,You can't be serious.
+Dialogue: 0,0:11:39.43,0:11:40.83,Default,,0,0,0,,You think he cares\Nabout America?
+Dialogue: 0,0:11:40.87,0:11:43.18,Default,,0,0,0,,Is that why this is\Nhappening to you?
+Dialogue: 0,0:11:43.22,0:11:46.70,Default,,0,0,0,,Because you cared about America?
+Dialogue: 0,0:11:46.74,0:11:48.79,Default,,0,0,0,,Guards, these men are...
+Dialogue: 0,0:11:48.83,0:11:49.83,Default,,0,0,0,,oh, what is the word?
+Dialogue: 0,0:11:49.88,0:11:51.49,Default,,0,0,0,,Uh, terrorists.
+Dialogue: 0,0:11:51.53,0:11:54.36,Default,,0,0,0,,Okay, screw this. Go,\NGo, Sanchez laser fists.
+Dialogue: 0,0:11:54.40,0:11:57.32,Default,,0,0,0,,Oh, shit, I was a turkey\Nfor a while, wasn't I?
+Dialogue: 0,0:11:57.36,0:11:59.19,Default,,0,0,0,,Okay, guy's pretty strong.
+Dialogue: 0,0:11:59.24,0:12:00.72,Default,,0,0,0,,Mary Todd Lincoln!
+Dialogue: 0,0:12:03.98,0:12:05.94,Default,,0,0,0,,Who's dead weight now, bitch?
+Dialogue: 0,0:12:11.07,0:12:13.60,Default,,0,0,0,,You should regain feeling\Nin your ass in a minute.
+Dialogue: 0,0:12:13.64,0:12:15.23,Default,,0,0,0,,Sorry my turrets blew\Nup your motorcycle.
+Dialogue: 0,0:12:15.25,0:12:16.86,Default,,0,0,0,,Just give me some\Ngoddamn clothes.
+Dialogue: 0,0:12:16.91,0:12:18.95,Default,,0,0,0,,Must suck to have your\Nonly safe haven be my house.
+Dialogue: 0,0:12:18.99,0:12:20.34,Default,,0,0,0,,Y-you want your regular outfit
+Dialogue: 0,0:12:20.39,0:12:21.84,Default,,0,0,0,,or should we dress\Nyou like a terrorist?
+Dialogue: 0,0:12:21.87,0:12:23.84,Default,,0,0,0,,I don't need to be here,\Nand I'm still the President.
+Dialogue: 0,0:12:23.87,0:12:25.80,Default,,0,0,0,,Oh, glad to hear it. That means\Nyou can give me that pardon.
+Dialogue: 0,0:12:25.83,0:12:27.37,Default,,0,0,0,,Or -- Or I could put\Nyou out with the trash.
+Dialogue: 0,0:12:27.39,0:12:29.48,Default,,0,0,0,,What is your problem?!\NWhy do you hate this country?
+Dialogue: 0,0:12:29.53,0:12:31.40,Default,,0,0,0,,I hate every country\Nin the universe, brother!
+Dialogue: 0,0:12:31.44,0:12:32.79,Default,,0,0,0,,They're job placement programs
+Dialogue: 0,0:12:32.83,0:12:34.33,Default,,0,0,0,,for the politicians\Nthat invent them --
+Dialogue: 0,0:12:34.36,0:12:35.79,Default,,0,0,0,,Okay, Fight Club.
+Dialogue: 0,0:12:35.84,0:12:38.23,Default,,0,0,0,,I get paid to protect\Nthe sidelines you sit on!
+Dialogue: 0,0:12:38.27,0:12:39.84,Default,,0,0,0,,You get paid to make\Nsports metaphors!
+Dialogue: 0,0:12:39.88,0:12:41.32,Default,,0,0,0,,I clean your litterbox!
+Dialogue: 0,0:12:41.36,0:12:43.54,Default,,0,0,0,,So your little nerd\Npaws don't have to touch
+Dialogue: 0,0:12:43.58,0:12:45.76,Default,,0,0,0,,another nerd's nerdy\Npoopies while you're flexing
+Dialogue: 0,0:12:45.80,0:12:47.81,Default,,0,0,0,,your grody little edge\Nlord anus all over it!
+Dialogue: 0,0:12:47.85,0:12:49.81,Default,,0,0,0,,Guys, maybe you're\Nboth right and both wrong.
+Dialogue: 0,0:12:49.85,0:12:51.37,Default,,0,0,0,,Shut up, Morty!
+Dialogue: 0,0:12:51.42,0:12:53.27,Default,,0,0,0,,You little bitch, you\Ndestroyed the Constitution.
+Dialogue: 0,0:12:53.29,0:12:54.66,Default,,0,0,0,,You're the biggest\Nbooger eater here!
+Dialogue: 0,0:12:54.68,0:12:57.34,Default,,0,0,0,,Do not talk to my son that way.
+Dialogue: 0,0:12:57.38,0:12:58.77,Default,,0,0,0,,Sorry, Mrs. Smith.
+Dialogue: 0,0:12:58.82,0:13:00.14,Default,,0,0,0,,The two of you are\Nruining Thanksgiving.
+Dialogue: 0,0:13:00.17,0:13:01.60,Default,,0,0,0,,Together.
+Dialogue: 0,0:13:01.65,0:13:02.75,Default,,0,0,0,,And you can both\Neither come to the table
+Dialogue: 0,0:13:02.78,0:13:04.52,Default,,0,0,0,,and eat food with my family
+Dialogue: 0,0:13:04.56,0:13:07.83,Default,,0,0,0,,or you can keep doing what\Nyou're doing at the corner bar.
+Dialogue: 0,0:13:07.87,0:13:09.87,Default,,0,0,0,,Bars actually suck\Nat Thanksgiving.
+Dialogue: 0,0:13:09.91,0:13:12.22,Default,,0,0,0,,{\i1}I'm still trying to\Nsort through this.
+Dialogue: 0,0:13:12.26,0:13:13.81,Default,,0,0,0,,{\i1}One of you wishes you\Nhad the personal quality
+Dialogue: 0,0:13:13.83,0:13:15.49,Default,,0,0,0,,{\i1}known as courage
+Dialogue: 0,0:13:15.53,0:13:17.57,Default,,0,0,0,,{\i1}but the other two of you\Nwant actual vital organs?
+Dialogue: 0,0:13:17.62,0:13:19.92,Default,,0,0,0,,This Charlie Kaufman\Nreboot of "Wizard of Oz"
+Dialogue: 0,0:13:19.97,0:13:21.62,Default,,0,0,0,,is destroying itself.
+Dialogue: 0,0:13:21.67,0:13:23.06,Default,,0,0,0,,{\i1}That's why I need a brain!
+Dialogue: 0,0:13:23.10,0:13:26.24,Default,,0,0,0,,{\i1}I'm doing a terrible\Njob writing this!
+Dialogue: 0,0:13:26.28,0:13:28.85,Default,,0,0,0,,Pass the potatoes.
+Dialogue: 0,0:13:28.89,0:13:30.50,Default,,0,0,0,,Thank you. Mm-hmm.
+Dialogue: 0,0:13:30.54,0:13:32.28,Default,,0,0,0,,Good green beans, Mom.
+Dialogue: 0,0:13:32.33,0:13:34.55,Default,,0,0,0,,The turkey's raw,\NDad. Shit's potato bunz.
+Dialogue: 0,0:13:34.59,0:13:36.59,Default,,0,0,0,,Sorry, Summer, the\NUnited States enclosed us
+Dialogue: 0,0:13:36.64,0:13:39.07,Default,,0,0,0,,in a shimmer bubble that\Nscrambled my oven timer.
+Dialogue: 0,0:13:39.12,0:13:41.42,Default,,0,0,0,,So I guess elections\Ndo have consequences.
+Dialogue: 0,0:13:41.47,0:13:44.21,Default,,0,0,0,,Eat my ass, Jerry. I've\Nseen your IRS records.
+Dialogue: 0,0:13:44.25,0:13:46.43,Default,,0,0,0,,You can blame me once\Nyou have taxable income.
+Dialogue: 0,0:13:46.47,0:13:48.30,Default,,0,0,0,,Yes, Jerry is a piece of shit.
+Dialogue: 0,0:13:48.34,0:13:49.78,Default,,0,0,0,,I agree.
+Dialogue: 0,0:13:49.82,0:13:51.78,Default,,0,0,0,,Um, guys? What's that?
+Dialogue: 0,0:13:51.83,0:13:54.18,Default,,0,0,0,,{\i1}Paula, as you can see,\NPresident Curtis has enacted
+Dialogue: 0,0:13:54.22,0:13:56.27,Default,,0,0,0,,{\i1}a plan to turn all\Nturkeys in America
+Dialogue: 0,0:13:56.31,0:13:57.88,Default,,0,0,0,,{\i1}into hybrid super soldiers.
+Dialogue: 0,0:13:57.92,0:13:59.88,Default,,0,0,0,,{\i1}The move has 100%\Napproval from Congress
+Dialogue: 0,0:13:59.92,0:14:01.97,Default,,0,0,0,,{\i1}following its third\Npay raise in six hours.
+Dialogue: 0,0:14:02.01,0:14:03.01,Default,,0,0,0,,{\i1}Back to you.
+Dialogue: 0,0:14:07.32,0:14:09.19,Default,,0,0,0,,My God, the bastard's unhinged!
+Dialogue: 0,0:14:09.23,0:14:11.19,Default,,0,0,0,,There won't be a\Nsingle bird left in DC!
+Dialogue: 0,0:14:11.24,0:14:13.80,Default,,0,0,0,,Oh, wow, wiping out a native\Npopulation on Thanksgiving?
+Dialogue: 0,0:14:13.85,0:14:16.37,Default,,0,0,0,,- That's never happened before.\N- What did you just say?
+Dialogue: 0,0:14:16.42,0:14:18.26,Default,,0,0,0,,Well, I-I associated\NThanksgiving with genocide.
+Dialogue: 0,0:14:18.29,0:14:20.38,Default,,0,0,0,,It's what young people\Ndo. I wasn't trying to --
+Dialogue: 0,0:14:20.42,0:14:22.07,Default,,0,0,0,,The Crypt of the New World.
+Dialogue: 0,0:14:22.12,0:14:24.34,Default,,0,0,0,,That could be our one\Nchance to turn this thing around.
+Dialogue: 0,0:14:24.38,0:14:25.64,Default,,0,0,0,,You know about the Crypt?
+Dialogue: 0,0:14:25.69,0:14:27.30,Default,,0,0,0,,Ugh, so the treasure's\Nalready gone.
+Dialogue: 0,0:14:27.34,0:14:29.47,Default,,0,0,0,,Wait, is that why you were\Nstealing the Constitution?
+Dialogue: 0,0:14:29.52,0:14:30.91,Default,,0,0,0,,You old fart dick.
+Dialogue: 0,0:14:30.95,0:14:32.63,Default,,0,0,0,,The Crypt of the New\NWorld isn't a treasure.
+Dialogue: 0,0:14:32.65,0:14:34.17,Default,,0,0,0,,But it might be our\Nonly hope. Come on.
+Dialogue: 0,0:14:34.22,0:14:36.35,Default,,0,0,0,,But isn't the crypt\Nunderneath DC?
+Dialogue: 0,0:14:36.39,0:14:38.00,Default,,0,0,0,,The Turkey\NPresident's got an army.
+Dialogue: 0,0:14:38.05,0:14:39.74,Default,,0,0,0,,An actual Army.\NAnd an Air Force.
+Dialogue: 0,0:14:39.79,0:14:41.14,Default,,0,0,0,,And Marines --Slow down, Morty.
+Dialogue: 0,0:14:41.18,0:14:42.59,Default,,0,0,0,,Walk us through\Nevery military service.
+Dialogue: 0,0:14:42.62,0:14:43.88,Default,,0,0,0,,Does somebody have a pen?
+Dialogue: 0,0:14:43.92,0:14:45.16,Default,,0,0,0,,We've got something\Nmore powerful
+Dialogue: 0,0:14:45.18,0:14:46.79,Default,,0,0,0,,than every army in the world.
+Dialogue: 0,0:14:46.84,0:14:49.19,Default,,0,0,0,,Well, no, we don't, but\Nwith the right speech,
+Dialogue: 0,0:14:49.23,0:14:50.99,Default,,0,0,0,,we could get a handful\Nof well-trained hillbillies.
+Dialogue: 0,0:14:51.02,0:14:52.71,Default,,0,0,0,,Eh, it worked against\Nthe British. I'm in.
+Dialogue: 0,0:14:53.98,0:14:55.59,Default,,0,0,0,,Birds replacin' people.
+Dialogue: 0,0:14:55.63,0:14:58.07,Default,,0,0,0,,What would Johnny Cash\Nor Dale Earnhardt say?
+Dialogue: 0,0:14:58.11,0:15:00.33,Default,,0,0,0,,He'd say "It's time\Nto walk the line"
+Dialogue: 0,0:15:00.37,0:15:02.33,Default,,0,0,0,,or "Drive very fast\Nbetween two of them."
+Dialogue: 0,0:15:02.37,0:15:04.07,Default,,0,0,0,,We don't serve your kind here.
+Dialogue: 0,0:15:04.12,0:15:05.55,Default,,0,0,0,,Oh, my God, are you serious?
+Dialogue: 0,0:15:05.60,0:15:07.25,Default,,0,0,0,,Read the sign.
+Dialogue: 0,0:15:07.29,0:15:08.34,Default,,0,0,0,,He's my boss, Marvin.
+Dialogue: 0,0:15:08.38,0:15:09.64,Default,,0,0,0,,It's okay.
+Dialogue: 0,0:15:09.69,0:15:11.99,Default,,0,0,0,,Mistrusting Presidents\Nis a patriotic duty.
+Dialogue: 0,0:15:12.04,0:15:13.78,Default,,0,0,0,,And that guy on TV isn't me.
+Dialogue: 0,0:15:13.82,0:15:16.00,Default,,0,0,0,,He's a turkey\Ninfused with my DNA.
+Dialogue: 0,0:15:16.04,0:15:17.91,Default,,0,0,0,,I'll be damned.
+Dialogue: 0,0:15:20.39,0:15:21.87,Default,,0,0,0,,Well, I'm racist.
+Dialogue: 0,0:15:21.92,0:15:24.18,Default,,0,0,0,,You better not be here\Nto take my man again.
+Dialogue: 0,0:15:24.22,0:15:25.79,Default,,0,0,0,,- Mary Lou.\N- I'm poor!
+Dialogue: 0,0:15:25.83,0:15:26.88,Default,,0,0,0,,And pregnant!
+Dialogue: 0,0:15:26.92,0:15:28.18,Default,,0,0,0,,With a poor person!
+Dialogue: 0,0:15:28.23,0:15:29.66,Default,,0,0,0,,And I need you.
+Dialogue: 0,0:15:29.71,0:15:31.40,Default,,0,0,0,,And 10% of your baby.
+Dialogue: 0,0:15:31.45,0:15:34.93,Default,,0,0,0,,Now, look, I know it's gonna\Ntake more than some speech.
+Dialogue: 0,0:15:34.97,0:15:36.58,Default,,0,0,0,,But what is a speech?
+Dialogue: 0,0:15:36.63,0:15:38.37,Default,,0,0,0,,Isn't it just a question?
+Dialogue: 0,0:15:38.41,0:15:40.11,Default,,0,0,0,,And isn't that a question too?
+Dialogue: 0,0:15:40.15,0:15:41.72,Default,,0,0,0,,Speeches are words.
+Dialogue: 0,0:15:41.76,0:15:42.94,Default,,0,0,0,,Repeated words.
+Dialogue: 0,0:15:42.98,0:15:44.29,Default,,0,0,0,,Listed words.
+Dialogue: 0,0:15:44.33,0:15:46.03,Default,,0,0,0,,Repeated lists of\Nrepeated words.
+Dialogue: 0,0:15:46.07,0:15:47.64,Default,,0,0,0,,None of that matters.
+Dialogue: 0,0:15:47.68,0:15:48.99,Default,,0,0,0,,You know what does matter?
+Dialogue: 0,0:15:49.03,0:15:51.25,Default,,0,0,0,,Me. Asking you.
+Dialogue: 0,0:15:51.29,0:15:53.86,Default,,0,0,0,,"Will you do what I say?"
+Dialogue: 0,0:15:53.90,0:15:55.82,Default,,0,0,0,,Just two questions, Chief.
+Dialogue: 0,0:15:55.86,0:15:59.04,Default,,0,0,0,,Lock? And load?
+Dialogue: 0,0:15:59.08,0:16:00.26,Default,,0,0,0,,They're rhetorical, sir!
+Dialogue: 0,0:16:00.30,0:16:01.39,Default,,0,0,0,,Lock and load!
+Dialogue: 0,0:16:11.44,0:16:13.92,Default,,0,0,0,,Sir, we've got Rick and Morty\Ncoming in what appears to be
+Dialogue: 0,0:16:13.97,0:16:15.93,Default,,0,0,0,,an unlicensed "Star Wars" AT-AT.
+Dialogue: 0,0:16:15.97,0:16:18.41,Default,,0,0,0,,Or as the millennials\Nsay, A-T, A-T.
+Dialogue: 0,0:16:18.45,0:16:19.76,Default,,0,0,0,,So it begins.
+Dialogue: 0,0:16:19.80,0:16:20.76,Default,,0,0,0,,Gobblers!
+Dialogue: 0,0:16:20.80,0:16:22.37,Default,,0,0,0,,Tonight, we rise!
+Dialogue: 0,0:16:30.51,0:16:31.81,Default,,0,0,0,,Aww, geez, geez, geez.
+Dialogue: 0,0:16:33.99,0:16:35.55,Default,,0,0,0,,Nice driving, Sanchez.
+Dialogue: 0,0:16:35.60,0:16:37.25,Default,,0,0,0,,Wire's down, pen is clear.
+Dialogue: 0,0:16:37.30,0:16:38.64,Default,,0,0,0,,You know the Goddamn rules!
+Dialogue: 0,0:16:38.69,0:16:39.97,Default,,0,0,0,,If you see something\Nclucking or pecking,
+Dialogue: 0,0:16:39.99,0:16:41.39,Default,,0,0,0,,put a buckshot in its panties.
+Dialogue: 0,0:16:55.53,0:16:57.88,Default,,0,0,0,,Jesus Christ!\NT-they got Johnson!
+Dialogue: 0,0:16:57.92,0:16:59.45,Default,,0,0,0,,He got off easy.
+Dialogue: 0,0:16:59.49,0:17:01.15,Default,,0,0,0,,Hold off the bastards!
+Dialogue: 0,0:17:03.02,0:17:04.06,Default,,0,0,0,,What now, Rick?
+Dialogue: 0,0:17:04.11,0:17:05.63,Default,,0,0,0,,Time to turn up the broiler.
+Dialogue: 0,0:17:12.33,0:17:13.77,Default,,0,0,0,,Whoa, i-is that --
+Dialogue: 0,0:17:13.81,0:17:15.86,Default,,0,0,0,,The Crypt of the New World.
+Dialogue: 0,0:17:17.34,0:17:21.17,Default,,0,0,0,,The treasure you were after\Nis this country's oldest secret.
+Dialogue: 0,0:17:21.21,0:17:25.04,Default,,0,0,0,,One disguised by centuries\Nof Thanksgiving folklore.
+Dialogue: 0,0:17:27.91,0:17:30.13,Default,,0,0,0,,Is that... a turkey dinosaur?
+Dialogue: 0,0:17:30.17,0:17:31.78,Default,,0,0,0,,America's original rulers.
+Dialogue: 0,0:17:31.83,0:17:35.09,Default,,0,0,0,,Merciless beasts, grazing on\Nthe flesh of cowering humans.
+Dialogue: 0,0:17:35.14,0:17:37.70,Default,,0,0,0,,Then, in the 15th\Ncentury, a vessel crashed.
+Dialogue: 0,0:17:37.75,0:17:38.84,Default,,0,0,0,,Two vessels, really.
+Dialogue: 0,0:17:38.88,0:17:41.66,Default,,0,0,0,,On board -- our saviors.
+Dialogue: 0,0:17:41.71,0:17:44.97,Default,,0,0,0,,Sanchez, pull that lever\Nat the same time I do.
+Dialogue: 0,0:17:55.20,0:17:57.25,Default,,0,0,0,,Oh, shit, they're gonna fight!
+Dialogue: 0,0:17:57.29,0:17:58.99,Default,,0,0,0,,No, wait, they love each other!
+Dialogue: 0,0:17:59.03,0:18:00.68,Default,,0,0,0,,They were at war\Nwhen they arrived,
+Dialogue: 0,0:18:00.73,0:18:03.16,Default,,0,0,0,,but they united over\Ntheir hatred of turkeys.
+Dialogue: 0,0:18:03.21,0:18:05.21,Default,,0,0,0,,And what they love even\Nmore than each other
+Dialogue: 0,0:18:05.25,0:18:06.95,Default,,0,0,0,,is kicking turkey butt.
+Dialogue: 0,0:18:06.99,0:18:07.99,Default,,0,0,0,,Gentlemen!
+Dialogue: 0,0:18:08.04,0:18:10.26,Default,,0,0,0,,{\i1}Ba'ruka Dar Tin'in Yo-Tei!
+Dialogue: 0,0:18:13.91,0:18:16.74,Default,,0,0,0,,Coooooooooorn!
+Dialogue: 0,0:18:22.44,0:18:23.97,Default,,0,0,0,,It's working!
+Dialogue: 0,0:18:24.01,0:18:26.27,Default,,0,0,0,,Come on, Sanchez, let's\Npower down the humanizer ray.
+Dialogue: 0,0:18:31.06,0:18:32.63,Default,,0,0,0,,Whose side are we on?
+Dialogue: 0,0:18:32.67,0:18:34.93,Default,,0,0,0,,I don't know, but we've done\Nenough to pay for college.
+Dialogue: 0,0:18:36.20,0:18:37.94,Default,,0,0,0,,Look, we're almost there.
+Dialogue: 0,0:18:37.98,0:18:40.85,Default,,0,0,0,,Sorry, my turn for a surprise.
+Dialogue: 0,0:18:40.90,0:18:42.90,Default,,0,0,0,,Damn, this guy loves\Narriving from the shadows.
+Dialogue: 0,0:18:42.94,0:18:45.29,Default,,0,0,0,,Look around. You can't\Nbeat our ancient warriors.
+Dialogue: 0,0:18:45.34,0:18:48.69,Default,,0,0,0,,Can't I? My kind has\Nalways dealt with predators.
+Dialogue: 0,0:18:48.73,0:18:50.73,Default,,0,0,0,,That's why we sleep in trees.
+Dialogue: 0,0:18:50.78,0:18:53.82,Default,,0,0,0,,And that's why,\Nin the wild, we fly.
+Dialogue: 0,0:18:56.00,0:18:58.18,Default,,0,0,0,,Now you must choose ---
+Dialogue: 0,0:18:58.22,0:19:00.74,Default,,0,0,0,,Fight me, or stop that\Nweapon from turning
+Dialogue: 0,0:19:00.79,0:19:04.40,Default,,0,0,0,,all of America's turkeys\Ninto a new master race.
+Dialogue: 0,0:19:04.44,0:19:05.94,Default,,0,0,0,,You dumb dip shit,\Nthere's three of us,
+Dialogue: 0,0:19:05.97,0:19:07.23,Default,,0,0,0,,and two of us are spacemen.
+Dialogue: 0,0:19:07.27,0:19:09.14,Default,,0,0,0,,Obviously they're\Ngonna save America
+Dialogue: 0,0:19:09.19,0:19:10.29,Default,,0,0,0,,and bring that monument home,
+Dialogue: 0,0:19:10.32,0:19:12.23,Default,,0,0,0,,and I'm gonna kick your ass.
+Dialogue: 0,0:19:12.28,0:19:13.54,Default,,0,0,0,,Oh, and, Sanchez?
+Dialogue: 0,0:19:13.58,0:19:15.02,Default,,0,0,0,,You got your pardon. Aw.
+Dialogue: 0,0:19:15.06,0:19:16.98,Default,,0,0,0,,Shut up, Morty. Come on.
+Dialogue: 0,0:19:17.02,0:19:18.50,Default,,0,0,0,,Let's go, bitch.
+Dialogue: 0,0:19:18.54,0:19:20.15,Default,,0,0,0,,So be it.
+Dialogue: 0,0:19:22.29,0:19:23.68,Default,,0,0,0,,Is it true what Turkey Man said?
+Dialogue: 0,0:19:23.72,0:19:24.85,Default,,0,0,0,,That turkeys sleep in trees?
+Dialogue: 0,0:19:24.90,0:19:26.20,Default,,0,0,0,,Who the hell cares, Morty?
+Dialogue: 0,0:19:26.25,0:19:27.94,Default,,0,0,0,,Let's just deactivate this shit.
+Dialogue: 0,0:19:27.99,0:19:29.60,Default,,0,0,0,,{\i1}Calibrating.
+Dialogue: 0,0:19:29.64,0:19:31.95,Default,,0,0,0,,{\i1}Targeting all American turkeys.
+Dialogue: 0,0:19:31.99,0:19:33.38,Default,,0,0,0,,Oh, my God, they\Ngave it a voice?
+Dialogue: 0,0:19:33.43,0:19:36.21,Default,,0,0,0,,Who is this for? We're in space.
+Dialogue: 0,0:19:36.26,0:19:37.95,Default,,0,0,0,,Geez, Rick, I-I-I guess them?
+Dialogue: 0,0:19:38.00,0:19:39.39,Default,,0,0,0,,Morty, use this carefully.
+Dialogue: 0,0:19:39.43,0:19:40.80,Default,,0,0,0,,Crack the humanizer\Ncore and cut the blue wire.
+Dialogue: 0,0:19:40.83,0:19:42.09,Default,,0,0,0,,You hear me? Blue wire.
+Dialogue: 0,0:19:42.13,0:19:43.41,Default,,0,0,0,,Wha-- Why don't\Nwe just blow it up?
+Dialogue: 0,0:19:43.44,0:19:44.83,Default,,0,0,0,,It's a national\Nmonument, fuck nut!
+Dialogue: 0,0:19:44.87,0:19:46.22,Default,,0,0,0,,We just got pardoned.
+Dialogue: 0,0:19:46.27,0:19:48.05,Default,,0,0,0,,You really wanna do\Nthis again next year?
+Dialogue: 0,0:19:52.93,0:19:54.36,Default,,0,0,0,,You forgot something,\NTurkey Man.
+Dialogue: 0,0:19:54.41,0:19:56.97,Default,,0,0,0,,No matter what you\Ngot people to believe,
+Dialogue: 0,0:19:57.02,0:19:59.15,Default,,0,0,0,,I'm still the Goddamn President.
+Dialogue: 0,0:19:59.19,0:20:02.37,Default,,0,0,0,,And you forget, in the\None day I've had your job,
+Dialogue: 0,0:20:02.41,0:20:04.81,Default,,0,0,0,,I've learned 10 times as much.
+Dialogue: 0,0:20:04.85,0:20:06.46,Default,,0,0,0,,I've underestimated you.
+Dialogue: 0,0:20:06.50,0:20:08.25,Default,,0,0,0,,For the last time.
+Dialogue: 0,0:20:13.25,0:20:15.30,Default,,0,0,0,,Rick, they're not\Nexactly primary colors!
+Dialogue: 0,0:20:15.34,0:20:17.30,Default,,0,0,0,,A-Are -- Are we cool\Nwith, like, t-turquoise?
+Dialogue: 0,0:20:17.34,0:20:19.52,Default,,0,0,0,,Are you kidding me, Morty?\NJust cut the damn thing!
+Dialogue: 0,0:20:20.65,0:20:24.13,Default,,0,0,0,,Oh, shit, oh, fuck --
+Dialogue: 0,0:20:24.17,0:20:26.48,Default,,0,0,0,,{\i1}- Targets acquired.\N- Activating weapon.
+Dialogue: 0,0:20:26.52,0:20:29.70,Default,,0,0,0,,Oh, shit! Oooooooh!
+Dialogue: 0,0:20:29.75,0:20:31.44,Default,,0,0,0,,{\i1}Heritage destroyed.
+Dialogue: 0,0:20:31.49,0:20:32.57,Default,,0,0,0,,Morty!
+Dialogue: 0,0:20:35.01,0:20:37.01,Default,,0,0,0,,God damn it, you had one job!
+Dialogue: 0,0:20:45.02,0:20:46.28,Default,,0,0,0,,I beat you.
+Dialogue: 0,0:20:46.33,0:20:48.20,Default,,0,0,0,,Look at me, you\Nturkey ass bitch.
+Dialogue: 0,0:20:49.90,0:20:51.55,Default,,0,0,0,,Wait, why are you --
+Dialogue: 0,0:20:51.59,0:20:53.29,Default,,0,0,0,,Is that a wishbone?
+Dialogue: 0,0:20:53.33,0:20:55.38,Default,,0,0,0,,I wish to explode.
+Dialogue: 0,0:21:02.39,0:21:04.08,Default,,0,0,0,,{\i1}The Berlin Wall has come down.
+Dialogue: 0,0:21:04.13,0:21:05.52,Default,,0,0,0,,Man ♪ It's called\Nthe Playstation.
+Dialogue: 0,0:21:05.56,0:21:07.35,Default,,0,0,0,,{\i1}- The winner is...\N- "Shakespeare in Love."
+Dialogue: 0,0:21:07.39,0:21:09.05,Default,,0,0,0,,{\i1}- Playstation 2.\N- Hurricane Katrina
+Dialogue: 0,0:21:09.09,0:21:11.05,Default,,0,0,0,,{\i1}- slams Louisiana...\N- Playstation 3.
+Dialogue: 0,0:21:11.09,0:21:12.59,Default,,0,0,0,,{\i1}- This is Maroon Five...\N- Playstation 4.
+Dialogue: 0,0:21:12.61,0:21:16.14,Default,,0,0,0,,{\i1}- The Cubbies win!\N- I want a Playstation 5.
+Dialogue: 0,0:21:17.45,0:21:18.92,Default,,0,0,0,,I wasn't sure when\Nto pull you out.
+Dialogue: 0,0:21:18.97,0:21:21.10,Default,,0,0,0,,I-I assumed you were\Nrunning through your whole life.
+Dialogue: 0,0:21:21.14,0:21:22.23,Default,,0,0,0,,Yes.
+Dialogue: 0,0:21:22.28,0:21:24.23,Default,,0,0,0,,And what a life it was.
+Dialogue: 0,0:21:24.28,0:21:27.80,Default,,0,0,0,,Gentlemen, thank you once\Nagain for saving this nation.
+Dialogue: 0,0:21:27.85,0:21:29.72,Default,,0,0,0,,{\i1}Slloosh garg blurrg.
+Dialogue: 0,0:21:29.76,0:21:31.29,Default,,0,0,0,,I don't speak googa.
+Dialogue: 0,0:21:31.33,0:21:33.37,Default,,0,0,0,,The CIA only taught me\Nyour activation phrase.
+Dialogue: 0,0:21:33.42,0:21:34.85,Default,,0,0,0,,But if I could say anything...
+Dialogue: 0,0:21:34.90,0:21:38.47,Default,,0,0,0,,I'd say give America\None more chance.
+Dialogue: 0,0:21:40.69,0:21:44.52,Default,,0,0,0,,{\i1}Kalaak 'ha benben prilo garg.
+Dialogue: 0,0:21:44.56,0:21:47.04,Default,,0,0,0,,Oh, my God, they're gonna\Nfight. Th-They're really gonna fight.
+Dialogue: 0,0:21:47.95,0:21:49.96,Default,,0,0,0,,- Aw, they love each other!\N- Never gets old.
+Dialogue: 0,0:21:50.00,0:21:51.48,Default,,0,0,0,,I'll never get tired of that.
+Dialogue: 0,0:21:51.52,0:21:53.79,Default,,0,0,0,,So... after those aliens\Ndiscovered America...
+Dialogue: 0,0:21:53.83,0:21:55.40,Default,,0,0,0,,They went into hibernation,
+Dialogue: 0,0:21:55.44,0:21:58.75,Default,,0,0,0,,leaving us the technology\Nwe used to lead the free world.
+Dialogue: 0,0:21:58.79,0:22:01.01,Default,,0,0,0,,That and also to\Ndo stuff like slavery.
+Dialogue: 0,0:22:01.05,0:22:03.10,Default,,0,0,0,,I always thought we were...\Nmore special than that.
+Dialogue: 0,0:22:03.14,0:22:05.10,Default,,0,0,0,,Like we invented\Neverything and did everything
+Dialogue: 0,0:22:05.14,0:22:06.58,Default,,0,0,0,,and that's why\Nwe own everything.
+Dialogue: 0,0:22:06.62,0:22:08.80,Default,,0,0,0,,Now I- I- I- I don't\Nknow what to feel.
+Dialogue: 0,0:22:08.84,0:22:10.50,Default,,0,0,0,,Feel thankful, Morty.
+Dialogue: 0,0:22:10.54,0:22:12.33,Default,,0,0,0,,Feel thankful.
+Dialogue: 0,0:22:13.33,0:22:15.33,Default,,0,0,0,,{\an5\c&H51ab2b&}Improved by{\c&Hf8fc03&} {\b1}KID{\b0} {\c}\N\N{\an5\c&H51ab2b&}Resynced by{\c&Hf8fc03&} {\b1}KID{\b0} {\c}\N\N{\an5\c&H51ab2b&}Enjoy the movie(s) / show(s)
+Dialogue: 0,0:22:43.88,0:22:45.97,Default,,0,0,0,,I know, baby.
+Dialogue: 0,0:22:46.01,0:22:48.84,Default,,0,0,0,,Coop, honey, should we get\NLucky Charms or Kibble Bibbitz?
+Dialogue: 0,0:22:48.88,0:22:50.54,Default,,0,0,0,,You know we can't afford either.
+Dialogue: 0,0:22:50.58,0:22:53.45,Default,,0,0,0,,Baby, the President\Nowes you. You saved him.
+Dialogue: 0,0:22:53.50,0:22:55.11,Default,,0,0,0,,Ain't his fault our\Ninsurance got cut.
+Dialogue: 0,0:22:55.15,0:22:56.59,Default,,0,0,0,,They gotta build missiles.
+Dialogue: 0,0:22:56.63,0:22:59.50,Default,,0,0,0,,Ugh, fine, just -- Can y'all\Nhold Jakey for a second?
+Dialogue: 0,0:23:09.91,0:23:11.08,Default,,0,0,0,,What the hell's he doin?
+Dialogue: 0,0:23:11.12,0:23:12.30,Default,,0,0,0,,I think he's foraging.
+Dialogue: 0,0:23:12.34,0:23:14.13,Default,,0,0,0,,Crazy bastard\Nthinks he's a turkey.
+Dialogue: 0,0:23:14.17,0:23:16.22,Default,,0,0,0,,Well, I refuse to pay for\Nthis man's health care.
+Dialogue: 0,0:23:22.48,0:23:23.70,Default,,0,0,0,,Did you get any of that?

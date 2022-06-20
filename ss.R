@@ -1,0 +1,6 @@
+devtools::install_github("fkeck/subtools")
+library(tidytext)
+library(subtools)
+a <- read.subtitles.serie(dir = "eee/")
+df <- subDataFrame(a)
+str(df)

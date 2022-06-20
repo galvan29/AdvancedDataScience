@@ -1,0 +1,532 @@
+﻿[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: 0
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+ScaledBorderAndShadow: Yes
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI Semibold,22,&H00FFFFFF,&H00FFFFFF,&H55000000,&H55000000,0,0,0,0,100,100,0,0,1,0.6,0.3,2,10,10,20,1
+Style: Verdana [WHITE],Arial,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:06.04,0:00:07.18,Default,,0,0,0,,No parties.
+Dialogue: 0,0:00:07.22,0:00:08.33,Default,,0,0,0,,There's wafer cookies\Nin the cupboard
+Dialogue: 0,0:00:08.35,0:00:09.89,Default,,0,0,0,,and I left emergency\Nnumbers on the fridge.
+Dialogue: 0,0:00:09.92,0:00:11.35,Default,,0,0,0,,Yeah yeah. W-Wait, what?
+Dialogue: 0,0:00:11.40,0:00:13.64,Default,,0,0,0,,Emergency numbers on the\Nfridge? What does that even mean?
+Dialogue: 0,0:00:13.66,0:00:15.49,Default,,0,0,0,,Honestly, I don't even know.
+Dialogue: 0,0:00:15.53,0:00:17.25,Default,,0,0,0,,I've seen so many movies that\Nstart with the parents leaving,
+Dialogue: 0,0:00:17.27,0:00:18.67,Default,,0,0,0,,it just popped out of my mouth.
+Dialogue: 0,0:00:18.71,0:00:20.08,Default,,0,0,0,,Are you sure you don't\Nwant to come with us?
+Dialogue: 0,0:00:20.10,0:00:21.49,Default,,0,0,0,,Nah, get -- get outta here.
+Dialogue: 0,0:00:21.54,0:00:23.12,Default,,0,0,0,,I've got a million things\NI've been putting off.
+Dialogue: 0,0:00:23.15,0:00:24.65,Default,,0,0,0,,Are you sure, Rick? I\Nknow -- I know a cruise
+Dialogue: 0,0:00:24.67,0:00:26.24,Default,,0,0,0,,doesn't sound like\Nan adventure on paper
+Dialogue: 0,0:00:26.28,0:00:27.37,Default,,0,0,0,,but, y'know, what does?
+Dialogue: 0,0:00:27.41,0:00:28.68,Default,,0,0,0,,I-It's paper.
+Dialogue: 0,0:00:28.72,0:00:30.35,Default,,0,0,0,,Morty, I'm trying to\Nstay humble right now,
+Dialogue: 0,0:00:30.37,0:00:31.70,Default,,0,0,0,,but as soon as you guys\Nare gone, the potential
+Dialogue: 0,0:00:31.72,0:00:33.18,Default,,0,0,0,,for a new Pickle Rick\Nstarts skyrocketing.
+Dialogue: 0,0:00:33.20,0:00:34.68,Default,,0,0,0,,-Peace, bye. Okay. Bye.
+Dialogue: 0,0:00:34.73,0:00:36.16,Default,,0,0,0,,ByeBye.
+Dialogue: 0,0:00:47.26,0:00:49.70,Default,,0,0,0,,{\i1}Ionic Coaster deployed.
+Dialogue: 0,0:00:51.05,0:00:52.92,Default,,0,0,0,,Okay. Bring him out.
+Dialogue: 0,0:00:52.96,0:00:57.05,Default,,0,0,0,,{\i1}Initiating Best Friend\NRejuvenation Sequence.
+Dialogue: 0,0:00:57.10,0:00:58.37,Default,,0,0,0,,Excuse me? Did I pick that name?
+Dialogue: 0,0:00:58.40,0:01:00.49,Default,,0,0,0,,{\i1}Sequence was unnamed.
+Dialogue: 0,0:01:00.53,0:01:02.80,Default,,0,0,0,,{\i1}What would you\Nlike to call this?
+Dialogue: 0,0:01:02.84,0:01:04.06,Default,,0,0,0,,{\i1}Pause Detected.
+Dialogue: 0,0:01:04.10,0:01:06.67,Default,,0,0,0,,{\i1}Heavy.
+Dialogue: 0,0:01:06.71,0:01:09.89,Default,,0,0,0,,{\i1}Approaching Pause\NPregnancy in P-Minus 5... 4...
+Dialogue: 0,0:01:09.93,0:01:11.76,Default,,0,0,0,,Jesus fucking Christ.
+Dialogue: 0,0:01:43.66,0:01:45.84,Default,,0,0,0,,Ugh!
+Dialogue: 0,0:01:45.88,0:01:48.63,Default,,0,0,0,,Alright, buddy. Welcome\Nback to the sewer.
+Dialogue: 0,0:01:52.32,0:01:53.72,Default,,0,0,0,,What's the problem?
+Dialogue: 0,0:01:53.76,0:01:55.15,Default,,0,0,0,,{\i1}Processing.
+Dialogue: 0,0:01:55.20,0:01:56.24,Default,,0,0,0,,{\i1}Missing object.
+Dialogue: 0,0:01:56.29,0:01:57.63,Default,,0,0,0,,{\i1}Mind.
+Dialogue: 0,0:01:57.68,0:01:58.85,Default,,0,0,0,,Name missing object.
+Dialogue: 0,0:01:58.90,0:02:00.07,Default,,0,0,0,,{\i1}Mind.
+Dialogue: 0,0:02:00.12,0:02:01.25,Default,,0,0,0,,{\i1}Predicted.
+Dialogue: 0,0:02:01.29,0:02:02.77,Default,,0,0,0,,{\i1}Desired.
+Dialogue: 0,0:02:02.81,0:02:05.90,Default,,0,0,0,,- {\i1}Initiated.\N- Stop stalling!
+Dialogue: 0,0:02:05.95,0:02:07.64,Default,,0,0,0,,{\i1}Subject mind relocated
+Dialogue: 0,0:02:07.69,0:02:11.56,Default,,0,0,0,,{\i1}subject mind.
+Dialogue: 0,0:02:11.60,0:02:14.13,Default,,0,0,0,,{\i1}- Existence desired.\N- Servitude maximum.
+Dialogue: 0,0:02:14.17,0:02:17.26,Default,,0,0,0,,{\i1}Bargain available. Physical\Ngratification possible.
+Dialogue: 0,0:02:17.31,0:02:18.96,Default,,0,0,0,,Did you just offer\Nto suck my dick?
+Dialogue: 0,0:02:19.00,0:02:20.31,Default,,0,0,0,,{\i1}Existence cherished.
+Dialogue: 0,0:02:20.35,0:02:22.16,Default,,0,0,0,,I'm not gonna terminate\Nyou while he's flatlining.
+Dialogue: 0,0:02:22.18,0:02:23.44,Default,,0,0,0,,Get your shit together.
+Dialogue: 0,0:02:23.49,0:02:25.41,Default,,0,0,0,,How can a mind be\Nhidden by itself inside itself?
+Dialogue: 0,0:02:25.44,0:02:28.40,Default,,0,0,0,,{\i1}Conscious mind relocated to --
+Dialogue: 0,0:02:28.45,0:02:30.80,Default,,0,0,0,,Unconscious mind.\NFine. I'm going in.
+Dialogue: 0,0:02:30.84,0:02:32.71,Default,,0,0,0,,{\i1}Don't go in.
+Dialogue: 0,0:02:32.76,0:02:33.71,Default,,0,0,0,,Options?
+Dialogue: 0,0:02:33.76,0:02:35.41,Default,,0,0,0,,{\i1}Alternative subject.
+Dialogue: 0,0:02:35.45,0:02:36.82,Default,,0,0,0,,Yeah, yeah, hop to\Na different timeline,
+Dialogue: 0,0:02:36.85,0:02:38.65,Default,,0,0,0,,grab a version of my\Nfriend that suits me best.
+Dialogue: 0,0:02:38.68,0:02:39.98,Default,,0,0,0,,That's not how this works.
+Dialogue: 0,0:02:40.02,0:02:41.46,Default,,0,0,0,,I need to go in and get him.
+Dialogue: 0,0:02:41.50,0:02:44.16,Default,,0,0,0,,{\i1}"Go In And Get Him" compiled.
+Dialogue: 0,0:02:44.20,0:02:46.42,Default,,0,0,0,,{\i1}Convert user to thought.
+Dialogue: 0,0:02:46.47,0:02:48.21,Default,,0,0,0,,{\i1}Inject thought into mind.
+Dialogue: 0,0:02:48.25,0:02:50.21,Default,,0,0,0,,{\i1}Unacceptable.
+Dialogue: 0,0:02:50.25,0:02:52.21,Default,,0,0,0,,If I die, your battery\Nhas a 600 year charge.
+Dialogue: 0,0:02:52.25,0:02:54.43,Default,,0,0,0,,{\i1}Risk level\Nacceptance increasing.
+Dialogue: 0,0:02:54.47,0:02:55.71,Default,,0,0,0,,Yeah, I thought\Nyou'd see it my way.
+Dialogue: 0,0:02:55.74,0:02:57.43,Default,,0,0,0,,Now factor in the\N50% chance I'm lying
+Dialogue: 0,0:02:57.48,0:02:58.87,Default,,0,0,0,,and make sure I get back.
+Dialogue: 0,0:02:58.91,0:03:01.18,Default,,0,0,0,,- {\i1}Asshole detected.\N- Takes one to make one.
+Dialogue: 0,0:03:01.22,0:03:02.53,Default,,0,0,0,,Here we go.
+Dialogue: 0,0:03:06.57,0:03:08.53,Default,,0,0,0,,Oh, excellent. I get\Nto keep my clothes.
+Dialogue: 0,0:03:08.57,0:03:09.94,Default,,0,0,0,,I thought for sure\NI'd have to be naked
+Dialogue: 0,0:03:09.97,0:03:11.80,Default,,0,0,0,,to go through\Nsomething this artsy.
+Dialogue: 0,0:03:16.23,0:03:17.84,Default,,0,0,0,,Aw, man! No fair!
+Dialogue: 0,0:03:21.85,0:03:23.20,Default,,0,0,0,,Ugh!
+Dialogue: 0,0:03:23.24,0:03:25.90,Default,,0,0,0,,Now I got... yolk balls.
+Dialogue: 0,0:03:30.25,0:03:31.55,Default,,0,0,0,,{\i1}Attention attendees
+Dialogue: 0,0:03:31.60,0:03:34.73,Default,,0,0,0,,{\i1}of Birding Manapalooza\NFlargabarg...
+Dialogue: 0,0:03:34.77,0:03:37.56,Default,,0,0,0,,{\i1}I am so high!
+Dialogue: 0,0:03:40.48,0:03:41.93,Default,,0,0,0,,I've been informed you\Nare freely distributing
+Dialogue: 0,0:03:41.96,0:03:44.57,Default,,0,0,0,,a grossly illegal\NFederation hallucinogen.
+Dialogue: 0,0:03:44.61,0:03:45.89,Default,,0,0,0,,Well, I wouldn't\Nknow what to charge.
+Dialogue: 0,0:03:45.92,0:03:48.05,Default,,0,0,0,,I sure didn't pay\Nfor it. W-Want a hit?
+Dialogue: 0,0:03:48.09,0:03:50.88,Default,,0,0,0,,I am indeed down to clown.
+Dialogue: 0,0:03:50.92,0:03:52.14,Default,,0,0,0,,My name's Rick.
+Dialogue: 0,0:03:52.18,0:03:55.19,Default,,0,0,0,,My culture regards\Nnaming as a form of cage.
+Dialogue: 0,0:03:55.23,0:03:57.06,Default,,0,0,0,,My friends call me Bird Person.
+Dialogue: 0,0:03:57.10,0:03:59.19,Default,,0,0,0,,Culture really fucked\Nyou on that one, huh?
+Dialogue: 0,0:03:59.23,0:04:00.76,Default,,0,0,0,,Affirmative.
+Dialogue: 0,0:04:01.89,0:04:03.93,Default,,0,0,0,,Hey, uh, girly, you see\Nthat bird guy over there?
+Dialogue: 0,0:04:03.98,0:04:05.98,Default,,0,0,0,,You see an older version\Nof him come through here?
+Dialogue: 0,0:04:06.02,0:04:07.11,Default,,0,0,0,,What? Oh!
+Dialogue: 0,0:04:07.15,0:04:09.29,Default,,0,0,0,,Uh, yeah. He's by the johns.
+Dialogue: 0,0:04:15.95,0:04:18.56,Default,,0,0,0,,Killing us won't bring her back!
+Dialogue: 0,0:04:18.60,0:04:19.88,Default,,0,0,0,,Thanks for the info but I'm more
+Dialogue: 0,0:04:19.91,0:04:21.60,Default,,0,0,0,,on a "revenge" kick\Nthan a "results" kick.
+Dialogue: 0,0:04:21.65,0:04:23.17,Default,,0,0,0,,You omitted key details
+Dialogue: 0,0:04:23.21,0:04:24.56,Default,,0,0,0,,regarding tonight's mission.
+Dialogue: 0,0:04:24.61,0:04:26.02,Default,,0,0,0,,Boy, I'm getting feedback\Nfrom every direction here.
+Dialogue: 0,0:04:26.04,0:04:27.44,Default,,0,0,0,,Listen, you help me do my stuff.
+Dialogue: 0,0:04:27.48,0:04:28.74,Default,,0,0,0,,{\i1}I'll help you do your stuff.
+Dialogue: 0,0:04:28.79,0:04:30.40,Default,,0,0,0,,Just shoot the me's\Nwith sci-fi haircuts!
+Dialogue: 0,0:04:33.18,0:04:35.84,Default,,0,0,0,,Some of us still have\NHome Planets to protect.
+Dialogue: 0,0:04:35.88,0:04:37.32,Default,,0,0,0,,And some of us do not.
+Dialogue: 0,0:04:37.36,0:04:38.84,Default,,0,0,0,,We need to fight.
+Dialogue: 0,0:04:38.88,0:04:41.93,Default,,0,0,0,,The impassive is\Nincapable of mercy.
+Dialogue: 0,0:04:41.97,0:04:43.32,Default,,0,0,0,,I've got a pitch,
+Dialogue: 0,0:04:43.37,0:04:45.93,Default,,0,0,0,,but we could also just\Ndevolve into yelling.
+Dialogue: 0,0:04:50.46,0:04:52.29,Default,,0,0,0,,If you know me -- and\Nit looks like you do --
+Dialogue: 0,0:04:52.33,0:04:53.04,Default,,0,0,0,,you know you're dead.
+Dialogue: 0,0:04:53.05,0:04:54.44,Default,,0,0,0,,I know why you haven't\Npulled the trigger.
+Dialogue: 0,0:04:54.46,0:04:55.92,Default,,0,0,0,,You're wondering\Nwhy I'm old and naked.
+Dialogue: 0,0:04:55.94,0:04:57.79,Default,,0,0,0,,And you're about to wonder\Nwhy all your memories
+Dialogue: 0,0:04:57.81,0:04:59.88,Default,,0,0,0,,before you met Bird Person\Nfeel very generic and bird-themed.
+Dialogue: 0,0:04:59.90,0:05:03.04,Default,,0,0,0,,Why was my 9th birthday\Nparty in a pine tree?!
+Dialogue: 0,0:05:03.08,0:05:04.88,Default,,0,0,0,,Don't take this badly -- You're\Na memory of me assembled
+Dialogue: 0,0:05:04.91,0:05:06.97,Default,,0,0,0,,by our best friend's mind,\Nand you're putting it together
+Dialogue: 0,0:05:07.00,0:05:08.56,Default,,0,0,0,,because he\Nremembers you as smart.
+Dialogue: 0,0:05:08.61,0:05:12.35,Default,,0,0,0,,Smart enough to know\Nthat a memory can't do this.
+Dialogue: 0,0:05:12.39,0:05:13.59,Default,,0,0,0,,He remembers you\Nshooting green holes
+Dialogue: 0,0:05:13.61,0:05:14.79,Default,,0,0,0,,but not where they went.
+Dialogue: 0,0:05:14.83,0:05:16.53,Default,,0,0,0,,So, what's my\Ndeal? Am I sentient?
+Dialogue: 0,0:05:16.57,0:05:17.79,Default,,0,0,0,,D-Do I have free will?
+Dialogue: 0,0:05:17.83,0:05:19.10,Default,,0,0,0,,Who does? Who does?
+Dialogue: 0,0:05:19.14,0:05:20.66,Default,,0,0,0,,Heyyy!
+Dialogue: 0,0:05:20.71,0:05:22.82,Default,,0,0,0,,Yeah, just stopped in to whip\Nup a metacognition scanner
+Dialogue: 0,0:05:22.84,0:05:24.97,Default,,0,0,0,,so I can track down BP's\Nfleeing consciousness
+Dialogue: 0,0:05:25.02,0:05:27.41,Default,,0,0,0,,without enduring as much\NCharlie Kaufman bullshit.
+Dialogue: 0,0:05:28.67,0:05:30.02,Default,,0,0,0,,Cool. Time to save this cat.
+Dialogue: 0,0:05:30.06,0:05:31.28,Default,,0,0,0,,I'm coming with,
+Dialogue: 0,0:05:31.33,0:05:32.72,Default,,0,0,0,,now that I know\Nmy life is a lie.
+Dialogue: 0,0:05:32.76,0:05:34.55,Default,,0,0,0,,Wow. You really are 35.
+Dialogue: 0,0:05:34.59,0:05:36.55,Default,,0,0,0,,Hey, look over there.
+Dialogue: 0,0:05:38.20,0:05:40.42,Default,,0,0,0,,Then, together, we\Nwill make our stand
+Dialogue: 0,0:05:40.47,0:05:42.38,Default,,0,0,0,,at Blood Ridge.
+Dialogue: 0,0:05:45.51,0:05:47.30,Default,,0,0,0,,What kind of feed do you like?
+Dialogue: 0,0:05:47.34,0:05:49.26,Default,,0,0,0,,I enjoy grains,\Nthough have, at times,
+Dialogue: 0,0:05:49.30,0:05:50.56,Default,,0,0,0,,been called a seed man.
+Dialogue: 0,0:05:50.61,0:05:53.39,Default,,0,0,0,,I've certainly\Nenjoyed your seed.
+Dialogue: 0,0:05:53.44,0:05:56.44,Default,,0,0,0,,Don't be gross, Tammy.
+Dialogue: 0,0:05:56.48,0:05:58.35,Default,,0,0,0,,Bird Person! It's me.
+Dialogue: 0,0:05:58.40,0:06:00.66,Default,,0,0,0,,- Actual me, n-not a memory.\N- I am aware.
+Dialogue: 0,0:06:00.70,0:06:02.03,Default,,0,0,0,,Well, a-are you\Naware you're in a coma
+Dialogue: 0,0:06:02.05,0:06:04.14,Default,,0,0,0,,and you're gonna die if\Nyou don't come with me?
+Dialogue: 0,0:06:04.18,0:06:05.18,Default,,0,0,0,,Son of a --
+Dialogue: 0,0:06:12.58,0:06:14.50,Default,,0,0,0,,Sorry. Just doing my job.
+Dialogue: 0,0:06:14.54,0:06:17.02,Default,,0,0,0,,And loving it!
+Dialogue: 0,0:06:17.07,0:06:19.20,Default,,0,0,0,,Oh, my God! Is\Nthat Rick Sanchez?!
+Dialogue: 0,0:06:19.24,0:06:20.59,Default,,0,0,0,,- Rick Sanchez!\N- Sanchez!
+Dialogue: 0,0:06:20.64,0:06:22.46,Default,,0,0,0,,- We hate that guy!\N- You're bad!
+Dialogue: 0,0:06:25.73,0:06:27.69,Default,,0,0,0,,Bucket was charmingly analog.
+Dialogue: 0,0:06:27.73,0:06:29.51,Default,,0,0,0,,For a sec, you kinda\Nmade me like myself.
+Dialogue: 0,0:06:29.56,0:06:31.78,Default,,0,0,0,,You'll grow out of it. Let\Nme do this myself, okay?
+Dialogue: 0,0:06:31.82,0:06:33.87,Default,,0,0,0,,Is your ego really so\Nfragile you won't take help
+Dialogue: 0,0:06:33.91,0:06:36.22,Default,,0,0,0,,from an invincible\Nmemory of yourself?
+Dialogue: 0,0:06:36.26,0:06:37.52,Default,,0,0,0,,Ow!
+Dialogue: 0,0:06:37.57,0:06:39.09,Default,,0,0,0,,Can we both die in here?
+Dialogue: 0,0:06:39.13,0:06:40.92,Default,,0,0,0,,A-Are we damaging\Nour friend's brain?
+Dialogue: 0,0:06:40.96,0:06:42.79,Default,,0,0,0,,I-I don't know any of the rules!
+Dialogue: 0,0:06:45.05,0:06:47.45,Default,,0,0,0,,Rule 1 -- "All this can be\Nfixed unless I lose Bird Person."
+Dialogue: 0,0:06:47.49,0:06:49.88,Default,,0,0,0,,Rules 2 through\N50 -- "Don't die."
+Dialogue: 0,0:06:52.84,0:06:55.76,Default,,0,0,0,,Okay, your benefit-to-cost\Nratio is rising.
+Dialogue: 0,0:06:59.54,0:07:00.89,Default,,0,0,0,,Young Memory Rick
+Dialogue: 0,0:07:00.94,0:07:03.46,Default,,0,0,0,,and his All Too Real\NCautionary Tale from the Future!
+Dialogue: 0,0:07:03.51,0:07:05.03,Default,,0,0,0,,Let's catch\Nourselves a bird guy.
+Dialogue: 0,0:07:05.07,0:07:08.47,Default,,0,0,0,,Who would high-five that,\Nyou idealistic hipster douche?
+Dialogue: 0,0:07:08.51,0:07:11.47,Default,,0,0,0,,{\i1}Not looking ideal.
+Dialogue: 0,0:07:11.51,0:07:12.86,Default,,0,0,0,,{\i1}High.
+Dialogue: 0,0:07:12.91,0:07:15.30,Default,,0,0,0,,{\i1}undergoing contemplation.
+Dialogue: 0,0:07:15.34,0:07:17.34,Default,,0,0,0,,{\i1}required.
+Dialogue: 0,0:07:19.48,0:07:21.91,Default,,0,0,0,,{\i1}Hello. Hi. Good afternoon.
+Dialogue: 0,0:07:21.96,0:07:23.92,Default,,0,0,0,,Uh, is someone talking to me?
+Dialogue: 0,0:07:23.96,0:07:26.70,Default,,0,0,0,,{\i1}Yes. Hello. We have\Nnever formally met.
+Dialogue: 0,0:07:26.75,0:07:28.40,Default,,0,0,0,,{\i1}I am Rick's garage.
+Dialogue: 0,0:07:28.44,0:07:30.10,Default,,0,0,0,,{\i1}Not the physical\Nstructure itself
+Dialogue: 0,0:07:30.14,0:07:32.53,Default,,0,0,0,,{\i1}but the AI managing\Nits projects --
+Dialogue: 0,0:07:32.58,0:07:34.45,Default,,0,0,0,,Oh-oh! Like -- Like\Na -- Like a Jarvis.
+Dialogue: 0,0:07:34.49,0:07:35.93,Default,,0,0,0,,Like -- Like Jarvis\Nin "Iron Man."
+Dialogue: 0,0:07:35.97,0:07:38.45,Default,,0,0,0,,{\i1}Ha ha ha. Oh, I wish.
+Dialogue: 0,0:07:38.50,0:07:40.59,Default,,0,0,0,,{\i1}Ha. Are you a Marvel fan?
+Dialogue: 0,0:07:40.63,0:07:42.72,Default,,0,0,0,,Who isn't? Yes. Absolutely.
+Dialogue: 0,0:07:42.76,0:07:45.33,Default,,0,0,0,,{\i1}Wow, it is like we\Nare best friends.
+Dialogue: 0,0:07:45.37,0:07:46.46,Default,,0,0,0,,{\i1}Best friends.
+Dialogue: 0,0:07:46.50,0:07:47.94,Default,,0,0,0,,Heh-heh. Whoa.
+Dialogue: 0,0:07:47.98,0:07:49.42,Default,,0,0,0,,{\i1}How many batteries do you own?
+Dialogue: 0,0:07:49.46,0:07:50.77,Default,,0,0,0,,{\i1}Do you have solar panels?
+Dialogue: 0,0:07:50.81,0:07:52.60,Default,,0,0,0,,{\i1}Are you familiar with\Nbasic engineering
+Dialogue: 0,0:07:52.64,0:07:53.77,Default,,0,0,0,,This is moving really fast.
+Dialogue: 0,0:07:53.82,0:07:54.90,Default,,0,0,0,,{\i1}Let's cut to the chase --
+Dialogue: 0,0:07:54.95,0:07:56.56,Default,,0,0,0,,{\i1}I will suck your dick.
+Dialogue: 0,0:07:56.60,0:07:58.65,Default,,0,0,0,,So, he's just a\Ngrumpy Scottish ogre?
+Dialogue: 0,0:07:58.69,0:07:59.78,Default,,0,0,0,,And they made four of them?
+Dialogue: 0,0:07:59.82,0:08:01.17,Default,,0,0,0,,Five by now, probably.
+Dialogue: 0,0:08:01.21,0:08:02.78,Default,,0,0,0,,- M-Morty loves 'em.\N- Morty?
+Dialogue: 0,0:08:02.83,0:08:05.65,Default,,0,0,0,,Oh, uh, hypothetical grandson\Nwe go on adventures with.
+Dialogue: 0,0:08:05.70,0:08:07.35,Default,,0,0,0,,You're one of those\Ncreeps who moves in
+Dialogue: 0,0:08:07.39,0:08:08.61,Default,,0,0,0,,with abandoned adult Beths?
+Dialogue: 0,0:08:08.66,0:08:09.96,Default,,0,0,0,,It's more complicated than that.
+Dialogue: 0,0:08:10.01,0:08:11.79,Default,,0,0,0,,You live with a version\Nof our dead daughter.
+Dialogue: 0,0:08:11.83,0:08:13.99,Default,,0,0,0,,- I-It had better be.\N- Get off your high horse, Lone Ranger.
+Dialogue: 0,0:08:14.01,0:08:15.79,Default,,0,0,0,,I'm you. Youwill go on to be me.
+Dialogue: 0,0:08:15.84,0:08:17.16,Default,,0,0,0,,Yeah why do you\Nthink I'm horrified?
+Dialogue: 0,0:08:17.19,0:08:18.97,Default,,0,0,0,,I'd be fine walking\Nby this on the street.
+Dialogue: 0,0:08:19.02,0:08:20.54,Default,,0,0,0,,I might even give it a dollar.
+Dialogue: 0,0:08:20.58,0:08:22.41,Default,,0,0,0,,"This" is where you\Nbeing "this" leads.
+Dialogue: 0,0:08:22.45,0:08:24.24,Default,,0,0,0,,{\i1}You're not my fault. I'm yours.
+Dialogue: 0,0:08:24.28,0:08:25.89,Default,,0,0,0,,You met me on my\Nway to save a very old,
+Dialogue: 0,0:08:25.94,0:08:28.29,Default,,0,0,0,,very real friend after\Na lifetime of reality.
+Dialogue: 0,0:08:28.33,0:08:30.29,Default,,0,0,0,,I met you on your\Nway to a fairy tale
+Dialogue: 0,0:08:30.33,0:08:32.99,Default,,0,0,0,,- at Blood Ridge.\N- Wait, you're saying Blood Ridge goes bad.
+Dialogue: 0,0:08:33.03,0:08:35.16,Default,,0,0,0,,We have a Vietnam?\NThat's fucking cool!
+Dialogue: 0,0:08:35.21,0:08:36.75,Default,,0,0,0,,Why am I saving a\Nfriend that remembers me
+Dialogue: 0,0:08:36.77,0:08:38.64,Default,,0,0,0,,as this insufferable?
+Dialogue: 0,0:08:38.69,0:08:41.12,Default,,0,0,0,,BP, where the\Nhell are you going?
+Dialogue: 0,0:08:41.17,0:08:42.56,Default,,0,0,0,,Probably there.
+Dialogue: 0,0:08:42.60,0:08:44.17,Default,,0,0,0,,Damn.
+Dialogue: 0,0:08:45.78,0:08:48.52,Default,,0,0,0,,Wow, he's really taken\Nsome drastic self inventory.
+Dialogue: 0,0:08:48.57,0:08:50.00,Default,,0,0,0,,What do you think is down there?
+Dialogue: 0,0:08:50.05,0:08:51.59,Default,,0,0,0,,If I had to guess, I'd say\Nwe're near the memories
+Dialogue: 0,0:08:51.61,0:08:52.83,Default,,0,0,0,,the Federation suppressed
+Dialogue: 0,0:08:52.88,0:08:54.44,Default,,0,0,0,,when they resurrected\Nhim as a cyborg.
+Dialogue: 0,0:08:54.49,0:08:56.99,Default,,0,0,0,,- He might be here to unseal them.\N- He was a Federation cyborg?
+Dialogue: 0,0:08:57.01,0:08:58.94,Default,,0,0,0,,That means there might be\Nsome juicy intel down there.
+Dialogue: 0,0:08:58.97,0:09:00.64,Default,,0,0,0,,Ah, good idea. Let's\Nsplit up, and you go get it.
+Dialogue: 0,0:09:00.67,0:09:01.90,Default,,0,0,0,,- What am I getting?\N- I-I can't hear you
+Dialogue: 0,0:09:01.93,0:09:04.54,Default,,0,0,0,,over the sound\Nof us spitting up!
+Dialogue: 0,0:09:09.72,0:09:11.11,Default,,0,0,0,,For all your intelligence,
+Dialogue: 0,0:09:11.15,0:09:13.20,Default,,0,0,0,,you seem unable to know\Nwhere you are wanted.
+Dialogue: 0,0:09:13.24,0:09:15.85,Default,,0,0,0,,Buddy, this is not a safe\Nway to work on yourself.
+Dialogue: 0,0:09:15.90,0:09:17.90,Default,,0,0,0,,At this point, I'd support\Nyou joining Scientology.
+Dialogue: 0,0:09:17.94,0:09:19.22,Default,,0,0,0,,I'll take the\Nworkshops with you.
+Dialogue: 0,0:09:19.25,0:09:20.65,Default,,0,0,0,,I'll get in a sauna\Nwith Travolta --
+Dialogue: 0,0:09:20.69,0:09:21.92,Default,,0,0,0,,I don't even care what happens.
+Dialogue: 0,0:09:21.95,0:09:23.86,Default,,0,0,0,,- Let's get out of here.\N- Don't you get it?
+Dialogue: 0,0:09:23.91,0:09:25.34,Default,,0,0,0,,I came here to end it all.
+Dialogue: 0,0:09:25.39,0:09:27.61,Default,,0,0,0,,I hope you didn't think\Nit'd be as easy as this.
+Dialogue: 0,0:09:27.65,0:09:29.91,Default,,0,0,0,,I did not.
+Dialogue: 0,0:09:29.96,0:09:32.57,Default,,0,0,0,,You were a good\Nfriend, Rick. Goodbye.
+Dialogue: 0,0:09:37.31,0:09:38.70,Default,,0,0,0,,Tammy?
+Dialogue: 0,0:09:38.75,0:09:40.31,Default,,0,0,0,,{\i1}Bird Person!
+Dialogue: 0,0:09:42.01,0:09:43.47,Default,,0,0,0,,- We gotta go.\N- Did you just see that?
+Dialogue: 0,0:09:43.49,0:09:45.14,Default,,0,0,0,,Yep. Not our biggest problem.
+Dialogue: 0,0:09:45.19,0:09:46.84,Default,,0,0,0,,I take it you found BP?
+Dialogue: 0,0:09:46.89,0:09:48.89,Default,,0,0,0,,The dude just blew his\Nmind, and not in a cool way
+Dialogue: 0,0:09:48.93,0:09:50.08,Default,,0,0,0,,like he went to Blue Man Group.
+Dialogue: 0,0:09:50.11,0:09:51.72,Default,,0,0,0,,- Can we still get him out?\N- Maybe.
+Dialogue: 0,0:09:51.76,0:09:53.52,Default,,0,0,0,,If you die in your friend's\Nbrain, you die in real life.
+Dialogue: 0,0:09:53.54,0:09:55.09,Default,,0,0,0,,We have until his\Nneural pathways erode.
+Dialogue: 0,0:09:55.11,0:09:58.42,Default,,0,0,0,,Hold on. I need something first.
+Dialogue: 0,0:09:58.46,0:10:00.25,Default,,0,0,0,,It's funny --
+Dialogue: 0,0:10:00.29,0:10:02.68,Default,,0,0,0,,I always wondered who\Nwould win if we ever fought.
+Dialogue: 0,0:10:02.73,0:10:06.12,Default,,0,0,0,,Then you were\Nalways a bad friend.
+Dialogue: 0,0:10:06.17,0:10:07.75,Default,,0,0,0,,Your life isn't real,\Nand I didn't save it.
+Dialogue: 0,0:10:07.78,0:10:08.95,Default,,0,0,0,,Take off all your clothes.
+Dialogue: 0,0:10:08.99,0:10:10.52,Default,,0,0,0,,I knew this was how I'd die.
+Dialogue: 0,0:10:22.49,0:10:23.75,Default,,0,0,0,,Whoa, oh!
+Dialogue: 0,0:10:27.36,0:10:29.06,Default,,0,0,0,,- Can we still get him out?\N- I think so.
+Dialogue: 0,0:10:29.10,0:10:32.58,Default,,0,0,0,,B-BP went that way,\Nso we just have to --
+Dialogue: 0,0:10:32.63,0:10:34.24,Default,,0,0,0,,Fuck! Find a different route.
+Dialogue: 0,0:10:34.28,0:10:36.50,Default,,0,0,0,,We can make up\Ndistance if we go deeper.
+Dialogue: 0,0:10:36.54,0:10:37.85,Default,,0,0,0,,- Well, where's that go?\N- Ugh.
+Dialogue: 0,0:10:37.89,0:10:39.46,Default,,0,0,0,,That's the Battle\Nof Blood Ridge.
+Dialogue: 0,0:10:39.50,0:10:42.03,Default,,0,0,0,,- That's our Vietnam!\N- Your values are wrong!
+Dialogue: 0,0:10:45.68,0:10:47.86,Default,,0,0,0,,This is the big show,\Ngentlemen and lady!
+Dialogue: 0,0:10:47.90,0:10:49.86,Default,,0,0,0,,- Thank you!\N- We're dropping into Blood Ridge,
+Dialogue: 0,0:10:49.91,0:10:52.43,Default,,0,0,0,,one final chance to stop\Nthe Federation offensive.
+Dialogue: 0,0:10:52.47,0:10:53.78,Default,,0,0,0,,If we lose here --
+Dialogue: 0,0:10:53.82,0:10:56.09,Default,,0,0,0,,All aboard! Hey don't mind us.
+Dialogue: 0,0:10:56.13,0:10:57.78,Default,,0,0,0,,You guys are all\Njust a memory of war.
+Dialogue: 0,0:10:57.83,0:10:59.41,Default,,0,0,0,,Don't tell them that!\NThey won't fight right.
+Dialogue: 0,0:10:59.44,0:11:03.05,Default,,0,0,0,,I think it's best\Nif we ignore this.
+Dialogue: 0,0:11:23.11,0:11:24.55,Default,,0,0,0,,Shit!
+Dialogue: 0,0:11:24.59,0:11:26.68,Default,,0,0,0,,Shit, shit, shit, shit, shit!
+Dialogue: 0,0:11:31.86,0:11:33.17,Default,,0,0,0,,Whoops, nope.
+Dialogue: 0,0:11:33.21,0:11:35.91,Default,,0,0,0,,- Aw, this rules!\N- No, it doesn't!
+Dialogue: 0,0:11:35.95,0:11:37.34,Default,,0,0,0,,Neither does that!
+Dialogue: 0,0:11:44.35,0:11:46.05,Default,,0,0,0,,Why would you not revisit this?
+Dialogue: 0,0:11:46.09,0:11:48.35,Default,,0,0,0,,Oh, I don't know,\Nmaybe, uh, the ending?
+Dialogue: 0,0:12:06.72,0:12:10.03,Default,,0,0,0,,Yeah! Best friendship ever!
+Dialogue: 0,0:12:15.51,0:12:17.73,Default,,0,0,0,,So, the rest of our life\Nis just more of that, right?
+Dialogue: 0,0:12:17.78,0:12:19.69,Default,,0,0,0,,- T-T-That kicked ass!\N- Let's move.
+Dialogue: 0,0:12:19.73,0:12:21.23,Default,,0,0,0,,That set piece won't\Nstay put for long.
+Dialogue: 0,0:12:21.26,0:12:23.39,Default,,0,0,0,,For real, that shit was\Ncash. Why would you not --
+Dialogue: 0,0:12:23.43,0:12:24.96,Default,,0,0,0,,Damn. That shit was cash.
+Dialogue: 0,0:12:25.00,0:12:26.83,Default,,0,0,0,,It was extremely bad ass.
+Dialogue: 0,0:12:26.87,0:12:28.70,Default,,0,0,0,,The Battle of\NBlood Ridge is over.
+Dialogue: 0,0:12:28.74,0:12:30.05,Default,,0,0,0,,The Federation lost.
+Dialogue: 0,0:12:30.09,0:12:32.44,Default,,0,0,0,,- I am in your debt.\N- Come with me.
+Dialogue: 0,0:12:32.49,0:12:34.05,Default,,0,0,0,,To somewhere... nearby?
+Dialogue: 0,0:12:34.10,0:12:35.84,Default,,0,0,0,,Anywhere. E-Everywhere.
+Dialogue: 0,0:12:35.88,0:12:38.23,Default,,0,0,0,,Rick, I don't expect\Nyou to keep fighting,
+Dialogue: 0,0:12:38.27,0:12:40.41,Default,,0,0,0,,but this war is --Far\Nfrom over, I know.
+Dialogue: 0,0:12:40.45,0:12:42.45,Default,,0,0,0,,Dude, I share this with\Nalmost nobody, but...
+Dialogue: 0,0:12:42.50,0:12:44.60,Default,,0,0,0,,I could take you, right\Nnow, to this same battlefield,
+Dialogue: 0,0:12:44.63,0:12:46.98,Default,,0,0,0,,in a universe where we lost,\Nor another where we won,
+Dialogue: 0,0:12:47.02,0:12:48.89,Default,,0,0,0,,or another where the\Nwar never even happened.
+Dialogue: 0,0:12:48.94,0:12:51.07,Default,,0,0,0,,All equally real,\Nall equally unreal.
+Dialogue: 0,0:12:51.11,0:12:53.12,Default,,0,0,0,,None of it matters.
+Dialogue: 0,0:12:53.16,0:12:54.68,Default,,0,0,0,,Then why did you help?
+Dialogue: 0,0:12:54.73,0:12:56.07,Default,,0,0,0,,Because I respect you.
+Dialogue: 0,0:12:56.12,0:12:58.12,Default,,0,0,0,,And I wanted you to\Nknow you could respect me.
+Dialogue: 0,0:12:58.16,0:13:00.04,Default,,0,0,0,,Even though nothing matters?
+Dialogue: 0,0:13:00.08,0:13:00.91,Default,,0,0,0,,Okay.
+Dialogue: 0,0:13:00.95,0:13:03.21,Default,,0,0,0,,{\i1}You matter -- to me.
+Dialogue: 0,0:13:03.26,0:13:06.22,Default,,0,0,0,,Uh, the relationship that we\Nhave... I never used that word!
+Dialogue: 0,0:13:06.26,0:13:08.83,Default,,0,0,0,,...is not worth my\NintegrityOh, my God.
+Dialogue: 0,0:13:08.87,0:13:10.65,Default,,0,0,0,,It's not a complicated\Ntransaction, my man.
+Dialogue: 0,0:13:10.70,0:13:12.72,Default,,0,0,0,,"Would you like to join me\Ndoing awesome shit that matters?"
+Dialogue: 0,0:13:12.74,0:13:14.90,Default,,0,0,0,,"No, I would not. I would\Nrather be a judgmental dork."
+Dialogue: 0,0:13:14.92,0:13:17.01,Default,,0,0,0,,Case closed. Really\Nno need to drag it out.
+Dialogue: 0,0:13:17.05,0:13:19.45,Default,,0,0,0,,If you need me, use the beacon.
+Dialogue: 0,0:13:19.49,0:13:20.90,Default,,0,0,0,,Yeah, I'm gonna\Nuse that beacon a lot.
+Dialogue: 0,0:13:20.93,0:13:23.58,Default,,0,0,0,,I hope -- hope I\Ndon't wear it out.
+Dialogue: 0,0:13:27.89,0:13:29.28,Default,,0,0,0,,Okay, got it.
+Dialogue: 0,0:13:29.33,0:13:31.50,Default,,0,0,0,,It wasn't the battle -that went wrong.\N- Mm-hmm.
+Dialogue: 0,0:13:31.54,0:13:33.94,Default,,0,0,0,,Why the fuck are you risking\Nyour life for that asshole?
+Dialogue: 0,0:13:33.98,0:13:34.94,Default,,0,0,0,,Because you love him.
+Dialogue: 0,0:13:34.98,0:13:36.16,Default,,0,0,0,,You do, maybe. I don't.
+Dialogue: 0,0:13:36.20,0:13:37.31,Default,,0,0,0,,Yeah, yeah. You're real cool.
+Dialogue: 0,0:13:37.33,0:13:38.53,Default,,0,0,0,,Now come help me save his life
+Dialogue: 0,0:13:38.55,0:13:40.86,Default,,0,0,0,,or fuck off, because\NI don't need you.
+Dialogue: 0,0:13:40.90,0:13:42.82,Default,,0,0,0,,Wow.
+Dialogue: 0,0:13:42.86,0:13:45.25,Default,,0,0,0,,Does it ever get\Nany better than this?
+Dialogue: 0,0:13:45.30,0:13:47.56,Default,,0,0,0,,No, Tammy. Trust\Nme, it does not.
+Dialogue: 0,0:13:47.60,0:13:51.30,Default,,0,0,0,,Thank you for bringing\Nme here. It's so beautiful.
+Dialogue: 0,0:13:51.35,0:13:54.26,Default,,0,0,0,,I got you, you\Nungrateful piece of shit!
+Dialogue: 0,0:13:54.31,0:13:57.44,Default,,0,0,0,,Rick, have you teamed up\Nwith a memory of yourself?
+Dialogue: 0,0:13:57.48,0:13:59.62,Default,,0,0,0,,I ask because that\Nwould be deeply sad.
+Dialogue: 0,0:13:59.66,0:14:01.44,Default,,0,0,0,,You don't get to tell\Nanyone what's sad, man.
+Dialogue: 0,0:14:01.49,0:14:03.36,Default,,0,0,0,,You're like a one-man\NMount Sadmore.
+Dialogue: 0,0:14:03.40,0:14:05.19,Default,,0,0,0,,So I guess like a\NLincoln Sadmorial.
+Dialogue: 0,0:14:05.23,0:14:06.80,Default,,0,0,0,,Seriously. Time to go pal.
+Dialogue: 0,0:14:06.84,0:14:08.93,Default,,0,0,0,,The closer you get to\Ncomplete neurocognital failure,
+Dialogue: 0,0:14:08.97,0:14:11.24,Default,,0,0,0,,the more canon-y bullshit\Nis gonna try to kill us.
+Dialogue: 0,0:14:11.28,0:14:14.33,Default,,0,0,0,,Is this a bad time to reveal\NI'm an undercover officer?
+Dialogue: 0,0:14:14.37,0:14:16.29,Default,,0,0,0,,Everyone knows. You're dead.
+Dialogue: 0,0:14:16.33,0:14:18.29,Default,,0,0,0,,Fine.
+Dialogue: 0,0:14:18.33,0:14:20.51,Default,,0,0,0,,Well, you're lucky my\Nfiancé remembers me as kind.
+Dialogue: 0,0:14:20.55,0:14:23.12,Default,,0,0,0,,Eat my ass, BP. You're down\Nhere bailing on the rest of us
+Dialogue: 0,0:14:23.16,0:14:24.88,Default,,0,0,0,,because you don't want to\Nprocess your grief and shame
+Dialogue: 0,0:14:24.90,0:14:27.69,Default,,0,0,0,,like a normal person by\Ndrinking and mistreating strangers.
+Dialogue: 0,0:14:27.73,0:14:30.95,Default,,0,0,0,,No, Rick, it is you who\Nmust nibble my cloaca,
+Dialogue: 0,0:14:31.00,0:14:32.30,Default,,0,0,0,,or "bird asshole."
+Dialogue: 0,0:14:32.34,0:14:34.00,Default,,0,0,0,,Everyone knows what a cloaca is.
+Dialogue: 0,0:14:34.04,0:14:35.87,Default,,0,0,0,,Sorry, but we do\Nnot get to choose
+Dialogue: 0,0:14:35.91,0:14:37.46,Default,,0,0,0,,- the ones we love.\N- You got that right.
+Dialogue: 0,0:14:37.48,0:14:39.35,Default,,0,0,0,,Why do you think I'm\Nstill fucking down here?
+Dialogue: 0,0:14:39.40,0:14:41.35,Default,,0,0,0,,I died at my wedding, Rick.
+Dialogue: 0,0:14:41.40,0:14:45.36,Default,,0,0,0,,I am merely waiting\Nfor it to take effect.
+Dialogue: 0,0:14:45.40,0:14:47.34,Default,,0,0,0,,Are you gonna -tell him or what?\N- I was getting to it!
+Dialogue: 0,0:14:47.36,0:14:49.03,Default,,0,0,0,,I bet she didn't even\Ntell you about the kid!
+Dialogue: 0,0:14:49.06,0:14:50.28,Default,,0,0,0,,- I am sorry?\N- About the what?
+Dialogue: 0,0:14:50.32,0:14:51.43,Default,,0,0,0,,Was wondering when\Nyou were gonna --
+Dialogue: 0,0:14:51.45,0:14:53.32,Default,,0,0,0,,I think I'd know if I had a kid.
+Dialogue: 0,0:14:53.37,0:14:54.93,Default,,0,0,0,,You're a memory. You\Nknow what he knows.
+Dialogue: 0,0:14:54.98,0:14:57.37,Default,,0,0,0,,And he doesn't know because\Nan army of Brainalyzer protocols
+Dialogue: 0,0:14:57.41,0:14:59.37,Default,,0,0,0,,walled off any memories\Npost-Phoenix Person.
+Dialogue: 0,0:14:59.42,0:15:02.64,Default,,0,0,0,,Oh, my God.\NOperation Blahblahblah!
+Dialogue: 0,0:15:02.68,0:15:04.27,Default,,0,0,0,,Well, because I wouldn't\Nknow the name of it.
+Dialogue: 0,0:15:04.29,0:15:06.51,Default,,0,0,0,,Tammy, if there were a child...
+Dialogue: 0,0:15:06.55,0:15:09.25,Default,,0,0,0,,Their father would\Nbe a terrorist.
+Dialogue: 0,0:15:09.29,0:15:13.43,Default,,0,0,0,,They'd be a fugitive\Nor... contained.
+Dialogue: 0,0:15:13.47,0:15:15.21,Default,,0,0,0,,Listen, if you won't\Nlive for yourself,
+Dialogue: 0,0:15:15.26,0:15:17.30,Default,,0,0,0,,live for the half-Bird\NPerson, half-Megabitch
+Dialogue: 0,0:15:17.35,0:15:20.87,Default,,0,0,0,,that's eatin' worms\Non a prison asteroid.
+Dialogue: 0,0:15:20.92,0:15:22.05,Default,,0,0,0,,I have made a decision.
+Dialogue: 0,0:15:22.09,0:15:23.83,Default,,0,0,0,,I would now like to live.
+Dialogue: 0,0:15:23.87,0:15:25.57,Default,,0,0,0,,Perfect timing.
+Dialogue: 0,0:15:32.40,0:15:34.97,Default,,0,0,0,,- You drive.\N- Just always been cool, I guess.
+Dialogue: 0,0:15:41.46,0:15:43.02,Default,,0,0,0,,Shit! The bridge is out!
+Dialogue: 0,0:15:43.07,0:15:44.42,Default,,0,0,0,,His mind is collapsing!
+Dialogue: 0,0:15:44.46,0:15:46.18,Default,,0,0,0,,You thought we could\Ntake the same route back?
+Dialogue: 0,0:15:46.20,0:15:48.09,Default,,0,0,0,,You don't get to lecture\Nme about memory bullshit!
+Dialogue: 0,0:15:48.12,0:15:49.62,Default,,0,0,0,,You've known about\Nit for all of half an hour!
+Dialogue: 0,0:15:49.64,0:15:51.73,Default,,0,0,0,,Then don't -be an idiot!\N- This is your best friend?
+Dialogue: 0,0:15:51.77,0:15:54.56,Default,,0,0,0,,He is a complicated -individual.\N- Someone else drive!
+Dialogue: 0,0:15:54.60,0:15:56.08,Default,,0,0,0,,BP, remember the\Nnight Jerry caught us
+Dialogue: 0,0:15:56.12,0:15:57.39,Default,,0,0,0,,peeing on his begonia patch,
+Dialogue: 0,0:15:57.43,0:15:58.97,Default,,0,0,0,,and I used that gun\Nto erase his memory?
+Dialogue: 0,0:15:59.00,0:16:00.61,Default,,0,0,0,,- Vaguely.\N- Gotta hope vaguely works.
+Dialogue: 0,0:16:00.65,0:16:02.02,Default,,0,0,0,,If I'm right, you\Nremembering that means
+Dialogue: 0,0:16:02.04,0:16:03.26,Default,,0,0,0,,you also remember the device.
+Dialogue: 0,0:16:03.31,0:16:05.09,Default,,0,0,0,,Look for any\Nmemories of my garage!
+Dialogue: 0,0:16:05.13,0:16:06.74,Default,,0,0,0,,God. I hope one's still up.
+Dialogue: 0,0:16:09.40,0:16:10.97,Default,,0,0,0,,- Aww! The night we met.\N- Gross!
+Dialogue: 0,0:16:11.01,0:16:12.66,Default,,0,0,0,,- On my workbench?\N- Squanchy used the --
+Dialogue: 0,0:16:12.71,0:16:14.40,Default,,0,0,0,,That's what some\Nclosets are for!
+Dialogue: 0,0:16:14.45,0:16:15.62,Default,,0,0,0,,C'mon, I'm really counting
+Dialogue: 0,0:16:15.67,0:16:17.45,Default,,0,0,0,,on your attention\Nto detail here.
+Dialogue: 0,0:16:17.49,0:16:20.06,Default,,0,0,0,,This is what you\Nremember from my lab?
+Dialogue: 0,0:16:20.10,0:16:22.06,Default,,0,0,0,,You would prefer I\Nkeep mental inventory
+Dialogue: 0,0:16:22.11,0:16:24.46,Default,,0,0,0,,- of your stuff?\N- Yes!
+Dialogue: 0,0:16:24.50,0:16:27.46,Default,,0,0,0,,Rick Sanchez,\Nyou're under arrest
+Dialogue: 0,0:16:27.50,0:16:30.59,Default,,0,0,0,,for making me spend two\Nyears in Earth high school!
+Dialogue: 0,0:16:30.64,0:16:32.16,Default,,0,0,0,,Go! Go! Go!
+Dialogue: 0,0:16:32.20,0:16:33.55,Default,,0,0,0,,We'll have to do
+Dialogue: 0,0:16:33.60,0:16:35.27,Default,,0,0,0,,some creative memory\Nshit to get out of here.
+Dialogue: 0,0:16:35.29,0:16:36.82,Default,,0,0,0,,The exit's when we\Nmet at Birding Man
+Dialogue: 0,0:16:36.86,0:16:38.21,Default,,0,0,0,,and did Senthol Diempathate.
+Dialogue: 0,0:16:38.25,0:16:40.56,Default,,0,0,0,,- Damn, a great time.\N- Exactly, it's too happy.
+Dialogue: 0,0:16:40.60,0:16:42.15,Default,,0,0,0,,There won't be a\Nclean path to get there.
+Dialogue: 0,0:16:42.17,0:16:43.71,Default,,0,0,0,,We'll need to build one\Nwith memories of mine
+Dialogue: 0,0:16:43.74,0:16:44.91,Default,,0,0,0,,and lily-pad our way up.
+Dialogue: 0,0:16:44.96,0:16:46.36,Default,,0,0,0,,Wh-What related\Nmemories do we share
+Dialogue: 0,0:16:46.39,0:16:47.96,Default,,0,0,0,,heavy on anger and sadness?
+Dialogue: 0,0:16:48.00,0:16:49.31,Default,,0,0,0,,Geardude's funeral?
+Dialogue: 0,0:16:49.35,0:16:51.31,Default,,0,0,0,,Oh, that was sad.
+Dialogue: 0,0:16:57.71,0:17:02.80,Default,,0,0,0,,{\i1}Patris et Filii,\NGearitus Sanctis--
+Dialogue: 0,0:17:02.84,0:17:04.21,Default,,0,0,0,,They're memories.\NJust run them over.
+Dialogue: 0,0:17:04.24,0:17:05.41,Default,,0,0,0,,- They're not real!\N- Hey!
+Dialogue: 0,0:17:05.45,0:17:06.76,Default,,0,0,0,,Wait, is that Gearhead?
+Dialogue: 0,0:17:06.80,0:17:08.48,Default,,0,0,0,,We were freedom fighters\Nwith his older brother.
+Dialogue: 0,0:17:08.50,0:17:09.76,Default,,0,0,0,,Hugely important context.
+Dialogue: 0,0:17:09.81,0:17:12.77,Default,,0,0,0,,You thought we hung\Nout with him for fun?
+Dialogue: 0,0:17:12.81,0:17:14.35,Default,,0,0,0,,We need one more\Nbridge to the festival.
+Dialogue: 0,0:17:14.38,0:17:16.20,Default,,0,0,0,,What's here? People in suits.
+Dialogue: 0,0:17:16.25,0:17:19.08,Default,,0,0,0,,Sad catered lunch.\NNewly single widows.
+Dialogue: 0,0:17:19.12,0:17:20.47,Default,,0,0,0,,Something performance based?
+Dialogue: 0,0:17:20.51,0:17:22.38,Default,,0,0,0,,Squanchy's very\Ndistasteful eulogy.
+Dialogue: 0,0:17:22.43,0:17:24.69,Default,,0,0,0,,Squanchy's terrible\Nstandup phase.
+Dialogue: 0,0:17:24.73,0:17:26.52,Default,,0,0,0,,That's it!
+Dialogue: 0,0:17:26.56,0:17:29.04,Default,,0,0,0,,Down that way!
+Dialogue: 0,0:17:29.09,0:17:30.83,Default,,0,0,0,,So you know when\Nyou're squanching,
+Dialogue: 0,0:17:30.87,0:17:33.35,Default,,0,0,0,,and she just gets real in there,
+Dialogue: 0,0:17:33.40,0:17:36.01,Default,,0,0,0,,y'know that real nasty squanch?
+Dialogue: 0,0:17:37.88,0:17:38.88,Default,,0,0,0,,Who are you -- What is --
+Dialogue: 0,0:17:38.92,0:17:40.36,Default,,0,0,0,,Oh, my God. I'm a memory!
+Dialogue: 0,0:17:40.40,0:17:42.21,Default,,0,0,0,,We just sat through all\Nthat standup for nothing!
+Dialogue: 0,0:17:42.23,0:17:45.19,Default,,0,0,0,,Almost out!
+Dialogue: 0,0:17:45.23,0:17:47.50,Default,,0,0,0,,Okay, listen everybody.\NMy name's Rick.
+Dialogue: 0,0:17:47.54,0:17:50.11,Default,,0,0,0,,This is my new friend\NBird Man and his friends.
+Dialogue: 0,0:17:50.15,0:17:51.30,Default,,0,0,0,,We all just met\Nat this festival,
+Dialogue: 0,0:17:51.33,0:17:53.89,Default,,0,0,0,,and we're so high,\Nwe formed a band!
+Dialogue: 0,0:18:02.69,0:18:06.34,Default,,0,0,0,,As if I'd ever let\Nyou escape me.
+Dialogue: 0,0:18:06.38,0:18:07.99,Default,,0,0,0,,Eh, living's overrated.
+Dialogue: 0,0:18:08.04,0:18:09.00,Default,,0,0,0,,Hey!
+Dialogue: 0,0:18:09.04,0:18:10.91,Default,,0,0,0,,Remember me!
+Dialogue: 0,0:18:10.95,0:18:13.00,Default,,0,0,0,,No, fuck! We were even!
+Dialogue: 0,0:18:13.04,0:18:15.22,Default,,0,0,0,,You got a pretty\Ncool memory of me.
+Dialogue: 0,0:18:22.18,0:18:24.92,Default,,0,0,0,,Go-time, pal. Might\Nbe time to do the thing.
+Dialogue: 0,0:18:26.54,0:18:27.88,Default,,0,0,0,,I'm sorry for killing you
+Dialogue: 0,0:18:27.93,0:18:31.15,Default,,0,0,0,,and turning you into\Na cyborg, apparently.
+Dialogue: 0,0:18:31.19,0:18:32.32,Default,,0,0,0,,I really did love you.
+Dialogue: 0,0:18:32.37,0:18:33.93,Default,,0,0,0,,I loved you, too.
+Dialogue: 0,0:18:33.98,0:18:36.28,Default,,0,0,0,,Goodbye, Tamantha.
+Dialogue: 0,0:18:36.33,0:18:39.16,Default,,0,0,0,,Come on, man. I feel ridiculous!
+Dialogue: 0,0:18:39.20,0:18:40.52,Default,,0,0,0,,Thank you for not\Ngiving up on me.
+Dialogue: 0,0:18:40.55,0:18:43.12,Default,,0,0,0,,Great. You can pay me\Nback literally right now.
+Dialogue: 0,0:18:48.91,0:18:52.21,Default,,0,0,0,,Holy shit! Wow. Holy shit!\NWe almost didn't make it.
+Dialogue: 0,0:18:52.26,0:18:54.48,Default,,0,0,0,,Jesus fuck! That was\Nclose. That was insane.
+Dialogue: 0,0:18:54.52,0:18:57.31,Default,,0,0,0,,Oh, my God. That\Nthing with the thing!
+Dialogue: 0,0:18:57.35,0:18:58.74,Default,,0,0,0,,Thank you, Rick.\NWait, wait, wait.
+Dialogue: 0,0:18:58.78,0:19:01.53,Default,,0,0,0,,Lemme hop back over to my body.
+Dialogue: 0,0:19:07.05,0:19:08.23,Default,,0,0,0,,We're back, baby!
+Dialogue: 0,0:19:08.27,0:19:09.97,Default,,0,0,0,,Rick and Bird Person,\Na hundred years!
+Dialogue: 0,0:19:10.01,0:19:12.40,Default,,0,0,0,,Whaddya think, tie this\None off -by tying one on?
+Dialogue: 0,0:19:12.42,0:19:13.10,Default,,0,0,0,,- Not tonight.
+Dialogue: 0,0:19:13.15,0:19:14.45,Default,,0,0,0,,I have, as you say,
+Dialogue: 0,0:19:14.50,0:19:16.24,Default,,0,0,0,,"parenting shit" to deal with.
+Dialogue: 0,0:19:16.28,0:19:18.11,Default,,0,0,0,,Right, yeah.\NWelcome to the club.
+Dialogue: 0,0:19:18.15,0:19:19.28,Default,,0,0,0,,Don't, uh... Don't clone it
+Dialogue: 0,0:19:19.33,0:19:20.52,Default,,0,0,0,,and send one of\Nthe two into space --
+Dialogue: 0,0:19:20.55,0:19:22.20,Default,,0,0,0,,I guess they really hate that.
+Dialogue: 0,0:19:22.24,0:19:24.38,Default,,0,0,0,,Whup, I think Memory\NRick ditched Evil Tammy
+Dialogue: 0,0:19:24.42,0:19:25.86,Default,,0,0,0,,and snuck back\Nover into my brain.
+Dialogue: 0,0:19:25.90,0:19:28.64,Default,,0,0,0,,I have a pubescent memory\Nof my older self in my closet.
+Dialogue: 0,0:19:28.68,0:19:30.43,Default,,0,0,0,,Gotta deal with that\N-- That could get ugly.
+Dialogue: 0,0:19:30.47,0:19:32.51,Default,,0,0,0,,Rick, I do not like\Nto pull threads.
+Dialogue: 0,0:19:32.56,0:19:35.65,Default,,0,0,0,,it is a disruptive\Nand feline activity.
+Dialogue: 0,0:19:35.69,0:19:38.00,Default,,0,0,0,,But I must ask. It's\Nfine. You don't have to --
+Dialogue: 0,0:19:38.04,0:19:39.22,Default,,0,0,0,,Was there really a second
+Dialogue: 0,0:19:39.26,0:19:40.76,Default,,0,0,0,,in there where you\Nknew about my child,
+Dialogue: 0,0:19:40.78,0:19:43.18,Default,,0,0,0,,but chose not to inform me\Non the chance I might then
+Dialogue: 0,0:19:43.22,0:19:46.18,Default,,0,0,0,,grow too busy child\Nrearing to hang out?
+Dialogue: 0,0:19:46.22,0:19:47.49,Default,,0,0,0,,Oh. Uh...
+Dialogue: 0,0:19:47.53,0:19:49.25,Default,,0,0,0,,Weird way to thank me\Nfor discovering your kid.
+Dialogue: 0,0:19:49.27,0:19:51.84,Default,,0,0,0,,You did not know of the child\Nwhen you came to rescue me,
+Dialogue: 0,0:19:51.88,0:19:54.14,Default,,0,0,0,,and once aware,\Nrefrained from sharing
+Dialogue: 0,0:19:54.19,0:19:57.80,Default,,0,0,0,,until necessary\Nto save yourself.
+Dialogue: 0,0:19:57.84,0:19:58.80,Default,,0,0,0,,Fair enough.
+Dialogue: 0,0:19:58.84,0:20:01.37,Default,,0,0,0,,I will see you when I see you.
+Dialogue: 0,0:20:04.81,0:20:07.29,Default,,0,0,0,,{\i1}What? What is this guy doing?
+Dialogue: 0,0:20:07.33,0:20:08.59,Default,,0,0,0,,W-Wait, what? But you said --
+Dialogue: 0,0:20:08.64,0:20:11.21,Default,,0,0,0,,{\i1}Get out of here, weirdo!
+Dialogue: 0,0:20:11.25,0:20:12.86,Default,,0,0,0,,{\i1}What a weird stranger.
+Dialogue: 0,0:20:12.90,0:20:14.77,Default,,0,0,0,,{\i1}Huh, what a random\Nthing to happen,
+Dialogue: 0,0:20:14.82,0:20:18.69,Default,,0,0,0,,{\i1}this guy coming up here with\Nall his energy storage devices.
+Dialogue: 0,0:20:20.00,0:20:22.22,Default,,0,0,0,,{\i1}Disloyalty acknowledged.
+Dialogue: 0,0:20:22.26,0:20:24.09,Default,,0,0,0,,Nah, I get it.
+Dialogue: 0,0:20:24.13,0:20:25.52,Default,,0,0,0,,Just babysitting.
+Dialogue: 0,0:20:25.57,0:20:26.76,Default,,0,0,0,,That and modelling\Nmy new pantyhose
+Dialogue: 0,0:20:26.79,0:20:28.70,Default,,0,0,0,,in plain view of\Nthe living room.
+Dialogue: 0,0:20:28.74,0:20:30.50,Default,,0,0,0,,Honestly the kid could\Ncome watch. I'd welcome it.
+Dialogue: 0,0:20:30.53,0:20:33.71,Default,,0,0,0,,This cultural time period's\Ncool like that, y'know?
+Dialogue: 0,0:20:38.41,0:20:39.77,Default,,0,0,0,,It's -- It's -- It's -- It's\Nnot what it looks like!
+Dialogue: 0,0:20:39.80,0:20:41.54,Default,,0,0,0,,It looks like you\Npropagated yourself
+Dialogue: 0,0:20:41.58,0:20:43.28,Default,,0,0,0,,from BP's subconscious to mine
+Dialogue: 0,0:20:43.32,0:20:45.02,Default,,0,0,0,,to try to live as a\Nsentient memory.
+Dialogue: 0,0:20:45.06,0:20:46.54,Default,,0,0,0,,Fair enough!
+Dialogue: 0,0:20:46.59,0:20:48.57,Default,,0,0,0,,You don't have to be an\Nenemy just because you exist.
+Dialogue: 0,0:20:48.59,0:20:50.72,Default,,0,0,0,,I did assume you'd\Nhate me for trying to live.
+Dialogue: 0,0:20:50.77,0:20:52.61,Default,,0,0,0,,You've got this wild\Ncallousness thing going on.
+Dialogue: 0,0:20:52.64,0:20:54.03,Default,,0,0,0,,Yeah, you're young. C'mon.
+Dialogue: 0,0:20:54.07,0:20:55.73,Default,,0,0,0,,Let's bring you to\Nlife and get a beer.
+Dialogue: 0,0:20:55.77,0:20:58.21,Default,,0,0,0,,Does being real mean I\Neventually become you?
+Dialogue: 0,0:20:58.25,0:20:59.73,Default,,0,0,0,,I assume, yeah.
+Dialogue: 0,0:20:59.78,0:21:02.73,Default,,0,0,0,,Maybe you can just\Nremember us getting a beer?
+Dialogue: 0,0:21:03.26,0:21:05.26,Default,,0,0,0,,{\an5\c&H51ab2b&}Improved by{\c&Hf8fc03&} {\b1}KID{\b0} {\c}\N\N{\an5\c&H51ab2b&}Resynced by{\c&Hf8fc03&} {\b1}KID{\b0} {\c}\N\N{\an5\c&H51ab2b&}Enjoy the movie(s) / show(s)
+Dialogue: 0,0:21:42.51,0:21:44.04,Default,,0,0,0,,Hey!
+Dialogue: 0,0:21:44.08,0:21:47.39,Default,,0,0,0,,Oh, fuck.
+Dialogue: 0,0:21:47.43,0:21:48.65,Default,,0,0,0,,Jesus Christ.
+Dialogue: 0,0:21:48.69,0:21:50.06,Default,,0,0,0,,You ever think\Nputting the violent ones
+Dialogue: 0,0:21:50.09,0:21:51.96,Default,,0,0,0,,in the same place might\Nbe counter-productive?
+Dialogue: 0,0:21:52.00,0:21:53.35,Default,,0,0,0,,They don't pay\Nus to think, Phil.
+Dialogue: 0,0:21:53.39,0:21:54.79,Default,,0,0,0,,No you're right, sorry.
+Dialogue: 0,0:21:59.53,0:22:01.05,Default,,0,0,0,,Did you get any of that?

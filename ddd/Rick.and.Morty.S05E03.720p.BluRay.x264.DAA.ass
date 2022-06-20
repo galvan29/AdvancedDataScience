@@ -1,0 +1,596 @@
+﻿[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: 0
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+ScaledBorderAndShadow: Yes
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI Semibold,22,&H00FFFFFF,&H00FFFFFF,&H55000000,&H55000000,0,0,0,0,100,100,0,0,1,0.6,0.3,2,10,10,20,1
+Style: Verdana [WHITE],Arial,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:06.48,0:00:08.57,Default,,0,0,0,,Ahh, I love that\Nnew T-shirt smell.
+Dialogue: 0,0:00:08.61,0:00:10.35,Default,,0,0,0,,Chicks are gonna\Nbe up all up in our biz
+Dialogue: 0,0:00:10.40,0:00:12.07,Default,,0,0,0,,when they see us wearing\Nthese Rick and Morty custom tees.
+Dialogue: 0,0:00:12.09,0:00:13.57,Default,,0,0,0,,I bet we could sell these.
+Dialogue: 0,0:00:13.62,0:00:14.90,Default,,0,0,0,,Hells yeah. I\Nfuckin' love merch!
+Dialogue: 0,0:00:14.92,0:00:16.05,Default,,0,0,0,,Aah!
+Dialogue: 0,0:00:16.10,0:00:17.38,Default,,0,0,0,,- The rain! It -- It burns!\N- Oh, shit.
+Dialogue: 0,0:00:17.40,0:00:18.42,Default,,0,0,0,,Quick, Morty,\Nprotect the shirts!
+Dialogue: 0,0:00:18.45,0:00:20.06,Default,,0,0,0,,The door! Open the door!
+Dialogue: 0,0:00:20.10,0:00:21.36,Default,,0,0,0,,Rick! Is it --
+Dialogue: 0,0:00:21.41,0:00:22.67,Default,,0,0,0,,Morty, will ya stop tryna--
+Dialogue: 0,0:00:22.71,0:00:24.11,Default,,0,0,0,,Okay, there, it's open.
+Dialogue: 0,0:00:24.15,0:00:26.06,Default,,0,0,0,,- Jesus.\N- My skin is on fire.
+Dialogue: 0,0:00:26.11,0:00:27.41,Default,,0,0,0,,W-Why is the rain doing that?
+Dialogue: 0,0:00:27.46,0:00:30.46,Default,,0,0,0,,My acid rain will destroy
+Dialogue: 0,0:00:30.50,0:00:34.73,Default,,0,0,0,,all things green and natural or\Nmy name isn't Diesel Weasel.
+Dialogue: 0,0:00:37.16,0:00:40.25,Default,,0,0,0,,Huh. Well, that\Nguy's easy to please.
+Dialogue: 0,0:00:40.30,0:00:43.04,Default,,0,0,0,,Your acid rain\Nis an acid pain...
+Dialogue: 0,0:00:43.08,0:00:44.91,Default,,0,0,0,,in the butt, Diesel Weasel!
+Dialogue: 0,0:00:44.95,0:00:46.30,Default,,0,0,0,,Yikes. Wow.
+Dialogue: 0,0:00:46.35,0:00:47.93,Default,,0,0,0,,Who's the chick in\Nneed of a dialogue pass?
+Dialogue: 0,0:00:47.96,0:00:50.70,Default,,0,0,0,,First order of business is\Nto clean up this acid rain
+Dialogue: 0,0:00:50.74,0:00:52.57,Default,,0,0,0,,with a little wind!
+Dialogue: 0,0:00:52.61,0:00:53.61,Default,,0,0,0,,Yoww!
+Dialogue: 0,0:00:53.66,0:00:55.35,Default,,0,0,0,,Ow! Ow, my leg!
+Dialogue: 0,0:00:55.40,0:00:56.79,Default,,0,0,0,,Wow.
+Dialogue: 0,0:00:56.83,0:00:59.10,Default,,0,0,0,,And now an elemental\Npunch that's too hot to handle!
+Dialogue: 0,0:00:59.14,0:01:00.62,Default,,0,0,0,,Wa-kah!
+Dialogue: 0,0:01:00.66,0:01:01.88,Default,,0,0,0,,Oh, wow.
+Dialogue: 0,0:01:01.93,0:01:03.10,Default,,0,0,0,,Curse you, Planetina!
+Dialogue: 0,0:01:03.15,0:01:05.15,Default,,0,0,0,,I'll get you next slime!
+Dialogue: 0,0:01:06.80,0:01:09.76,Default,,0,0,0,,There's only one solution\Nfor Earth's pollution -- you!
+Dialogue: 0,0:01:10.76,0:01:12.42,Default,,0,0,0,,- Wow.\N- Morty, if you say "wow"
+Dialogue: 0,0:01:12.46,0:01:13.78,Default,,0,0,0,,one more time, I\Nswear to fucking God...
+Dialogue: 0,0:01:13.81,0:01:15.51,Default,,0,0,0,,Are you crazy, Rick?\NShe's right there!
+Dialogue: 0,0:01:15.55,0:01:17.18,Default,,0,0,0,,Yeah, get that aluminum,\NMorty. It's 8% of the Earth.
+Dialogue: 0,0:01:17.20,0:01:18.68,Default,,0,0,0,,We'll need every atom.
+Dialogue: 0,0:01:19.47,0:01:21.77,Default,,0,0,0,,Thanks! Every litter-bit helps!
+Dialogue: 0,0:01:21.82,0:01:23.25,Default,,0,0,0,,Your problem!
+Dialogue: 0,0:01:23.30,0:01:24.64,Default,,0,0,0,,Excuse me? S-Sorry.
+Dialogue: 0,0:01:24.69,0:01:27.13,Default,,0,0,0,,I-I-I wanted to say, "N-No\Nproblem, you're welcome,"
+Dialogue: 0,0:01:27.17,0:01:29.17,Default,,0,0,0,,a-a-and it came\Nout "your problem."
+Dialogue: 0,0:01:29.21,0:01:30.43,Default,,0,0,0,,I-I'm an idiot. Sorry.
+Dialogue: 0,0:01:30.48,0:01:33.09,Default,,0,0,0,,You're not an\Nidiot. You recycled.
+Dialogue: 0,0:01:33.13,0:01:35.13,Default,,0,0,0,,- I-I'm Morty.\N- Nice to meet you, Morty.
+Dialogue: 0,0:01:35.18,0:01:37.31,Default,,0,0,0,,I'm Planetina, and I hope\Nyou have a wonderful day.
+Dialogue: 0,0:01:37.35,0:01:38.40,Default,,0,0,0,,Hey!
+Dialogue: 0,0:01:38.44,0:01:39.57,Default,,0,0,0,,The fuck we doin' here?
+Dialogue: 0,0:01:39.62,0:01:41.66,Default,,0,0,0,,Uhh, y-y-you like soft serve?
+Dialogue: 0,0:01:41.71,0:01:43.01,Default,,0,0,0,,There's a shop around the bend.
+Dialogue: 0,0:01:43.05,0:01:44.75,Default,,0,0,0,,Oh, I don't eat ice cream.
+Dialogue: 0,0:01:44.80,0:01:47.15,Default,,0,0,0,,Veal is a product\Nof the dairy industry.
+Dialogue: 0,0:01:47.19,0:01:48.32,Default,,0,0,0,,Oh, that's not good.
+Dialogue: 0,0:01:48.36,0:01:49.54,Default,,0,0,0,,No, it is not.
+Dialogue: 0,0:01:49.58,0:01:52.11,Default,,0,0,0,,Oh, my God! Come on! Let's go!
+Dialogue: 0,0:01:52.15,0:01:54.15,Default,,0,0,0,,I know a place that serves\Ncruelty-free doughnuts.
+Dialogue: 0,0:01:54.20,0:01:56.29,Default,,0,0,0,,If you'd like, I could fly\Nyou and your friend there
+Dialogue: 0,0:01:56.33,0:01:57.50,Default,,0,0,0,,easy-peasy, lemon-squeezy.
+Dialogue: 0,0:01:57.55,0:01:59.64,Default,,0,0,0,,Okay, I-I-I'll ask him.
+Dialogue: 0,0:01:59.68,0:02:02.51,Default,,0,0,0,,He -- He said he\Ncan't come. Let's go!
+Dialogue: 0,0:02:04.08,0:02:06.64,Default,,0,0,0,,What the fuck was that shit?
+Dialogue: 0,0:02:37.94,0:02:39.68,Default,,0,0,0,,The Earth is in danger!
+Dialogue: 0,0:02:39.72,0:02:42.11,Default,,0,0,0,,Pollution and waste\Nare ruining our planet.
+Dialogue: 0,0:02:42.16,0:02:44.64,Default,,0,0,0,,Mother Nature has enlisted\Nthe help of four young adults
+Dialogue: 0,0:02:44.68,0:02:46.90,Default,,0,0,0,,from each major ethnicity\N-- and when things look bad,
+Dialogue: 0,0:02:46.94,0:02:49.69,Default,,0,0,0,,and I mean really bad --\Nthey combine the powers
+Dialogue: 0,0:02:49.73,0:02:52.30,Default,,0,0,0,,of their elemental\Nrings to create me!
+Dialogue: 0,0:02:52.34,0:02:55.39,Default,,0,0,0,,Planetina, conservationist\Nsuper person!
+Dialogue: 0,0:02:55.43,0:02:57.13,Default,,0,0,0,,There's only one solution...
+Dialogue: 0,0:02:57.17,0:02:58.91,Default,,0,0,0,,{\i1}for Earth's pollution -- you!
+Dialogue: 0,0:02:58.96,0:03:00.31,Default,,0,0,0,,P-Pretty cool, huh?
+Dialogue: 0,0:03:00.35,0:03:02.37,Default,,0,0,0,,I-I can't believe I actually\Nhung out with Planetina.
+Dialogue: 0,0:03:02.39,0:03:04.83,Default,,0,0,0,,How old is this woman?\NShe looks very mature.
+Dialogue: 0,0:03:04.88,0:03:06.75,Default,,0,0,0,,She's a sentient amalgam\Nof natural elements,
+Dialogue: 0,0:03:06.79,0:03:08.66,Default,,0,0,0,,so I don't believe\Nage applies to her.
+Dialogue: 0,0:03:08.71,0:03:10.34,Default,,0,0,0,,Great. Taylor Murphy\Ndumps me the day before his
+Dialogue: 0,0:03:10.36,0:03:12.71,Default,,0,0,0,,hella-big pool party\Nand my little brother's
+Dialogue: 0,0:03:12.75,0:03:14.41,Default,,0,0,0,,dating a phase four super hero.
+Dialogue: 0,0:03:14.45,0:03:16.25,Default,,0,0,0,,Just shoot me in the\Nfucking head until I die.
+Dialogue: 0,0:03:16.28,0:03:17.89,Default,,0,0,0,,Hey, hey, none of\Nthat, Summerfest.
+Dialogue: 0,0:03:17.93,0:03:19.65,Default,,0,0,0,,Look what you're doing to\Nyour sister, you piece of shit.
+Dialogue: 0,0:03:19.67,0:03:21.04,Default,,0,0,0,,Is it weird that she\Nhasn't texted me yet?
+Dialogue: 0,0:03:21.07,0:03:22.37,Default,,0,0,0,,- Yes.\N- No.
+Dialogue: 0,0:03:22.41,0:03:23.96,Default,,0,0,0,,What if I told you that\Nyour Grandpa Rick's
+Dialogue: 0,0:03:23.98,0:03:25.57,Default,,0,0,0,,got something up his\Nsleeve that's so Rick-diculous
+Dialogue: 0,0:03:25.59,0:03:26.83,Default,,0,0,0,,that it's gonna make\Nyou forget all about
+Dialogue: 0,0:03:26.85,0:03:28.46,Default,,0,0,0,,that stupid asshole\Nthat dumped you?
+Dialogue: 0,0:03:28.51,0:03:30.25,Default,,0,0,0,,Hey, my egg plate!
+Dialogue: 0,0:03:30.29,0:03:32.60,Default,,0,0,0,,Morglutz, Slartivart,\Nand Ferkus 9 --
+Dialogue: 0,0:03:32.64,0:03:35.12,Default,,0,0,0,,three planets are all ending\Nin a delayed succession
+Dialogue: 0,0:03:35.17,0:03:36.56,Default,,0,0,0,,of cataclysmic events.
+Dialogue: 0,0:03:36.60,0:03:38.28,Default,,0,0,0,,A jam like this comes\Naround only once in a lifetime.
+Dialogue: 0,0:03:38.30,0:03:39.78,Default,,0,0,0,,Morglutz's sun is\Ngoing supernova,
+Dialogue: 0,0:03:39.82,0:03:41.61,Default,,0,0,0,,Slartivart is falling\Ninto a black hole,
+Dialogue: 0,0:03:41.65,0:03:43.52,Default,,0,0,0,,and Ferkus 9 is getting\N"Deep Impact" -ed
+Dialogue: 0,0:03:43.57,0:03:44.92,Default,,0,0,0,,by an asteroid.
+Dialogue: 0,0:03:44.96,0:03:46.59,Default,,0,0,0,,They're all having a\Nmajor, final blow out --
+Dialogue: 0,0:03:46.61,0:03:48.50,Default,,0,0,0,,and I'm gonna drug it up\Nand suck it up before each one
+Dialogue: 0,0:03:48.53,0:03:50.62,Default,,0,0,0,,goes ka-blamo, and I'm taking
+Dialogue: 0,0:03:50.66,0:03:51.94,Default,,0,0,0,,my favorite grandkid\Nalong with me!
+Dialogue: 0,0:03:51.97,0:03:54.01,Default,,0,0,0,,Hells yeah.10\Nseconds on Morglutz,
+Dialogue: 0,0:03:54.05,0:03:55.60,Default,,0,0,0,,and you'll be up to your\Nneck in I-could-give-two-
+Dialogue: 0,0:03:55.62,0:03:57.19,Default,,0,0,0,,shits-about-what's-his-ass.
+Dialogue: 0,0:03:57.23,0:03:58.28,Default,,0,0,0,,And also herpes.
+Dialogue: 0,0:03:58.32,0:03:59.28,Default,,0,0,0,,Um... Oh, my God,
+Dialogue: 0,0:03:59.32,0:04:00.41,Default,,0,0,0,,thank you, Grandpa Rick!
+Dialogue: 0,0:04:00.45,0:04:01.85,Default,,0,0,0,,I'm gonna go pack my rollie.
+Dialogue: 0,0:04:01.89,0:04:03.93,Default,,0,0,0,,Um, Summer? I-I-I haven't\Ngiven you my approval yet.
+Dialogue: 0,0:04:03.98,0:04:05.28,Default,,0,0,0,,Summer, approval
+Dialogue: 0,0:04:05.33,0:04:06.59,Default,,0,0,0,,is yet to be given here!
+Dialogue: 0,0:04:06.63,0:04:08.20,Default,,0,0,0,,There's a huge forest fire
+Dialogue: 0,0:04:08.24,0:04:09.59,Default,,0,0,0,,like 200 miles from here!
+Dialogue: 0,0:04:09.64,0:04:11.55,Default,,0,0,0,,This is amazing!\NPlanetina's bound to be there.
+Dialogue: 0,0:04:11.59,0:04:13.40,Default,,0,0,0,,Mom, I-I need the credit\Ncard to buy a train ticket.
+Dialogue: 0,0:04:13.42,0:04:14.68,Default,,0,0,0,,Absolutely not.
+Dialogue: 0,0:04:14.73,0:04:16.53,Default,,0,0,0,,Mom, this is the biggest\Nwildfire of the year!
+Dialogue: 0,0:04:16.56,0:04:17.88,Default,,0,0,0,,- You're not going!\N- You're not going!
+Dialogue: 0,0:04:17.90,0:04:19.04,Default,,0,0,0,,Da fuck I'm not.
+Dialogue: 0,0:04:19.08,0:04:20.45,Default,,0,0,0,,Last time I checked,\Nthis wasn't Russia.
+Dialogue: 0,0:04:20.47,0:04:22.23,Default,,0,0,0,,- It's not Russia, Jerry.\N- My heart is broken,
+Dialogue: 0,0:04:22.26,0:04:23.82,Default,,0,0,0,,and I deserve to let loose,
+Dialogue: 0,0:04:23.87,0:04:26.26,Default,,0,0,0,,and if you don't like it,\Nyou can suck my bigger tit.
+Dialogue: 0,0:04:26.30,0:04:27.65,Default,,0,0,0,,Adios, C-words.
+Dialogue: 0,0:04:27.70,0:04:29.07,Default,,0,0,0,,Morty, I don't want\Nyou getting hurt.
+Dialogue: 0,0:04:29.09,0:04:30.89,Default,,0,0,0,,- Please, think this over.\N- I don't want to think!
+Dialogue: 0,0:04:30.92,0:04:32.62,Default,,0,0,0,,I want to see a girl I like.
+Dialogue: 0,0:04:32.66,0:04:33.96,Default,,0,0,0,,If you don't want to help me,
+Dialogue: 0,0:04:34.01,0:04:35.97,Default,,0,0,0,,I'll find my own goddamn\Nway to the wildfire.
+Dialogue: 0,0:04:40.80,0:04:42.84,Default,,0,0,0,,- I'll get the wine.\N- Thank you.
+Dialogue: 0,0:04:42.89,0:04:45.58,Default,,0,0,0,,The Governor has implemented\Na mandatory evacuation.
+Dialogue: 0,0:04:45.63,0:04:48.20,Default,,0,0,0,,Abandon all hope, people!\NNothing will stop this fire.
+Dialogue: 0,0:04:48.24,0:04:49.72,Default,,0,0,0,,Nothing!
+Dialogue: 0,0:04:49.76,0:04:52.59,Default,,0,0,0,,Scratch that! Here's\NPlanetina, Savioress of Earth!
+Dialogue: 0,0:04:52.64,0:04:54.64,Default,,0,0,0,,Yeeouch! Talk about a hot foot.
+Dialogue: 0,0:04:54.68,0:04:58.21,Default,,0,0,0,,Better put this wildfire on ice!
+Dialogue: 0,0:04:58.68,0:04:59.90,Default,,0,0,0,,Come here, little buddy.
+Dialogue: 0,0:04:59.95,0:05:02.04,Default,,0,0,0,,Come on, come on,\Ncome on, I gotcha.
+Dialogue: 0,0:05:02.86,0:05:04.78,Default,,0,0,0,,Morty?! What are you doing here?
+Dialogue: 0,0:05:04.82,0:05:06.48,Default,,0,0,0,,Oh, hey! Y-You're here, too?
+Dialogue: 0,0:05:06.52,0:05:08.35,Default,,0,0,0,,Yeah, I heard about\Nthe wildfire back home,
+Dialogue: 0,0:05:08.39,0:05:09.85,Default,,0,0,0,,and, you know, I\Nstopped by to lend a hand.
+Dialogue: 0,0:05:09.87,0:05:12.09,Default,,0,0,0,,H-Here you go,\Nfella. All safe now.
+Dialogue: 0,0:05:12.13,0:05:14.48,Default,,0,0,0,,Ahh, rabbits --\Nal-always hopping --
+Dialogue: 0,0:05:14.53,0:05:15.66,Default,,0,0,0,,Never stoppin'.
+Dialogue: 0,0:05:15.70,0:05:17.49,Default,,0,0,0,,Y-Yeah.
+Dialogue: 0,0:05:17.53,0:05:18.97,Default,,0,0,0,,S-So it was, uh,\Ngreat hanging --
+Dialogue: 0,0:05:19.01,0:05:20.58,Default,,0,0,0,,hanging out the other day.
+Dialogue: 0,0:05:20.62,0:05:22.51,Default,,0,0,0,,I-I was getting kind of\Na -- I mean I-I got kind of
+Dialogue: 0,0:05:22.53,0:05:23.67,Default,,0,0,0,,a p-positive vibe.
+Dialogue: 0,0:05:23.71,0:05:25.41,Default,,0,0,0,,Oh, good. I was putting one out.
+Dialogue: 0,0:05:25.45,0:05:26.54,Default,,0,0,0,,I-I really like you.
+Dialogue: 0,0:05:26.58,0:05:27.84,Default,,0,0,0,,Holy shit.
+Dialogue: 0,0:05:27.89,0:05:30.02,Default,,0,0,0,,I-I-I mean, uh,\Nwell, oh, all right.
+Dialogue: 0,0:05:30.06,0:05:31.89,Default,,0,0,0,,Next step, you\Nw-want to go out again?
+Dialogue: 0,0:05:31.94,0:05:35.72,Default,,0,0,0,,I do! But, uh,\NMorty, I have kids.
+Dialogue: 0,0:05:35.77,0:05:38.03,Default,,0,0,0,,Oh, I-I-I'll get along\Nwith them. I'm-I'm a kid.
+Dialogue: 0,0:05:38.07,0:05:40.20,Default,,0,0,0,,No, I mean the four kids\Nthat bring me into existence
+Dialogue: 0,0:05:40.25,0:05:42.12,Default,,0,0,0,,by combining the power\Nof their elemental rings
+Dialogue: 0,0:05:42.16,0:05:44.03,Default,,0,0,0,,so I can save Earth\Nfrom ecological disasters.
+Dialogue: 0,0:05:44.08,0:05:46.25,Default,,0,0,0,,Oh, them! No, I-I\Nknow about them.
+Dialogue: 0,0:05:46.30,0:05:47.43,Default,,0,0,0,,I-I like them.
+Dialogue: 0,0:05:47.47,0:05:49.52,Default,,0,0,0,,Oh, good. Well,\Nhere they are now.
+Dialogue: 0,0:05:49.56,0:05:51.22,Default,,0,0,0,,Hey, buddy, you\Nwant an autograph?
+Dialogue: 0,0:05:51.26,0:05:52.52,Default,,0,0,0,,That's 20 bucks a pop.
+Dialogue: 0,0:05:52.56,0:05:54.22,Default,,0,0,0,,No, Eddie, he's my friend.
+Dialogue: 0,0:05:54.26,0:05:56.83,Default,,0,0,0,,Morty, these are my\Nkids, The Tina-Teers.
+Dialogue: 0,0:05:56.87,0:05:57.96,Default,,0,0,0,,Oh, hey.
+Dialogue: 0,0:05:58.00,0:05:59.36,Default,,0,0,0,,Tina, girl, have\Nyou gained weight?
+Dialogue: 0,0:05:59.40,0:06:01.20,Default,,0,0,0,,Uh, well, I had a plant-based\Ndoughnut yesterday.
+Dialogue: 0,0:06:01.23,0:06:02.40,Default,,0,0,0,,Just a half.
+Dialogue: 0,0:06:02.44,0:06:04.53,Default,,0,0,0,,Sugar is worst thing\Nfor figure, darling.
+Dialogue: 0,0:06:04.58,0:06:06.06,Default,,0,0,0,,You want to be ugly?
+Dialogue: 0,0:06:06.10,0:06:07.88,Default,,0,0,0,,Heh, I-I thought\Nthey'd be younger.
+Dialogue: 0,0:06:07.93,0:06:09.84,Default,,0,0,0,,They've been manifesting\Nme since the mid-'90s.
+Dialogue: 0,0:06:09.89,0:06:12.24,Default,,0,0,0,,A lot has changed since then.
+Dialogue: 0,0:06:12.28,0:06:13.63,Default,,0,0,0,,This is freaking you out, huh?
+Dialogue: 0,0:06:13.67,0:06:15.59,Default,,0,0,0,,It is a lot to take in.
+Dialogue: 0,0:06:15.63,0:06:16.94,Default,,0,0,0,,I understand.
+Dialogue: 0,0:06:16.98,0:06:19.29,Default,,0,0,0,,Well, I guess I'd better go.
+Dialogue: 0,0:06:19.33,0:06:20.68,Default,,0,0,0,,See you around.
+Dialogue: 0,0:06:20.72,0:06:22.38,Default,,0,0,0,,Hi-de-ho, TV 58!
+Dialogue: 0,0:06:22.42,0:06:23.70,Default,,0,0,0,,Planetina, you\Nsingle-handily saved
+Dialogue: 0,0:06:23.73,0:06:24.94,Default,,0,0,0,,a National Forest with ease.
+Dialogue: 0,0:06:24.99,0:06:26.73,Default,,0,0,0,,I do what I can, but\NI can't do it alone!
+Dialogue: 0,0:06:26.77,0:06:28.47,Default,,0,0,0,,And who's your\Nfriend over there?
+Dialogue: 0,0:06:28.51,0:06:29.99,Default,,0,0,0,,Oh! This is Morty Smith.
+Dialogue: 0,0:06:30.04,0:06:32.78,Default,,0,0,0,,He traveled 200 miles just\Nto save a rabbit from the fire.
+Dialogue: 0,0:06:32.82,0:06:34.26,Default,,0,0,0,,He's a very special guy.
+Dialogue: 0,0:06:34.30,0:06:35.39,Default,,0,0,0,,So, are you two dating?
+Dialogue: 0,0:06:35.43,0:06:37.48,Default,,0,0,0,,Oh, um, w-- I-I-I --
+Dialogue: 0,0:06:37.52,0:06:40.09,Default,,0,0,0,,Yes, we are.
+Dialogue: 0,0:06:41.61,0:06:43.05,Default,,0,0,0,,Fuck love. Fuck love.
+Dialogue: 0,0:06:43.09,0:06:44.44,Default,,0,0,0,,All right, time\Nto set the rules.
+Dialogue: 0,0:06:44.49,0:06:45.44,Default,,0,0,0,,Lay it on me. No whining.
+Dialogue: 0,0:06:45.49,0:06:46.44,Default,,0,0,0,,Done. No crying.
+Dialogue: 0,0:06:46.49,0:06:47.79,Default,,0,0,0,,As if.
+Dialogue: 0,0:06:47.84,0:06:49.47,Default,,0,0,0,,And absolutely, positively\Nno getting attached.
+Dialogue: 0,0:06:49.49,0:06:52.15,Default,,0,0,0,,We're here to smash max\Nass -- quantity over quality.
+Dialogue: 0,0:06:52.19,0:06:53.54,Default,,0,0,0,,Deal? Deal!
+Dialogue: 0,0:06:53.58,0:06:55.58,Default,,0,0,0,,I'm gonna eat so much\Nass, you're gonna shit.
+Dialogue: 0,0:06:55.63,0:06:57.30,Default,,0,0,0,,Check this out. This is\Ngonna be me at the party --
+Dialogue: 0,0:06:57.32,0:06:58.46,Default,,0,0,0,,b-b-laaaah!
+Dialogue: 0,0:06:58.50,0:06:59.98,Default,,0,0,0,,B-b-blaaaah! Oh,\Nis that another ass?
+Dialogue: 0,0:07:00.02,0:07:01.94,Default,,0,0,0,,Don't mind if I-- b-b-blaaaah!
+Dialogue: 0,0:07:01.98,0:07:04.77,Default,,0,0,0,,Ho-ho! This'll be me across\Nthe room -- "Excuse me, miss.
+Dialogue: 0,0:07:04.81,0:07:06.46,Default,,0,0,0,,It appears that you\Nhave an uneaten ass.
+Dialogue: 0,0:07:06.51,0:07:08.47,Default,,0,0,0,,Allow me -- lalalalalaaah!
+Dialogue: 0,0:07:08.51,0:07:09.53,Default,,0,0,0,,- Lalalalalaaah!\N- B-b-blaaaah!
+Dialogue: 0,0:07:09.55,0:07:11.56,Default,,0,0,0,,B-b-blaaaah!
+Dialogue: 0,0:07:13.69,0:07:15.95,Default,,0,0,0,,Whoo! Fucking super nova party!
+Dialogue: 0,0:07:16.00,0:07:17.78,Default,,0,0,0,,Love is a lie! Hack the planet!
+Dialogue: 0,0:07:17.82,0:07:19.15,Default,,0,0,0,,The world's ending,\Nand for some reason,
+Dialogue: 0,0:07:19.17,0:07:21.26,Default,,0,0,0,,I want to die with you\Nmore than anyone else.
+Dialogue: 0,0:07:21.31,0:07:22.35,Default,,0,0,0,,Wow!
+Dialogue: 0,0:07:22.39,0:07:23.53,Default,,0,0,0,,Yo, Rick, don't look now,
+Dialogue: 0,0:07:23.57,0:07:25.96,Default,,0,0,0,,but someone's\Ngiving you the big eye.
+Dialogue: 0,0:07:27.62,0:07:28.98,Default,,0,0,0,,'Scuse me. I got\Nto see a man about
+Dialogue: 0,0:07:29.01,0:07:31.53,Default,,0,0,0,,a horse I'd rather\Nhave sex with.
+Dialogue: 0,0:07:31.58,0:07:32.66,Default,,0,0,0,,Aah!
+Dialogue: 0,0:07:32.71,0:07:34.01,Default,,0,0,0,,Hello. I'm Rick.
+Dialogue: 0,0:07:34.06,0:07:36.49,Default,,0,0,0,,Hey. So, the world's\Nending, and for some reason,
+Dialogue: 0,0:07:36.54,0:07:38.50,Default,,0,0,0,,I want to die with you\Nmore than anyone else.
+Dialogue: 0,0:07:38.54,0:07:39.58,Default,,0,0,0,,Hello.
+Dialogue: 0,0:07:39.63,0:07:40.63,Default,,0,0,0,,Have fun, Grandpa Rick!
+Dialogue: 0,0:07:40.67,0:07:42.98,Default,,0,0,0,,No commitments!
+Dialogue: 0,0:07:43.02,0:07:47.64,Default,,0,0,0,,♪ I flew to you on an airplane
+Dialogue: 0,0:07:50.03,0:07:56.17,Default,,0,0,0,,♪ I was afraid that\Nyou gave me strength ♪
+Dialogue: 0,0:07:56.21,0:08:02.52,Default,,0,0,0,,♪ Forever, birds\Nwere soul twin loves ♪
+Dialogue: 0,0:08:02.56,0:08:04.52,Default,,0,0,0,,♪ Baby, come back to me
+Dialogue: 0,0:08:04.57,0:08:07.70,Default,,0,0,0,,♪ Baby, come back like it was
+Dialogue: 0,0:08:08.13,0:08:09.18,Default,,0,0,0,,Surprise!
+Dialogue: 0,0:08:09.22,0:08:10.22,Default,,0,0,0,,What are you doing here?
+Dialogue: 0,0:08:10.27,0:08:11.62,Default,,0,0,0,,Mmm!
+Dialogue: 0,0:08:11.66,0:08:13.75,Default,,0,0,0,,I told my kids I went\Nout to recycle batteries.
+Dialogue: 0,0:08:13.79,0:08:16.14,Default,,0,0,0,,All kidding aside,\Neveryone should discard
+Dialogue: 0,0:08:16.19,0:08:19.80,Default,,0,0,0,,used batteries at\Nproper disposal centers
+Dialogue: 0,0:08:19.84,0:08:22.15,Default,,0,0,0,,instead of tossing them\Ninto a regular waste bin.
+Dialogue: 0,0:08:22.19,0:08:23.11,Default,,0,0,0,,Thanks for the tip.
+Dialogue: 0,0:08:23.15,0:08:26.72,Default,,0,0,0,,♪ Flowers never last forever
+Dialogue: 0,0:08:26.76,0:08:29.24,Default,,0,0,0,,♪ But we can make\Nit past forever ♪
+Dialogue: 0,0:08:30.33,0:08:31.68,Default,,0,0,0,,♪ Baby, come home to me
+Dialogue: 0,0:08:31.72,0:08:34.99,Default,,0,0,0,,♪ Baby, you're home with me
+Dialogue: 0,0:08:38.99,0:08:41.30,Default,,0,0,0,,Solus is collapsing\Nin five zip-zops.
+Dialogue: 0,0:08:41.34,0:08:42.60,Default,,0,0,0,,If we time it right,
+Dialogue: 0,0:08:42.65,0:08:44.39,Default,,0,0,0,,we can skeet together\Nas the sun explodes.
+Dialogue: 0,0:08:44.43,0:08:45.74,Default,,0,0,0,,Sounds ah-mazing.
+Dialogue: 0,0:08:45.78,0:08:47.83,Default,,0,0,0,,Say, I think I left my\Npurse back at the bar.
+Dialogue: 0,0:08:47.87,0:08:49.61,Default,,0,0,0,,Can both of you\Ngo get it for me?
+Dialogue: 0,0:08:49.65,0:08:51.74,Default,,0,0,0,,Anything for you, Mrs. Obama.
+Dialogue: 0,0:08:51.79,0:08:53.22,Default,,0,0,0,,Time to ghost, Grandpa Rick.
+Dialogue: 0,0:08:53.27,0:08:55.40,Default,,0,0,0,,{\i1}- Righty-right.\N- Meet me at the car.
+Dialogue: 0,0:08:55.44,0:08:57.97,Default,,0,0,0,,One of these has to be\Nhers. Where'd she go?
+Dialogue: 0,0:08:58.01,0:08:59.58,Default,,0,0,0,,I guess we'll have\Nto start without her.
+Dialogue: 0,0:08:59.62,0:09:00.67,Default,,0,0,0,,Oh, her loss.
+Dialogue: 0,0:09:00.71,0:09:02.89,Default,,0,0,0,,B-b-blaaaaaaaaah!
+Dialogue: 0,0:09:03.76,0:09:06.11,Default,,0,0,0,,Whoo! Planet\Nnumber two, let's do it!
+Dialogue: 0,0:09:06.15,0:09:08.24,Default,,0,0,0,,Sorry, I took so long. I\Nhad to ditch some clingers.
+Dialogue: 0,0:09:08.28,0:09:10.59,Default,,0,0,0,,Let's do it. Up the butt, y'all.
+Dialogue: 0,0:09:10.63,0:09:11.94,Default,,0,0,0,,Geez, you okay to drive?
+Dialogue: 0,0:09:11.98,0:09:12.76,Default,,0,0,0,,Shiii!
+Dialogue: 0,0:09:12.81,0:09:14.90,Default,,0,0,0,,'Course, I-I-I'm mable.
+Dialogue: 0,0:09:14.94,0:09:17.20,Default,,0,0,0,,Buckle up.
+Dialogue: 0,0:09:20.95,0:09:22.30,Default,,0,0,0,,Yeah!
+Dialogue: 0,0:09:22.95,0:09:25.56,Default,,0,0,0,,Whoo! The best week of my life!
+Dialogue: 0,0:09:25.60,0:09:26.60,Default,,0,0,0,,{\i1}Hello.
+Dialogue: 0,0:09:26.65,0:09:27.87,Default,,0,0,0,,What was that? Nothin'.
+Dialogue: 0,0:09:27.91,0:09:30.17,Default,,0,0,0,,Who wants to see\Nthe most radadelic
+Dialogue: 0,0:09:30.22,0:09:31.74,Default,,0,0,0,,lady-version of a super hero?
+Dialogue: 0,0:09:32.78,0:09:34.53,Default,,0,0,0,,- Fire!\N- Water!
+Dialogue: 0,0:09:34.57,0:09:37.09,Default,,0,0,0,,- Air!\N- And Dirt!
+Dialogue: 0,0:09:40.31,0:09:42.53,Default,,0,0,0,,Oh, no, the convention.\NMorty, wake up!
+Dialogue: 0,0:09:42.58,0:09:43.77,Default,,0,0,0,,- We overslept.\N- What's happening?
+Dialogue: 0,0:09:43.80,0:09:45.03,Default,,0,0,0,,Hey, there's a\Nlittle boy on her!
+Dialogue: 0,0:09:45.06,0:09:46.80,Default,,0,0,0,,Oh, d-d-drop the curtain!
+Dialogue: 0,0:09:46.84,0:09:47.80,Default,,0,0,0,,There is no curtain!
+Dialogue: 0,0:09:47.84,0:09:48.93,Default,,0,0,0,,Idiots, zap her away!
+Dialogue: 0,0:09:48.97,0:09:50.32,Default,,0,0,0,,No, no, no. Wait, I-I --
+Dialogue: 0,0:09:50.37,0:09:51.63,Default,,0,0,0,,- Whoa!\N- Security!
+Dialogue: 0,0:09:51.67,0:09:53.02,Default,,0,0,0,,What did you do?\NB-Bring her back!
+Dialogue: 0,0:09:53.07,0:09:54.76,Default,,0,0,0,,- No! Let me go!\N- Sorry, folks.
+Dialogue: 0,0:09:54.81,0:09:56.46,Default,,0,0,0,,Planetina will be\Nback in a moment.
+Dialogue: 0,0:09:56.50,0:10:00.64,Default,,0,0,0,,Until then, who wants a limited\Nedition Funko for only $50?
+Dialogue: 0,0:10:01.77,0:10:03.55,Default,,0,0,0,,This is very bad.
+Dialogue: 0,0:10:03.60,0:10:04.69,Default,,0,0,0,,We are about to close deal.
+Dialogue: 0,0:10:04.73,0:10:06.43,Default,,0,0,0,,We cannot afford controversy.
+Dialogue: 0,0:10:06.47,0:10:07.65,Default,,0,0,0,,Don't you worry.
+Dialogue: 0,0:10:07.69,0:10:09.91,Default,,0,0,0,,I know how ta deal\Nwith this Morty kid.
+Dialogue: 0,0:10:14.26,0:10:17.26,Default,,0,0,0,,Hey, a bunch of us are\Ngoing over to Hibler's place
+Dialogue: 0,0:10:17.31,0:10:18.66,Default,,0,0,0,,to shoot ourselves.
+Dialogue: 0,0:10:18.70,0:10:20.27,Default,,0,0,0,,Y-You want to come with?
+Dialogue: 0,0:10:20.31,0:10:22.49,Default,,0,0,0,,Sorry, but no man's tying\Ndown Sum-Sum tonight.
+Dialogue: 0,0:10:22.53,0:10:23.49,Default,,0,0,0,,Hit the dicks.
+Dialogue: 0,0:10:23.53,0:10:24.66,Default,,0,0,0,,Your loss, honey.
+Dialogue: 0,0:10:24.71,0:10:27.40,Default,,0,0,0,,You could have\Nhad allllllll this.
+Dialogue: 0,0:10:28.84,0:10:31.97,Default,,0,0,0,,Hey, check it out! There's\Nold people dancing!
+Dialogue: 0,0:10:40.72,0:10:42.51,Default,,0,0,0,,Damn, girl. Your moves is tight.
+Dialogue: 0,0:10:42.55,0:10:43.73,Default,,0,0,0,,-Hello. Rick!
+Dialogue: 0,0:10:43.77,0:10:46.34,Default,,0,0,0,,What the WTF is that\NMorglutzian doing here?
+Dialogue: 0,0:10:46.38,0:10:48.16,Default,,0,0,0,,Morglutzian? She's --\NShe's not Morglutzian.
+Dialogue: 0,0:10:48.21,0:10:50.56,Default,,0,0,0,,She's the only blue person\Nhere without three eyes!
+Dialogue: 0,0:10:50.60,0:10:53.43,Default,,0,0,0,,Okay, fine. B-Busted.\NThi-Thi-This is, uh, Daphne.
+Dialogue: 0,0:10:53.47,0:10:55.13,Default,,0,0,0,,Daphne, this is Summer,\Nmy granddaughter.
+Dialogue: 0,0:10:55.17,0:10:57.09,Default,,0,0,0,,Granddaughter? Hello.
+Dialogue: 0,0:10:57.13,0:10:58.72,Default,,0,0,0,,Daphne heard about\Nour little party crawl,
+Dialogue: 0,0:10:58.74,0:10:59.85,Default,,0,0,0,,and I told her she\Ncould come with.
+Dialogue: 0,0:10:59.87,0:11:01.00,Default,,0,0,0,,I-I-In the trunk.
+Dialogue: 0,0:11:01.05,0:11:02.57,Default,,0,0,0,,What in the actual fuck, Rick?
+Dialogue: 0,0:11:02.61,0:11:03.92,Default,,0,0,0,,We said no commitments!
+Dialogue: 0,0:11:03.96,0:11:06.79,Default,,0,0,0,,This was to be our\NApocalypse Party-crawl!
+Dialogue: 0,0:11:06.84,0:11:08.36,Default,,0,0,0,,You broke the rules!
+Dialogue: 0,0:11:08.40,0:11:10.29,Default,,0,0,0,,Squares follow rules, Summer.\NDaphne's down to freak.
+Dialogue: 0,0:11:10.32,0:11:12.71,Default,,0,0,0,,She's up for any sick,\Nnasty thing I want to do.
+Dialogue: 0,0:11:12.75,0:11:14.54,Default,,0,0,0,,Hello. Oh, yeah, baby.
+Dialogue: 0,0:11:18.06,0:11:19.85,Default,,0,0,0,,All right, fellas, take five.
+Dialogue: 0,0:11:19.89,0:11:21.85,Default,,0,0,0,,He ain't gonna\Ngive me any trouble.
+Dialogue: 0,0:11:21.89,0:11:23.20,Default,,0,0,0,,Where's Planetina?
+Dialogue: 0,0:11:23.24,0:11:25.05,Default,,0,0,0,,- Don't you worry about her.\N- I want to see her!
+Dialogue: 0,0:11:25.07,0:11:27.55,Default,,0,0,0,,Planetina's got a\Nlot of responsibilities.
+Dialogue: 0,0:11:27.59,0:11:29.03,Default,,0,0,0,,People depend on her.
+Dialogue: 0,0:11:29.07,0:11:30.51,Default,,0,0,0,,And you, my friend,
+Dialogue: 0,0:11:30.55,0:11:32.47,Default,,0,0,0,,are a distraction we\Ncan't afford right now.
+Dialogue: 0,0:11:32.51,0:11:34.12,Default,,0,0,0,,She's just a product\Nto you, isn't she?
+Dialogue: 0,0:11:34.17,0:11:35.95,Default,,0,0,0,,Something to make money off of.
+Dialogue: 0,0:11:35.99,0:11:37.39,Default,,0,0,0,,W-Well, Planetina's\Nmore than that.
+Dialogue: 0,0:11:37.43,0:11:39.31,Default,,0,0,0,,She's a brilliant, living\Nthing, and I love her.
+Dialogue: 0,0:11:39.35,0:11:42.39,Default,,0,0,0,,Oh, you love her?\NWell, guess what.
+Dialogue: 0,0:11:42.44,0:11:43.79,Default,,0,0,0,,We own her.
+Dialogue: 0,0:11:43.83,0:11:45.18,Default,,0,0,0,,But not for long, of course.
+Dialogue: 0,0:11:45.22,0:11:47.75,Default,,0,0,0,,We're gonna sell her\Nto some Arab overseas.
+Dialogue: 0,0:11:47.79,0:11:49.14,Default,,0,0,0,,Fire.
+Dialogue: 0,0:11:49.18,0:11:50.92,Default,,0,0,0,,As for you, maybe she won't
+Dialogue: 0,0:11:50.97,0:11:53.53,Default,,0,0,0,,love you so much if you\Nain't so pretty no more.
+Dialogue: 0,0:11:53.58,0:11:54.58,Default,,0,0,0,,Stop! Yah!
+Dialogue: 0,0:11:54.62,0:11:55.75,Default,,0,0,0,,Ow!
+Dialogue: 0,0:11:55.80,0:11:57.28,Default,,0,0,0,,Y-You want to fuck\Nwith me? Do you?
+Dialogue: 0,0:11:57.32,0:11:59.32,Default,,0,0,0,,Stupid fuckin' shit hole!
+Dialogue: 0,0:11:59.37,0:12:00.37,Default,,0,0,0,,Aaaaaah!
+Dialogue: 0,0:12:01.59,0:12:03.76,Default,,0,0,0,,Boss, what's\Nhappening? Let us in!
+Dialogue: 0,0:12:03.81,0:12:04.76,Default,,0,0,0,,Aah!
+Dialogue: 0,0:12:04.81,0:12:06.46,Default,,0,0,0,,Fire!
+Dialogue: 0,0:12:07.85,0:12:10.20,Default,,0,0,0,,Fire!
+Dialogue: 0,0:12:11.81,0:12:13.77,Default,,0,0,0,,Can we conclude our business?
+Dialogue: 0,0:12:13.82,0:12:15.29,Default,,0,0,0,,I'm eager to celebrate\Nmy purchase of
+Dialogue: 0,0:12:15.34,0:12:17.78,Default,,0,0,0,,Planetina over dinner,\Nand these infant seals
+Dialogue: 0,0:12:17.82,0:12:19.08,Default,,0,0,0,,aren't getting any younger.
+Dialogue: 0,0:12:19.12,0:12:20.74,Default,,0,0,0,,Momentarily, comrade.
+Dialogue: 0,0:12:20.78,0:12:22.91,Default,,0,0,0,,Soon, our partner will return.
+Dialogue: 0,0:12:22.95,0:12:25.17,Default,,0,0,0,,Ugh! What is taking\NEddie so long?
+Dialogue: 0,0:12:25.22,0:12:26.70,Default,,0,0,0,,His phone keep\Ngoing to voicemail.
+Dialogue: 0,0:12:26.74,0:12:28.70,Default,,0,0,0,,{\i1}♪ Start leaving a message
+Dialogue: 0,0:12:28.74,0:12:30.79,Default,,0,0,0,,{\i1}♪ I can't make it to the phone ♪
+Dialogue: 0,0:12:30.83,0:12:32.79,Default,,0,0,0,,{\i1}Just kidding. It's\NEddie. Go fuck yourself.
+Dialogue: 0,0:12:34.01,0:12:35.31,Default,,0,0,0,,Which one of you\Nordered a pizza?
+Dialogue: 0,0:12:35.36,0:12:37.32,Default,,0,0,0,,No one order\Npizza. What is this?
+Dialogue: 0,0:12:37.36,0:12:41.49,Default,,0,0,0,,Well, I got a cheesy Italian,\Nextra crispy just for you.
+Dialogue: 0,0:12:42.32,0:12:44.37,Default,,0,0,0,,I know those cheek\Nbones like they're me own!
+Dialogue: 0,0:12:44.41,0:12:45.28,Default,,0,0,0,,It's Eddie!
+Dialogue: 0,0:12:45.32,0:12:46.80,Default,,0,0,0,,Fucking Mother! Kill him!
+Dialogue: 0,0:12:46.85,0:12:48.98,Default,,0,0,0,,- Stone! Stone!\N- Fire!
+Dialogue: 0,0:12:51.29,0:12:52.64,Default,,0,0,0,,Aah!
+Dialogue: 0,0:12:54.59,0:12:55.68,Default,,0,0,0,,Airs!
+Dialogue: 0,0:12:56.86,0:12:58.86,Default,,0,0,0,,Cold Water! Cold Water!
+Dialogue: 0,0:12:58.90,0:13:00.56,Default,,0,0,0,,Dirt!
+Dialogue: 0,0:13:00.60,0:13:02.17,Default,,0,0,0,,Fire!
+Dialogue: 0,0:13:03.52,0:13:04.65,Default,,0,0,0,,Wa--
+Dialogue: 0,0:13:05.82,0:13:06.96,Default,,0,0,0,,Airs.
+Dialogue: 0,0:13:07.00,0:13:09.17,Default,,0,0,0,,Now we can be\Ntogether, Planetina.
+Dialogue: 0,0:13:09.22,0:13:11.00,Default,,0,0,0,,I am an individual character.
+Dialogue: 0,0:13:11.05,0:13:12.57,Default,,0,0,0,,I represent no group.
+Dialogue: 0,0:13:12.61,0:13:13.66,Default,,0,0,0,,- Fire!\N- Aaah!
+Dialogue: 0,0:13:13.70,0:13:15.49,Default,,0,0,0,,Water! Dirt! Airs!
+Dialogue: 0,0:13:17.70,0:13:18.71,Default,,0,0,0,,Aah!
+Dialogue: 0,0:13:18.75,0:13:21.27,Default,,0,0,0,,Not good!
+Dialogue: 0,0:13:23.89,0:13:24.97,Default,,0,0,0,,Blib...
+Dialogue: 0,0:13:25.02,0:13:26.32,Default,,0,0,0,,Naga...
+Dialogue: 0,0:13:26.37,0:13:27.50,Default,,0,0,0,,Threve...
+Dialogue: 0,0:13:27.54,0:13:29.50,Default,,0,0,0,,Verillex... Gam!
+Dialogue: 0,0:13:29.54,0:13:31.46,Default,,0,0,0,,Happy Apocalypse!
+Dialogue: 0,0:13:31.50,0:13:33.02,Default,,0,0,0,,- Oh, my gaaah!\N- This is awful!
+Dialogue: 0,0:13:33.07,0:13:34.68,Default,,0,0,0,,Why were we cheering?!
+Dialogue: 0,0:13:39.07,0:13:41.64,Default,,0,0,0,,Hello. Got any agua around here?
+Dialogue: 0,0:13:41.69,0:13:42.95,Default,,0,0,0,,Mama's got to hydrate.
+Dialogue: 0,0:13:42.99,0:13:44.43,Default,,0,0,0,,Glove box.
+Dialogue: 0,0:13:44.47,0:13:46.56,Default,,0,0,0,,Oh, yeah.
+Dialogue: 0,0:13:47.39,0:13:49.74,Default,,0,0,0,,Rick is the coolest guy ever.
+Dialogue: 0,0:13:49.78,0:13:51.17,Default,,0,0,0,,We're total soul mates.
+Dialogue: 0,0:13:51.22,0:13:53.61,Default,,0,0,0,,He's gonna show me the\Nwonders of the universe.
+Dialogue: 0,0:13:53.65,0:13:55.35,Default,,0,0,0,,Ha! Once we get\Nto the next planet,
+Dialogue: 0,0:13:55.39,0:13:57.88,Default,,0,0,0,,Grandpa Rick is gonna\Nditch you, like, so fast.
+Dialogue: 0,0:13:57.92,0:13:59.62,Default,,0,0,0,,Oh, is that so?
+Dialogue: 0,0:13:59.66,0:14:01.88,Default,,0,0,0,,Uh-huh, nobody is tying\Nthat guy down -- ever.
+Dialogue: 0,0:14:01.92,0:14:04.84,Default,,0,0,0,,The only chick seeing the\Nuniverse with Rick is me.
+Dialogue: 0,0:14:04.88,0:14:07.84,Default,,0,0,0,,Not if I keep Rick's\Nmouth full of these.
+Dialogue: 0,0:14:08.45,0:14:10.32,Default,,0,0,0,,Oh, my -- Oh, my God.
+Dialogue: 0,0:14:10.37,0:14:12.76,Default,,0,0,0,,Oh, yeah. That's\Nright, girlfriend.
+Dialogue: 0,0:14:12.80,0:14:14.33,Default,,0,0,0,,This is what you're up against.
+Dialogue: 0,0:14:14.37,0:14:16.33,Default,,0,0,0,,Wars were fought over these.
+Dialogue: 0,0:14:16.37,0:14:19.94,Default,,0,0,0,,They've ruined kings,\Ninspired presidents.
+Dialogue: 0,0:14:19.98,0:14:22.94,Default,,0,0,0,,A hundred songs and\Nnine national anthems
+Dialogue: 0,0:14:22.99,0:14:24.55,Default,,0,0,0,,have been written about them.
+Dialogue: 0,0:14:24.60,0:14:27.69,Default,,0,0,0,,Best set of\Nelbow-titties on Morglutz.
+Dialogue: 0,0:14:27.73,0:14:32.21,Default,,0,0,0,,And now, thanks to Rick,\Nthe best in the galaxy.
+Dialogue: 0,0:14:32.26,0:14:33.74,Default,,0,0,0,,You want me to put them away?
+Dialogue: 0,0:14:33.78,0:14:35.04,Default,,0,0,0,,Please. Sure.
+Dialogue: 0,0:14:35.09,0:14:37.48,Default,,0,0,0,,But only because you're\NRick's granddaughter.
+Dialogue: 0,0:14:37.52,0:14:39.48,Default,,0,0,0,,Daph? Daphne?\NWhere are ya, baby?
+Dialogue: 0,0:14:39.53,0:14:41.22,Default,,0,0,0,,Papa needs some\Nmore elbow grease.
+Dialogue: 0,0:14:41.27,0:14:43.92,Default,,0,0,0,,Comin'! Ya might want to\Nkeep your eyes on the road.
+Dialogue: 0,0:14:43.97,0:14:46.53,Default,,0,0,0,,It's about to get sloppy.
+Dialogue: 0,0:14:46.58,0:14:48.19,Default,,0,0,0,,Hello! Hello.
+Dialogue: 0,0:14:48.23,0:14:50.41,Default,,0,0,0,,Ugh!
+Dialogue: 0,0:14:50.45,0:14:52.67,Default,,0,0,0,,Then I put my sunglasses\Non and walked out
+Dialogue: 0,0:14:52.71,0:14:53.80,Default,,0,0,0,,like nothing happened.
+Dialogue: 0,0:14:53.84,0:14:55.32,Default,,0,0,0,,I'm finally free.
+Dialogue: 0,0:14:55.37,0:14:56.76,Default,,0,0,0,,All because of Morty.
+Dialogue: 0,0:14:56.80,0:14:59.07,Default,,0,0,0,,What a romantic story\Nabout our son killing
+Dialogue: 0,0:14:59.11,0:15:00.59,Default,,0,0,0,,a room full of people.
+Dialogue: 0,0:15:00.63,0:15:02.07,Default,,0,0,0,,Your turn.
+Dialogue: 0,0:15:02.11,0:15:03.42,Default,,0,0,0,,Uh, seven.
+Dialogue: 0,0:15:03.46,0:15:05.81,Default,,0,0,0,,One, two, three,\Nfour, five, six, seven!
+Dialogue: 0,0:15:05.86,0:15:08.03,Default,,0,0,0,,Oyyy, don't punch my lunch!
+Dialogue: 0,0:15:08.08,0:15:09.25,Default,,0,0,0,,A-ha! Eat it!
+Dialogue: 0,0:15:09.29,0:15:10.60,Default,,0,0,0,,I'm out of food cards.
+Dialogue: 0,0:15:10.64,0:15:12.69,Default,,0,0,0,,How 'bout I loan you\Ntwo quiche at 10%?
+Dialogue: 0,0:15:12.73,0:15:14.69,Default,,0,0,0,,That's so generous.
+Dialogue: 0,0:15:14.73,0:15:16.26,Default,,0,0,0,,My turn!
+Dialogue: 0,0:15:16.30,0:15:17.74,Default,,0,0,0,,Double sixes, baby!
+Dialogue: 0,0:15:17.78,0:15:19.96,Default,,0,0,0,,One, two, three... So,\Nwhat's next for Planetina?
+Dialogue: 0,0:15:20.00,0:15:22.39,Default,,0,0,0,,Well, now that I'm not\Ndistracted by book signings
+Dialogue: 0,0:15:22.44,0:15:25.09,Default,,0,0,0,,and publicity stunts, Morty\Nand I can concentrate on
+Dialogue: 0,0:15:25.14,0:15:26.36,Default,,0,0,0,,more important things.
+Dialogue: 0,0:15:26.40,0:15:27.14,Default,,0,0,0,,Like school.
+Dialogue: 0,0:15:27.18,0:15:28.53,Default,,0,0,0,,Like moving in.
+Dialogue: 0,0:15:28.57,0:15:30.32,Default,,0,0,0,,Planetina doesn't have\Na place to stay now,
+Dialogue: 0,0:15:30.36,0:15:31.60,Default,,0,0,0,,so I said she\Ncould live with us.
+Dialogue: 0,0:15:31.62,0:15:33.62,Default,,0,0,0,,- Holy shit. Morty, no.\N- I'm so full!
+Dialogue: 0,0:15:33.67,0:15:35.02,Default,,0,0,0,,- What do you mean, no?\N- Whoo!
+Dialogue: 0,0:15:35.06,0:15:36.28,Default,,0,0,0,,Don't punch my lunch.
+Dialogue: 0,0:15:36.32,0:15:37.47,Default,,0,0,0,,I wouldn't be a\Nburden, Mrs. Smith.
+Dialogue: 0,0:15:37.50,0:15:39.19,Default,,0,0,0,,I only want to\Nspend as much time
+Dialogue: 0,0:15:39.24,0:15:40.63,Default,,0,0,0,,as possible with your son.
+Dialogue: 0,0:15:40.67,0:15:42.55,Default,,0,0,0,,My son is 14, miss.
+Dialogue: 0,0:15:42.59,0:15:44.55,Default,,0,0,0,,I'm sorry, Morty.\NYou're way too young.
+Dialogue: 0,0:15:44.59,0:15:46.81,Default,,0,0,0,,But y-y-y-you were a teenager\Nwhen Dad got you pregnant.
+Dialogue: 0,0:15:46.85,0:15:48.16,Default,,0,0,0,,I was 17!
+Dialogue: 0,0:15:48.20,0:15:49.99,Default,,0,0,0,,That's at least 26 in boy years.
+Dialogue: 0,0:15:50.03,0:15:52.99,Default,,0,0,0,,I'm sure Planetina is very\Nnice, but when you're a teenager,
+Dialogue: 0,0:15:53.03,0:15:54.51,Default,,0,0,0,,love is fleeting, at best.
+Dialogue: 0,0:15:54.56,0:15:57.82,Default,,0,0,0,,You underestimate Morty.\NHe is a very mature young man.
+Dialogue: 0,0:15:57.86,0:15:59.13,Default,,0,0,0,,See, Mom? I told you!
+Dialogue: 0,0:15:59.17,0:16:01.52,Default,,0,0,0,,This is not happening.\NEnd of discussion.
+Dialogue: 0,0:16:01.56,0:16:03.83,Default,,0,0,0,,Planetina, I think you\Nshould leave, please.
+Dialogue: 0,0:16:03.87,0:16:05.22,Default,,0,0,0,,Okay, Mrs. Smith.
+Dialogue: 0,0:16:05.26,0:16:06.74,Default,,0,0,0,,Oh, no!
+Dialogue: 0,0:16:06.79,0:16:08.01,Default,,0,0,0,,Mom, I hate you!
+Dialogue: 0,0:16:08.05,0:16:09.29,Default,,0,0,0,,- You suck!\N- Hey, now, it's only a game.
+Dialogue: 0,0:16:09.31,0:16:10.31,Default,,0,0,0,,- Shut up!\N- Shut up!
+Dialogue: 0,0:16:10.36,0:16:11.44,Default,,0,0,0,,- Okay.\N- My whole life,
+Dialogue: 0,0:16:11.49,0:16:12.79,Default,,0,0,0,,I've never fit in anywhere.
+Dialogue: 0,0:16:12.84,0:16:14.34,Default,,0,0,0,,Everything I have to\Nsay is always met with
+Dialogue: 0,0:16:14.36,0:16:15.73,Default,,0,0,0,,an eye roll as if\Nthe act of hearing
+Dialogue: 0,0:16:15.75,0:16:17.67,Default,,0,0,0,,what I have to say is\Nsome exhausting chore.
+Dialogue: 0,0:16:17.71,0:16:19.86,Default,,0,0,0,,Nobody in this family thinks I\Ncan say or do anything right!
+Dialogue: 0,0:16:19.89,0:16:22.11,Default,,0,0,0,,I've been all over the universe,\Nmet hundreds of people,
+Dialogue: 0,0:16:22.15,0:16:24.98,Default,,0,0,0,,and Planetina's the only one\NI've ever met that makes me feel
+Dialogue: 0,0:16:25.02,0:16:27.63,Default,,0,0,0,,like I belong, and you just\Nkicked her out of our house!
+Dialogue: 0,0:16:27.68,0:16:28.72,Default,,0,0,0,,Morty, please --
+Dialogue: 0,0:16:28.77,0:16:30.68,Default,,0,0,0,,I will never\Nforgive you for this!
+Dialogue: 0,0:16:30.72,0:16:35.42,Default,,0,0,0,,♪ Get the sword\Nand throw it far ♪
+Dialogue: 0,0:16:35.47,0:16:37.60,Default,,0,0,0,,♪ Let it shine under\Nthe morning star ♪
+Dialogue: 0,0:16:37.64,0:16:40.34,Default,,0,0,0,,Morty! Morty, come back!
+Dialogue: 0,0:16:43.35,0:16:44.91,Default,,0,0,0,,♪ Who are you?
+Dialogue: 0,0:16:44.96,0:16:48.92,Default,,0,0,0,,♪ Who am I to you?
+Dialogue: 0,0:16:48.96,0:16:51.09,Default,,0,0,0,,♪ I am the antichrist to you
+Dialogue: 0,0:16:55.62,0:17:01.10,Default,,0,0,0,,♪ Fallen from the\Nsky with grace ♪
+Dialogue: 0,0:17:01.15,0:17:06.76,Default,,0,0,0,,♪ Into your arms race
+Dialogue: 0,0:17:15.55,0:17:17.81,Default,,0,0,0,,Get out! All of you,\Nget out of there!
+Dialogue: 0,0:17:17.86,0:17:19.47,Default,,0,0,0,,You're killing the planet!
+Dialogue: 0,0:17:19.51,0:17:21.12,Default,,0,0,0,,Your people\Ndidn't get the votes.
+Dialogue: 0,0:17:21.17,0:17:22.69,Default,,0,0,0,,Leave, or I'll\Nhave you arrested.
+Dialogue: 0,0:17:22.73,0:17:24.56,Default,,0,0,0,,It's you people who\Nshould be arrested.
+Dialogue: 0,0:17:24.60,0:17:27.61,Default,,0,0,0,,Gutting the land, poisoning\Nthe air your children breathe?!
+Dialogue: 0,0:17:27.65,0:17:29.22,Default,,0,0,0,,Can't you see\Nwhat you're doing?!
+Dialogue: 0,0:17:29.26,0:17:31.44,Default,,0,0,0,,Easy for you to say! You\Ncan live how you want!
+Dialogue: 0,0:17:31.48,0:17:33.74,Default,,0,0,0,,We need the jobs.\NLet's go, boys.
+Dialogue: 0,0:17:33.79,0:17:35.14,Default,,0,0,0,,She can't stop us.
+Dialogue: 0,0:17:35.18,0:17:36.83,Default,,0,0,0,,W-We'll get them next time.
+Dialogue: 0,0:17:36.88,0:17:38.14,Default,,0,0,0,,There's no time left!
+Dialogue: 0,0:17:38.18,0:17:40.18,Default,,0,0,0,,Can't you hear the\NEarth screaming?
+Dialogue: 0,0:17:40.23,0:17:41.71,Default,,0,0,0,,You filthy murderers!
+Dialogue: 0,0:17:41.75,0:17:43.01,Default,,0,0,0,,Planetina, stop it!
+Dialogue: 0,0:17:43.06,0:17:46.93,Default,,0,0,0,,There's only one solution\Nfor Earth's pollution!
+Dialogue: 0,0:17:48.45,0:17:50.24,Default,,0,0,0,,Oh, my God, no.
+Dialogue: 0,0:17:50.28,0:17:53.98,Default,,0,0,0,,♪ Who am I to you?
+Dialogue: 0,0:17:54.02,0:17:56.94,Default,,0,0,0,,♪ I am the antichrist to you
+Dialogue: 0,0:17:56.98,0:17:58.86,Default,,0,0,0,,No!
+Dialogue: 0,0:18:01.90,0:18:04.12,Default,,0,0,0,,I can't believe I'm\Nbanging my co-workers.
+Dialogue: 0,0:18:04.17,0:18:05.43,Default,,0,0,0,,And I'm the boss!
+Dialogue: 0,0:18:05.47,0:18:07.95,Default,,0,0,0,,This gay sex with\Nmy Dad is terrific!
+Dialogue: 0,0:18:07.99,0:18:09.43,Default,,0,0,0,,What was I thinking?
+Dialogue: 0,0:18:09.47,0:18:11.17,Default,,0,0,0,,It'll all be over soon!
+Dialogue: 0,0:18:11.22,0:18:13.26,Default,,0,0,0,,Last chance to pee\Non me! Anyone?!
+Dialogue: 0,0:18:13.30,0:18:15.13,Default,,0,0,0,,Okay, Grandpa, the\Nmeteor's almost here.
+Dialogue: 0,0:18:15.18,0:18:17.44,Default,,0,0,0,,- We can go now.\N- Ah, nah, we still got time.
+Dialogue: 0,0:18:17.48,0:18:19.83,Default,,0,0,0,,Well, then stop being in\Nlove and start having fun.
+Dialogue: 0,0:18:19.88,0:18:22.44,Default,,0,0,0,,Ah, love's pretty fun,\NSummer. Just give it a chance.
+Dialogue: 0,0:18:22.49,0:18:23.97,Default,,0,0,0,,It's not even real love!
+Dialogue: 0,0:18:24.01,0:18:26.45,Default,,0,0,0,,Daphne's just with you\Nso she can keep surviving!
+Dialogue: 0,0:18:26.49,0:18:28.89,Default,,0,0,0,,Ah, the young -- so naive.
+Dialogue: 0,0:18:35.02,0:18:36.72,Default,,0,0,0,,Eww, gross.
+Dialogue: 0,0:18:50.21,0:18:51.65,Default,,0,0,0,,Congratulations, Ferkisians!
+Dialogue: 0,0:18:51.69,0:18:53.43,Default,,0,0,0,,Your apocalypse is aborted.
+Dialogue: 0,0:18:53.48,0:18:55.13,Default,,0,0,0,,And, Grandpa, you\Nand I can go home.
+Dialogue: 0,0:18:55.17,0:18:56.30,Default,,0,0,0,,Daphne, you may come with.
+Dialogue: 0,0:18:56.35,0:18:58.39,Default,,0,0,0,,If you want to\Nand don't have to.
+Dialogue: 0,0:18:58.44,0:18:59.72,Default,,0,0,0,,I don't know what you're\Ngetting at, Summer.
+Dialogue: 0,0:18:59.74,0:19:02.31,Default,,0,0,0,,Obviously, Daphne wants to --
+Dialogue: 0,0:19:02.35,0:19:05.66,Default,,0,0,0,,Aw, you cold bitch. Hello?
+Dialogue: 0,0:19:05.70,0:19:07.36,Default,,0,0,0,,Goodbye.
+Dialogue: 0,0:19:07.71,0:19:10.19,Default,,0,0,0,,Hey, she's the one\Nthat saved the world!
+Dialogue: 0,0:19:10.23,0:19:12.02,Default,,0,0,0,,Now we got to go\Nto work tomorrow!
+Dialogue: 0,0:19:13.93,0:19:15.24,Default,,0,0,0,,You fucker!
+Dialogue: 0,0:19:16.72,0:19:18.63,Default,,0,0,0,,Sorry I messed\Nthings up with Daphne.
+Dialogue: 0,0:19:18.67,0:19:20.50,Default,,0,0,0,,Just shut up. I get it.
+Dialogue: 0,0:19:20.55,0:19:23.11,Default,,0,0,0,,- Really? You're not mad?\N- I'm furious.
+Dialogue: 0,0:19:24.07,0:19:26.68,Default,,0,0,0,,But I have to admit, it\Nwas pretty Rick of you
+Dialogue: 0,0:19:26.73,0:19:28.90,Default,,0,0,0,,to avert an apocalypse\Nin a tantrum of cynicism
+Dialogue: 0,0:19:28.95,0:19:31.38,Default,,0,0,0,,just to destroy one\Ndumb relationship.
+Dialogue: 0,0:19:31.43,0:19:33.65,Default,,0,0,0,,Still, sorry.
+Dialogue: 0,0:19:33.69,0:19:36.08,Default,,0,0,0,,Eh, I would've done\Nthe same for you.
+Dialogue: 0,0:19:36.13,0:19:38.17,Default,,0,0,0,,Promise?
+Dialogue: 0,0:19:38.22,0:19:39.17,Default,,0,0,0,,Love you, Grandpa Rick.
+Dialogue: 0,0:19:39.22,0:19:40.91,Default,,0,0,0,,Don't make it weird.
+Dialogue: 0,0:19:54.62,0:19:57.37,Default,,0,0,0,,Please go. I-I-I can't\Nsee you anymore.
+Dialogue: 0,0:19:57.41,0:19:59.50,Default,,0,0,0,,Don't you even want\Nto try to make it work?
+Dialogue: 0,0:19:59.54,0:20:00.50,Default,,0,0,0,,We were so close.
+Dialogue: 0,0:20:00.54,0:20:02.59,Default,,0,0,0,,You murdered 300 people.
+Dialogue: 0,0:20:02.63,0:20:03.85,Default,,0,0,0,,And you murdered my kids.
+Dialogue: 0,0:20:03.89,0:20:06.24,Default,,0,0,0,,They were gonna\Nsell you away forever.
+Dialogue: 0,0:20:06.29,0:20:07.59,Default,,0,0,0,,Eddie was trying to kill me!
+Dialogue: 0,0:20:07.64,0:20:09.59,Default,,0,0,0,,Th-Those miners were innocent.
+Dialogue: 0,0:20:09.64,0:20:12.86,Default,,0,0,0,,Those innocent miners\Nvoted men into power to protect
+Dialogue: 0,0:20:12.90,0:20:14.56,Default,,0,0,0,,their precious jobs\Nso they can buy more
+Dialogue: 0,0:20:14.60,0:20:16.80,Default,,0,0,0,,plastic garbage and eat the\Ncorpses of tortured animals.
+Dialogue: 0,0:20:16.82,0:20:18.65,Default,,0,0,0,,The system is broken, Morty.
+Dialogue: 0,0:20:18.69,0:20:22.26,Default,,0,0,0,,This is the only\Nway I can save Earth,
+Dialogue: 0,0:20:22.30,0:20:23.83,Default,,0,0,0,,the only way I can save you.
+Dialogue: 0,0:20:23.87,0:20:26.87,Default,,0,0,0,,If that's the only way,\NI-I don't want to be saved.
+Dialogue: 0,0:20:26.92,0:20:28.27,Default,,0,0,0,,Please, go.
+Dialogue: 0,0:20:28.31,0:20:31.53,Default,,0,0,0,,But... I love you.
+Dialogue: 0,0:20:31.57,0:20:34.01,Default,,0,0,0,,I-I-I can't -- I-I\Ncan't love you.
+Dialogue: 0,0:20:34.05,0:20:35.49,Default,,0,0,0,,I-I just can't.
+Dialogue: 0,0:20:35.53,0:20:36.53,Default,,0,0,0,,Please understand.
+Dialogue: 0,0:20:36.58,0:20:38.06,Default,,0,0,0,,No.
+Dialogue: 0,0:20:38.10,0:20:42.28,Default,,0,0,0,,I'll go, but don't you dare\Nask me to understand.
+Dialogue: 0,0:20:42.32,0:20:46.11,Default,,0,0,0,,Planetina, I-I'm so sorry.
+Dialogue: 0,0:20:46.15,0:20:48.11,Default,,0,0,0,,Fuck you.
+Dialogue: 0,0:20:58.43,0:21:00.52,Default,,0,0,0,,Morty? Are you all right?
+Dialogue: 0,0:21:00.56,0:21:02.87,Default,,0,0,0,,She's gone, Mom! She's gone!
+Dialogue: 0,0:21:02.91,0:21:04.95,Default,,0,0,0,,I loved her so much!
+Dialogue: 0,0:21:05.00,0:21:06.52,Default,,0,0,0,,I know you did, honey.
+Dialogue: 0,0:21:06.56,0:21:09.05,Default,,0,0,0,,Shh, Mommy's here.
+Dialogue: 0,0:21:09.09,0:21:16.97,Default,,0,0,0,,♪ Let it shine under\Nthe morning star ♪
+Dialogue: 0,0:21:17.27,0:21:18.18,Default,,0,0,0,,{\an5\c&H51ab2b&}Improved by{\c&Hf8fc03&} {\b1}KID{\b0} {\c}\N\N{\an5\c&H51ab2b&}Resynced by{\c&Hf8fc03&} {\b1}KID{\b0} {\c}\N\N{\an5\c&H51ab2b&}Enjoy the movie(s) / show(s)
+Dialogue: 0,0:21:18.36,0:21:21.58,Default,,0,0,0,,♪ Who am I to you? ♪
+Dialogue: 0,0:21:22.75,0:21:27.02,Default,,0,0,0,,♪ I am the antichrist to you ♪
+Dialogue: 0,0:21:29.50,0:21:34.55,Default,,0,0,0,,♪ Fallen from the\Nsky with grace ♪
+Dialogue: 0,0:21:36.16,0:21:40.73,Default,,0,0,0,,♪ Into your arms ♪
+Dialogue: 0,0:21:55.09,0:21:56.44,Default,,0,0,0,,Good morning.
+Dialogue: 0,0:21:56.48,0:21:59.18,Default,,0,0,0,,'Morning.
+Dialogue: 0,0:21:59.23,0:22:00.36,Default,,0,0,0,,Slow day, huh?
+Dialogue: 0,0:22:00.40,0:22:01.66,Default,,0,0,0,,Yep.
+Dialogue: 0,0:22:01.71,0:22:03.97,Default,,0,0,0,,Probably because\Neverybody thought
+Dialogue: 0,0:22:04.01,0:22:08.84,Default,,0,0,0,,the world wouldn't be,\Nyou know, like, here today.
+Dialogue: 0,0:22:08.89,0:22:10.67,Default,,0,0,0,,Mm-hmm. Mom in back?
+Dialogue: 0,0:22:10.72,0:22:12.24,Default,,0,0,0,,Mom's not talking to us.
+Dialogue: 0,0:22:12.28,0:22:13.50,Default,,0,0,0,,Because we had sex?
+Dialogue: 0,0:22:13.54,0:22:15.24,Default,,0,0,0,,Yes. Uh, yeah.
+Dialogue: 0,0:22:15.29,0:22:17.51,Default,,0,0,0,,That makes sense.
+Dialogue: 0,0:22:17.55,0:22:20.99,Default,,0,0,0,,Happy birthday, by the way.

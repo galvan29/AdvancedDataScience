@@ -1,0 +1,2199 @@
+﻿1
+00:00:05,087 --> 00:00:06,047
+We're out of syrup.
+
+2
+00:00:06,172 --> 00:00:07,298
+Huh.
+You know what?
+
+3
+00:00:07,423 --> 00:00:09,717
+Maybe I'll use my intern.
+
+4
+00:00:09,842 --> 00:00:12,136
+- Glootie?
+- Good?
+
+5
+00:00:12,261 --> 00:00:13,961
+- Thanks, Glootie.
+- Anything else?
+
+6
+00:00:14,055 --> 00:00:15,389
+Do you want to develop an app?
+
+7
+00:00:15,473 --> 00:00:17,099
+- No thanks, Glootie.
+- Hey, what's up, Glootie?
+
+8
+00:00:17,183 --> 00:00:18,725
+Hi, Morty.
+Do you want to develop an app?
+
+9
+00:00:18,809 --> 00:00:20,269
+- No thanks.
+- Rick, why does it say,
+
+10
+00:00:20,353 --> 00:00:22,312
+"Do not develop my app,"
+on your intern's forehead?
+
+11
+00:00:22,396 --> 00:00:23,605
+Why, you want to develop one?
+
+12
+00:00:23,689 --> 00:00:24,898
+Ah, I'm glad you asked that, Jerry.
+
+13
+00:00:24,982 --> 00:00:26,567
+It's so <i>you</i> don't develop his app.
+
+14
+00:00:26,651 --> 00:00:28,569
+Glootie, go make some
+photocopies of something.
+
+15
+00:00:28,653 --> 00:00:29,779
+Cool.
+
+16
+00:00:29,904 --> 00:00:31,155
+Well, if anyone wants
+to develop an app with me,
+
+17
+00:00:31,239 --> 00:00:32,281
+I'm down.
+
+18
+00:00:32,406 --> 00:00:34,867
+He seems to <i>really</i> want
+to develop an app.
+
+19
+00:00:34,992 --> 00:00:36,952
+He really does, sweetie,
+but nobody's gonna do that.
+
+20
+00:00:37,036 --> 00:00:38,454
+Now, if you'll excuse me,
+
+21
+00:00:38,579 --> 00:00:40,629
+I've got a quick solo adventure to go on,
+
+22
+00:00:40,748 --> 00:00:43,292
+and this one will <i>not</i> be
+directed by Ron Howard.
+
+23
+00:00:43,417 --> 00:00:44,334
+He's gonna go poop.
+
+24
+00:00:44,418 --> 00:00:46,044
+When Grandpa Rick pats
+his belly like that
+
+25
+00:00:46,128 --> 00:00:47,629
+and leaves without Morty,
+it means he's going to go poop.
+
+26
+00:00:47,713 --> 00:00:49,673
+He's a shy pooper.
+He has a secret pooping place.
+
+27
+00:00:49,757 --> 00:00:51,551
+Man, fuck you, Summer.
+
+28
+00:00:51,676 --> 00:00:54,094
+Honey, why can't you get
+this excited about your SATs?
+
+29
+00:00:54,178 --> 00:00:56,973
+Well, I'm man enough to simply
+say, "I'm going to poop,"
+
+30
+00:00:57,098 --> 00:00:59,642
+and I'd be honored to have
+Ron Howard involved.
+
+31
+00:00:59,767 --> 00:01:00,851
+Good job, hon.
+
+32
+00:01:00,977 --> 00:01:02,977
+- Way to go, Dad.
+- We're rooting for ya.
+
+33
+00:01:06,524 --> 00:01:08,025
+He's really putting you to work, huh?
+
+34
+00:01:08,109 --> 00:01:09,359
+Did you want to develop an app?
+
+35
+00:01:09,443 --> 00:01:11,612
+- I'll pass, Glootie.
+- Hmm, your loss.
+
+36
+00:01:11,737 --> 00:01:13,322
+Oh, yeah?
+Why's that?
+
+37
+00:01:13,447 --> 00:01:14,823
+Eh, it's an app you'd want to develop.
+
+38
+00:01:14,907 --> 00:01:17,285
+- Can I ask what it is?
+- Of course you can.
+
+39
+00:01:17,410 --> 00:01:19,829
+That's always the first step
+in app development.
+
+40
+00:01:19,954 --> 00:01:23,457
+Ah.
+
+41
+00:01:23,583 --> 00:01:24,917
+50/50!
+Final offer!
+
+42
+00:03:21,242 --> 00:03:25,037
+Reverse digestion extrapolation.
+
+43
+00:03:25,162 --> 00:03:26,789
+Time to meet your maker.
+
+44
+00:03:28,541 --> 00:03:29,792
+What are you guys doing?
+
+45
+00:03:29,917 --> 00:03:31,252
+Did you develop an app?
+
+46
+00:03:31,377 --> 00:03:33,295
+Rule number one
+in app development, son...
+
+47
+00:03:33,379 --> 00:03:34,922
+Never follow the rules.
+
+48
+00:03:35,047 --> 00:03:38,050
+Except when the rule is tattooed
+on an alien's forehead, Dad.
+
+49
+00:03:38,175 --> 00:03:39,551
+Why do you think
+Rick would have that rule?
+
+50
+00:03:39,635 --> 00:03:41,094
+'Cause he's a disrupt-o-phobe.
+
+51
+00:03:41,178 --> 00:03:42,513
+No, Dad, no.
+
+52
+00:03:42,638 --> 00:03:44,056
+To keep something horrible
+from happening,
+
+53
+00:03:44,140 --> 00:03:46,058
+something he's too lazy to explain.
+
+54
+00:03:46,183 --> 00:03:47,983
+Guys, we're getting our first users.
+
+55
+00:03:51,105 --> 00:03:53,149
+Whoa, this new app just matched me
+
+56
+00:03:53,274 --> 00:03:55,860
+with a guy that is su my ty.
+
+57
+00:03:55,985 --> 00:03:57,945
+Super my type.
+Learn to abbre.
+
+58
+00:03:58,070 --> 00:03:59,196
+Hey!
+
+59
+00:03:59,321 --> 00:04:01,949
+Your su ty works at Jersey Mike's
+
+60
+00:04:02,074 --> 00:04:04,160
+and sees 25 Phish shows a year.
+
+61
+00:04:04,285 --> 00:04:06,579
+- That is so Danny.
+- Summer!
+
+62
+00:04:06,704 --> 00:04:08,205
+- Danny?
+- Summer Smith?
+
+63
+00:04:08,330 --> 00:04:10,832
+Danny Publits from Lovefinderrz
+with two "R's" and a "Z"?
+
+64
+00:04:10,916 --> 00:04:13,335
+I ran all the way here
+while staring at your profile.
+
+65
+00:04:13,419 --> 00:04:14,920
+I tripped on a fire hydrant
+and fell down,
+
+66
+00:04:15,004 --> 00:04:16,963
+so I'm covered in gravel
+that stuck to my sweat.
+
+67
+00:04:17,047 --> 00:04:18,466
+And even after a shower,
+
+68
+00:04:18,591 --> 00:04:20,509
+I'll still be into a jam band
+for old junkies,
+
+69
+00:04:20,593 --> 00:04:22,719
+but I think this world cares
+too much about bands
+
+70
+00:04:22,803 --> 00:04:24,972
+and too little about love.
+
+71
+00:04:25,097 --> 00:04:27,433
+- And I think I love you.
+- Me, too.
+
+72
+00:04:27,558 --> 00:04:29,769
+Hi, I'm my under-aged daughter's mother.
+
+73
+00:04:29,894 --> 00:04:31,395
+Nice to... whoa!
+
+74
+00:04:31,520 --> 00:04:33,689
+Come on. Just met.
+
+75
+00:04:33,814 --> 00:04:35,232
+Uh, this isn't working.
+
+76
+00:04:35,357 --> 00:04:36,567
+Wait. What are you...
+
+77
+00:04:36,692 --> 00:04:37,860
+Never mind.
+
+78
+00:04:37,985 --> 00:04:40,821
+I quit, I'm gay, and I love Xander.
+
+79
+00:04:40,946 --> 00:04:43,783
+Stupid phones are destroying us.
+
+80
+00:04:43,908 --> 00:04:45,409
+Hey, sweetie.
+
+81
+00:04:45,534 --> 00:04:47,619
+<i>Honey, our daughter
+ran off with a Frisbee golfer</i>
+
+82
+00:04:47,703 --> 00:04:49,287
+<i>because of some app with a really dumb,</i>
+
+83
+00:04:49,371 --> 00:04:50,873
+<i>really forgettable name.</i>
+
+84
+00:04:50,998 --> 00:04:54,627
+<i>Like a really dumb, uncreative,
+super sweaty name.</i>
+
+85
+00:04:54,752 --> 00:04:55,919
+<i>Anyway, I'll be late.
+I love you.</i>
+
+86
+00:04:56,003 --> 00:04:58,130
+Got it.
+I love you, too.
+
+87
+00:04:58,255 --> 00:05:00,633
+Okay, Glootie, take the app down.
+
+88
+00:05:00,758 --> 00:05:03,260
+Can't take it down.
+I'm just an intern.
+
+89
+00:05:06,388 --> 00:05:08,057
+Uh, that's not how apps work.
+
+90
+00:05:08,182 --> 00:05:09,809
+Then make it how it works.
+
+91
+00:05:09,934 --> 00:05:12,728
+This isn't how making things work works.
+
+92
+00:05:12,853 --> 00:05:14,187
+Get... get it off the server.
+
+93
+00:05:14,271 --> 00:05:15,939
+Y-You think we're stupid, but we're not.
+
+94
+00:05:16,023 --> 00:05:17,983
+We know apps have something
+to do with servers.
+
+95
+00:05:18,067 --> 00:05:19,192
+The server's on the mother ship.
+
+96
+00:05:19,276 --> 00:05:20,318
+Where's the mother ship?
+
+97
+00:05:20,402 --> 00:05:21,778
+- It's coming.
+- Take us to it.
+
+98
+00:05:21,862 --> 00:05:23,072
+- No.
+- Yes.
+
+99
+00:05:23,197 --> 00:05:24,573
+Shake him more, Morty.
+That was working.
+
+100
+00:05:24,657 --> 00:05:26,007
+Take us to the mother ship.
+
+101
+00:05:38,587 --> 00:05:40,381
+Okay, don't hurt me.
+Don't hurt me.
+
+102
+00:05:40,506 --> 00:05:42,424
+An ominous beeping app.
+
+103
+00:05:42,550 --> 00:05:44,593
+You can't stay made at a guy
+with this kind of talent.
+
+104
+00:05:44,677 --> 00:05:46,512
+Dad, you can, and you have to.
+
+105
+00:05:52,893 --> 00:05:54,603
+- Ribbit, ribbit.
+- Ribbit, ribbit.
+
+106
+00:05:54,728 --> 00:05:56,521
+- Hey, ribbit, ribbit, ribbit!
+- Ribbit, ribbit, ribbit!
+
+107
+00:05:56,605 --> 00:05:58,565
+Look at this guy.
+He wants to eat me so bad.
+
+108
+00:05:58,649 --> 00:05:59,900
+You want to eat me, don't you?
+
+109
+00:05:59,984 --> 00:06:01,777
+- Ribbit.
+- Just kidding. Have some drugs.
+
+110
+00:06:01,861 --> 00:06:03,862
+- Are you Vermigurber?
+- What does this guy want?
+
+111
+00:06:03,946 --> 00:06:05,781
+- Who is this monkey?
+- I'm here about a sandwich.
+
+112
+00:06:05,865 --> 00:06:07,032
+Oh, well you came to the right place
+
+113
+00:06:07,116 --> 00:06:08,200
+'cause you're about to get
+
+114
+00:06:08,284 --> 00:06:09,535
+a <i>bullet</i> sandwich
+
+115
+00:06:09,660 --> 00:06:12,246
+on two slices
+of whole... gun.
+
+116
+00:06:12,371 --> 00:06:14,832
+You might want to get that.
+
+117
+00:06:16,375 --> 00:06:17,751
+Hello?
+
+118
+00:06:17,877 --> 00:06:19,777
+<i>Dad, give the human whatever he wants.</i>
+
+119
+00:06:19,879 --> 00:06:21,797
+<i>He knows where I live.
+He's crazy!</i>
+
+120
+00:06:21,922 --> 00:06:24,258
+You fucking idiot.
+
+121
+00:06:24,383 --> 00:06:27,344
+I have 800,000 kids.
+
+122
+00:06:27,469 --> 00:06:29,305
+Don't forget your voicemail.
+
+123
+00:06:29,430 --> 00:06:33,809
+<i>You have 470,000 messages.</i>
+
+124
+00:06:33,934 --> 00:06:35,352
+Oh, ah, that's half of them.
+
+125
+00:06:35,477 --> 00:06:37,677
+Okay, w-w-what do you want?
+What do you want?
+
+126
+00:06:38,355 --> 00:06:40,405
+Wait, this is seriously about sandwiches?
+
+127
+00:06:40,524 --> 00:06:42,776
+I thought this was about drugs or guns
+
+128
+00:06:42,902 --> 00:06:44,861
+or the fact that I'm a fly
+that runs a frog restaurant.
+
+129
+00:06:44,945 --> 00:06:47,280
+There's a million things
+that are interesting about me,
+
+130
+00:06:47,364 --> 00:06:48,698
+and none of them are sandwiches.
+
+131
+00:06:48,782 --> 00:06:51,160
+- Who ordered it?
+- Talk to our delivery drone.
+
+132
+00:06:51,285 --> 00:06:53,954
+He... he run off to fight
+in the robot wars.
+
+133
+00:06:55,331 --> 00:06:57,166
+Hey, ape man, I hope this was worth
+
+134
+00:06:57,291 --> 00:06:59,084
+making a whole swarm of enemies.
+
+135
+00:06:59,209 --> 00:07:02,588
+It will be when I find
+whoever shit in my toilet.
+
+136
+00:07:02,713 --> 00:07:05,674
+Is that code for something?
+Someone look that up.
+
+137
+00:07:05,799 --> 00:07:07,799
+If that's drug slang, I need to know it.
+
+138
+00:07:09,219 --> 00:07:10,721
+Ah!
+
+139
+00:07:10,846 --> 00:07:13,641
+- Mom, you can't stop true love.
+- Oh, yes, I can.
+
+140
+00:07:13,766 --> 00:07:15,058
+- You're assaulting me!
+- Keep your voice down.
+
+141
+00:07:15,142 --> 00:07:16,435
+I'm being assaulted!
+
+142
+00:07:16,560 --> 00:07:17,811
+Oh, yeah? Okay.
+
+143
+00:07:17,937 --> 00:07:19,271
+- Statutory rape!
+- Whoa.
+
+144
+00:07:19,396 --> 00:07:20,564
+My daughter's about to be raped!
+
+145
+00:07:20,648 --> 00:07:21,857
+No, I'm not!
+I'm being assaulted!
+
+146
+00:07:21,941 --> 00:07:23,108
+- Rape!
+- Assault!
+
+147
+00:07:23,233 --> 00:07:25,277
+- Rape!
+- Nobody cares. It's a motel.
+
+148
+00:07:25,402 --> 00:07:27,070
+Nobody's here because
+their life's going so great
+
+149
+00:07:27,154 --> 00:07:28,905
+they can afford to get mixed up in yours.
+
+150
+00:07:28,989 --> 00:07:30,908
+Deal with this shit on your own.
+
+151
+00:07:31,033 --> 00:07:32,701
+You can't stop us
+from getting a motel room.
+
+152
+00:07:32,785 --> 00:07:33,910
+Fine.
+I'll get one, too.
+
+153
+00:07:33,994 --> 00:07:35,621
+I'm getting the one next door,
+
+154
+00:07:35,746 --> 00:07:37,163
+and I'm putting a glass
+to the wall, and I'm listening.
+
+155
+00:07:37,247 --> 00:07:39,249
+- Fine. Enjoy.
+- I will.
+
+156
+00:07:39,375 --> 00:07:42,127
+- I'm Danny, by the way.
+- You had your chance, dick.
+
+157
+00:07:45,255 --> 00:07:47,049
+Take your app down.
+
+158
+00:07:47,174 --> 00:07:48,216
+T-Take... take it down.
+
+159
+00:07:48,300 --> 00:07:49,677
+- What?
+- I'm their hostage.
+
+160
+00:07:49,802 --> 00:07:51,678
+- Do they have weapons?
+- Nope, but neither do it.
+
+161
+00:07:51,762 --> 00:07:52,971
+Do... do <i>you</i> have a weapon?
+
+162
+00:07:53,055 --> 00:07:54,723
+No.
+
+163
+00:07:54,848 --> 00:07:56,391
+- Take the app down.
+- Take the app down.
+
+164
+00:07:56,475 --> 00:07:57,685
+I can't.
+I'm an intern.
+
+165
+00:07:57,810 --> 00:07:59,644
+Okay, well who tells interns what to do?
+
+166
+00:07:59,728 --> 00:08:01,188
+Not you, that's for sure.
+
+167
+00:08:01,313 --> 00:08:05,192
+Take us to whoever does,
+or w-w-we'll... we'll punch you.
+
+168
+00:08:05,317 --> 00:08:06,276
+Okay.
+
+169
+00:08:06,402 --> 00:08:08,028
+Not bad, Morty.
+
+170
+00:08:08,153 --> 00:08:09,863
+Yeah, I don't know when
+the other shoe's gonna drop,
+
+171
+00:08:09,947 --> 00:08:12,116
+but this is working pretty good so far.
+
+172
+00:08:12,241 --> 00:08:15,411
+Greetings.
+We are the Monogatrons.
+
+173
+00:08:15,536 --> 00:08:17,788
+While your species was
+still toying with fire,
+
+174
+00:08:17,913 --> 00:08:20,416
+ours mastered the science of functioning,
+
+175
+00:08:20,541 --> 00:08:22,042
+committed relationships.
+
+176
+00:08:22,167 --> 00:08:24,044
+As the latest planet to develop our app,
+
+177
+00:08:24,128 --> 00:08:28,632
+you will now witness the true
+power of superior intimacy.
+
+178
+00:08:28,757 --> 00:08:30,259
+Take the app down.
+
+179
+00:08:30,384 --> 00:08:32,886
+Take it down, or... we'll...
+We'll... we'll punch you.
+
+180
+00:08:32,970 --> 00:08:35,222
+Is there someone with a gun or...
+
+181
+00:08:35,347 --> 00:08:36,348
+It's on its way.
+
+182
+00:08:36,473 --> 00:08:37,558
+The app remains up.
+
+183
+00:08:37,683 --> 00:08:39,143
+So what's the evil plan?
+
+184
+00:08:39,268 --> 00:08:41,103
+Does there have to be an evil plan?
+
+185
+00:08:41,228 --> 00:08:43,480
+- Oh, uh, uh...
+- Uh, someone wanted a gun?
+
+186
+00:08:43,605 --> 00:08:44,732
+I'll take it. Thanks.
+
+187
+00:08:44,857 --> 00:08:46,483
+Here's the evil plan.
+
+188
+00:08:46,608 --> 00:08:47,567
+- Fuck!
+- Goddamn it.
+
+189
+00:08:47,651 --> 00:08:49,445
+As a pre-app civilization,
+
+190
+00:08:49,570 --> 00:08:52,406
+your love's value is defined by scarcity.
+
+191
+00:08:53,824 --> 00:08:55,408
+You are highly trained to seek it,
+
+192
+00:08:55,492 --> 00:08:59,455
+and you have no idea how to maintain it.
+
+193
+00:08:59,580 --> 00:09:01,623
+Had you bothered to master love,
+
+194
+00:09:01,749 --> 00:09:05,169
+you would've learned by now,
+it is as abundant as water.
+
+195
+00:09:05,294 --> 00:09:07,504
+You know what isn't?
+Water.
+
+196
+00:09:07,629 --> 00:09:09,506
+That shit runs out.
+
+197
+00:09:09,631 --> 00:09:11,759
+So we'll be taking yours.
+
+198
+00:09:11,884 --> 00:09:14,678
+While your planet continues
+to dick around with a, uh...
+
+199
+00:09:14,803 --> 00:09:16,555
+What is their version of it called?
+
+200
+00:09:16,680 --> 00:09:18,766
+Lovefinderrz,
+with two "R's" and a "Z."
+
+201
+00:09:18,891 --> 00:09:20,601
+- Oof.
+- Yeah, not my idea.
+
+202
+00:09:20,726 --> 00:09:22,686
+- Goddamn.
+- Am I interrupting?
+
+203
+00:09:22,811 --> 00:09:26,231
+- Impossible. Here she is.
+- Mwah.
+
+204
+00:09:26,356 --> 00:09:27,983
+Your prisoners are getting away.
+
+205
+00:09:28,108 --> 00:09:29,735
+Prisoners are just things.
+
+206
+00:09:29,860 --> 00:09:31,987
+Connect with me.
+Tell me about your day.
+
+207
+00:09:32,112 --> 00:09:33,512
+I had an incredible meeting.
+
+208
+00:09:33,614 --> 00:09:35,908
+Did you know humans are 80% water?
+
+209
+00:09:37,534 --> 00:09:39,452
+And I found a new podcast
+we can listen to tonight.
+
+210
+00:09:39,536 --> 00:09:40,454
+Love it.
+
+211
+00:09:40,579 --> 00:09:42,081
+Okay, back to work.
+
+212
+00:09:42,206 --> 00:09:44,666
+Find and kill those earthlings.
+
+213
+00:09:50,172 --> 00:09:52,132
+We're outnumbered.
+There's no hope.
+
+214
+00:09:52,257 --> 00:09:55,427
+Then we go out in glory.
+
+215
+00:09:55,552 --> 00:09:57,221
+Flesh intruder, prepare to die.
+
+216
+00:09:57,346 --> 00:09:59,139
+Oh, hold on.
+
+217
+00:09:59,264 --> 00:10:01,350
+My apologies, Lieutenant Commander.
+
+218
+00:10:01,475 --> 00:10:03,352
+No problem.
+At ease, Solider.
+
+219
+00:10:06,313 --> 00:10:08,524
+Initiate Employee Evaluation Mode.
+
+220
+00:10:08,649 --> 00:10:11,360
+- Accessing delivery archive.
+- Okay, listen.
+
+221
+00:10:11,485 --> 00:10:13,361
+You delivered an avian
+protein club sandwich
+
+222
+00:10:13,445 --> 00:10:15,489
+with no lettu... Goddamn it.
+
+223
+00:10:35,759 --> 00:10:37,970
+Oy, scoping for this bit, then?
+
+224
+00:10:39,138 --> 00:10:41,306
+Alright, a-a-alright.
+I know you want to have
+
+225
+00:10:41,390 --> 00:10:43,016
+the big guy/little guy fight, but...
+
+226
+00:10:43,100 --> 00:10:45,352
+Aw, are you fucking kidding me?
+
+227
+00:10:48,355 --> 00:10:49,689
+<i>Here at the Midland Quasar,</i>
+
+228
+00:10:49,773 --> 00:10:51,316
+<i>where, in a complete upset,</i>
+
+229
+00:10:51,441 --> 00:10:53,109
+<i>the Robolution has overturned
+the lizards.</i>
+
+230
+00:10:53,193 --> 00:10:54,277
+<i>It's totally unexpected.</i>
+
+231
+00:10:54,361 --> 00:10:55,861
+Uh, I understand,
+Mr. Phillips.
+
+232
+00:10:55,946 --> 00:10:57,698
+Yes.
+
+233
+00:10:57,823 --> 00:11:00,492
+I believe this is yours.
+
+234
+00:11:00,617 --> 00:11:03,162
+You, uh... you dropped that.
+
+235
+00:11:03,287 --> 00:11:05,289
+I'll have to call you back.
+
+236
+00:11:05,414 --> 00:11:06,874
+Where do you want to die?
+
+237
+00:11:06,999 --> 00:11:09,334
+Susan, is conference room three
+available?
+
+238
+00:11:09,459 --> 00:11:12,546
+Can I look at a photo
+of my wife while you kill me?
+
+239
+00:11:12,671 --> 00:11:14,130
+Sure, but I'm doing her a favor.
+
+240
+00:11:14,214 --> 00:11:15,714
+She either has terrible taste,
+
+241
+00:11:15,799 --> 00:11:17,342
+or she's trapped in a marriage
+to a toilet thief.
+
+242
+00:11:17,426 --> 00:11:19,219
+She's dead.
+
+243
+00:11:19,344 --> 00:11:21,054
+And I don't mind joining her.
+
+244
+00:11:21,180 --> 00:11:24,892
+Life has been hollow since I lost her.
+
+245
+00:11:25,017 --> 00:11:27,227
+Using your toilet was nice, though.
+
+246
+00:11:27,352 --> 00:11:30,439
+I'm a bit of a shy pooper.
+
+247
+00:11:30,564 --> 00:11:32,191
+I'm ready when you are.
+
+248
+00:11:34,193 --> 00:11:35,819
+Stay there.
+
+249
+00:11:38,864 --> 00:11:39,948
+Tell him what you told me.
+
+250
+00:11:40,032 --> 00:11:41,074
+What is this?
+What's happening?
+
+251
+00:11:41,158 --> 00:11:42,117
+Tell him what you told me.
+
+252
+00:11:42,201 --> 00:11:43,619
+My wife's still alive.
+
+253
+00:11:43,744 --> 00:11:45,620
+Sh... sh... she went into remission
+10 years ago.
+
+254
+00:11:45,704 --> 00:11:46,746
+And what did you do today?
+
+255
+00:11:46,830 --> 00:11:48,123
+Oh, I, uh, pooped
+
+256
+00:11:48,248 --> 00:11:49,958
+on a really awesome toilet I found...
+
+257
+00:11:50,042 --> 00:11:52,586
+Oh, ow, ow, ow, ow, oh!
+
+258
+00:11:52,711 --> 00:11:54,611
+Don't use your dead wife as an excuse.
+
+259
+00:11:54,713 --> 00:11:57,257
+You shit on my toilet because
+you don't know your place,
+
+260
+00:11:57,341 --> 00:11:59,092
+and your place is nothing.
+
+261
+00:11:59,218 --> 00:12:00,802
+So next time you stumble onto a toilet
+
+262
+00:12:00,886 --> 00:12:04,348
+that feels too good
+for your ass, trust me, it is.
+
+263
+00:12:04,473 --> 00:12:05,431
+You're not gonna kill me?
+
+264
+00:12:05,515 --> 00:12:06,850
+Don't tell me what to do!
+
+265
+00:12:15,692 --> 00:12:17,235
+<i>♪ Every time,
+they play this song ♪</i>
+
+266
+00:12:17,319 --> 00:12:19,219
+<i>♪ She say, "This is my shit,
+my shit" ♪</i>
+
+267
+00:12:20,155 --> 00:12:21,948
+<i>♪ See the flick of my wrist,
+of my wrist ♪</i>
+
+268
+00:12:22,032 --> 00:12:23,283
+<i>♪ And I know
+she know what's up ♪</i>
+
+269
+00:12:23,367 --> 00:12:25,285
+<i>♪ Baby, this is my shit,
+my shit ♪</i>
+
+270
+00:12:26,536 --> 00:12:28,371
+<i>♪ See the flick of my wrist,
+my wrist ♪</i>
+
+271
+00:12:28,455 --> 00:12:31,959
+Are you fucking kidding me?
+
+272
+00:12:32,084 --> 00:12:35,003
+<i>♪ When you in my section,
+fill it up when my cup empty ♪</i>
+
+273
+00:12:35,128 --> 00:12:36,630
+<i>♪ I can't fuck with rats ♪</i>
+
+274
+00:12:36,755 --> 00:12:39,258
+<i>♪ That's a fact,
+that's a dub nigga ♪</i>
+
+275
+00:12:45,305 --> 00:12:47,140
+Oh, so you <i>like</i> being alive?
+
+276
+00:12:47,266 --> 00:12:48,976
+So why the fuck are you back here?
+
+277
+00:12:49,101 --> 00:12:50,935
+After you left,
+I thought about what you said
+
+278
+00:12:51,019 --> 00:12:52,520
+and how much I needed to hear it,
+
+279
+00:12:52,604 --> 00:12:54,439
+but then I thought about
+<i>why</i> you were saying it,
+
+280
+00:12:54,523 --> 00:12:56,065
+who you were really saying it to.
+
+281
+00:12:56,149 --> 00:12:57,775
+You need the same thing I needed, Rick.
+
+282
+00:12:57,859 --> 00:13:00,404
+You need someone to give you,
+permission to live.
+
+283
+00:13:00,529 --> 00:13:02,155
+What the...?
+
+284
+00:13:02,281 --> 00:13:03,907
+I thought you were a shy pooper.
+
+285
+00:13:04,032 --> 00:13:05,700
+You know what shy pooping is, Rick?
+
+286
+00:13:05,784 --> 00:13:07,536
+It's a pointless bid for control.
+
+287
+00:13:07,661 --> 00:13:09,162
+You want to take the one part of life
+
+288
+00:13:09,246 --> 00:13:11,247
+that you truly think is yours,
+and you want to protect it
+
+289
+00:13:11,331 --> 00:13:13,750
+from a universe
+that takes whatever it wants.
+
+290
+00:13:13,875 --> 00:13:15,502
+It took my wife.
+
+291
+00:13:15,627 --> 00:13:17,587
+It clearly took something from you.
+
+292
+00:13:17,713 --> 00:13:19,297
+We can spend our lives fighting that,
+
+293
+00:13:19,381 --> 00:13:20,966
+or we can choose to be free.
+
+294
+00:13:21,091 --> 00:13:23,468
+You're right, Tony.
+I'm done fighting.
+
+295
+00:13:23,593 --> 00:13:24,970
+Time to be free.
+
+296
+00:13:25,095 --> 00:13:26,095
+Oh, wait, you're actually gonna...
+
+297
+00:13:26,179 --> 00:13:27,306
+Oh, God!
+Oh, God!
+
+298
+00:13:32,185 --> 00:13:34,438
+- Where am I?
+- Hi, little mouse.
+
+299
+00:13:34,563 --> 00:13:36,982
+Baby bee?
+I missed you so much.
+
+300
+00:13:37,107 --> 00:13:38,525
+I never really left you.
+
+301
+00:13:38,650 --> 00:13:40,360
+Then you know that a few years ago
+
+302
+00:13:40,485 --> 00:13:42,362
+- I started getting into...
+- Strap-on porn?
+
+303
+00:13:42,446 --> 00:13:44,239
+Yes.
+I thought it was hot.
+
+304
+00:13:44,364 --> 00:13:46,214
+- Now, come on.
+- Where are you going?
+
+305
+00:13:46,325 --> 00:13:47,576
+- To poop.
+- Where?
+
+306
+00:13:47,701 --> 00:13:49,828
+Wherever you want, forever.
+
+307
+00:13:49,953 --> 00:13:50,954
+My God.
+
+308
+00:13:51,079 --> 00:13:54,207
+You rang?
+I'm pooping, too.
+
+309
+00:13:54,333 --> 00:13:55,667
+Come, Tony.
+Come on.
+
+310
+00:13:55,792 --> 00:13:58,003
+Come poop with me.
+Poop with me, Tony.
+
+311
+00:13:58,128 --> 00:13:59,379
+Poop with me.
+
+312
+00:13:59,504 --> 00:14:00,756
+What are you waiting for?
+
+313
+00:14:00,881 --> 00:14:02,758
+Aren't you gonna join us, Tony?
+
+314
+00:14:02,883 --> 00:14:05,177
+Aren't you gonna join us in the pooping?
+
+315
+00:14:22,319 --> 00:14:23,278
+Where are we?
+What is this?
+
+316
+00:14:23,362 --> 00:14:24,571
+That's it.
+Get out.
+
+317
+00:14:24,696 --> 00:14:25,947
+You can make a perfectly-realized,
+
+318
+00:14:26,031 --> 00:14:27,448
+toilet-filled simulation of heaven,
+
+319
+00:14:27,532 --> 00:14:28,783
+but you can't share a toilet?
+
+320
+00:14:28,867 --> 00:14:30,077
+Don't insult my craft.
+
+321
+00:14:30,202 --> 00:14:31,661
+The chemical is Globaflyn.
+
+322
+00:14:31,787 --> 00:14:33,246
+It connects the whatever-you-want section
+
+323
+00:14:33,330 --> 00:14:35,123
+of your brain to the
+whatever-you-have section.
+
+324
+00:14:35,207 --> 00:14:37,584
+If your heaven is toilets, that's on you.
+
+325
+00:14:37,709 --> 00:14:39,086
+All of these people...
+
+326
+00:14:39,211 --> 00:14:40,837
+Are living their wildest,
+meaningless dreams
+
+327
+00:14:40,921 --> 00:14:42,631
+and leaving me out of them.
+
+328
+00:14:42,756 --> 00:14:45,633
+People you refuse to kill and
+refuse to let into your life.
+
+329
+00:14:45,717 --> 00:14:49,054
+An offer you rejected,
+so here's your last chance.
+
+330
+00:14:49,179 --> 00:14:51,472
+Goodbye forever. If you touch
+my toilet again, you die.
+
+331
+00:14:51,556 --> 00:14:52,808
+You need a friend.
+
+332
+00:14:52,933 --> 00:14:54,142
+I have a million cooler friends than you.
+
+333
+00:14:54,226 --> 00:14:55,643
+- I'll be seeing you.
+- You'll be dying.
+
+334
+00:14:55,727 --> 00:14:57,854
+- We're gonna be friends.
+- You're gonna be dead.
+
+335
+00:14:57,938 --> 00:14:59,355
+So, we fight our way to the gas line,
+
+336
+00:14:59,439 --> 00:15:00,857
+we cut it, and then we set a fire.
+
+337
+00:15:00,941 --> 00:15:02,317
+Okay. Alright.
+
+338
+00:15:02,442 --> 00:15:04,152
+Morty, "Adventures of Jerry
+and Morty," huh?
+
+339
+00:15:04,236 --> 00:15:05,528
+- Put her there.
+- Dad, look, y-you know,
+
+340
+00:15:05,612 --> 00:15:06,696
+w-we don't need to high-five.
+
+341
+00:15:06,780 --> 00:15:07,947
+It's... it's kind of your fault
+
+342
+00:15:08,031 --> 00:15:09,073
+that we're in this situation at all.
+
+343
+00:15:09,157 --> 00:15:10,784
+I know, but, you know, come on.
+
+344
+00:15:10,909 --> 00:15:12,285
+"Adventures of Jerry
+and Morty."
+
+345
+00:15:12,369 --> 00:15:14,454
+Okay.
+
+346
+00:15:26,425 --> 00:15:28,051
+Mwah.
+
+347
+00:15:33,932 --> 00:15:35,517
+Jeff, I can explain everything.
+
+348
+00:15:35,642 --> 00:15:36,726
+You don't have to.
+
+349
+00:15:36,852 --> 00:15:39,020
+Can you just marry <i>us</i> instead?
+
+350
+00:15:39,146 --> 00:15:40,147
+Jeff, don't do it!
+
+351
+00:15:40,272 --> 00:15:42,232
+Richard.
+
+352
+00:15:42,357 --> 00:15:43,608
+Maggie.
+
+353
+00:15:43,733 --> 00:15:46,653
+- Running Bird.
+- Let's get out of here.
+
+354
+00:15:46,778 --> 00:15:48,488
+- Priest Witherspoon.
+- Josiah?
+
+355
+00:15:48,613 --> 00:15:51,408
+Let's get the fuck out of here.
+
+356
+00:15:51,533 --> 00:15:54,327
+Summer Smith, let's get
+the hell out of here.
+
+357
+00:15:54,453 --> 00:15:56,538
+You had me at my own name.
+
+358
+00:15:56,663 --> 00:15:59,374
+Oh, yeah, no.
+Why would I...?
+
+359
+00:15:59,499 --> 00:16:00,667
+Summer!
+
+360
+00:16:00,792 --> 00:16:01,835
+Fucking thing.
+
+361
+00:16:01,960 --> 00:16:04,129
+Come on. I can't steer this.
+
+362
+00:16:06,465 --> 00:16:08,341
+What in the hell are you doing?
+
+363
+00:16:08,467 --> 00:16:10,635
+- Parenting.
+- That's not how I did it.
+
+364
+00:16:10,760 --> 00:16:12,387
+Yeah, where's <i>your</i> daughter?
+
+365
+00:16:12,512 --> 00:16:14,055
+Ah, you're right.
+
+366
+00:16:14,181 --> 00:16:15,807
+She joined ISIS.
+
+367
+00:16:18,560 --> 00:16:20,979
+It's Glootie, and he's had
+a change of heart.
+
+368
+00:16:21,104 --> 00:16:22,606
+And he's going to set us free.
+
+369
+00:16:22,731 --> 00:16:24,899
+Actually, he's been blamed
+for bringing you aboard
+
+370
+00:16:24,983 --> 00:16:26,150
+and assigned to execute you.
+
+371
+00:16:26,234 --> 00:16:27,736
+Whoa, whoa, whoa.
+Okay.
+
+372
+00:16:27,861 --> 00:16:30,238
+What would your girlfriend
+think of you murdering?
+
+373
+00:16:30,322 --> 00:16:32,115
+I happen to be between
+relationships right now.
+
+374
+00:16:32,199 --> 00:16:34,283
+Really? I thought your species
+had perfected relationships.
+
+375
+00:16:34,367 --> 00:16:35,494
+Here.
+
+376
+00:16:35,619 --> 00:16:36,911
+We're not allowed to use those apps.
+
+377
+00:16:36,995 --> 00:16:39,247
+I wonder why.
+
+378
+00:16:39,372 --> 00:16:41,165
+Yeah, that's what I thought, Glootie.
+
+379
+00:16:41,249 --> 00:16:42,918
+Looks like you and I
+
+380
+00:16:43,043 --> 00:16:44,544
+are all we've got.
+
+381
+00:16:47,756 --> 00:16:48,923
+I'm not helping you any more than that,
+
+382
+00:16:49,007 --> 00:16:50,383
+but if you can find the hangar,
+
+383
+00:16:50,467 --> 00:16:51,926
+grab a ship and get the hell out of here.
+
+384
+00:16:52,010 --> 00:16:53,345
+Where you going, Glootie?
+
+385
+00:16:53,470 --> 00:16:56,348
+I've got a date
+with dumping a dating app.
+
+386
+00:16:56,473 --> 00:16:58,350
+Glootie-ootie-ooh!
+
+387
+00:16:58,475 --> 00:17:00,143
+- Was that ever his thing?
+- No.
+
+388
+00:17:00,268 --> 00:17:02,186
+- He never exited that way.
+- No, first time.
+
+389
+00:17:02,270 --> 00:17:03,813
+Dad, I want to say something.
+
+390
+00:17:03,939 --> 00:17:06,732
+I started today disgusted
+and embarrassed to be your son,
+
+391
+00:17:06,816 --> 00:17:08,109
+and then later I thought
+we were gonna die
+
+392
+00:17:08,193 --> 00:17:09,861
+because you're a loser.
+
+393
+00:17:11,530 --> 00:17:12,864
+- There's no more, is there?
+- Nope.
+
+394
+00:17:12,948 --> 00:17:14,991
+Now quit fucking up, and let's go.
+
+395
+00:17:16,451 --> 00:17:18,453
+Is Tony here? I br...
+I brought him some, uh,
+
+396
+00:17:18,537 --> 00:17:20,637
+Vegan Fiber Chili,
+delicious family recipe,
+
+397
+00:17:20,747 --> 00:17:22,623
+and a box of these, uh,
+chocolates, sugar free.
+
+398
+00:17:22,707 --> 00:17:24,167
+He can eat as many of these as he wants.
+
+399
+00:17:24,251 --> 00:17:25,960
+Anyways, uh, just wanted
+to drop these off,
+
+400
+00:17:26,044 --> 00:17:28,588
+and you tell him, uh,
+the toilet's all his.
+
+401
+00:17:28,713 --> 00:17:30,089
+H-He... he'll know what I mean.
+
+402
+00:17:30,173 --> 00:17:31,841
+Tony died.
+
+403
+00:17:32,968 --> 00:17:35,178
+- Excuse me?
+- He quit his job,
+
+404
+00:17:35,303 --> 00:17:37,639
+starting living life to the fullest.
+
+405
+00:17:37,764 --> 00:17:38,864
+He crashed into a tree
+
+406
+00:17:38,974 --> 00:17:41,226
+space-skiing down Mount Space Everest.
+
+407
+00:17:41,351 --> 00:17:42,435
+Fuck.
+
+408
+00:17:42,561 --> 00:17:45,188
+There's a Mount Space Everest?
+
+409
+00:17:45,313 --> 00:17:46,773
+Okay.
+Uh, Jesus.
+
+410
+00:17:46,898 --> 00:17:49,276
+I-I got to process this.
+
+411
+00:17:49,401 --> 00:17:50,610
+Oh, no, no. You...
+You don't want to eat that.
+
+412
+00:17:50,694 --> 00:17:52,069
+Y-y-you'll... you'll... you'll become
+
+413
+00:17:52,153 --> 00:17:54,030
+the opening
+of "The Beverly Hillbillies."
+
+414
+00:17:54,114 --> 00:17:56,240
+You know what I'm saying?
+A little bubbling crude?
+
+415
+00:17:56,324 --> 00:17:58,409
+- Texas tea?
+- I don't know these references.
+
+416
+00:17:58,493 --> 00:18:00,077
+Yeah, but you have a Space Everest?
+
+417
+00:18:00,161 --> 00:18:02,038
+Watch "Space Beverly Hillbilllies"
+
+418
+00:18:02,163 --> 00:18:05,000
+so my jokes can land, you fucking twat.
+
+419
+00:18:21,099 --> 00:18:22,058
+Now what?
+
+420
+00:18:22,183 --> 00:18:23,476
+Happily ever after.
+
+421
+00:18:23,602 --> 00:18:24,853
+And after that?
+
+422
+00:18:24,978 --> 00:18:26,771
+We'll find out together.
+
+423
+00:18:26,896 --> 00:18:27,981
+Summer
+
+424
+00:18:28,106 --> 00:18:29,857
+how many soul mates is
+that in the last week?
+
+425
+00:18:29,941 --> 00:18:32,652
+Four. You can't stop me
+from loving who I love, Mom.
+
+426
+00:18:32,777 --> 00:18:34,195
+Oh, the shit I can't.
+
+427
+00:18:34,321 --> 00:18:36,072
+I'm gonna mother you
+until your 18th birthday,
+
+428
+00:18:36,156 --> 00:18:39,033
+even if I get thrown in prison
+for non-consensual mothering.
+
+429
+00:18:39,117 --> 00:18:41,119
+And even then, I will break out,
+
+430
+00:18:41,244 --> 00:18:43,371
+come to your house, kick down your door,
+
+431
+00:18:43,496 --> 00:18:46,207
+and mother your fucking face
+out of your stupid asshole.
+
+432
+00:18:46,291 --> 00:18:48,341
+I'm gonna daughter
+your brains out, bitch.
+
+433
+00:18:59,512 --> 00:19:00,680
+Motherfucker!
+
+434
+00:19:00,805 --> 00:19:02,849
+That's my name.
+Don't wear it out.
+
+435
+00:19:06,519 --> 00:19:08,980
+Gimme dat new soul mate.
+
+436
+00:19:09,105 --> 00:19:11,566
+Ad wall?
+
+437
+00:19:11,691 --> 00:19:14,027
+Fuck this.
+
+438
+00:19:14,152 --> 00:19:15,195
+Ad wall?
+
+439
+00:19:15,320 --> 00:19:17,170
+What, they want us to pay for it now?
+
+440
+00:19:17,530 --> 00:19:20,158
+Come on, Mom.
+Let's go home.
+
+441
+00:19:23,078 --> 00:19:24,704
+Great.
+We lost Earth.
+
+442
+00:19:24,829 --> 00:19:27,957
+We aren't defined by what we do,
+and we only need each other.
+
+443
+00:19:28,083 --> 00:19:29,834
+Each other... and water.
+
+444
+00:19:29,959 --> 00:19:31,169
+There's no water?
+
+445
+00:19:31,294 --> 00:19:32,587
+Honey, the whole point
+of conquering Earth...
+
+446
+00:19:32,671 --> 00:19:34,422
+I know the point of conquering Earth.
+
+447
+00:19:34,506 --> 00:19:36,591
+- Don't talk to me like...
+- Like I'm thirsty?
+
+448
+00:19:36,675 --> 00:19:39,344
+Like I'm your mother, you childish prick.
+
+449
+00:19:39,469 --> 00:19:40,969
+How much water are you sucking
+
+450
+00:19:41,054 --> 00:19:42,722
+through these stupid
+fucking tubes on your back?
+
+451
+00:19:42,806 --> 00:19:44,890
+These tubes are cool,
+and I want a divorce.
+
+452
+00:19:44,974 --> 00:19:49,187
+You can have one for a glass
+of Goddamn water.
+
+453
+00:19:49,312 --> 00:19:52,857
+Look, uh, on the off-chance
+that you used the app
+
+454
+00:19:52,982 --> 00:19:56,486
+and there's someone out there
+waiting for you, I, uh...
+
+455
+00:19:56,611 --> 00:19:59,447
+Jerry, I didn't use it.
+Did you?
+
+456
+00:19:59,572 --> 00:20:01,950
+Me? No.
+God, of course not.
+
+457
+00:20:02,075 --> 00:20:03,868
+Well, then, we're all good, dawg.
+
+458
+00:20:10,750 --> 00:20:12,919
+Hey, uh... Hey, uh, Tony's dad,
+
+459
+00:20:13,044 --> 00:20:16,381
+uh, th-this is, um, $8 billion
+in your local currency,
+
+460
+00:20:16,506 --> 00:20:20,135
+and, uh, this is a kit
+you can use to clone a new son.
+
+461
+00:20:20,260 --> 00:20:21,927
+He... he won't have the same brain.
+
+462
+00:20:22,011 --> 00:20:24,805
+He'll kind of be an animal man,
+but you can teach him stuff.
+
+463
+00:20:24,889 --> 00:20:26,098
+I-I-I also wanted to let you know
+
+464
+00:20:26,182 --> 00:20:27,725
+I did explore infinite universes,
+
+465
+00:20:27,809 --> 00:20:30,227
+and there is a version of Tony
+that was completely evil
+
+466
+00:20:30,311 --> 00:20:31,771
+and ended up causing a lot of genocide
+
+467
+00:20:31,855 --> 00:20:33,356
+because of how fulfilled he was.
+
+468
+00:20:33,440 --> 00:20:35,149
+So, really, a lot of ways
+of looking at this
+
+469
+00:20:35,233 --> 00:20:37,527
+as not much of a loss.
+
+470
+00:20:37,652 --> 00:20:39,154
+I understand.
+
+471
+00:20:39,279 --> 00:20:41,990
+It's, uh, hard losing a friend.
+
+472
+00:20:42,115 --> 00:20:43,241
+- Fuck you.
+- What?
+
+473
+00:20:43,366 --> 00:20:45,076
+He's not my friend.
+
+474
+00:21:03,511 --> 00:21:05,138
+<i>There he is.
+There's our guy.</i>
+
+475
+00:21:05,263 --> 00:21:06,389
+<i>Congrats, Tony.</i>
+
+476
+00:21:06,514 --> 00:21:08,015
+<i>Have fun with your stupid toilet</i>
+
+477
+00:21:08,099 --> 00:21:10,099
+<i>that you get to use all by yourself now.</i>
+
+478
+00:21:10,185 --> 00:21:12,269
+<i>Enjoy using it all by yourself
+while you sit there</i>
+
+479
+00:21:12,353 --> 00:21:14,105
+<i>and think about how nobody
+wants to be around you</i>
+
+480
+00:21:14,189 --> 00:21:15,606
+<i>and how you ruined it for yourself</i>
+
+481
+00:21:15,690 --> 00:21:16,941
+<i>because you're a huge piece of shit.</i>
+
+482
+00:21:17,025 --> 00:21:18,359
+<i>Look at you sitting there,</i>
+
+483
+00:21:18,485 --> 00:21:20,695
+<i>King Shit on his throne of loneliness.</i>
+
+484
+00:21:20,820 --> 00:21:22,906
+<i>Enjoy this toilet with a thousand of me</i>
+
+485
+00:21:23,031 --> 00:21:25,241
+<i>screaming every time you take a shit.</i>
+
+486
+00:21:25,366 --> 00:21:27,243
+<i>All hail his majesty,</i>
+
+487
+00:21:27,368 --> 00:21:31,581
+<i>the sa-a-ddest piece of garbage
+in the entire cosmos.</i>
+
+488
+00:21:31,706 --> 00:21:34,751
+<i>Long live the big, bad, doo-doo daddy.</i>
+
+489
+00:21:34,876 --> 00:21:38,004
+<i>May his reign last 1,000 years.</i>
+
+490
+00:22:11,120 --> 00:22:14,332
+Rick, did you take the Tapatío?
+
+491
+00:22:14,457 --> 00:22:16,459
+Hmm, Globaflyn?
+
+492
+00:22:18,878 --> 00:22:20,672
+Thanks.
+I could never lift it up.
+
+493
+00:22:20,797 --> 00:22:22,298
+No problem.
+
+494
+00:22:22,423 --> 00:22:25,343
+I'll be able to drink water
+for weeks because of you.
+
+495
+00:22:25,468 --> 00:22:27,595
+It's just part of my job, ma'am.
+
+496
+00:22:29,848 --> 00:22:31,724
+Breaker one nine, this is Jerry Smith.
+
+497
+00:22:31,808 --> 00:22:33,934
+Uh, just finished
+my first delivery of the day.
+
+498
+00:22:34,018 --> 00:22:35,228
+900 more to go.
+

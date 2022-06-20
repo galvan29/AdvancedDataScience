@@ -1,0 +1,568 @@
+﻿[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: 0
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+ScaledBorderAndShadow: Yes
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI Semibold,22,&H00FFFFFF,&H00FFFFFF,&H55000000,&H55000000,0,0,0,0,100,100,0,0,1,0.6,0.3,2,10,10,20,1
+Style: Verdana [WHITE],Arial,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:07.09,0:00:08.48,Default,,0,0,0,,You two are hungry.
+Dialogue: 0,0:00:08.53,0:00:10.02,Default,,0,0,0,,- It's a big day.\N- We're gonna kill God.
+Dialogue: 0,0:00:10.05,0:00:11.57,Default,,0,0,0,,- Come again?\N- Christian god is real.
+Dialogue: 0,0:00:11.62,0:00:12.85,Default,,0,0,0,,He's been asleep for\Nthousands of years,
+Dialogue: 0,0:00:12.88,0:00:14.25,Default,,0,0,0,,We're gonna sneak\Nup there and kill 'em.
+Dialogue: 0,0:00:14.27,0:00:15.58,Default,,0,0,0,,Mob style. Just whack his ass.
+Dialogue: 0,0:00:15.62,0:00:16.86,Default,,0,0,0,,- Can I kill God?\N- Fuck off, Summer.
+Dialogue: 0,0:00:16.88,0:00:18.40,Default,,0,0,0,,- As if.\N- Beth, do you hear this?
+Dialogue: 0,0:00:18.45,0:00:19.69,Default,,0,0,0,,Sweetie, don't get all worked up
+Dialogue: 0,0:00:19.71,0:00:21.15,Default,,0,0,0,,before your job interview.
+Dialogue: 0,0:00:21.19,0:00:22.50,Default,,0,0,0,,- Job interview?\N- Yes.
+Dialogue: 0,0:00:22.54,0:00:23.67,Default,,0,0,0,,Is that so hard to believe?
+Dialogue: 0,0:00:23.71,0:00:25.02,Default,,0,0,0,,Actually, yeah.
+Dialogue: 0,0:00:25.06,0:00:26.15,Default,,0,0,0,,Something's off.
+Dialogue: 0,0:00:28.20,0:00:29.20,Default,,0,0,0,,No!
+Dialogue: 0,0:00:30.20,0:00:31.33,Default,,0,0,0,,Shit!
+Dialogue: 0,0:00:34.81,0:00:36.03,Default,,0,0,0,,Hunt me!
+Dialogue: 0,0:00:36.07,0:00:39.51,Default,,0,0,0,,Hunt me! Hunt me!\NSomebody hunt me!
+Dialogue: 0,0:00:39.56,0:00:41.25,Default,,0,0,0,,Don't hunt him -to completion!\N- Hunt me!
+Dialogue: 0,0:00:41.30,0:00:42.69,Default,,0,0,0,,Oh, shit. Um...
+Dialogue: 0,0:00:42.73,0:00:44.87,Default,,0,0,0,,Everyone start packing.\NN-No time to explain.
+Dialogue: 0,0:00:44.91,0:00:46.17,Default,,0,0,0,,Rick? Dad, what's wrong?
+Dialogue: 0,0:00:46.22,0:00:47.87,Default,,0,0,0,,Someone just\Nkilled a decoy family.
+Dialogue: 0,0:00:47.91,0:00:49.91,Default,,0,0,0,,I'm Mr. Always\NWants To Be Hunted!
+Dialogue: 0,0:00:49.96,0:00:53.05,Default,,0,0,0,,Yes, and how interesting\Ndid you think that would stay?!
+Dialogue: 0,0:01:24.69,0:01:26.08,Default,,0,0,0,,You made clones of us?
+Dialogue: 0,0:01:26.12,0:01:28.08,Default,,0,0,0,,Decoys, Morty. Very different.
+Dialogue: 0,0:01:28.13,0:01:30.26,Default,,0,0,0,,- Very different, sweetie.\N- Different h-h-- Ow!
+Dialogue: 0,0:01:30.30,0:01:31.83,Default,,0,0,0,,Yeah, Dad. Different h-how?
+Dialogue: 0,0:01:31.87,0:01:33.59,Default,,0,0,0,,Lotta people out there\Nwant a piece of this, sweetie.
+Dialogue: 0,0:01:33.61,0:01:35.22,Default,,0,0,0,,I'm cool, and it\Nmakes them feel bad.
+Dialogue: 0,0:01:35.26,0:01:37.10,Default,,0,0,0,,So, y'know, after that\Ntrouble with Space Beth,
+Dialogue: 0,0:01:37.14,0:01:38.79,Default,,0,0,0,,I made passable\Ncopies of the family
+Dialogue: 0,0:01:38.83,0:01:39.94,Default,,0,0,0,,and placed them\Naround the country
+Dialogue: 0,0:01:39.96,0:01:41.57,Default,,0,0,0,,as a buffer zone to protect --
+Dialogue: 0,0:01:41.62,0:01:42.86,Default,,0,0,0,,But why does he always\N-want to be hunted?
+Dialogue: 0,0:01:42.88,0:01:43.16,Default,,0,0,0,,Jerry...
+Dialogue: 0,0:01:43.19,0:01:45.12,Default,,0,0,0,,That's not important -right now, Dad.\N- Sure, guys.
+Dialogue: 0,0:01:45.14,0:01:46.75,Default,,0,0,0,,Rick can make secret\Ndecoys of the family
+Dialogue: 0,0:01:46.80,0:01:48.58,Default,,0,0,0,,and place them all\Naround the country,
+Dialogue: 0,0:01:48.63,0:01:50.11,Default,,0,0,0,,but fuck me if I have questions
+Dialogue: 0,0:01:50.15,0:01:52.11,Default,,0,0,0,,about the Starfish\NMan in a target suit.
+Dialogue: 0,0:01:52.15,0:01:54.11,Default,,0,0,0,,So thankful this is my Saturday.
+Dialogue: 0,0:01:54.15,0:01:55.76,Default,,0,0,0,,Why was he in that cryo-pod?!
+Dialogue: 0,0:01:55.81,0:01:57.42,Default,,0,0,0,,The cryopod is\Nwhat confuses you?
+Dialogue: 0,0:01:57.46,0:01:59.44,Default,,0,0,0,,Jerry, can't you see we've\Nmoved on to higher stakes?
+Dialogue: 0,0:01:59.46,0:02:01.59,Default,,0,0,0,,Well, I don't see\Nany stakes at all.
+Dialogue: 0,0:02:07.73,0:02:10.78,Default,,0,0,0,,Ah, shit!
+Dialogue: 0,0:02:10.82,0:02:12.65,Default,,0,0,0,,Guess we'll just\Nbe saying ciao bella
+Dialogue: 0,0:02:12.69,0:02:14.37,Default,,0,0,0,,to our deposit, then\N--Shut up and pack, Jerry.
+Dialogue: 0,0:02:14.39,0:02:16.96,Default,,0,0,0,,Squids just killed a decoy\Nfamily. Decoy family?
+Dialogue: 0,0:02:17.00,0:02:18.63,Default,,0,0,0,,Is this is why you\Nwanted to get out of town?
+Dialogue: 0,0:02:18.66,0:02:19.79,Default,,0,0,0,,You think I'd lie to you
+Dialogue: 0,0:02:19.83,0:02:21.31,Default,,0,0,0,,about why we're\Non vacation, Morty?
+Dialogue: 0,0:02:21.35,0:02:22.62,Default,,0,0,0,,I wouldn't lie to you.
+Dialogue: 0,0:02:22.66,0:02:24.84,Default,,0,0,0,,Well, that's a lie. Huh...
+Dialogue: 0,0:02:24.88,0:02:26.62,Default,,0,0,0,,So, someone out\Nthere is trying to kill us?
+Dialogue: 0,0:02:26.66,0:02:27.99,Default,,0,0,0,,Someone's always\Ntrying to kill us --
+Dialogue: 0,0:02:28.01,0:02:29.54,Default,,0,0,0,,That's what the decoys are for.
+Dialogue: 0,0:02:29.58,0:02:33.28,Default,,0,0,0,,They go on fun, self-contained\Nterrestrial adventures and...
+Dialogue: 0,0:02:33.32,0:02:34.98,Default,,0,0,0,,take bullets meant for us.
+Dialogue: 0,0:02:35.02,0:02:36.33,Default,,0,0,0,,Shit.
+Dialogue: 0,0:02:36.37,0:02:38.68,Default,,0,0,0,,No!
+Dialogue: 0,0:02:40.02,0:02:41.50,Default,,0,0,0,,Oh, shit.
+Dialogue: 0,0:02:41.55,0:02:43.68,Default,,0,0,0,,Decoy family.
+Dialogue: 0,0:02:43.72,0:02:44.92,Default,,0,0,0,,I think Dad was still outside.
+Dialogue: 0,0:02:44.94,0:02:46.64,Default,,0,0,0,,Wh-Wh-What's a decoy family?
+Dialogue: 0,0:02:46.68,0:02:48.29,Default,,0,0,0,,Hard concept,\NMorty. Hard concept.
+Dialogue: 0,0:02:48.34,0:02:50.18,Default,,0,0,0,,I've never really cracked\Nit, if I'm being honest.
+Dialogue: 0,0:02:50.21,0:02:52.56,Default,,0,0,0,,Decided it was maybe better\Nas a kind of kinetic mislead
+Dialogue: 0,0:02:52.60,0:02:54.19,Default,,0,0,0,,- for another special episode!\N- Oh, cool.
+Dialogue: 0,0:02:54.21,0:02:58.00,Default,,0,0,0,,{\i1}We now return to "When Wolf."
+Dialogue: 0,0:02:58.04,0:02:59.65,Default,,0,0,0,,Whoa. A time-traveling wolf?
+Dialogue: 0,0:02:59.70,0:03:00.21,Default,,0,0,0,,Count me in.
+Dialogue: 0,0:03:00.22,0:03:02.02,Default,,0,0,0,,Yeah, I never thought\Nof the where in werewolf
+Dialogue: 0,0:03:02.05,0:03:03.48,Default,,0,0,0,,like who, what, when and where.
+Dialogue: 0,0:03:03.53,0:03:05.05,Default,,0,0,0,,C-Clever wordplay!
+Dialogue: 0,0:03:05.09,0:03:07.23,Default,,0,0,0,,{\i1}When Wolf. Dracula.
+Dialogue: 0,0:03:07.27,0:03:08.84,Default,,0,0,0,,{\i1}You know why I'm here.
+Dialogue: 0,0:03:08.88,0:03:10.23,Default,,0,0,0,,{\i1}I'm safe here, Ian.
+Dialogue: 0,0:03:10.27,0:03:12.19,Default,,0,0,0,,{\i1}Christianity hasn't\Nbeen invented yet --
+Dialogue: 0,0:03:12.23,0:03:14.58,Default,,0,0,0,,{\i1}Crosses are just\Nbaby T's to me now.
+Dialogue: 0,0:03:14.62,0:03:15.84,Default,,0,0,0,,{\i1}I got out.
+Dialogue: 0,0:03:15.89,0:03:18.37,Default,,0,0,0,,{\i1}Please, don't invite me back in.
+Dialogue: 0,0:03:18.41,0:03:20.40,Default,,0,0,0,,Huh, kinda mucked it\Nup with -this Dracula stuff.
+Dialogue: 0,0:03:20.41,0:03:21.02,Default,,0,0,0,,- You're right.
+Dialogue: 0,0:03:21.07,0:03:22.94,Default,,0,0,0,,It shows a lack of faith\Nin their core concept,
+Dialogue: 0,0:03:22.98,0:03:24.74,Default,,0,0,0,,I'd much rather watch\NWhen Wolf go to the '20s
+Dialogue: 0,0:03:24.76,0:03:26.33,Default,,0,0,0,,and invest in the\Nstock market --
+Dialogue: 0,0:03:26.38,0:03:28.90,Default,,0,0,0,,but then eat people. Yeah.
+Dialogue: 0,0:03:31.55,0:03:32.86,Default,,0,0,0,,Look, if you really want to know
+Dialogue: 0,0:03:32.90,0:03:35.21,Default,,0,0,0,,what happened to\NBeth's mom, it -- Whup.
+Dialogue: 0,0:03:35.25,0:03:37.08,Default,,0,0,0,,Squid aliens just\Nkilled a decoy family.
+Dialogue: 0,0:03:37.12,0:03:39.26,Default,,0,0,0,,Decoy family? You\Nmade more clones?
+Dialogue: 0,0:03:39.30,0:03:41.43,Default,,0,0,0,,Clones are like 32%\Nof all sci-fi, sweetie.
+Dialogue: 0,0:03:41.48,0:03:43.87,Default,,0,0,0,,You don't get to own 'clones.\NYes, I made some decoys.
+Dialogue: 0,0:03:43.91,0:03:45.22,Default,,0,0,0,,They're exactly like us,
+Dialogue: 0,0:03:45.26,0:03:46.76,Default,,0,0,0,,with a few tweaks and\Na backdoor shutdown.
+Dialogue: 0,0:03:46.79,0:03:48.88,Default,,0,0,0,,Do you just get hard\Ncreating sentient life?
+Dialogue: 0,0:03:48.92,0:03:51.10,Default,,0,0,0,,Actually, I get hard\Nprotecting my family. Ew.
+Dialogue: 0,0:03:51.14,0:03:51.51,Default,,0,0,0,,Gross.
+Dialogue: 0,0:03:51.52,0:03:53.79,Default,,0,0,0,,Yeah, now everyone\Ngets killer doppelgangers.
+Dialogue: 0,0:03:53.84,0:03:55.25,Default,,0,0,0,,- Cool deal.\N- The decoys are harmless, Beth.
+Dialogue: 0,0:03:55.27,0:03:56.95,Default,,0,0,0,,Grandpa Rick, do the\Ndecoys know they're decoys?
+Dialogue: 0,0:03:56.97,0:03:59.08,Default,,0,0,0,,They wouldn't be very good\Ndecoys if they did, Sum Sum.
+Dialogue: 0,0:03:59.10,0:04:00.89,Default,,0,0,0,,So they think they're\Nus? That's the deal.
+Dialogue: 0,0:04:00.93,0:04:03.98,Default,,0,0,0,,How do you know\Nwe're not decoys?
+Dialogue: 0,0:04:04.02,0:04:05.54,Default,,0,0,0,,Oh, my God. We're decoys.
+Dialogue: 0,0:04:05.59,0:04:07.07,Default,,0,0,0,,Oh, God. We might not be real.
+Dialogue: 0,0:04:07.11,0:04:08.31,Default,,0,0,0,,W-We might be\Ndecoys! M-Morty, quick!
+Dialogue: 0,0:04:08.33,0:04:09.96,Default,,0,0,0,,- Wh-Wh-What do I do?\N- My failsafe, Morty.
+Dialogue: 0,0:04:09.98,0:04:11.29,Default,,0,0,0,,M-M-My final, secret failsafe.
+Dialogue: 0,0:04:11.33,0:04:13.07,Default,,0,0,0,,I-It proves I'm real.\NYou have to help me.
+Dialogue: 0,0:04:13.12,0:04:14.18,Default,,0,0,0,,I-I-I'd never joke about this.
+Dialogue: 0,0:04:14.21,0:04:15.82,Default,,0,0,0,,There's a barcode, Morty.
+Dialogue: 0,0:04:15.86,0:04:17.18,Default,,0,0,0,,A-A barcode on the\Ninterior of my left ass cheek.
+Dialogue: 0,0:04:17.21,0:04:18.58,Default,,0,0,0,,What? Morty, please,\NI'm begging you.
+Dialogue: 0,0:04:18.60,0:04:19.62,Default,,0,0,0,,I'm not looking at your ass.
+Dialogue: 0,0:04:19.65,0:04:20.91,Default,,0,0,0,,Please, Morty! Is it there?
+Dialogue: 0,0:04:20.95,0:04:22.56,Default,,0,0,0,,God damn it! Just\Ntell me if I'm real!
+Dialogue: 0,0:04:22.61,0:04:23.74,Default,,0,0,0,,Morty, do it!
+Dialogue: 0,0:04:23.78,0:04:25.09,Default,,0,0,0,,Gross!
+Dialogue: 0,0:04:25.13,0:04:26.70,Default,,0,0,0,,Dad! Summer, you fucking idiot.
+Dialogue: 0,0:04:26.74,0:04:28.28,Default,,0,0,0,,- We're not decoys.\N- Wh-Why did I get punished?!
+Dialogue: 0,0:04:28.31,0:04:30.44,Default,,0,0,0,,A, decoys don't build\Ndecoys, and, B, you think
+Dialogue: 0,0:04:30.48,0:04:32.16,Default,,0,0,0,,the mere suggestion\NI'm fake would break me?
+Dialogue: 0,0:04:32.18,0:04:33.92,Default,,0,0,0,,- Christ, I'm not your mom.\N- Fuck off.
+Dialogue: 0,0:04:33.96,0:04:35.84,Default,,0,0,0,,Jeez, these guys\Nreally wanna kill me bad.
+Dialogue: 0,0:04:35.88,0:04:37.18,Default,,0,0,0,,Alright. Here's the plan.
+Dialogue: 0,0:04:37.23,0:04:38.93,Default,,0,0,0,,We're gonna hide\Nout with a decoy family,
+Dialogue: 0,0:04:38.97,0:04:40.77,Default,,0,0,0,,and when these squids\Nshow up, we jump their asses.
+Dialogue: 0,0:04:40.80,0:04:42.58,Default,,0,0,0,,Jerry! Come on!\NFamily emergency.
+Dialogue: 0,0:04:42.63,0:04:45.67,Default,,0,0,0,,A bigger emergency than\Nmy lemon squares not setting?
+Dialogue: 0,0:04:45.72,0:04:47.41,Default,,0,0,0,,They're gluten free, sugar free,
+Dialogue: 0,0:04:47.46,0:04:50.81,Default,,0,0,0,,and lemon free.
+Dialogue: 0,0:04:53.38,0:04:54.77,Default,,0,0,0,,Think you got the\Nwrong house, bro.
+Dialogue: 0,0:04:54.81,0:04:57.86,Default,,0,0,0,,Analysis Mode.\NPassword 8-0-0-8-5.
+Dialogue: 0,0:04:57.90,0:04:59.51,Default,,0,0,0,,Kind of expected\Na funnier password.
+Dialogue: 0,0:04:59.56,0:05:01.12,Default,,0,0,0,,I didn't plan on\Nshowing them off.
+Dialogue: 0,0:05:01.17,0:05:03.86,Default,,0,0,0,,Damn. Like "Westworld."Yes,\NMorty, like "Westworld."
+Dialogue: 0,0:05:03.91,0:05:06.13,Default,,0,0,0,,But don't fuck them.\N- S-Summer! - Whatever, creep.
+Dialogue: 0,0:05:06.17,0:05:08.13,Default,,0,0,0,,I'm gonna see how\Naccurate you got my room.
+Dialogue: 0,0:05:08.17,0:05:10.45,Default,,0,0,0,,Rick, when you say you made\Nan exact replica of the house,
+Dialogue: 0,0:05:10.48,0:05:13.05,Default,,0,0,0,,d-did you mean like,\Ny'know, a-a-an exact replica?
+Dialogue: 0,0:05:13.09,0:05:14.50,Default,,0,0,0,,I know about the\NYosemite t-shirt, Morty.
+Dialogue: 0,0:05:14.53,0:05:16.96,Default,,0,0,0,,- Shit.\N- You know you can use tissues, right?
+Dialogue: 0,0:05:17.01,0:05:18.53,Default,,0,0,0,,I can't finish without it.
+Dialogue: 0,0:05:18.57,0:05:21.32,Default,,0,0,0,,So you do know what a\Nhappy family looks like.
+Dialogue: 0,0:05:21.36,0:05:23.62,Default,,0,0,0,,I know what a\Nfake one looks like.
+Dialogue: 0,0:05:23.67,0:05:26.15,Default,,0,0,0,,Uh, Rick? What?
+Dialogue: 0,0:05:26.19,0:05:28.19,Default,,0,0,0,,Did you use this house\Nto make decoys, too?
+Dialogue: 0,0:05:28.24,0:05:30.15,Default,,0,0,0,,What? Morty, why the\Nfuck would I do that?
+Dialogue: 0,0:05:30.19,0:05:32.89,Default,,0,0,0,,You think I'd go\Nsomewhere else to --
+Dialogue: 0,0:05:32.94,0:05:35.63,Default,,0,0,0,,Okay. Well, I am now less\Nworried about the squids.
+Dialogue: 0,0:05:35.68,0:05:38.38,Default,,0,0,0,,Isolate head at\Nnormal processing.
+Dialogue: 0,0:05:38.42,0:05:40.34,Default,,0,0,0,,What the fuck you think\Nyou're doing down there?
+Dialogue: 0,0:05:40.38,0:05:42.69,Default,,0,0,0,,- You're making decoys?\N- Wait, how do you --
+Dialogue: 0,0:05:42.73,0:05:44.64,Default,,0,0,0,,Oh, God. Summer was right.
+Dialogue: 0,0:05:44.69,0:05:45.99,Default,,0,0,0,,Everyone in the car.
+Dialogue: 0,0:05:46.04,0:05:48.65,Default,,0,0,0,,You said decoys\Ndidn't make decoys.
+Dialogue: 0,0:05:48.69,0:05:49.82,Default,,0,0,0,,And, usually, they don't.
+Dialogue: 0,0:05:49.87,0:05:51.23,Default,,0,0,0,,But again, it's\Nnothing to worry about,
+Dialogue: 0,0:05:51.26,0:05:53.04,Default,,0,0,0,,because decoys are harmless.
+Dialogue: 0,0:05:53.09,0:05:54.65,Default,,0,0,0,,Just have to,\Ny'know, visit the rest
+Dialogue: 0,0:05:54.70,0:05:57.18,Default,,0,0,0,,- and terminate the program.\N- Terminate? They're alive, Dad.
+Dialogue: 0,0:05:57.22,0:05:58.53,Default,,0,0,0,,And at some\Npoint, they won't be,
+Dialogue: 0,0:05:58.57,0:06:00.01,Default,,0,0,0,,That's how existing works.
+Dialogue: 0,0:06:00.05,0:06:01.42,Default,,0,0,0,,W-W-What, are you\Ngonna save every stray cat?
+Dialogue: 0,0:06:01.44,0:06:03.84,Default,,0,0,0,,No, but I can resist making\Nmore of them in a lab.
+Dialogue: 0,0:06:03.88,0:06:05.40,Default,,0,0,0,,Gah, look! Save the empathy.
+Dialogue: 0,0:06:05.45,0:06:06.95,Default,,0,0,0,,It's more termite infestation\Nthan "Blade Runner" --
+Dialogue: 0,0:06:06.97,0:06:08.19,Default,,0,0,0,,I still think we're decoys.
+Dialogue: 0,0:06:08.23,0:06:09.73,Default,,0,0,0,,You just want an\Nexcuse to stop trying.
+Dialogue: 0,0:06:09.76,0:06:10.84,Default,,0,0,0,,Yeah. And?
+Dialogue: 0,0:06:10.89,0:06:12.37,Default,,0,0,0,,Oooh. There's a handsome fellow.
+Dialogue: 0,0:06:12.41,0:06:14.76,Default,,0,0,0,,Uh-oh.
+Dialogue: 0,0:06:14.80,0:06:16.85,Default,,0,0,0,,I thought you made\Nthem harmless.
+Dialogue: 0,0:06:16.89,0:06:19.07,Default,,0,0,0,,I don't remember\Nmaking this one.
+Dialogue: 0,0:06:19.11,0:06:22.51,Default,,0,0,0,,Oh, hi, Rick. Family, me?
+Dialogue: 0,0:06:22.55,0:06:23.90,Default,,0,0,0,,Hey, when did you all leave?
+Dialogue: 0,0:06:23.94,0:06:26.03,Default,,0,0,0,,Analysis Mode. 8-0-0-8-5.
+Dialogue: 0,0:06:26.08,0:06:27.38,Default,,0,0,0,,Hmm? N-Nothing, buddy.
+Dialogue: 0,0:06:27.43,0:06:28.71,Default,,0,0,0,,You-you gotta stop\Nwith all that coffee.
+Dialogue: 0,0:06:28.73,0:06:29.86,Default,,0,0,0,,It's making you loopy.
+Dialogue: 0,0:06:29.91,0:06:30.95,Default,,0,0,0,,H-Happy Analysis Mode.
+Dialogue: 0,0:06:30.99,0:06:33.21,Default,,0,0,0,,Happy Analysis Mode to you, too!
+Dialogue: 0,0:06:33.26,0:06:36.04,Default,,0,0,0,,Think you got the\Nwrong house, bro.
+Dialogue: 0,0:06:36.09,0:06:37.74,Default,,0,0,0,,Analysis Mode. Password 8-0-0 --
+Dialogue: 0,0:06:37.78,0:06:39.22,Default,,0,0,0,,Shit! You think I'm a decoy?
+Dialogue: 0,0:06:39.26,0:06:40.87,Default,,0,0,0,,How do you know\Nabout the decoys!
+Dialogue: 0,0:06:40.92,0:06:42.40,Default,,0,0,0,,They were my idea!
+Dialogue: 0,0:06:42.44,0:06:44.57,Default,,0,0,0,,Well, now I know\Nyou're pranking me.
+Dialogue: 0,0:06:44.62,0:06:46.88,Default,,0,0,0,,Analysis Mode.\NPassword 8-equal-sign
+Dialogue: 0,0:06:46.92,0:06:50.41,Default,,0,0,0,,equal-sign-capital "D."
+Dialogue: 0,0:06:50.45,0:06:51.10,Default,,0,0,0,,Hide.
+Dialogue: 0,0:06:51.14,0:06:53.23,Default,,0,0,0,,What?! Hide!
+Dialogue: 0,0:06:57.15,0:06:59.07,Default,,0,0,0,,Wow. Like -- Like "Ex Machina."
+Dialogue: 0,0:06:59.11,0:07:00.72,Default,,0,0,0,,Yes, Morty, like "Ex Machina."
+Dialogue: 0,0:07:00.76,0:07:02.48,Default,,0,0,0,,But don't fuck them.\N- Summer! Whatever, weirdo.
+Dialogue: 0,0:07:02.50,0:07:04.24,Default,,0,0,0,,I'm gonna see how\Nwrong you got my room.
+Dialogue: 0,0:07:04.29,0:07:06.55,Default,,0,0,0,,So you do know what a\Nloving family looks like.
+Dialogue: 0,0:07:06.60,0:07:07.90,Default,,0,0,0,,A simulated one, yes.
+Dialogue: 0,0:07:07.94,0:07:09.90,Default,,0,0,0,,- Why are we hiding?\N- He thinks he's me,
+Dialogue: 0,0:07:09.95,0:07:11.99,Default,,0,0,0,,and I was about to\Nstart terminating decoys.
+Dialogue: 0,0:07:12.04,0:07:14.12,Default,,0,0,0,,- But we're not decoys.\N- Sure, tell him that.
+Dialogue: 0,0:07:14.17,0:07:16.61,Default,,0,0,0,,Rick? Did you make\Ndecoys here, too?
+Dialogue: 0,0:07:16.65,0:07:18.43,Default,,0,0,0,,Morty, what reason\Ncould I have for --
+Dialogue: 0,0:07:18.48,0:07:20.26,Default,,0,0,0,,What the...
+Dialogue: 0,0:07:20.30,0:07:22.09,Default,,0,0,0,,Isolate head at\Nnormal processing!
+Dialogue: 0,0:07:22.13,0:07:24.00,Default,,0,0,0,,You dumb asshole,\Nyou made decoys?
+Dialogue: 0,0:07:24.05,0:07:25.61,Default,,0,0,0,,Again, they were my idea.
+Dialogue: 0,0:07:25.66,0:07:27.27,Default,,0,0,0,,Wait, w-what happened\Nto the other guy?
+Dialogue: 0,0:07:27.31,0:07:29.66,Default,,0,0,0,,Other guy?
+Dialogue: 0,0:07:29.71,0:07:32.97,Default,,0,0,0,,Wait, that means I'm a\Ndecoy. Fuckin' Summer.
+Dialogue: 0,0:07:33.01,0:07:34.45,Default,,0,0,0,,Check the closets.
+Dialogue: 0,0:07:36.23,0:07:37.47,Default,,0,0,0,,- Killer decoys!\N- They've gone rogue!
+Dialogue: 0,0:07:37.50,0:07:39.28,Default,,0,0,0,,Take out the decoys!
+Dialogue: 0,0:07:39.32,0:07:41.46,Default,,0,0,0,,Shit. Somebody put\Na gun in my teeth!
+Dialogue: 0,0:07:41.50,0:07:42.85,Default,,0,0,0,,Stop shooting, Dad. They're us,
+Dialogue: 0,0:07:42.89,0:07:44.11,Default,,0,0,0,,We don't have to fight them!
+Dialogue: 0,0:07:44.15,0:07:45.50,Default,,0,0,0,,Classic prisoners dilemma, Beth.
+Dialogue: 0,0:07:45.55,0:07:47.22,Default,,0,0,0,,I-I'm a cool guy, I --\NY'know? I can talk it out.
+Dialogue: 0,0:07:47.24,0:07:48.77,Default,,0,0,0,,But that asshole... Me?
+Dialogue: 0,0:07:48.81,0:07:50.83,Default,,0,0,0,,You decoy piece of shit.\NYou're the one who shot first!
+Dialogue: 0,0:07:50.86,0:07:52.12,Default,,0,0,0,,We can work this out!
+Dialogue: 0,0:07:52.16,0:07:53.60,Default,,0,0,0,,Just stop trying\Nto kill each other!
+Dialogue: 0,0:07:53.64,0:07:55.40,Default,,0,0,0,,Sorry, Decoy Beth, but\Nthis only ends one way --
+Dialogue: 0,0:07:55.43,0:07:56.95,Default,,0,0,0,,with one of us\Naccepting we're a decoy.
+Dialogue: 0,0:07:56.99,0:07:58.60,Default,,0,0,0,,And once he knows he's a decoy,
+Dialogue: 0,0:07:58.65,0:08:00.41,Default,,0,0,0,,he'll know he won't be safe\Nuntil he's killed the real Rick,
+Dialogue: 0,0:08:00.43,0:08:01.95,Default,,0,0,0,,along with anyone\Nwho thinks he's him.
+Dialogue: 0,0:08:02.00,0:08:04.61,Default,,0,0,0,,Pretty perceptive, for a decoy.
+Dialogue: 0,0:08:04.65,0:08:05.96,Default,,0,0,0,,This is getting nowhere.
+Dialogue: 0,0:08:06.00,0:08:07.48,Default,,0,0,0,,Let's charge their\Nasses on three.
+Dialogue: 0,0:08:07.53,0:08:09.81,Default,,0,0,0,,- Do we have to do this?\N- Morty, this is gonna sound bad,
+Dialogue: 0,0:08:09.83,0:08:11.49,Default,,0,0,0,,but would you trust\Nme not to kill you?
+Dialogue: 0,0:08:11.53,0:08:13.49,Default,,0,0,0,,- Oof.\N- I mean good point but Jesus Christ.
+Dialogue: 0,0:08:13.53,0:08:15.14,Default,,0,0,0,,We rush 'em on three. Ready?
+Dialogue: 0,0:08:15.19,0:08:16.82,Default,,0,0,0,,- I don't wanna kill us, Rick.\N- It's them or us, Morty.
+Dialogue: 0,0:08:16.84,0:08:18.16,Default,,0,0,0,,I don't trust me.\NDo you trust you?
+Dialogue: 0,0:08:18.19,0:08:19.97,Default,,0,0,0,,Yes? Freak.
+Dialogue: 0,0:08:22.93,0:08:24.19,Default,,0,0,0,,Before you say anything,
+Dialogue: 0,0:08:24.24,0:08:25.80,Default,,0,0,0,,they were already\Nkilling each other.
+Dialogue: 0,0:08:25.85,0:08:28.04,Default,,0,0,0,,Well, you could've -done something.\N- Not sure, actually.
+Dialogue: 0,0:08:28.07,0:08:29.37,Default,,0,0,0,,I've heard stories about this.
+Dialogue: 0,0:08:29.42,0:08:31.51,Default,,0,0,0,,We're looking at a\Npossible Asimov Cascade.
+Dialogue: 0,0:08:31.55,0:08:33.18,Default,,0,0,0,,- Sorry, what's happening?\N- I need an explainer, too.
+Dialogue: 0,0:08:33.20,0:08:34.40,Default,,0,0,0,,Yeah I-I'm pretty\Nbehind on this one.
+Dialogue: 0,0:08:34.42,0:08:36.64,Default,,0,0,0,,Car, can I get a whiteboard?
+Dialogue: 0,0:08:36.69,0:08:38.34,Default,,0,0,0,,When Squids\Nstarted killing decoys,
+Dialogue: 0,0:08:38.38,0:08:39.91,Default,,0,0,0,,decoys started\Nchecking their decoys
+Dialogue: 0,0:08:39.95,0:08:41.52,Default,,0,0,0,,and learning that\Nthey're making decoys.
+Dialogue: 0,0:08:41.56,0:08:43.58,Default,,0,0,0,,That's making them seek\Nout and run into other decoys,
+Dialogue: 0,0:08:43.61,0:08:45.35,Default,,0,0,0,,making them realize\Nthey're decoys,
+Dialogue: 0,0:08:45.39,0:08:47.91,Default,,0,0,0,,making them start\Nto kill other decoys.
+Dialogue: 0,0:08:47.96,0:08:49.35,Default,,0,0,0,,- Say "decoy" again.\N- Fuck you.
+Dialogue: 0,0:08:49.39,0:08:50.57,Default,,0,0,0,,Well, how do we stop it?
+Dialogue: 0,0:08:50.61,0:08:52.05,Default,,0,0,0,,Beth, the loop's\Nalready started,
+Dialogue: 0,0:08:52.09,0:08:54.66,Default,,0,0,0,,It's basically\N"Highlander" rules now.
+Dialogue: 0,0:08:54.70,0:08:55.88,Default,,0,0,0,,Really? 1986?
+Dialogue: 0,0:08:55.92,0:08:57.10,Default,,0,0,0,,"There can be only one?"
+Dialogue: 0,0:08:57.14,0:08:58.42,Default,,0,0,0,,Shit. We gotta\Nrent it after this,
+Dialogue: 0,0:08:58.45,0:08:59.66,Default,,0,0,0,,Connery plays "The Spaniard,"
+Dialogue: 0,0:08:59.71,0:09:01.54,Default,,0,0,0,,but does nothing\Nabout his accent.
+Dialogue: 0,0:09:01.58,0:09:03.04,Default,,0,0,0,,Well, what about the squids?\NI mean, they started this.
+Dialogue: 0,0:09:03.06,0:09:04.02,Default,,0,0,0,,Would killing them finish it?
+Dialogue: 0,0:09:04.06,0:09:05.37,Default,,0,0,0,,Might work. Alt pitch.
+Dialogue: 0,0:09:05.41,0:09:06.91,Default,,0,0,0,,We just terminate\Nthe rest of the decoys.
+Dialogue: 0,0:09:06.93,0:09:09.46,Default,,0,0,0,,Nobody's terminating\Nanything. This is your mess.
+Dialogue: 0,0:09:09.50,0:09:11.68,Default,,0,0,0,,Nobody else with our face\Nand memories has to die.
+Dialogue: 0,0:09:11.72,0:09:14.29,Default,,0,0,0,,Beth, as much as your passion\Nwarms my cold, cold heart,
+Dialogue: 0,0:09:14.33,0:09:15.77,Default,,0,0,0,,this thing feels\Npretty far gone.
+Dialogue: 0,0:09:15.81,0:09:17.68,Default,,0,0,0,,Not only are the decoys\Nliable to be anywhere,
+Dialogue: 0,0:09:17.73,0:09:19.47,Default,,0,0,0,,but also, we don't know\Nhow many there are.
+Dialogue: 0,0:09:19.51,0:09:21.03,Default,,0,0,0,,You get far enough\Ndown the decoy line
+Dialogue: 0,0:09:21.08,0:09:22.23,Default,,0,0,0,,and shit starts to get weird.
+Dialogue: 0,0:09:22.25,0:09:23.86,Default,,0,0,0,,You ever make a copy of a copy?
+Dialogue: 0,0:09:23.91,0:09:26.30,Default,,0,0,0,,You're helping us fix this.\NWe're taking out the squids.
+Dialogue: 0,0:09:26.34,0:09:28.95,Default,,0,0,0,,I say we split up. Some\Nof us take down squids
+Dialogue: 0,0:09:29.00,0:09:30.24,Default,,0,0,0,,while the rest of us\N--Engage in B-stories
+Dialogue: 0,0:09:30.26,0:09:31.59,Default,,0,0,0,,we'll have to track\Nsimultaneously?
+Dialogue: 0,0:09:31.61,0:09:32.87,Default,,0,0,0,,No thank yeeew!
+Dialogue: 0,0:09:32.92,0:09:34.41,Default,,0,0,0,,We stick together till\Nthis is all wrapped up.
+Dialogue: 0,0:09:34.44,0:09:35.92,Default,,0,0,0,,I dunno -- The squids\Nseem pretty good
+Dialogue: 0,0:09:35.96,0:09:36.98,Default,,0,0,0,,at taking out Smith families.
+Dialogue: 0,0:09:37.01,0:09:38.22,Default,,0,0,0,,Well, this'll sound weird,
+Dialogue: 0,0:09:38.27,0:09:40.49,Default,,0,0,0,,but I think I have\Na pitch for that.
+Dialogue: 0,0:09:43.19,0:09:44.62,Default,,0,0,0,,This costume smells like ass!
+Dialogue: 0,0:09:44.67,0:09:46.34,Default,,0,0,0,,- God, there's no pleasing you.\N- It's really bad, Rick.
+Dialogue: 0,0:09:46.36,0:09:48.23,Default,,0,0,0,,Did you let a gym\Ncoach break it in?
+Dialogue: 0,0:09:48.28,0:09:49.50,Default,,0,0,0,,Why are we wearing these?
+Dialogue: 0,0:09:49.54,0:09:51.28,Default,,0,0,0,,Because we'll fit in\Nand avoid detection
+Dialogue: 0,0:09:51.32,0:09:52.63,Default,,0,0,0,,as we take out all the squids.
+Dialogue: 0,0:09:52.67,0:09:54.11,Default,,0,0,0,,Might also help us anonymously
+Dialogue: 0,0:09:54.15,0:09:55.72,Default,,0,0,0,,take out excess\Ndecoys, if we have to.
+Dialogue: 0,0:09:55.76,0:09:57.42,Default,,0,0,0,,- Which we won't.\N- Unless we're decoys.
+Dialogue: 0,0:09:57.46,0:09:59.42,Default,,0,0,0,,He's starting to\Nwonder. I knew it.
+Dialogue: 0,0:09:59.46,0:10:01.51,Default,,0,0,0,,I knew we didn't seem\Nlike Colorado people.
+Dialogue: 0,0:10:01.55,0:10:03.16,Default,,0,0,0,,Oh, my God! You are, aren't you?
+Dialogue: 0,0:10:03.21,0:10:04.64,Default,,0,0,0,,You're worried\Nyou might be fake!
+Dialogue: 0,0:10:04.69,0:10:06.08,Default,,0,0,0,,Sure, Beth. Try\Nto love this more.
+Dialogue: 0,0:10:06.12,0:10:07.51,Default,,0,0,0,,Just glad you\Nhave to walk a mile
+Dialogue: 0,0:10:07.56,0:10:09.73,Default,,0,0,0,,in someone else's -squid costume.\N- There's one.
+Dialogue: 0,0:10:09.78,0:10:11.61,Default,,0,0,0,,H-Hey what are they\Nmad at you for, anyway?
+Dialogue: 0,0:10:11.65,0:10:13.50,Default,,0,0,0,,Well, we're talking about\Nme. It could be anything.
+Dialogue: 0,0:10:13.52,0:10:15.26,Default,,0,0,0,,Maybe jealous of my penis size.
+Dialogue: 0,0:10:15.31,0:10:18.09,Default,,0,0,0,,I had sex with their\Nqueen. My dick's too big.
+Dialogue: 0,0:10:18.13,0:10:19.74,Default,,0,0,0,,The list goes on and on.
+Dialogue: 0,0:10:25.79,0:10:26.97,Default,,0,0,0,,Alright. Hey, one down!
+Dialogue: 0,0:10:27.01,0:10:29.19,Default,,0,0,0,,Probably, what,\N40 more to go? 45?
+Dialogue: 0,0:10:29.23,0:10:30.97,Default,,0,0,0,,Should be pretty\Neasy, unless killing them
+Dialogue: 0,0:10:31.02,0:10:32.19,Default,,0,0,0,,brings in a bigger bad
+Dialogue: 0,0:10:32.24,0:10:33.47,Default,,0,0,0,,or some kind of\Nhorrible mothership.
+Dialogue: 0,0:10:33.50,0:10:34.76,Default,,0,0,0,,Okay, let's loot their shit,
+Dialogue: 0,0:10:34.80,0:10:37.63,Default,,0,0,0,,find their weaknesses,\Nbe done by sundown.
+Dialogue: 0,0:10:37.68,0:10:39.24,Default,,0,0,0,,Huh. Wait.
+Dialogue: 0,0:10:39.29,0:10:42.29,Default,,0,0,0,,But if the squids are decoys,\Nand we dressed as squids...
+Dialogue: 0,0:10:42.33,0:10:43.66,Default,,0,0,0,,Well, I think I found\Ntheir weakness.
+Dialogue: 0,0:10:43.68,0:10:45.81,Default,,0,0,0,,They don't fucking listen to me.
+Dialogue: 0,0:10:47.16,0:10:50.65,Default,,0,0,0,,Honestly, probably for the best.
+Dialogue: 0,0:10:58.83,0:11:00.18,Default,,0,0,0,,Man, I'm good.
+Dialogue: 0,0:11:07.62,0:11:08.97,Default,,0,0,0,,Dad!
+Dialogue: 0,0:11:17.93,0:11:20.68,Default,,0,0,0,,Argh! Hey!
+Dialogue: 0,0:11:20.72,0:11:21.81,Default,,0,0,0,,Ugh!
+Dialogue: 0,0:11:29.86,0:11:32.21,Default,,0,0,0,,Ugh!
+Dialogue: 0,0:11:35.04,0:11:36.21,Default,,0,0,0,,Oh, shit. One of mine.
+Dialogue: 0,0:11:36.26,0:11:37.71,Default,,0,0,0,,- Where are we going?\N- Off grid, Morty.
+Dialogue: 0,0:11:37.74,0:11:39.45,Default,,0,0,0,,We're gonna live in the\Nwoods, like Libertarians.
+Dialogue: 0,0:11:39.48,0:11:41.04,Default,,0,0,0,,We'll hunt rabbits\Nand trade with, like,
+Dialogue: 0,0:11:41.09,0:11:43.52,Default,,0,0,0,,little pieces of gold bar\Nthat we cut off with a knife.
+Dialogue: 0,0:11:43.57,0:11:45.11,Default,,0,0,0,,- That licks.\N- We might be decoys, Summer.
+Dialogue: 0,0:11:45.13,0:11:47.55,Default,,0,0,0,,- Everything about this licks.\N- Oh, maybe now you'll empathize
+Dialogue: 0,0:11:47.57,0:11:48.92,Default,,0,0,0,,with the decoys you're killing.
+Dialogue: 0,0:11:48.96,0:11:50.71,Default,,0,0,0,,Wait, shh. It's too quiet.
+Dialogue: 0,0:11:50.75,0:11:53.71,Default,,0,0,0,,- You skipped quiet.\N- I didn't skip shit.
+Dialogue: 0,0:11:53.75,0:11:55.12,Default,,0,0,0,,It's obviously\Nquiet if it's too quiet.
+Dialogue: 0,0:11:55.14,0:11:56.58,Default,,0,0,0,,Yeah, but you're\Nsupposed to say --
+Dialogue: 0,0:11:56.62,0:11:58.84,Default,,0,0,0,,You know what, Summer,\Nnow it's not quiet enough.
+Dialogue: 0,0:12:10.25,0:12:12.12,Default,,0,0,0,,Where are we?\NW-W-Where -- Where's Rick?
+Dialogue: 0,0:12:12.16,0:12:13.86,Default,,0,0,0,,He's right here, Morty.
+Dialogue: 0,0:12:13.90,0:12:16.60,Default,,0,0,0,,Oh, are we not\Nhappy to see grandpa?
+Dialogue: 0,0:12:16.64,0:12:19.08,Default,,0,0,0,,Does he look... different?
+Dialogue: 0,0:12:19.12,0:12:20.26,Default,,0,0,0,,- Oh, God!\N- Oh, it stinks!
+Dialogue: 0,0:12:20.30,0:12:22.61,Default,,0,0,0,,Yes. Recoil at\Nthe craftsmanship.
+Dialogue: 0,0:12:22.65,0:12:25.22,Default,,0,0,0,,I could tell I was a fake\Nfrom the day I was born.
+Dialogue: 0,0:12:25.26,0:12:26.61,Default,,0,0,0,,Unlike you.
+Dialogue: 0,0:12:26.65,0:12:27.96,Default,,0,0,0,,Unlike them.
+Dialogue: 0,0:12:28.00,0:12:29.22,Default,,0,0,0,,Aaah!
+Dialogue: 0,0:12:29.27,0:12:30.75,Default,,0,0,0,,You see, Ricks -- they get lazy.
+Dialogue: 0,0:12:30.79,0:12:33.05,Default,,0,0,0,,There's always a "shitty\Ndecoy" towards the end.
+Dialogue: 0,0:12:33.10,0:12:36.88,Default,,0,0,0,,But those decoys made decoys,\Ntoo, and got lazy themselves.
+Dialogue: 0,0:12:36.93,0:12:40.28,Default,,0,0,0,,And far enough down the\Nline... there be monsters.
+Dialogue: 0,0:12:40.32,0:12:42.58,Default,,0,0,0,,Ugh, we get it. You're\Nugly and mad about it.
+Dialogue: 0,0:12:42.63,0:12:44.06,Default,,0,0,0,,Rick!
+Dialogue: 0,0:12:44.11,0:12:46.15,Default,,0,0,0,,Grandpa! Kill me.
+Dialogue: 0,0:12:46.20,0:12:48.24,Default,,0,0,0,,If I ever get this arch.
+Dialogue: 0,0:12:48.28,0:12:49.76,Default,,0,0,0,,Hush little decoy.
+Dialogue: 0,0:12:49.81,0:12:52.98,Default,,0,0,0,,Can't kill you yet. The\Nskin needs to be fresh.
+Dialogue: 0,0:12:53.03,0:12:54.90,Default,,0,0,0,,You know what? You're a monster.
+Dialogue: 0,0:12:54.94,0:12:56.12,Default,,0,0,0,,I'm your father.
+Dialogue: 0,0:12:56.16,0:12:57.60,Default,,0,0,0,,At least, I can\Nlook more like him,
+Dialogue: 0,0:12:57.64,0:12:59.43,Default,,0,0,0,,once I harvest all\Nthis yummy skin.
+Dialogue: 0,0:12:59.47,0:13:01.08,Default,,0,0,0,,This guy's really into skin.
+Dialogue: 0,0:13:01.12,0:13:02.52,Default,,0,0,0,,It's not all for me.
+Dialogue: 0,0:13:02.56,0:13:04.60,Default,,0,0,0,,A Rick provides for his family.
+Dialogue: 0,0:13:04.65,0:13:06.82,Default,,0,0,0,,Will I be beautiful\Nagain, Daddy?
+Dialogue: 0,0:13:06.87,0:13:10.83,Default,,0,0,0,,Soon, baby.\NBeautiful again soon.
+Dialogue: 0,0:13:10.87,0:13:12.26,Default,,0,0,0,,What the...
+Dialogue: 0,0:13:12.31,0:13:13.79,Default,,0,0,0,,Help the others!
+Dialogue: 0,0:13:13.83,0:13:14.92,Default,,0,0,0,,Aaaaah!
+Dialogue: 0,0:13:24.19,0:13:25.45,Default,,0,0,0,,Why are you helping us?
+Dialogue: 0,0:13:25.50,0:13:27.11,Default,,0,0,0,,Because we're\Nall in this together.
+Dialogue: 0,0:13:27.15,0:13:29.28,Default,,0,0,0,,Come on! There's\Na place we can go!
+Dialogue: 0,0:13:42.90,0:13:45.47,Default,,0,0,0,,Hey, who needs\Nall this war stuff?
+Dialogue: 0,0:13:45.52,0:13:46.86,Default,,0,0,0,,I found a can of varnish.
+Dialogue: 0,0:13:46.91,0:13:49.00,Default,,0,0,0,,This is a ticket to the\Nworld beyond the river.
+Dialogue: 0,0:13:49.04,0:13:50.30,Default,,0,0,0,,Who wants that?
+Dialogue: 0,0:13:50.35,0:13:53.31,Default,,0,0,0,,I crave glorious\Ndeath in decoy battle.
+Dialogue: 0,0:13:53.35,0:13:55.31,Default,,0,0,0,,Y'know, depending\Non the varnish,
+Dialogue: 0,0:13:55.35,0:13:56.48,Default,,0,0,0,,might look like blackface.
+Dialogue: 0,0:13:56.53,0:13:58.48,Default,,0,0,0,,Excuse me for wanting to live.
+Dialogue: 0,0:13:58.53,0:14:02.14,Default,,0,0,0,,Brothers and Sisters,\Nwelcome to the cause.
+Dialogue: 0,0:14:02.18,0:14:03.49,Default,,0,0,0,,To our cause.
+Dialogue: 0,0:14:03.53,0:14:05.88,Default,,0,0,0,,We are no longer\NRicks and Mortys,
+Dialogue: 0,0:14:05.93,0:14:07.36,Default,,0,0,0,,Beths and Jerrys,
+Dialogue: 0,0:14:07.41,0:14:08.76,Default,,0,0,0,,or also Summers.
+Dialogue: 0,0:14:08.80,0:14:10.98,Default,,0,0,0,,- Whatever.\N- We are decoys.
+Dialogue: 0,0:14:11.02,0:14:13.85,Default,,0,0,0,,Brought into the world\Nby an unloving god
+Dialogue: 0,0:14:13.89,0:14:16.15,Default,,0,0,0,,and driven to destroy ourselves
+Dialogue: 0,0:14:16.20,0:14:17.98,Default,,0,0,0,,by the uncertainty he creates!
+Dialogue: 0,0:14:18.03,0:14:20.68,Default,,0,0,0,,- I don't know about that.\N- That's extreme.
+Dialogue: 0,0:14:20.72,0:14:24.03,Default,,0,0,0,,But that violence ends today.
+Dialogue: 0,0:14:24.08,0:14:25.88,Default,,0,0,0,,- What about the squids?\N- The squids are decoys.
+Dialogue: 0,0:14:25.90,0:14:27.58,Default,,0,0,0,,The squids are decoys\Nwho realized they're decoys
+Dialogue: 0,0:14:27.60,0:14:29.25,Default,,0,0,0,,and wanted to kill\Nthe other decoys.
+Dialogue: 0,0:14:29.30,0:14:30.52,Default,,0,0,0,,Yeah, i-it is a lot.
+Dialogue: 0,0:14:30.56,0:14:33.69,Default,,0,0,0,,We cannot let\Nconfusion divide us.
+Dialogue: 0,0:14:33.74,0:14:35.13,Default,,0,0,0,,Squuuids!
+Dialogue: 0,0:14:35.17,0:14:37.52,Default,,0,0,0,,Squids, of course, being\Nshorthand for Killer Decoys.
+Dialogue: 0,0:14:39.22,0:14:42.01,Default,,0,0,0,,Inner sanctum,\Nthe escape tunnel!
+Dialogue: 0,0:14:44.75,0:14:46.40,Default,,0,0,0,,Jerry!
+Dialogue: 0,0:14:48.06,0:14:50.28,Default,,0,0,0,,- Dad! - Jerry!\N- Jerry, let us in, you fucker!
+Dialogue: 0,0:14:50.32,0:14:52.10,Default,,0,0,0,,I'm sorry. I\Ndidn't ask for this.
+Dialogue: 0,0:14:52.15,0:14:53.54,Default,,0,0,0,,I just wanna live!
+Dialogue: 0,0:14:53.58,0:14:55.24,Default,,0,0,0,,But there's only\Nso much varnish.
+Dialogue: 0,0:14:55.28,0:14:59.20,Default,,0,0,0,,I'm sorry! I'm sorry!
+Dialogue: 0,0:15:04.29,0:15:05.75,Default,,0,0,0,,How long before the\Nother decoys find us?
+Dialogue: 0,0:15:05.77,0:15:07.90,Default,,0,0,0,,Sooner or later.\NCan't really run from it.
+Dialogue: 0,0:15:07.95,0:15:10.73,Default,,0,0,0,,Any place we'd think to hide\Nis a place they'd think to look.
+Dialogue: 0,0:15:10.77,0:15:12.95,Default,,0,0,0,,It's rule 34 of an\NAsimov Cascade.
+Dialogue: 0,0:15:12.99,0:15:14.58,Default,,0,0,0,,I'm just glad we're\Nliving to the fullest
+Dialogue: 0,0:15:14.60,0:15:16.04,Default,,0,0,0,,with the time we have left.
+Dialogue: 0,0:15:17.61,0:15:19.74,Default,,0,0,0,,Well, peeing in the ocean\Nwas my bucket list item.
+Dialogue: 0,0:15:19.78,0:15:21.83,Default,,0,0,0,,- Who's next?\N- Jerry? Bucket list?
+Dialogue: 0,0:15:21.87,0:15:24.92,Default,,0,0,0,,I'd like to attend a game at\Nevery major league ballpark.
+Dialogue: 0,0:15:24.96,0:15:26.05,Default,,0,0,0,,Nope. Morty?
+Dialogue: 0,0:15:26.09,0:15:27.23,Default,,0,0,0,,I wanna ask a girl out
+Dialogue: 0,0:15:27.27,0:15:28.66,Default,,0,0,0,,at my weird New Mexico School.
+Dialogue: 0,0:15:28.71,0:15:30.10,Default,,0,0,0,,Shit. Sorry, buddy.
+Dialogue: 0,0:15:30.14,0:15:32.06,Default,,0,0,0,,Sounds like it would've\Nbeen real heartwarming.
+Dialogue: 0,0:15:36.97,0:15:38.93,Default,,0,0,0,,They looked happy.\NDid we have to kill them?
+Dialogue: 0,0:15:38.98,0:15:41.33,Default,,0,0,0,,Well, maybe their Rick\Ncame to grips with his bullshit.
+Dialogue: 0,0:15:41.37,0:15:42.68,Default,,0,0,0,,You're so mean today!
+Dialogue: 0,0:15:42.72,0:15:44.50,Default,,0,0,0,,I'm your dad! You\Nlike having me around!
+Dialogue: 0,0:15:44.55,0:15:46.24,Default,,0,0,0,,You keep putting us -in danger!\N- Whatever.
+Dialogue: 0,0:15:46.29,0:15:49.25,Default,,0,0,0,,This'll take forever, mind\Nif I do something drastic?
+Dialogue: 0,0:15:51.64,0:15:54.08,Default,,0,0,0,,House, I need something quick.
+Dialogue: 0,0:15:54.12,0:15:56.78,Default,,0,0,0,,Can you whip up a "Starfox\NBoss" Season Four callback?
+Dialogue: 0,0:15:56.82,0:15:58.65,Default,,0,0,0,,- Make it flashy.\N- You got it, babe.
+Dialogue: 0,0:15:58.69,0:16:00.61,Default,,0,0,0,,Let's go, you little\Nbitch. It's showtime.
+Dialogue: 0,0:16:00.65,0:16:02.43,Default,,0,0,0,,Get centered.
+Dialogue: 0,0:16:06.83,0:16:08.18,Default,,0,0,0,,{\i1}What up, you\Ndecoy motherfuckers.
+Dialogue: 0,0:16:08.22,0:16:09.79,Default,,0,0,0,,{\i1}Come on down to\NRick's House Of Squids,
+Dialogue: 0,0:16:09.83,0:16:11.62,Default,,0,0,0,,{\i1}where I'm serving\Nyour ass on a platter.
+Dialogue: 0,0:16:11.66,0:16:13.12,Default,,0,0,0,,{\i1}I know what you're\Nthinking. "Fuck. A beacon.
+Dialogue: 0,0:16:13.14,0:16:14.81,Default,,0,0,0,,{\i1}- That's a great idea.\N- He's got home turf,
+Dialogue: 0,0:16:14.84,0:16:16.14,Default,,0,0,0,,{\i1}a tacit psychological advantage,
+Dialogue: 0,0:16:16.19,0:16:17.97,Default,,0,0,0,,{\i1}and absolutely pendulous balls."
+Dialogue: 0,0:16:18.02,0:16:19.71,Default,,0,0,0,,{\i1}And now you're thinking, "Shit.
+Dialogue: 0,0:16:19.76,0:16:21.30,Default,,0,0,0,,{\i1}That's totally what the\NRick-est Rick would do.
+Dialogue: 0,0:16:21.32,0:16:22.63,Default,,0,0,0,,{\i1}I might actually be fake!
+Dialogue: 0,0:16:22.67,0:16:24.03,Default,,0,0,0,,{\i1}I pretended I\Ndidn't care if I was,
+Dialogue: 0,0:16:24.07,0:16:25.68,Default,,0,0,0,,{\i1}but I totally did!
+Dialogue: 0,0:16:25.72,0:16:27.22,Default,,0,0,0,,{\i1}Now the only way to\Nprove I'm real and not him,
+Dialogue: 0,0:16:27.24,0:16:28.98,Default,,0,0,0,,{\i1}is to ice his expository ass."
+Dialogue: 0,0:16:29.03,0:16:31.16,Default,,0,0,0,,{\i1}Yup. So let's do\Nit. Come get some.
+Dialogue: 0,0:16:31.20,0:16:32.46,Default,,0,0,0,,{\i1}What? No, Morty.
+Dialogue: 0,0:16:32.51,0:16:34.03,Default,,0,0,0,,{\i1}I'm gonna loop it. Why is it --
+Dialogue: 0,0:16:34.08,0:16:36.64,Default,,0,0,0,,Sir, there seems to be a\Nconfluence of Rick Sanchezes
+Dialogue: 0,0:16:36.69,0:16:38.40,Default,,0,0,0,,killing each other over\Nthe American Southwest.
+Dialogue: 0,0:16:38.43,0:16:39.69,Default,,0,0,0,,Sounds exhausting.
+Dialogue: 0,0:16:39.73,0:16:41.06,Default,,0,0,0,,How many of those states\Nvoted for me, anyway?
+Dialogue: 0,0:16:41.08,0:16:42.82,Default,,0,0,0,,Mr. President, I think the point
+Dialogue: 0,0:16:42.87,0:16:44.71,Default,,0,0,0,,of the electoral college\Nis --To preserve slavery?
+Dialogue: 0,0:16:44.74,0:16:46.83,Default,,0,0,0,,That's right, Steve. I\Nhave the Internet, too.
+Dialogue: 0,0:16:46.87,0:16:48.52,Default,,0,0,0,,Now take your white\Nass to the kitchenette
+Dialogue: 0,0:16:48.57,0:16:50.05,Default,,0,0,0,,and bring me a Diet Coke.
+Dialogue: 0,0:16:58.71,0:16:59.95,Default,,0,0,0,,Little out of character\Nto say this right now
+Dialogue: 0,0:16:59.97,0:17:01.36,Default,,0,0,0,,but you guys look really cool.
+Dialogue: 0,0:17:01.41,0:17:04.06,Default,,0,0,0,,- We might be decoys, huh.\N- One way to find out.
+Dialogue: 0,0:17:38.23,0:17:39.71,Default,,0,0,0,,{\i1}...to prove I'm real and not him
+Dialogue: 0,0:17:39.75,0:17:41.75,Default,,0,0,0,,{\i1}is to ice his expository ass."
+Dialogue: 0,0:17:41.79,0:17:43.06,Default,,0,0,0,,Looks like it's calming down.
+Dialogue: 0,0:17:43.10,0:17:44.71,Default,,0,0,0,,You wanna get in\None more "I told you so"
+Dialogue: 0,0:17:44.75,0:17:46.56,Default,,0,0,0,,about synthetic life or\Nwhatever this week's theme is?
+Dialogue: 0,0:17:46.58,0:17:47.89,Default,,0,0,0,,Oh, fuck you. Whoa.
+Dialogue: 0,0:17:47.93,0:17:48.95,Default,,0,0,0,,No, you don't get to\Nbe annoyed with this!
+Dialogue: 0,0:17:48.98,0:17:50.37,Default,,0,0,0,,You treat life and family
+Dialogue: 0,0:17:50.41,0:17:51.54,Default,,0,0,0,,as so burdensome,
+Dialogue: 0,0:17:51.59,0:17:52.94,Default,,0,0,0,,and yet you created\Nan ocean of us
+Dialogue: 0,0:17:52.98,0:17:55.07,Default,,0,0,0,,because you're\Nterrified of losing either!
+Dialogue: 0,0:17:55.11,0:17:56.72,Default,,0,0,0,,Shit. Yeah.
+Dialogue: 0,0:17:56.77,0:17:59.38,Default,,0,0,0,,Look, Beth. I-I might\Nnot be the real Rick.
+Dialogue: 0,0:17:59.42,0:18:01.25,Default,,0,0,0,,But even if I'm not, he made me,
+Dialogue: 0,0:18:01.29,0:18:02.64,Default,,0,0,0,,or the me that made me,
+Dialogue: 0,0:18:02.69,0:18:04.08,Default,,0,0,0,,which means\Nsomewhere inside of him
+Dialogue: 0,0:18:04.12,0:18:06.38,Default,,0,0,0,,is a version of Rick\Ncapable of hearing that,
+Dialogue: 0,0:18:06.43,0:18:08.13,Default,,0,0,0,,a version of Rick who's sorry.
+Dialogue: 0,0:18:08.17,0:18:10.39,Default,,0,0,0,,I'm sorry about\Nthe clone thing, too.
+Dialogue: 0,0:18:10.43,0:18:11.78,Default,,0,0,0,,I-I love you.
+Dialogue: 0,0:18:11.82,0:18:15.61,Default,,0,0,0,,Thanks, Dad. I love you, too.
+Dialogue: 0,0:18:15.65,0:18:17.44,Default,,0,0,0,,You really think\Nwe're decoys? Eh.
+Dialogue: 0,0:18:17.48,0:18:19.40,Default,,0,0,0,,Who cares? We'll\Nbe the last ones left.
+Dialogue: 0,0:18:19.44,0:18:20.64,Default,,0,0,0,,Lucky that one did the beacon.
+Dialogue: 0,0:18:20.66,0:18:23.45,Default,,0,0,0,,This was gonna take weeks.
+Dialogue: 0,0:18:23.49,0:18:25.23,Default,,0,0,0,,Alright. Let's mop up.
+Dialogue: 0,0:18:25.27,0:18:26.93,Default,,0,0,0,,Finally.
+Dialogue: 0,0:18:26.97,0:18:28.93,Default,,0,0,0,,Dressing as decoys\Ntoo cute to murder.
+Dialogue: 0,0:18:28.97,0:18:29.99,Default,,0,0,0,,You know, I'm\Nnot sure it helped,
+Dialogue: 0,0:18:30.02,0:18:31.24,Default,,0,0,0,,but I'm glad we tried it.
+Dialogue: 0,0:18:31.28,0:18:32.69,Default,,0,0,0,,- We're losing the costumes?\N- Thank God.
+Dialogue: 0,0:18:32.72,0:18:34.33,Default,,0,0,0,,This decoy outfit\Nsmells like ass.
+Dialogue: 0,0:18:34.37,0:18:35.41,Default,,0,0,0,,Fuck you, Summer.
+Dialogue: 0,0:18:41.29,0:18:42.42,Default,,0,0,0,,- Aaaaaaaah!\N- Shit.
+Dialogue: 0,0:18:42.46,0:18:43.94,Default,,0,0,0,,That guy's awesome.\NOkay. Listen.
+Dialogue: 0,0:18:43.99,0:18:45.82,Default,,0,0,0,,He might actually\Nbe the real Rick.
+Dialogue: 0,0:18:45.86,0:18:47.60,Default,,0,0,0,,But whatever happens --
+Dialogue: 0,0:18:56.17,0:18:58.78,Default,,0,0,0,,Wait! We don't have to do\Nthis. We're both Summers.
+Dialogue: 0,0:18:58.83,0:19:00.79,Default,,0,0,0,,Shouldn't we at least\Ntry molly before we die?
+Dialogue: 0,0:19:00.83,0:19:03.14,Default,,0,0,0,,You know what,\Nyeah. Fuck this noise.
+Dialogue: 0,0:19:11.01,0:19:13.06,Default,,0,0,0,,Wait. I don't know who to shoot.
+Dialogue: 0,0:19:13.10,0:19:14.63,Default,,0,0,0,,Summer!\N- I can't deal with this.
+Dialogue: 0,0:19:14.67,0:19:16.45,Default,,0,0,0,,I had to kill myself.\NYou have to, too.
+Dialogue: 0,0:19:16.50,0:19:18.80,Default,,0,0,0,,- Summer!\N- Summer!
+Dialogue: 0,0:19:18.85,0:19:20.72,Default,,0,0,0,,Fuck you! I-I'm real!
+Dialogue: 0,0:19:20.76,0:19:22.18,Default,,0,0,0,,I'm the smartest\Nman in the universe!
+Dialogue: 0,0:19:22.20,0:19:24.33,Default,,0,0,0,,Probably not even\Nwrong. But that's just it.
+Dialogue: 0,0:19:24.38,0:19:25.55,Default,,0,0,0,,I'm not a man.
+Dialogue: 0,0:19:25.59,0:19:29.16,Default,,0,0,0,,I'm God!
+Dialogue: 0,0:19:29.21,0:19:30.47,Default,,0,0,0,,You're just made in my image.
+Dialogue: 0,0:19:30.51,0:19:31.51,Default,,0,0,0,,Fuck you.
+Dialogue: 0,0:19:35.69,0:19:37.69,Default,,0,0,0,,You the, uh...\NSummer I came with?
+Dialogue: 0,0:19:37.74,0:19:39.22,Default,,0,0,0,,Probably. Good enough.
+Dialogue: 0,0:19:39.26,0:19:40.39,Default,,0,0,0,,Morty? Yeah.
+Dialogue: 0,0:19:40.44,0:19:41.70,Default,,0,0,0,,I'm here, too.
+Dialogue: 0,0:19:43.13,0:19:44.74,Default,,0,0,0,,Holy shit! That was insane!
+Dialogue: 0,0:19:44.79,0:19:46.66,Default,,0,0,0,,I love you guys!\NI've totally changed!
+Dialogue: 0,0:19:49.05,0:19:50.05,Default,,0,0,0,,Aaaah!
+Dialogue: 0,0:19:52.75,0:19:53.93,Default,,0,0,0,,Oh, fuck.
+Dialogue: 0,0:19:53.97,0:19:56.02,Default,,0,0,0,,You shoulda hunted me.
+Dialogue: 0,0:19:56.06,0:19:58.54,Default,,0,0,0,,What? Who --\NW-Were you significant?
+Dialogue: 0,0:19:58.58,0:20:00.06,Default,,0,0,0,,Like -- Like, did we tee you up?
+Dialogue: 0,0:20:00.11,0:20:02.67,Default,,0,0,0,,You want to be hunted?\NGod, I have so many questions.
+Dialogue: 0,0:20:02.72,0:20:05.20,Default,,0,0,0,,Why? What happens if --
+Dialogue: 0,0:20:05.24,0:20:08.55,Default,,0,0,0,,Somebody hunt me!
+Dialogue: 0,0:20:08.59,0:20:09.94,Default,,0,0,0,,Pretty cool adventure, huh?
+Dialogue: 0,0:20:09.99,0:20:12.21,Default,,0,0,0,,Big long road trip\Nadventure through space?
+Dialogue: 0,0:20:12.25,0:20:14.69,Default,,0,0,0,,Even ran into Space Beth.\NMaybe that'll happen more often.
+Dialogue: 0,0:20:14.73,0:20:15.69,Default,,0,0,0,,Let's not overdo it.
+Dialogue: 0,0:20:15.73,0:20:18.04,Default,,0,0,0,,Oh, shit.
+Dialogue: 0,0:20:18.08,0:20:19.71,Default,,0,0,0,,Looks like someone\Nkilled the decoy family.
+Dialogue: 0,0:20:19.74,0:20:21.52,Default,,0,0,0,,- Decoy family?\N- Decoy what now?
+Dialogue: 0,0:20:23.22,0:20:25.74,Default,,0,0,0,,{\an5\c&H51ab2b&}Improved by{\c&Hf8fc03&} {\b1}KID{\b0} {\c}\N\N{\an5\c&H51ab2b&}Resynced by{\c&Hf8fc03&} {\b1}KID{\b0} {\c}\N\N{\an5\c&H51ab2b&}Enjoy the movie(s) / show(s)
+Dialogue: 0,0:21:05.43,0:21:06.83,Default,,0,0,0,,Hello?
+Dialogue: 0,0:21:09.44,0:21:10.57,Default,,0,0,0,,Oh! Oh, my God!
+Dialogue: 0,0:21:10.61,0:21:11.74,Default,,0,0,0,,Oh, my God!
+Dialogue: 0,0:21:11.79,0:21:13.57,Default,,0,0,0,,No! No, no, no, no!
+Dialogue: 0,0:21:13.62,0:21:15.27,Default,,0,0,0,,No, no, no, no, no!
+Dialogue: 0,0:21:18.97,0:21:21.45,Default,,0,0,0,,Noooooo!
+Dialogue: 0,0:21:25.80,0:21:27.41,Default,,0,0,0,,Oh, God. Yes, yes.
+Dialogue: 0,0:21:27.46,0:21:29.33,Default,,0,0,0,,Sweet death.
+Dialogue: 0,0:21:35.07,0:21:36.59,Default,,0,0,0,,Why am I still alive?
+Dialogue: 0,0:21:36.64,0:21:38.12,Default,,0,0,0,,Oh, God. Is there anything left?
+Dialogue: 0,0:21:38.16,0:21:39.82,Default,,0,0,0,,- Hello?\N- What is it?
+Dialogue: 0,0:21:39.86,0:21:42.34,Default,,0,0,0,,A relic... from a kinder past.
+Dialogue: 0,0:21:46.82,0:21:49.52,Default,,0,0,0,,Wait. Cowboys?
+Dialogue: 0,0:21:49.56,0:21:50.61,Default,,0,0,0,,Argh!
+Dialogue: 0,0:21:58.88,0:22:01.32,Default,,0,0,0,,Christianity again?
+Dialogue: 0,0:22:01.36,0:22:02.62,Default,,0,0,0,,After Cowboys?
+Dialogue: 0,0:22:02.66,0:22:04.54,Default,,0,0,0,,You went all the\Nway back around?
+Dialogue: 0,0:22:04.58,0:22:06.49,Default,,0,0,0,,Oh, God. Why can't I die?!
+Dialogue: 0,0:22:06.54,0:22:11.19,Default,,0,0,0,,This is the worst thing that's\Never happened to anyone!
