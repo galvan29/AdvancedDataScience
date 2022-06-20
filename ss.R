@@ -26,6 +26,8 @@ wordcloud_1 <- ds_singleWord %>% count(word) %>%
   with(wordcloud(words = word, freq = n, min.freq = 1, max.words=100, random.order=FALSE, rot.per=0.35, colors=brewer.pal(8, "Dark2")))
 
 
+#occorrenze
+
 occorrences <- ds_singleWord %>% count(word) %>% arrange(-n)
 occorrences
 totOccur <- ds_singleWord %>% summarize(words = n())
@@ -222,3 +224,16 @@ community = cluster_resolution(G, t = 1) # The number of communities typically d
 coords = layout_with_fr(G) 
 
 plot(G, vertex.color = membership(community), layout = coords)
+
+
+#sentiment analisy 
+#cambiare colori 
+
+bing <- get_sentiments("bing")
+
+ds_singleWord %>% 
+  inner_join(bing, "word") %>%
+  count(word, sentiment, sort=T) %>% 
+  acast(word ~ sentiment, value.var = "n", fill=0) %>% 
+  comparison.cloud(colors=c("#991D1D", "#327CDE"), max.words = 100)
+
