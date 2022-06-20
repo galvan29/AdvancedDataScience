@@ -160,11 +160,8 @@ word_cors <- ds_singleWord %>% filter(Season == 1) %>%
   pairwise_cor(word, Episode, sort = TRUE)
 
 
-av <- word_cors %>% graph_from_data_frame()
+#av <- word_cors %>% graph_from_data_frame()
 
-x <- betweenness(av)
-names(x) = 1:vcount(av)
-x
 
 word_cor_g <- word_cors %>%
   rename(word1 = item1, word2 = item2, n = correlation) %>%
@@ -200,4 +197,15 @@ pagerank <- data.frame(score = pr$vector) %>%
 
 pagerank
 
+#community detection
 
+#VORREI RIMUOVERE I VERBI ZIO BEL
+
+g <- word_cor_g %>% 
+  filter((word1 == "watch" | word2 == "watch" | word1 == "fun" | word2 == "fun" | word1 == "damn" | word2 == "damn"| word1 == "smith" | word2 == "smith") & !grepl(''', word1) & !grepl(''', word2) )
+
+G = graph_from_data_frame(g)
+community = cluster_resolution(G, t = 1.5) # The number of communities typically decreases as the resolution parameter (t) grows.
+coords = layout_with_fr(G) 
+
+plot(G, vertex.color = membership(community), layout = coords)
