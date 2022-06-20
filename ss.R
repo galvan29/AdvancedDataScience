@@ -1,4 +1,4 @@
-devtools::install_github("fkeck/subtools")
+devtools::install_github("fkeck/subtools", force = TRUE)
 library(tidytext)
 library(tidyverse)
 library(tidygraph)
@@ -11,6 +11,8 @@ library(ggraph)
 library(widyr)
 library(resolution)
 library(textdata)
+library(reshape2)
+library(wordcloud2)
 
 dataF <- read_subtitles_season(dir = "C:/flutter_pro/AdvancedDataScience/ddd/")
 ds_noTag <- clean_tags(dataF)
@@ -18,7 +20,7 @@ ds_noCap <- clean_captions(ds_noTag)
 ds_noCap <- clean_patterns(ds_noCap, "gonna")
 
 #cerchiamo le parole
-ds_singleWord <- unnest_ds_singleWord(ds_noCap, word, Text_content) %>% rename(word = "word") %>% select(Season, Episode, word) %>% anti_join(stop_words)
+ds_singleWord <- unnest_tokens(ds_noCap, word, Text_content) %>% rename(word = "word") %>% select(Season, Episode, word) %>% anti_join(stop_words)
 ds_senteces <- ds_noCap %>% rename(Sentence = "Text_content") %>% select(Season, Episode, Sentence)
 
 #wordcloud
@@ -40,7 +42,7 @@ ggplot(head(occorrences, 10), aes(x = reorder(word, -n), y = n)) + geom_bar(stat
 
 #bigrams
 
-bigrams <- unnest_ds_singleWord(ds_senteces, bigram, Sentence, token = "ngrams", n = 2)
+bigrams <- unnest_tokens(ds_senteces, bigram, Sentence, token = "ngrams", n = 2)
 bigrams <- bigrams %>% filter(!is.na(bigram))
 
 bigrams %>% count(bigram, sort = TRUE)
@@ -73,7 +75,7 @@ bigram_counts2
 
 #trigrams
 
-trigrams <- unnest_ds_singleWord(ds_senteces, trigram, Sentence, token = "ngrams", n = 3) %>%
+trigrams <- unnest_tokens(ds_senteces, trigram, Sentence, token = "ngrams", n = 3) %>%
   filter(!is.na(trigram)) %>% 
   separate(trigram, c("word1", "word2", "word3"), sep = " ") %>%
   filter(!word1 %in% stop_words$word,
@@ -227,6 +229,28 @@ coords = layout_with_fr(G)
 plot(G, vertex.color = membership(community), layout = coords)
 
 
+#NON SO SE VA
+
+word_cors <- ds_singleWord %>% filter(Season == 1) %>% 
+  group_by(word) %>%
+  filter(n() >= 10) %>%
+  pairwise_cor(word, Episode, sort = TRUE)
+
+word_cor_g <- word_cors %>%
+  rename(word1 = item1, word2 = item2, n = correlation) %>%
+  mutate(n = round(n*100)) %>%
+  filter(n > 10)
+
+g <- word_cor_g %>% 
+  filter((word1 == "summer" | word2 == "summer" | word1 == "rick" | word2 == "rick" | word1 == "beth" | word2 == "beth"| word1 == "morty" | word2 == "morty"| word1 == "Jerry" | word2 == "Jerry") & !grepl(''', word1) & !grepl(''', word2) )
+
+G = graph_from_data_frame(g)
+community = cluster_resolution(G, t = 1) # The number of communities typically decreases as the resolution parameter (t) grows.
+coords = layout_with_fr(G) 
+
+plot(G, vertex.color = membership(community), layout = coords)
+
+
 #sentiment analisy 
 #cambiare colori 
 
@@ -238,9 +262,11 @@ ds_singleWord %>%
   acast(word ~ sentiment, value.var = "n", fill=0) %>% 
   comparison.cloud(colors=c("#991D1D", "#327CDE"), max.words = 100)
 
+cicioacom <- ds_singleWord %>% 
+  inner_join(bing, "word") %>%
+  count(word, sentiment, sort=T)
 
-
-#nrc
+#nrc - molto più dettagliato e sono quasi uguali se uso nrc, con gli altri due invece proprio male
 nrc <- get_sentiments("nrc")
 sentiments <- ds_singleWord %>% 
   inner_join(nrc, "word") %>%
@@ -300,7 +326,98 @@ ds_singleWord %>%
   theme_bw()
 
 
-library(wordcloud2)
+#sentiment analisy guardando tutta gli episodi di rick e morty di fila
+
+wordcounts <- ds_singleWord %>%
+  group_by(Season) %>%
+  summarize(words = n())
+
+
+bingnegative <- get_sentiments("bing") %>% 
+  filter(sentiment == "positive")
+
+count_sentiment_words_per_season = ds_singleWord %>%
+  semi_join(bingnegative, by=c("word")) %>%
+  group_by(Season) %>%
+  summarize(sentimentwords = n()) %>%
+  left_join(wordcounts, by = c("Season")) %>%
+  mutate(ratio = sentimentwords/words) %>%
+  ungroup() %>%
+  mutate(id_chapter = row_number()) 
+
+p <- count_sentiment_words_per_season %>%
+  ggplot(aes(Season, ratio, text = paste0("Season: ", Season))) +
+  geom_col(show.legend = FALSE) +
+  labs(x = "\nChapter", y = "Ratio") +
+  theme_classic()+
+  scale_x_continuous(breaks = c(0:9)*4)+
+  scale_fill_manual(values = c("black","green")) +
+  theme(legend.position = "none",
+        text = element_text(family = "Arial"),
+        axis.text.x = element_text(vjust = 0.5))
+
+p
+
+
+#POSAOKADCA
+rick_morty_sentiment <- ds_singleWord %>%
+  inner_join(get_sentiments("bing")) %>%
+  count(Season, index=Episode, sentiment) %>%
+  spread(sentiment, n, fill = 0) %>%
+  mutate(sentiment = positive - negative)
+
+rick_morty_sentiment
+
+ggplot(rick_morty_sentiment, aes(index, sentiment, fill = Season)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~Season, ncol = 2, scales = "free_x")
+
+#grafico di confronto tra tutti insieme
+#POSAOKADCA
+rick_morty_sentiment <- ds_singleWord %>%
+  inner_join(get_sentiments("bing")) %>%
+  count(Season, sentiment) %>%
+  spread(sentiment, n, fill = 0) %>%
+  mutate(sentiment = positive - negative)
+
+rick_morty_sentiment
+
+ggplot(rick_morty_sentiment, aes(Season, sentiment, fill = Season)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~Season, ncol = 2, scales = "free_x")
+
+#ROBE SEPARATE PER STAGIONE
+df2 <- melt(rick_morty_sentiment %>% 
+              mutate(Negative = -negative) %>% 
+              select(Season, positive, Negative), 
+            id.vars='Season')
+
+ggplot(df2, aes(x=variable, y=value, fill=factor(Season))) +
+  geom_bar(stat='identity', position='dodge') +
+  scale_fill_discrete(name="Season",
+                      breaks=c(1, 2, 3, 4, 5),
+                      labels=c("1", "2", "3", "4", "5"))+
+  xlab("Sentiment")+ylab("Count")
+
+#STUDIAMO I SINGOLI EPISODI DELLA STAGIONE 1
+df2 <- melt(rick_morty_sentiment %>% filter(Season == "1") %>% 
+              mutate(Negative = -negative) %>% 
+              select(index, positive, Negative), 
+            id.vars='index')
+
+ggplot(df2, aes(x=variable, y=value, fill=factor(index))) +
+  geom_bar(stat='identity', position='dodge') +
+  scale_fill_discrete(name="Season",
+                      breaks=c(1, 2, 3, 4, 5),
+                      labels=c("1", "2", "3", "4", "5"))+
+  xlab("Sentiment")+ylab("Count")
+
+
+
 #altro
 
-wordcloud2(occorrences , size=1.6, minSize = 0.9, color='random-light', backgroundColor="black", shape="diamond", fontFamily="HersheySymbol")
+wordcloud2(occorrences, size=0.9, minSize = 0.5, color='random-light', backgroundColor="black", shape="diamond", fontFamily="HersheySymbol")
+
+
+#topic modelling?
+
