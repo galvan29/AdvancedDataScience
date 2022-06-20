@@ -10,6 +10,7 @@ library(igraph)
 library(ggraph)
 library(widyr)
 library(resolution)
+library(textdata)
 
 dataF <- read_subtitles_season(dir = "C:/flutter_pro/AdvancedDataScience/ddd/")
 ds_noTag <- clean_tags(dataF)
@@ -236,4 +237,22 @@ ds_singleWord %>%
   count(word, sentiment, sort=T) %>% 
   acast(word ~ sentiment, value.var = "n", fill=0) %>% 
   comparison.cloud(colors=c("#991D1D", "#327CDE"), max.words = 100)
+
+
+
+#nrc
+nrc <- get_sentiments("nrc")
+sentiments <- ds_singleWord %>% 
+  inner_join(nrc, "word") %>%
+  count(sentiment, sort=T)
+
+sentiments
+
+
+sentiments %>% 
+  ggplot(aes(x=reorder(sentiment, n), y=n)) +
+  geom_bar(stat="identity", aes(fill=sentiment), show.legend=F) +
+  geom_label(label=sentiments$n) +
+  labs(x="Sentiment", y="Frequency", title="How is the overall mood in Rick&Morty?") +
+  coord_flip()
 
