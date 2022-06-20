@@ -9,6 +9,7 @@ library(wordcloud)
 library(igraph)
 library(ggraph)
 library(widyr)
+library(resolution)
 
 dataF <- read_subtitles_season(dir = "C:/flutter_pro/AdvancedDataScience/ddd/")
 ds_noTag <- clean_tags(dataF)
@@ -197,15 +198,27 @@ pagerank <- data.frame(score = pr$vector) %>%
 
 pagerank
 
-#community detection
+
+
+#community detection - ma posso fare anche con altri algoritmi
 
 #VORREI RIMUOVERE I VERBI ZIO BEL
+
+word_cors <- ds_singleWord %>% filter(Season == 1) %>% 
+  group_by(word) %>%
+  filter(n() >= 10) %>%
+  pairwise_cor(word, Episode, sort = TRUE)
+
+word_cor_g <- word_cors %>%
+  rename(word1 = item1, word2 = item2, n = correlation) %>%
+  mutate(n = round(n*100)) %>%
+  filter(n > 40)
 
 g <- word_cor_g %>% 
   filter((word1 == "watch" | word2 == "watch" | word1 == "fun" | word2 == "fun" | word1 == "damn" | word2 == "damn"| word1 == "smith" | word2 == "smith") & !grepl(''', word1) & !grepl(''', word2) )
 
 G = graph_from_data_frame(g)
-community = cluster_resolution(G, t = 1.5) # The number of communities typically decreases as the resolution parameter (t) grows.
+community = cluster_resolution(G, t = 1) # The number of communities typically decreases as the resolution parameter (t) grows.
 coords = layout_with_fr(G) 
 
 plot(G, vertex.color = membership(community), layout = coords)
