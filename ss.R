@@ -18,7 +18,7 @@ ds_noCap <- clean_captions(ds_noTag)
 ds_noCap <- clean_patterns(ds_noCap, "gonna")
 
 #cerchiamo le parole
-ds_singleWord <- unnest_tokens(ds_noCap, word, Text_content) %>% rename(word = "word") %>% select(Season, Episode, word) %>% anti_join(stop_words)
+ds_singleWord <- unnest_ds_singleWord(ds_noCap, word, Text_content) %>% rename(word = "word") %>% select(Season, Episode, word) %>% anti_join(stop_words)
 ds_senteces <- ds_noCap %>% rename(Sentence = "Text_content") %>% select(Season, Episode, Sentence)
 
 #wordcloud
@@ -40,7 +40,7 @@ ggplot(head(occorrences, 10), aes(x = reorder(word, -n), y = n)) + geom_bar(stat
 
 #bigrams
 
-bigrams <- unnest_tokens(ds_senteces, bigram, Sentence, token = "ngrams", n = 2)
+bigrams <- unnest_ds_singleWord(ds_senteces, bigram, Sentence, token = "ngrams", n = 2)
 bigrams <- bigrams %>% filter(!is.na(bigram))
 
 bigrams %>% count(bigram, sort = TRUE)
@@ -73,7 +73,7 @@ bigram_counts2
 
 #trigrams
 
-trigrams <- unnest_tokens(ds_senteces, trigram, Sentence, token = "ngrams", n = 3) %>%
+trigrams <- unnest_ds_singleWord(ds_senteces, trigram, Sentence, token = "ngrams", n = 3) %>%
   filter(!is.na(trigram)) %>% 
   separate(trigram, c("word1", "word2", "word3"), sep = " ") %>%
   filter(!word1 %in% stop_words$word,
@@ -256,3 +256,51 @@ sentiments %>%
   labs(x="Sentiment", y="Frequency", title="How is the overall mood in Rick&Morty?") +
   coord_flip()
 
+#altro2
+
+ds_singleWord %>% 
+  inner_join(nrc, "word") %>% 
+  count(sentiment, word, sort=T) %>% 
+  group_by(sentiment) %>% 
+  arrange(desc(n)) %>% 
+  slice(1:7) %>% 
+  
+  # Plot:
+  ggplot(aes(x=reorder(word, n), y=n)) +
+  geom_col(aes(fill=sentiment), show.legend = F) +
+  facet_wrap(~sentiment, scales = "free_y") +
+  theme(axis.text.x = element_text(angle=45, hjust=1)) +
+  coord_flip() +
+  theme_bw() +
+  labs(x="Word", y="Frequency", title="Sentiment split by most frequent words")
+
+
+
+
+
+#alslsa
+
+afinn <- get_sentiments("afinn")
+
+ds_singleWord %>% 
+  # by word and value count number of occurences
+  inner_join(afinn, "word") %>% 
+  count(word, value, sort=T) %>% 
+  mutate(contribution = n * value,
+         sentiment = ifelse(contribution<=0, "Negative", "Positive")) %>% #another variable
+  arrange(desc(abs(contribution))) %>% 
+  head(20) %>% 
+  
+  # plot
+  ggplot(aes(x=reorder(word, contribution), y=contribution, fill=sentiment)) +
+  geom_col(aes(fill=sentiment), show.legend = F) +
+  labs(x="Word", y="Contribution", title="Words with biggest contributions in positive/negative moods") +
+  coord_flip() +
+  scale_fill_manual(values=c("#FA8072", "#08439A")) + 
+  theme_bw()
+
+
+library(wordcloud2)
+#altro
+
+wordcloud2(occorrences , size=1.6, minSize = 0.9, color='random-light', backgroundColor="black", shape="diamond", fontFamily="HersheySymbol")
