@@ -1,0 +1,42 @@
+---
+title: "Rick e Morty Series"
+author: "Matteo Galvan"
+date: '2022-06-27'
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, message=F, warning=F}
+library(tidytext)
+library(tidyverse)
+library(tidygraph)
+library(subtools)
+library(ggplot2)
+library(dplyr)
+library(wordcloud)
+library(igraph)
+library(ggraph)
+library(widyr)
+library(resolution)
+library(textdata)
+library(reshape2)
+library(wordcloud2)
+```
+
+## Introduzione
+
+Qua parliamo dell'idea generale
+
+## Rick e Morty
+
+Spiego cosa è la serie, argomento, numero stagioni ed episodi.
+
+## 
+
+## 
+
+## 
+
