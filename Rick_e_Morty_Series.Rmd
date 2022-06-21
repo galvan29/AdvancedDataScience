@@ -32,11 +32,83 @@ Qua parliamo dell'idea generale
 
 ## Rick e Morty
 
-Spiego cosa è la serie, argomento, numero stagioni ed episodi.
+Spiego cosa è la serie, argomento, numero stagioni ed episodi. Dataset in inglese
 
-## 
+## Frequenza delle parole
 
-## 
+Posso utilizzare il wordcloud
 
-## 
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+dataF <- read_subtitles_season(dir = "C:/flutter_pro/AdvancedDataScience/ddd/")
+ds_noTag <- clean_tags(dataF)
+ds_noCap <- clean_captions(ds_noTag)
+ds_noCap <- clean_patterns(ds_noCap, "gonna")
 
+#cerchiamo le parole
+ds_singleWord <- unnest_tokens(ds_noCap, word, Text_content) %>% rename(word = "word") %>% select(Season, Episode, word) %>% anti_join(stop_words)
+ds_senteces <- ds_noCap %>% rename(Sentence = "Text_content") %>% select(Season, Episode, Sentence)
+```
+
+## Frequenza delle parole
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+
+wordcloud_1 <- ds_singleWord %>% count(word) %>%
+  with(wordcloud(words = word, freq = n, min.freq = 1, max.words=100, random.order=FALSE, rot.per=0.35, colors=brewer.pal(8, "Dark2")))
+```
+
+Spiegazione del primo
+
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+occorrences <- ds_singleWord %>% count(word) %>% arrange(-n)
+
+wordcloud2(occorrences, size=0.9, minSize = 0.5, color='random-light', backgroundColor="black", shape="diamond", fontFamily="HersheySymbol")
+```
+Spiegazione del secondo
+
+## Analisi preliminare 
+
+Numero di battute per episodio di ogni stagione
+
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+rM_numberBattute <- ds_senteces %>%
+  count(Season, index=Episode)
+  
+ggplot(rM_numberBattute, aes(index, n, fill = Season)) +
+  facet_wrap(~Season, ncol = 2, scales = "free_x")+
+  geom_line(aes(y = n), colour="blue", size=0.5, show.legend = FALSE)
+```
+Seguono tutti la stessa struttura
+
+
+
+
+## Distribuzione dei termini negli episodi
+
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+ggplot(occorrences, aes(x = reorder(word, -n), y = n, group = 1)) + 
+  geom_line(colour="blue", size=0.5, show.legend = FALSE) +
+  theme(axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())
+```
+
+
+
+## Densità dei termini
+
+Densità dei termini, devo rimuovere i termini sull'asse delle x
+
+
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+
+ggplot(occorrences, aes(x=n)) + geom_density(alpha=.3)
+
+ggplot(occorrences, aes(x=word, y=n)) + 
+  geom_point()
+
+parole <- ds_singleWord %>% semi_join(head(occorrences, 10))
+
+ggplot(head(occorrences, 10), aes(x = reorder(word, -n), y = n)) + geom_bar(stat = "identity")
+
+```
+
+##
