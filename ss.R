@@ -250,7 +250,7 @@ V(struct)$color = "white"
 V(struct)[nodes]$color = "black"
 plot(struct, vertex.size = 3, vertex.label=NA, edge.arrow.size=0.005, edge.arrow.width=0.0000001)
 
-#COMPONENTE FORTEMNTE CONNESSA
+#COMPONENTE FORTEMENTE CONNESSA
 c = components(struct, mode="strong")
 nodes = which(c$membership == which.max(c$csize))
 coords = layout_with_fr(struct)
@@ -259,7 +259,7 @@ V(struct)$color = "white"
 V(struct)[nodes]$color = "black"
 plot(g, layout=coords, 
      vertex.size = 6, vertex.label=NA, 
-     edge.arrow.size = 0.5, edge.arrow.width=0.001)
+     edge.arrow.size = 0.5, edge.arrow.width=1)
 
 #av <- word_cors %>% graph_from_data_frame()
 
