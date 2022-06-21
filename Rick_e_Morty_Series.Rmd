@@ -193,6 +193,79 @@ ggraph(head(bigram_counts, 1000), layout="fr") +
   labs(title="Bigram Network")
 ```
 
+Ma sono uguali?
+
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+head(bigram_counts, 1000) %>%
+  graph_from_data_frame() %>%
+  ggraph(layout = "fr") +
+  geom_edge_link0()+
+  geom_node_point(color = "lightblue", size = 1) +
+  geom_node_text(aes(label = name), vjust = 1, size=3, col = "darkgreen") +
+  labs(title="Bigram Network")
+```
+
+## Correlazione
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+word_pairs <- ds_singleWord %>% filter(Season == 1) %>% 
+  pairwise_count(word, Episode, sort = TRUE)
+
+word_cors <- ds_singleWord %>% #filter(Season == 1) %>% 
+  group_by(word) %>%
+  filter(n() >= 10) %>%
+  pairwise_cor(word, Episode, sort = TRUE)
+
+struct <- word_cors %>%
+  #filter(correlation > .25) %>%
+  as_tbl_graph() 
+
+
+struct %>%
+  ggraph(layout = "fr") +
+  geom_edge_link(aes(edge_alpha = correlation), show.legend = FALSE) +
+  geom_node_point(color = "lightblue", size = 1) +
+  geom_node_text(aes(label = name), repel = TRUE)
+```
+#correlazione con anche indice di quanto sono uguali, se cambio 
+#il filter cambia tutto
+Spiegazione di questo
+
+## Misure Varie
+
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+#misure di centralità
+word_cors <- ds_singleWord %>% filter(Season == 1) %>% 
+  group_by(word) %>%
+  pairwise_cor(word, Episode, sort = TRUE)
+
+#VEDIAMO LE CARATTERISTICHE DI QUESTO GRAFO GIGANTE
+struct <- bigram_counts %>%
+  graph_from_data_frame() 
+options(ggrepel.max.overlaps = Inf)
+vcount(struct)
+mean_distance(struct)
+diameter(struct)
+distance_table(struct)
+
+paths = distance_table(struct)$res
+names(paths) = 1:length(paths)
+barplot(paths / sum(paths), xlab="Distance", ylab="Frequency")
+
+paths
+C <- transitivity(struct, type="global")
+C
+```
+VEDIAMO DA PRIMA CHE IL CAMMINO MINIMO TRA DUE NODI è BASSO, sta a 5, diametro max 19
+Una rete presenta un comportamento di tipo small world se e solo se L
+cresce in modo logaritmico (o inferiore) in funzione di n, dove n è il
+numero di nodi della rete. Il grado dei nodi del grafo ha un valore medio
+prefissato
+
+
+è una rete abbastanza grande (7106 nodi) con dei cammini minimi medi di tot ma la centralità di vicinanza non è alta, anzi è bassa, perchè ci sono moltissime parole che non sono associate ad altre. 
+
+## 
+
 
 
 
