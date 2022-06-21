@@ -229,9 +229,12 @@ barplot(paths / sum(paths), xlab="Distance", ylab="Frequency")
 
 L <- paths
 C <- transitivity(struct, type="global")
+L
 C
-
-
+# è una rete abbastanza grande (7106 nodi) con dei cammini minimi medi di tot ma
+# la centralità di vicinanza non è alta, anzi è bassa, perchè ci sono moltissime parole che non 
+# sono associate ad altre. 
+ds_singleWord
 
 
 
