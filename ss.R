@@ -369,7 +369,6 @@ sentiments <- ds_singleWord %>%
 
 sentiments
 
-
 sentiments %>% 
   ggplot(aes(x=reorder(sentiment, n), y=n)) +
   geom_bar(stat="identity", aes(fill=sentiment), show.legend=F) +
@@ -482,8 +481,6 @@ ggplot(rick_morty_sentiment2 %>% mutate(Sigla = paste(a$Season, a$index)),
                       breaks=c(1, 2, 3, 4, 5),
                       labels=c("1", "2", "3", "4", "5"))+
   xlab("Sentiment")+ylab("Count")
-
-
 
 
 #altro
