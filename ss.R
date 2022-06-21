@@ -28,6 +28,40 @@ ds_senteces <- ds_noCap %>% rename(Sentence = "Text_content") %>% select(Season,
 wordcloud_1 <- ds_singleWord %>% count(word) %>%
   with(wordcloud(words = word, freq = n, min.freq = 1, max.words=100, random.order=FALSE, rot.per=0.35, colors=brewer.pal(8, "Dark2")))
 
+#analisi preliminare
+#distribuzione della durata degli episodi? o anche del numero d battute di ogni episodio
+rM_numberBattute <- ds_senteces %>%
+  count(Season, index=Episode)
+
+rM_numberBattute
+
+ggplot(rM_numberBattute, aes(index, n, fill = Season)) +
+  facet_wrap(~Season, ncol = 2, scales = "free_x")+
+  geom_line(aes(y = n), colour="blue", size=0.5, show.legend = FALSE)
+
+#durata episodi
+#??
+
+
+#distribuzione dei termini negli episodi
+
+occorrences <- ds_singleWord %>% count(word) %>% arrange(-n)
+occorrences
+totOccur <- ds_singleWord %>% summarize(words = n())
+totOccur
+
+ggplot(occorrences, aes(x = reorder(word, -n), y = n, group = 1)) + 
+  geom_line(colour="blue", size=0.5, show.legend = FALSE) +
+  theme(axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())
+
+
+#densità dei termini, devo rimuovere i termini sull'asse delle x
+
+ggplot(occorrences, aes(x=n)) + geom_density(alpha=.3)
+
+ggplot(occorrences, aes(x=word, y=n)) + 
+  geom_point()
 
 #occorrenze
 
@@ -39,6 +73,8 @@ totOccur
 parole <- ds_singleWord %>% semi_join(head(occorrences, 10))
 
 ggplot(head(occorrences, 10), aes(x = reorder(word, -n), y = n)) + geom_bar(stat = "identity")
+
+
 
 #bigrams
 
@@ -117,7 +153,7 @@ bigram_tf_idf %>%
 
 #pairwise
 arrows <- grid::arrow(type="closed", length=unit(0.15, "inches"))
-ggraph(head(bigram_counts, 70), layout="fr") +
+ggraph(head(bigram_counts, 1000), layout="fr") +
   geom_edge_link(aes(edge_alpha=n), show.legend = F, arrow=arrows, end_cap=circle(0.03,'inches')) +
   geom_edge_density(aes(fill = n)) +
   geom_node_point(color="black", size=2) +
@@ -127,8 +163,9 @@ ggraph(head(bigram_counts, 70), layout="fr") +
 
 #cercare come risaltare colore dei nodi più importati
 #cercare come rimuoverli dal grafo se sono piccoli
+#togliere i nomi e tenre solo quelli più importanti
 
-head(bigram_counts, 400) %>%
+head(bigram_counts, 1000) %>%
   graph_from_data_frame() %>%
   ggraph(layout = "fr") +
   geom_edge_link0()+
@@ -146,15 +183,20 @@ word_pairs
 
 #correlazione con anche indice di quanto sono uguali, se cambio 
 #il filter cambia tutto
-word_cors <- ds_singleWord %>% filter(Season == 1) %>% 
+
+#SOLO STAGIONE 1 BRO
+
+word_cors <- ds_singleWord %>% #filter(Season == 1) %>% 
   group_by(word) %>%
   filter(n() >= 10) %>%
   pairwise_cor(word, Episode, sort = TRUE)
 
+struct <- word_cors %>%
+  #filter(correlation > .25) %>%
+  as_tbl_graph() 
 
-word_cors %>%
-  filter(correlation > .25) %>%
-  as_tbl_graph() %>%
+
+struct %>%
   ggraph(layout = "fr") +
   geom_edge_link(aes(edge_alpha = correlation), show.legend = FALSE) +
   geom_node_point(color = "lightblue", size = 1) +
@@ -165,10 +207,60 @@ word_cors <- ds_singleWord %>% filter(Season == 1) %>%
   group_by(word) %>%
   pairwise_cor(word, Episode, sort = TRUE)
 
+#VEDIAMO LE CARATTERISTICHE DI QUESTO GRAFO GIGANTE
+struct <- bigram_counts %>%
+  graph_from_data_frame() 
+options(ggrepel.max.overlaps = Inf)
+vcount(struct)
+mean_distance(struct)
+diameter(struct)
+distance_table(struct)
+
+paths = distance_table(struct)$res
+names(paths) = 1:length(paths)
+barplot(paths / sum(paths), xlab="Distance", ylab="Frequency")
+
+
+#VEDIAMO DA PRIMA CHE IL CAMMINO MINIMO TRA DUE NODI è BASSO, sta a 5, diametro max 19
+#Una rete presenta un comportamento di tipo small world se e solo se L
+#cresce in modo logaritmico (o inferiore) in funzione di n, dove n è il
+#numero di nodi della rete. Il grado dei nodi del grafo ha un valore medio
+#prefissato
+
+L <- paths
+C <- transitivity(struct, type="global")
+C
+
+
+
+
+
+#COSEEEEEEEEEEEEEEEEEE
+
+is_connected(struct)
+
+(c = components(struct))
+nodes = which(c$membership == which.max(c$csize))
+
+# color in red the nodes in the giant component
+V(struct)$color = "white"
+V(struct)[nodes]$color = "black"
+plot(struct, vertex.size = 3, vertex.label=NA, edge.arrow.size=0.005, edge.arrow.width=0.0000001)
+
+#COMPONENTE FORTEMNTE CONNESSA
+c = components(struct, mode="strong")
+nodes = which(c$membership == which.max(c$csize))
+coords = layout_with_fr(struct)
+# color in red the nodes in the giant component
+V(struct)$color = "white"
+V(struct)[nodes]$color = "black"
+plot(g, layout=coords, 
+     vertex.size = 6, vertex.label=NA, 
+     edge.arrow.size = 0.5, edge.arrow.width=0.001)
 
 #av <- word_cors %>% graph_from_data_frame()
 
-
+#DA GUARDARE STA COSA
 word_cor_g <- word_cors %>%
   rename(word1 = item1, word2 = item2, n = correlation) %>%
   mutate(n = round(n*100)) %>%
