@@ -326,65 +326,20 @@ ds_singleWord %>%
   theme_bw()
 
 
-#sentiment analisy guardando tutta gli episodi di rick e morty di fila
-
-wordcounts <- ds_singleWord %>%
-  group_by(Season) %>%
-  summarize(words = n())
-
-
-bingnegative <- get_sentiments("bing") %>% 
-  filter(sentiment == "positive")
-
-count_sentiment_words_per_season = ds_singleWord %>%
-  semi_join(bingnegative, by=c("word")) %>%
-  group_by(Season) %>%
-  summarize(sentimentwords = n()) %>%
-  left_join(wordcounts, by = c("Season")) %>%
-  mutate(ratio = sentimentwords/words) %>%
-  ungroup() %>%
-  mutate(id_chapter = row_number()) 
-
-p <- count_sentiment_words_per_season %>%
-  ggplot(aes(Season, ratio, text = paste0("Season: ", Season))) +
-  geom_col(show.legend = FALSE) +
-  labs(x = "\nChapter", y = "Ratio") +
-  theme_classic()+
-  scale_x_continuous(breaks = c(0:9)*4)+
-  scale_fill_manual(values = c("black","green")) +
-  theme(legend.position = "none",
-        text = element_text(family = "Arial"),
-        axis.text.x = element_text(vjust = 0.5))
-
-p
-
 
 #POSAOKADCA
-rick_morty_sentiment <- ds_singleWord %>%
+rick_morty_sentiment2 <- ds_singleWord %>%
   inner_join(get_sentiments("bing")) %>%
   count(Season, index=Episode, sentiment) %>%
   spread(sentiment, n, fill = 0) %>%
   mutate(sentiment = positive - negative)
 
-rick_morty_sentiment
+rick_morty_sentiment2
 
-ggplot(rick_morty_sentiment, aes(index, sentiment, fill = Season)) +
+ggplot(rick_morty_sentiment2, aes(index, sentiment, fill = Season)) +
   geom_col(show.legend = FALSE) +
   facet_wrap(~Season, ncol = 2, scales = "free_x")
 
-#grafico di confronto tra tutti insieme
-#POSAOKADCA
-rick_morty_sentiment <- ds_singleWord %>%
-  inner_join(get_sentiments("bing")) %>%
-  count(Season, sentiment) %>%
-  spread(sentiment, n, fill = 0) %>%
-  mutate(sentiment = positive - negative)
-
-rick_morty_sentiment
-
-ggplot(rick_morty_sentiment, aes(Season, sentiment, fill = Season)) +
-  geom_col(show.legend = FALSE) +
-  facet_wrap(~Season, ncol = 2, scales = "free_x")
 
 #ROBE SEPARATE PER STAGIONE
 df2 <- melt(rick_morty_sentiment %>% 
@@ -400,7 +355,7 @@ ggplot(df2, aes(x=variable, y=value, fill=factor(Season))) +
   xlab("Sentiment")+ylab("Count")
 
 #STUDIAMO I SINGOLI EPISODI DELLA STAGIONE 1
-df2 <- melt(rick_morty_sentiment %>% filter(Season == "1") %>% 
+df2 <- melt(rick_morty_sentiment2 %>% 
               mutate(Negative = -negative) %>% 
               select(index, positive, Negative), 
             id.vars='index')
@@ -411,6 +366,28 @@ ggplot(df2, aes(x=variable, y=value, fill=factor(index))) +
                       breaks=c(1, 2, 3, 4, 5),
                       labels=c("1", "2", "3", "4", "5"))+
   xlab("Sentiment")+ylab("Count")
+
+#check della positività di tutti gli episodi
+#check della negatività rispetto a bing di tutti gli episodi
+a <- rick_morty_sentiment2
+ggplot(rick_morty_sentiment2 %>% mutate(Sigla = paste(a$Season, a$index)),
+       aes(x=Sigla, index, y=positive, fill=factor(index))) +
+  geom_bar(stat='identity', position='dodge') +
+  scale_fill_discrete(name="Season",
+                      breaks=c(1, 2, 3, 4, 5),
+                      labels=c("1", "2", "3", "4", "5"))+
+  xlab("Sentiment")+ylab("Count")
+
+
+a <- rick_morty_sentiment2
+ggplot(rick_morty_sentiment2 %>% mutate(Sigla = paste(a$Season, a$index)),
+       aes(x=Sigla, index, y=-negative, fill=factor(index))) +
+  geom_bar(stat='identity', position='dodge') +
+  scale_fill_discrete(name="Season",
+                      breaks=c(1, 2, 3, 4, 5),
+                      labels=c("1", "2", "3", "4", "5"))+
+  xlab("Sentiment")+ylab("Count")
+
 
 
 
