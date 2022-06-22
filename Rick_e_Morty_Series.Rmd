@@ -26,6 +26,8 @@ library(resolution)
 library(textdata)
 library(reshape2)
 library(wordcloud2)
+library(ggpubr)
+library(plotly)
 ```
 
 ## Introduzione
@@ -34,7 +36,7 @@ Rick e Morty è una serie tv americana prodotta per Adult Swim arrivata alla qui
 
 ## Caratteristiche
 
-Per effettuare questo studio sono stati recuperati i dialoghi di ogni episodio tramite i sottotitoli in inglese. Utilizzando un pacchetto chiamato subtools questi file sono stati convertiti in un dataset utilizzabile, formato da tutte le battute della serie. 
+Per effettuare questo studio sono stati recuperati i dialoghi di ogni episodio tramite i sottotitoli in inglese. Utilizzando un pacchetto chiamato subtools questi file sono stati convertiti in un dataset utilizzabile, formato da tutte le battute della serie. Il dataset è formato da 51 episodi.
 
 ## Frequenza delle parole
 
@@ -74,6 +76,10 @@ I due termini maggiormente presenti sono il nome di Rick e di Morty che sostanzi
 
 Inoltre gli altri termini molto presenti sono le esclamazioni che il nonno di Morty esclama come un intercalare.
 
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+ggplot(head(occorrences, 10), aes(x = reorder(word, -n), y = n)) + geom_bar(stat = "identity")
+```
+
 ## Rick
 
 Possiamo notare come per esempio nell'episodio 1x10, si dica molto la parola Rick. Infatti questo episodio nominato "Rick e Summer" parla d una festa organizzata da Rick in cui invita i suoi amici a casa sua.
@@ -108,9 +114,9 @@ ggplot(freq)+
   theme(panel.spacing = unit(0, 'lines'))
 ```
 
-Nell'episodio 2x07, Summer chiede aiuto a suo nonno Rick per uccidere un vampiro. Rispetto ad altri episodi il nome di Summer compare di più perchè è ambientato nella scuola che lei frequenta.
+Osservando le frequenze del nome Summer, nell'episodio 2x07, Summer chiede aiuto a suo nonno Rick per uccidere un vampiro. Rispetto ad altri episodi il nome di Summer compare di più perchè è ambientato nella scuola che lei frequenta.
 
-## Analisi preliminare 
+## Analisi preliminare TOGLIERE?
 
 Come varia il numero di battute di ogni episodio per ogni stagione?
 
@@ -126,9 +132,7 @@ ggplot(rM_numberBattute, aes(index, n, fill = Season)) +
 Osservando il grafico si vede che l'andamento del numero di battute per ogni episodio è abbastanza costante. In generale si può osservare che gli ultimi episodi, in alcuni casi, contengono un numero minore di battute.
 
 
-
-
-## Distribuzione dei termini negli episodi
+## Distribuzione dei termini NON HA SENSO
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 ggplot(occorrences, aes(x = reorder(word, -n), y = n, group = 1)) + 
@@ -137,37 +141,44 @@ ggplot(occorrences, aes(x = reorder(word, -n), y = n, group = 1)) +
         axis.ticks.x=element_blank())
 ```
 
-
-
 ## Densità dei termini
 
-Densità dei termini, devo rimuovere i termini sull'asse delle x
-
+Quale densità e che distribuzione di frequenza assoluta possiedono i termini che compaiono nelle 5 stagioni?
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 
-ggplot(occorrences, aes(x=n)) + geom_density(alpha=.3)
+density <- ggplot(occorrences, aes(x=n)) + geom_density(alpha=.3, color="darkblue") +
+  theme(panel.border = element_rect(colour = "black", fill=NA, size=0.5))
 
-ggplot(occorrences, aes(x=word, y=n)) + 
-  geom_point()
+freqAss <- ggplot(occorrences, aes(x=word, y=n, label=word)) + 
+  geom_point(aes(colour = cut(n, c(-Inf, 300, Inf))),
+             size = 2, show.legend=F) +
+  scale_color_manual(name = "n",
+                     values = c("(-Inf,300]" = "black",
+                                  "(300, Inf]" = "red")) +
+  theme(axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.border = element_rect(colour = "black", fill=NA, size=0.5))+
+  geom_text(aes(label=ifelse(n>300,as.character(word),'')),hjust=1,vjust=1.1)
 
-parole <- ds_singleWord %>% semi_join(head(occorrences, 10))
-
-ggplot(head(occorrences, 10), aes(x = reorder(word, -n), y = n)) + geom_bar(stat = "identity")
-
+ggarrange(density, freqAss,
+          ncol = 2, nrow = 1)
 ```
 
+Il primo grafico rappresenta con quale densità compaiono i termini e vediamo che è un'iperbole in cui pochi termini compaiono molte volte e tanti termini compaiono poco.
+
+Nel secondo grafico verifichiamo la stessa cosa, osservando una grande quantità di punti rappresentanti le parole che hanno una frequenza assoluta molto bassa, e pochi termini, tipo il termine "Rick" e "Morty" che compaiono molto di più.
+
 
 ## Bigram analysis
 
-Cosa è sta analisi? Spieghiamo
-
-
-## Bigram analysis
+Un bigram è una sequenza di due elementi adiacenti da una stringa di token, che in questo caso sono parole. I bigram sono utilizzabili per andare a studiare la correlazione tra termini e per verificare quali sono le parole che sono maggiormente collegate alle altre.
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 bigrams <- unnest_tokens(ds_senteces, bigram, Sentence, token = "ngrams", n = 2)
-bigrams <- bigrams %>% filter(!is.na(bigram))
+bigrams <- bigrams %>% filter(!is.na(bigram)) %>% filter(bigram != "ah ah", bigram != "ha ha")
 
 #bigrams %>% count(bigram, sort = TRUE)
 
@@ -197,21 +208,65 @@ bigram_counts2 <- bigrams_united %>%
 ```
 ## Bigram analysis
 
-Spieghiamo delle analisi possibili sui bigrams
-
-Grafico che NON HO FATTO CODDUE SULLE COPPIE più presenti
-
-
-## TF-IDF 
-Spieghiamo a che serve e mostriamo i maggiori presenti per argomento
+Quali sono i bigram maggiormente presenti?
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+bigrams_for_plot = bigrams_united %>% semi_join(head(bigram_counts2, 10)) %>%
+  count(bigram, Season, sort=TRUE)
+
+xform <- list(categoryorder = "array",
+              categoryarray = unique(bigrams_for_plot$chapter))
+
+bigrams_plot <- plot_ly(bigrams_for_plot, x = ~Season, y = ~n, type = 'bar', color = ~bigram)
+bigrams_plot <- bigrams_plot %>% layout(yaxis = list(title = 'number of bigrams'), barmode = 'stack', xaxis = xform)
+
+bigrams_plot
+```
+
+## Bigram analysis
+
+Il grafico è stato diviso per stagione e rappresenta la frequenza assoluta dei 10 bigram maggiormente presenti nei dialoghi.
+
+Si nota che i bigram maggiormente utilizzati, oltre ai nomi quali "Rick Sanchez", "Hey Rick" e "Grandpa Rick", sono tutte esclamazioni. Infatti se si osserva la frequenza con cui queste esclamazioni compaiono si vede che nelle ultime stagione è stato fatto un uso maggiore di esclamazioni negative, rispetto a quelle innocue come "yeah yeah".
+
+## Grafo
+
+Rappresentazione grafica della connessione dei termini. 
+
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+bigram_graph <- bigram_counts %>%
+  filter(n > 3) %>% 
+  as_tbl_graph()
+
+a <- grid::arrow(type = "closed", length = unit(.1, "inches"))
+
+# plot the graph
+ggraph(bigram_graph, layout = "fr") +
+  geom_edge_link(aes(edge_alpha = n), show.legend = FALSE,
+                 arrow = a, end_cap = circle(.07, 'inches')) +
+  geom_node_point(color = "lightblue", size = 1) +
+  geom_node_text(aes(label = name), vjust = 1, hjust = 1) +
+  theme_void()
+
+head(bigram_counts, 1000) %>%
+  graph_from_data_frame() %>%
+  ggraph(layout = "fr") +
+  geom_edge_link0()+
+  geom_node_point(color = "lightblue", size = 1) +
+  geom_node_text(aes(label = name), vjust = 1, size=3, col = "darkgreen") +
+  labs(title="Bigram Network")
+```
+
+## Frequenza bigram in base al tf-idf
+
+I bigram possono essere visti come singoli termini e per ogni termine si può calcolare il tf-idf come misurazione per capire quanto un termine è discriminante di un testo, in questo caso delle stagioni.
+
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+
 bigram_tf_idf <- bigrams_united %>%
   count(Season, bigram) %>%
   bind_tf_idf(bigram, Season, n) %>%
   arrange(desc(tf_idf))
-
-bigram_tf_idf
 
 bigram_tf_idf %>%
   arrange(desc(tf_idf)) %>%
@@ -227,37 +282,20 @@ bigram_tf_idf %>%
        x = "")
 ```
 
-## Grafo delle coppie di parole collegate
-```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-arrows <- grid::arrow(type="closed", length=unit(0.15, "inches"))
-ggraph(head(bigram_counts, 1000), layout="fr") +
-  geom_edge_link(aes(edge_alpha=n), show.legend = F, arrow=arrows, end_cap=circle(0.03,'inches')) +
-  geom_edge_density(aes(fill = n)) +
-  geom_node_point(color="black", size=2) +
-  geom_node_text(aes(label=name), repel=T) +
-  labs(title="Bigram Network")
-```
+## Frequenza bigram in base al tf-idf
 
-Ma sono uguali?
+Dal grafico, diviso per stagioni, si vede che i bigram maggiomente presenti sono quelli che discriminano maggiormente la stagione. Per esempio nella stagione 2 è presente il bigram mini Rick che compare molte volte ma in un singolo episodio e questo lo rende un termine molto importante.
+
+Nelle altre stagione non c'è una grande rilevanza di termini.
+
+## Correlazione - TROPPO ALTA
+
+Oltre a vedere le coppie di termini più frequenti è possibile andare a studiare le parole che possiedono maggior correlazione, perchè compaiono nella stessa situazione ma non sono adiacenti.
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-head(bigram_counts, 1000) %>%
-  graph_from_data_frame() %>%
-  ggraph(layout = "fr") +
-  geom_edge_link0()+
-  geom_node_point(color = "lightblue", size = 1) +
-  geom_node_text(aes(label = name), vjust = 1, size=3, col = "darkgreen") +
-  labs(title="Bigram Network")
-```
-
-## Correlazione - non va 
-```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-word_pairs <- ds_singleWord %>% filter(Season == 1) %>% 
-  pairwise_count(word, Episode, sort = TRUE)
-
-word_cors <- ds_singleWord %>% #filter(Season == 1) %>% 
+word_cors <- ds_singleWord %>% filter(word != "ah", word != "ha") %>% #filter(Season == 1) %>% 
   group_by(word) %>%
-  filter(n() >= 50) %>%
+  filter(n() >= 90) %>%
   pairwise_cor(word, Episode, sort = TRUE)
 
 struct <- word_cors %>%

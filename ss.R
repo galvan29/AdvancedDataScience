@@ -259,7 +259,7 @@ V(struct)$color = "white"
 V(struct)[nodes]$color = "black"
 plot(g, layout=coords, 
      vertex.size = 6, vertex.label=NA, 
-     edge.arrow.size = 0.5, edge.arrow.width=1)
+     edge.arrow.size = 1, edge.arrow.width=1)
 
 #av <- word_cors %>% graph_from_data_frame()
 
@@ -384,8 +384,6 @@ ds_singleWord %>%
   group_by(sentiment) %>% 
   arrange(desc(n)) %>% 
   slice(1:7) %>% 
-  
-  # Plot:
   ggplot(aes(x=reorder(word, n), y=n)) +
   geom_col(aes(fill=sentiment), show.legend = F) +
   facet_wrap(~sentiment, scales = "free_y") +
@@ -436,7 +434,7 @@ ggplot(rick_morty_sentiment2, aes(index, sentiment, fill = Season)) +
 
 
 #ROBE SEPARATE PER STAGIONE
-df2 <- melt(rick_morty_sentiment %>% 
+df2 <- melt(rick_morty_sentiment2 %>% 
               mutate(Negative = -negative) %>% 
               select(Season, positive, Negative), 
             id.vars='Season')
@@ -489,4 +487,13 @@ wordcloud2(occorrences, size=0.9, minSize = 0.5, color='random-light', backgroun
 
 
 #topic modelling?
+freq <- ds_singleWord %>% filter(word == "summer") %>%
+  count(Season, Episode) %>%
+  mutate(Sigla = paste(a$Season, a$index)) %>%
+  select(Sigla, n)
 
+ggplot(freq,
+       aes(x=Sigla, y=n, fill=factor(Sigla))) +
+  geom_bar(stat='identity', position='dodge', show.legend=F) +
+  xlab("Season Episode")+ylab("Count") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
