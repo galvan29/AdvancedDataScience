@@ -271,7 +271,7 @@ bigram_tf_idf <- bigrams_united %>%
 bigram_tf_idf %>%
   arrange(desc(tf_idf)) %>%
   group_by(Season) %>%
-  top_n(6, tf_idf) %>%
+  top_n(5, tf_idf) %>%
   ungroup() %>%
   mutate(bigram = reorder(bigram, tf_idf)) %>%
   ggplot(aes(bigram, tf_idf, fill = Season)) +
@@ -479,9 +479,22 @@ plot(G, vertex.color = membership(community), vertex.size = 10, layout = coords,
 Possiamo notare che???????????
 
 ##Sentiment Analisy
-Cosa è
 
-## Wordcloud positive and negative
+Cerchiamo di effettuare un'analisi sui sentimenti e le emozioni che questa serie tv possono trasmettere a coloro che la guardano.
+
+Sappiamo che gli episodi hanno dei temi non felici, raccontano storie in cui spesso muoiono peronaggi e soprattutto fanno utilizzo di parolacce che comportano negatività.
+
+Per l'analisi utilizzero 3 diverse scale di misura:
+
+* bing: ha un controllo sui termini booleano che verifica se sono positivi o negativi
+
+* nrc: permette di riconoscere le emozioni in maniera più dettagliata 
+
+* afinn: permette di dare una valutazione ad ogni termine che va da -5 a 5.
+
+## Wordcloud
+
+Quali sono le parole che influenzano in maniera maggiore o minore i sentimenti in questa analisi?
 
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
@@ -493,12 +506,18 @@ ds_singleWord %>%
   acast(word ~ sentiment, value.var = "n", fill=0) %>% 
   comparison.cloud(colors=c("#991D1D", "#327CDE"), max.words = 100)
 ```
+Notiamo che per quanto riguarda le parole negative abbiamo una prevalenza di escalmazioni o di aggettivi positivi come love, whoa e cool.
+
+Per quanto riguarda le parole negativi abbiamo delle parolacce come fucking, shit oppure fuck, che vengono pronunciate per la maggior parte da Rick ma in seguito molto anche da Morty.
 
 ## Comparison di numeri
-Usato Bing
+
+Quali sono le emozioni più presenti, e quale è il numero di parole che caratterizzano queste emozioni?
+
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 nrc <- get_sentiments("nrc")
 sentiments <- ds_singleWord %>% 
+  filter(word != "god") %>%
   inner_join(nrc, "word") %>%
   count(sentiment, sort=T)
 
@@ -510,10 +529,15 @@ sentiments %>%
   coord_flip()
 ```
 
+Possiamo notare come in un classificatore binario le parole negative e positive siano più o meno lo stesso numero. Si vede subito che le emozioni più presenti all'interno della serie tv sono la fiduzia, la paura e altre emozioni più negative. 
+
 ## Sentimenti divisi tramite NRC
-Cosa è come funziona
+
+Quali sono i termini che caratterizzano le emozioni?
+
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 ds_singleWord %>% 
+  filter(word != "god") %>%
   inner_join(nrc, "word") %>% 
   count(sentiment, word, sort=T) %>% 
   group_by(sentiment) %>% 
@@ -528,12 +552,18 @@ ds_singleWord %>%
   labs(x="Word", y="Frequency", title="Sentiment split by most frequent words")
 ```
 
-## Le parole che influenzano maggiormente il tutto, tramite nrc
+## Sentimenti divisi tramite NRC
+
+Notiamo come le parolacce e le parole negative tipo "pistola", "morte", "uccisione" siano molto presenti. La serie tv è infatti abbastanza violeta e le scene di sparatorie sono molto comuni, come le scene in cui vengono usate delle pistole.
+
+## Le parole che influenzano maggiormente il tutto, tramite afinn
+
+Vediamo ora le parole che globalmente danno il più grande contributo sul lato positivo e negativo.
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 afinn <- get_sentiments("afinn")
 
 ds_singleWord %>% 
-  # by word and value count number of occurences
+  filter(word != "god") %>%
   inner_join(afinn, "word") %>% 
   count(word, value, sort=T) %>% 
   mutate(contribution = n * value,
@@ -549,62 +579,34 @@ ds_singleWord %>%
   theme_bw()
 ```
 
-## per stagione
+Questo grafico ci conferma ulteriormente che le parolacce rivestono un ruolo molto importante perchè parole come shit, fuck o hell pesano in modo molto alto quando andiamo a fare un resoconto.
+
+## Sentiment Analisy - Season
+
+Osservando i singoli episodi delle 5 stagioni, come è l'andamento dei sentimenti?
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-rick_morty_sentiment2 <- ds_singleWord %>%
+rick_morty_sentiment2 <- ds_singleWord %>% filter(word != "god") %>%
   inner_join(get_sentiments("bing")) %>%
   count(Season, index=Episode, sentiment) %>%
   spread(sentiment, n, fill = 0) %>%
   mutate(sentiment = positive - negative)
 
-df2 <- melt(rick_morty_sentiment2 %>% 
-              mutate(Negative = -negative) %>% 
-              select(Season, positive, Negative), 
-            id.vars='Season')
-
-ggplot(df2, aes(x=variable, y=value, fill=factor(Season))) +
-  geom_bar(stat='identity', position='dodge') +
-  scale_fill_discrete(name="Season",
-                      breaks=c(1, 2, 3, 4, 5),
-                      labels=c("1", "2", "3", "4", "5"))+
-  xlab("Sentiment")+ylab("Count")
-```
-
-## per episodio
-
-```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 ggplot(rick_morty_sentiment2, aes(index, sentiment, fill = Season)) +
   geom_col(show.legend = FALSE) +
   facet_wrap(~Season, ncol = 2, scales = "free_x")
 ```
+Osserviamo che l'andamento di tutti gli episodi è negativo. Le parolacce nei dialoghi rendono la serie tv molto negativa. 
 
+L'episodio 2x05 è l'unico sommariamente positivo e parla di una gara di canto interplanetaria in cui è presente anche il presidente degli Stati Uniti. La parola "president" oltre alle parole delle canzoni, rendono questo episodio migliore di altri. Seppur nell'episodio certi pianeti vengano distrutti.
 
-
-
-
-## resoconto per episodi del 1° stagione
-
-```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-df2 <- melt(rick_morty_sentiment2 %>% 
-              mutate(Negative = -negative) %>% 
-              select(index, positive, Negative), 
-            id.vars='index')
-
-ggplot(df2, aes(x=variable, y=value, fill=factor(index))) +
-  geom_bar(stat='identity', position='dodge') +
-  scale_fill_discrete(name="Season",
-                      breaks=c(1, 2, 3, 4, 5),
-                      labels=c("1", "2", "3", "4", "5"))+
-  xlab("Sentiment")+ylab("Count")
-
-```
+L'episodio 3x06 è l'episodio più negativo: parla di un viaggio rilassante alle terme in cui però la parte cattiva di Rick e poi quella di Morty scappano e quella di Morty vuole intossicare il mondo. Rappresenta proprio la negatività.
 
 ## Pos di tutti gli episodi
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 a <- rick_morty_sentiment2
-ggplot(rick_morty_sentiment2 %>% mutate(Sigla = paste(a$Season, a$index)),
+ggplot(rick_morty_sentiment2 %>% mutate(Sigla = paste(a$Season,"x", a$index)),
        aes(x=Sigla, index, y=positive, fill=factor(index))) +
   geom_bar(stat='identity', position='dodge') +
   scale_fill_discrete(name="Season",
