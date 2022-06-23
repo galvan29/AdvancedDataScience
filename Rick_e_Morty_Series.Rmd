@@ -440,11 +440,27 @@ betweenness
 ```
 Osservando la tabella dei 10 valori con un grado più elevato, si può notare che alcuni sono nomi, ma altri in realtà sono esclamazioni.
 
-##Community detection
+## Community detection
 
-Cosa sono
+Il community detection permette di trovare le divisioni naturali di una rete in un gruppo di vertici connessi, chiamate comunità. Tra queste comunità ci sono pochi archi, mentre ce ne sono un numero maggiore all'interno della comunità.
+
+Osserviamo i termini che secondo la centralità sono maggiormente importanti:
+
+* uh
+* shit
+* jerry
+* god
+
+## Community detection
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+word_cor <- ds_singleWord %>% filter(word != "ah", word != "ha") %>% mutate(Sigla = paste(Season, Episode)) %>%
+  add_count(word, Sigla) %>%
+  filter(n >= 15) %>%
+  arrange(-n)
+
+word_cor <- distinct(word_cor)
+word_cor <- word_cor %>% pairwise_cor(word, Sigla, sort = TRUE)
 word_cor_g <- word_cor %>%
   rename(word1 = item1, word2 = item2, n = correlation) %>%
   filter(n > 0.1)
@@ -456,9 +472,12 @@ G = graph_from_data_frame(g)
 community = cluster_resolution(G, t = 1) # The number of communities typically decreases as the resolution parameter (t) grows.
 coords = layout_with_fr(G) 
 
-plot(G, vertex.color = membership(community), vertex.size = 10, layout = coords, edge.arrow.size = 0.05, edge.arrow.width=0.00001)
+plot(G, vertex.color = membership(community), vertex.size = 10, layout = coords, edge.arrow.size = 0.05, edge.arrow.width=0.00001, layout=layout_with_kk(G), vertex.label.dist=1)
 
 ```
+
+Possiamo notare che???????????
+
 ##Sentiment Analisy
 Cosa è
 
