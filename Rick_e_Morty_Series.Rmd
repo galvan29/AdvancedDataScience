@@ -82,10 +82,6 @@ ggplot(head(occorrences, 10), aes(x = reorder(word, -n), y = n)) + geom_bar(stat
 
 ## Rick
 
-Possiamo notare come per esempio nell'episodio 1x10, si dica molto la parola Rick. Infatti questo episodio nominato "Rick e Summer" parla d una festa organizzata da Rick in cui invita i suoi amici a casa sua.
-
-Possiamo notare come per esempio nell'episodio 3x07, si dica molto la parola Rick. Infatti questo episodio nominato "A Ricklantide" è ambientato nella città dei Rick in cui sono presenti moltissime versioni dello stesso uomo ma di molti universi paralleli.
-
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 freq <- ds_singleWord %>% filter(word == "rick") %>%
   count(Season, Episode)
@@ -98,6 +94,9 @@ ggplot(freq)+
   facet_wrap(~Season, scales = 'free_x', ncol=5) +
   theme(panel.spacing = unit(0, 'lines'))
 ```
+Possiamo notare come per esempio nell'episodio 1x10, si dica molto la parola Rick. Infatti questo episodio nominato "Rick e Summer" parla d una festa organizzata da Rick in cui invita i suoi amici a casa sua.
+
+Possiamo notare come per esempio nell'episodio 3x07, si dica molto la parola Rick. Infatti questo episodio nominato "A Ricklantide" è ambientato nella città dei Rick in cui sono presenti moltissime versioni dello stesso uomo ma di molti universi paralleli.
 
 ## Summer
 
@@ -164,7 +163,9 @@ Nel secondo grafico verifichiamo la stessa cosa, osservando una grande quantità
 
 ## Bigram analysis
 
-Un bigram è una sequenza di due elementi adiacenti da una stringa di token, che in questo caso sono parole. I bigram sono utilizzabili per andare a studiare la correlazione tra termini e per verificare quali sono le parole che sono maggiormente collegate alle altre.
+Un bigram è una sequenza di due elementi adiacenti da una stringa di token, che in questo caso sono parole.
+
+I bigram sono utilizzabili per andare a studiare la correlazione tra termini e per verificare quali sono le parole che sono maggiormente collegate alle altre.
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 bigrams <- unnest_tokens(ds_senteces, bigram, Sentence, token = "ngrams", n = 2)
@@ -201,7 +202,7 @@ bigram_counts2 <- bigrams_united %>%
 Quali sono i bigram maggiormente presenti?
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-bigrams_for_plot = bigrams_united %>% semi_join(head(bigram_counts2, 10)) %>%
+bigrams_for_plot = bigrams_united %>% semi_join(head(bigram_counts2, 10), by="bigram") %>%
   count(bigram, Season, sort=TRUE)
 
 xform <- list(categoryorder = "array",
@@ -412,7 +413,7 @@ names(b) = 1:vcount(g)
 
 betweenness <- data.frame(score = round(b, 2)) %>%
   mutate(v = row_number()) %>%
-  full_join(v) %>%
+  full_join(v, by="v") %>%
   arrange(desc(score)) %>%
   mutate(word = name) %>%
   select(word, score) %>% 
