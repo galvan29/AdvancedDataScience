@@ -131,16 +131,6 @@ ggplot(rM_numberBattute, aes(index, n, fill = Season)) +
 
 Osservando il grafico si vede che l'andamento del numero di battute per ogni episodio è abbastanza costante. In generale si può osservare che gli ultimi episodi, in alcuni casi, contengono un numero minore di battute.
 
-
-## Distribuzione dei termini NON HA SENSO
-
-```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-ggplot(occorrences, aes(x = reorder(word, -n), y = n, group = 1)) + 
-  geom_line(colour="blue", size=0.5, show.legend = FALSE) +
-  theme(axis.text.x=element_blank(),
-        axis.ticks.x=element_blank())
-```
-
 ## Densità dei termini
 
 Quale densità e che distribuzione di frequenza assoluta possiedono i termini che compaiono nelle 5 stagioni?
