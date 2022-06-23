@@ -289,66 +289,100 @@ Dal grafico, diviso per stagioni, si vede che i bigram maggiomente presenti sono
 Nelle altre stagione non c'è una grande rilevanza di termini.
 
 ## Correlazione - TROPPO ALTA
+## Correlazione Pairwise
 
-Oltre a vedere le coppie di termini più frequenti è possibile andare a studiare le parole che possiedono maggior correlazione, perchè compaiono nella stessa situazione ma non sono adiacenti.
+Oltre a vedere le coppie di termini più frequenti è possibile andare a studiare le parole che possiedono maggior correlazione, perchè compaiono nella stessa situazione ma non sono per forza adiacenti.
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-word_cors <- ds_singleWord %>% filter(word != "ah", word != "ha") %>% #filter(Season == 1) %>% 
-  group_by(word) %>%
   filter(n() >= 90) %>%
-  pairwise_cor(word, Episode, sort = TRUE)
+word_cor <- ds_singleWord %>% filter(word != "ah", word != "ha") %>% mutate(Sigla = paste(Season, Episode)) %>%
+  add_count(word, Sigla) %>%
+  filter(n >= 10) %>%
+  arrange(-n)
 
-struct <- word_cors %>%
-  filter(correlation > .25) %>%
-  as_tbl_graph() 
-
-
-struct %>%
-  ggraph(layout = "fr") +
-  geom_edge_link(aes(edge_alpha = correlation), show.legend = FALSE) +
-  geom_node_point(color = "lightblue", size = 1) +
-  geom_node_text(aes(label = name), repel = TRUE)
+word_cor <- distinct(word_cor)
+word_cor <- word_cor %>% pairwise_cor(word, Sigla, sort = TRUE)
 ```
-#correlazione con anche indice di quanto sono uguali, se cambio 
-#il filter cambia tutto
-Spiegazione di questo
 
-## Misure Varie della stagione 1
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+struct <- word_cor %>%
+  filter(correlation > .15) %>%
+  as_tbl_graph() %>%
+  ggraph(layout = "fr")
+
+mcolor <- struct$data %>% mutate(mcolor = if_else(name %in% c("morty", "rick", "yeah", "time"), 
+                                     "#cf5717", "#174ECF")) %>% select(mcolor)
+
+struct +
+  geom_edge_link(aes(edge_alpha = correlation), show.legend = FALSE) +
+  geom_node_point(colour=mcolor$mcolor, size = 3)+
+  geom_node_text(aes(label = name), repel = TRUE, colour=mcolor$mcolor)
+```
+
+## Correlazione
+
+Il grafo rappresenta i termini come nodi e lo spessore dell'arco che li collega come relazione tra di essi. I nodi in rosso sono i termini che hanno una frequenza assoluta maggiore all'interno dei dialoghi.
+
+Si può vedere che i 4 termini non hanno una relazione molto elevata con gli altri presenti all'interno del testo. 
+
+## Misure di Centralità
 
 ```{r}
-#misure di centralità
-word_cors <- ds_singleWord %>% filter(Season == 1) %>% 
-  group_by(word) %>%
-  pairwise_cor(word, Episode, sort = TRUE)
 
 #VEDIAMO LE CARATTERISTICHE DI QUESTO GRAFO GIGANTE
 struct <- bigram_counts %>%
   graph_from_data_frame() 
 options(ggrepel.max.overlaps = Inf)
-vcount(struct)
-mean_distance(struct)
-diameter(struct)
-distance_table(struct)
+
 
 paths = distance_table(struct)$res
 names(paths) = 1:length(paths)
-barplot(paths / sum(paths), xlab="Distance", ylab="Frequency")
 
-paths
 C <- transitivity(struct, type="global")
+```
+Che misurazioni ha il grafo?
+
+Numero di nodi:
+```{r}
+vcount(struct)
+```
+
+Distanza media tra due nodi:
+```{r}
+mean_distance(struct)
+```
+
+Diametro:
+```{r}
+diameter(struct)
+```
+
+Tabella delle distanze:
+```{r}
+paths
+```
+
+Centralità:
+```{r}
 C
 ```
-VEDIAMO DA PRIMA CHE IL CAMMINO MINIMO TRA DUE NODI è BASSO, sta a 5, diametro max 19
-Una rete presenta un comportamento di tipo small world se e solo se L
-cresce in modo logaritmico (o inferiore) in funzione di n, dove n è il
-numero di nodi della rete. Il grado dei nodi del grafo ha un valore medio
-prefissato
+## Misure di Centralità
 
+Quale è la distribuzione della distanza media tra due nodi qualsiasi?
 
-è una rete abbastanza grande (7106 nodi) con dei cammini minimi medi di tot ma la centralità di vicinanza non è alta, anzi è bassa, perchè ci sono moltissime parole che non sono associate ad altre. 
+```{r}
+barplot(paths / sum(paths), xlab="Distance", ylab="Frequency")
+```
+
+Si può notare che seppur la grandezza della rete sia abbastanza elevata (7109 nodi), in realtà la distanza media tra due nodi qualsiasi è molto contenuta. 
+
+Il diametro, cioè la geodesica più lunga è di 19 passi.
+La centralità di vicinanza ha un valore molto basso, che è dovuto principalmente ai nodi che compaiono singolarmente, magari all'interno di una singola battuta effettuata da un personaggio.
 
 ## è connessa?
-No, componente gigante
+
+Nel grafo è presente una componente gigante?
+
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 # color in red the nodes in the giant component
 c = components(struct)
@@ -360,30 +394,22 @@ plot(struct, vertex.size = 3, vertex.label=NA, edge.arrow.size=0.005, edge.arrow
 
 ```
 
-
-## SCC
-Non va porcoddue
-```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-#COMPONENTE FORTEMNTE CONNESSA
-c = components(struct, mode="strong")
-nodes = which(c$membership == which.max(c$csize))
-coords = layout_with_fr(struct)
-# color in red the nodes in the giant component
-V(struct)$color = "white"
-V(struct)[nodes]$color = "black"
-plot(struct, layout=coords, 
-     vertex.size = 6, vertex.label=NA, 
-     edge.arrow.size = 0.5, edge.arrow.width=0.001)
+Il grafo mostra la componente gigante formata dai bigram collegati tra di essi.
+Esiste quindi una componente gigante che prende la maggior parte di nodi. Il numero di nodi connessi è: 
+```{r}
+vcount(struct)-c$no
 ```
 
 ## Betweenness centrality
-Betweennees e PageRank
+
+Quali sono le parole che hanno un valore di correlazione maggiore se comparate a tutte le altre parole?
+
+Calcoliamo la centralità betweenness che va a controllare quanto una parola compara in mezzo ad altre. In sostanza va a verificare se il termine appare sulla maggior parte delle geodesiche presenti tra due termini.
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-word_cor_g <- word_cors %>%
+word_cor_g <- word_cor %>%
   rename(word1 = item1, word2 = item2, n = correlation) %>%
-  mutate(n = round(n*100)) %>%
-  filter(n > 18)
+  filter(n > 0.18)
 
 #Betweenness centrality
 g <- word_cor_g %>%
@@ -407,35 +433,32 @@ betweenness <- data.frame(score = round(b, 2)) %>%
 betweenness
 
 #PageRank centrality
-pr <- page_rank(g)
-pagerank <- data.frame(score = pr$vector) %>%
-  arrange(desc(score)) %>%
-  head(10)
+#pr <- page_rank(g)
+#pagerank <- data.frame(score = pr$vector) %>%
+ # arrange(desc(score)) %>%
+ # head(10)
 
-pagerank
+#pagerank
 ```
+Osservando la tabella dei 10 valori con un grado più elevato, si può notare che alcuni sono nomi, ma altri in realtà sono esclamazioni.
 
 ##Community detection
-Per ora fa solo della prima stagione. Possiamo rimuovere i verbi
-```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-word_cors <- ds_singleWord %>% filter(Season == 1) %>% 
-  group_by(word) %>%
-  filter(n() >= 10) %>%
-  pairwise_cor(word, Episode, sort = TRUE)
 
-word_cor_g <- word_cors %>%
+Cosa sono
+
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+word_cor_g <- word_cor %>%
   rename(word1 = item1, word2 = item2, n = correlation) %>%
-  mutate(n = round(n*100)) %>%
-  filter(n > 40)
+  filter(n > 0.1)
 
 g <- word_cor_g %>% 
-  filter((word1 == "watch" | word2 == "watch" | word1 == "fun" | word2 == "fun" | word1 == "damn" | word2 == "damn"| word1 == "smith" | word2 == "smith") & !grepl('’', word1) & !grepl('’', word2) )
+  filter(word1 == "uh" | word2 == "uh" | word1 == "shit" | word2 == "shit" | word1 == "jerry" | word2 == "jerry"| word1 == "god" | word2 == "god")
 
 G = graph_from_data_frame(g)
 community = cluster_resolution(G, t = 1) # The number of communities typically decreases as the resolution parameter (t) grows.
 coords = layout_with_fr(G) 
 
-plot(G, vertex.color = membership(community), layout = coords, edge.arrow.size = 0.5, edge.arrow.width=0.001)
+plot(G, vertex.color = membership(community), vertex.size = 10, layout = coords, edge.arrow.size = 0.05, edge.arrow.width=0.00001)
 
 ```
 ##Sentiment Analisy
