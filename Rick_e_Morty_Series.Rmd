@@ -288,13 +288,11 @@ Dal grafico, diviso per stagioni, si vede che i bigram maggiomente presenti sono
 
 Nelle altre stagione non c'è una grande rilevanza di termini.
 
-## Correlazione - TROPPO ALTA
 ## Correlazione Pairwise
 
 Oltre a vedere le coppie di termini più frequenti è possibile andare a studiare le parole che possiedono maggior correlazione, perchè compaiono nella stessa situazione ma non sono per forza adiacenti.
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-  filter(n() >= 90) %>%
 word_cor <- ds_singleWord %>% filter(word != "ah", word != "ha") %>% mutate(Sigla = paste(Season, Episode)) %>%
   add_count(word, Sigla) %>%
   filter(n >= 10) %>%
