@@ -1,5 +1,5 @@
 ---
-title: "Rick e Morty Series"
+title: "Rick e Morty"
 author: "Matteo Galvan"
 date: '2022-06-27'
 output:
