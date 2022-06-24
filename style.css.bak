@@ -2,7 +2,3 @@ slides > slide {
   overflow-x: auto !important;
   overflow-y: auto !important;
 }
-
-slides > slide:not(.nobackground):after {
-  content: ""
-}

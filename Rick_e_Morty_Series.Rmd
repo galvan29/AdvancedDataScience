@@ -33,21 +33,28 @@ library(plotly)
 
 ## Introduzione
 
-Rick e Morty è una serie tv americana prodotta per Adult Swim arrivata alla quinta stagione e ancora in produzione. Il genere è il cosmic horror. La serie parla di Rick, nonno di Morty e padre di Beth che ritorna nella famiglia di sua figlia. Passa il suo tempo ad inventare gadget futuristici e a viaggiare in mondi e universi parlalleli prima con suo nipote Morty, e poi con sua nipote Summer.
+Rick e Morty è una serie tv americana prodotta per Adult Swim arrivata alla quinta stagione e ancora in produzione. Il genere è il cosmic horror. 
+
+La serie parla di Rick, nonno di Morty e padre di Beth che ritorna nella famiglia di sua figlia. Passa il suo tempo ad inventare gadget futuristici e a viaggiare in mondi e universi parlalleli prima con suo nipote Morty, e poi con sua nipote Summer.
 
 ## Caratteristiche
 
-Per effettuare questo studio sono stati recuperati i dialoghi di ogni episodio tramite i sottotitoli in inglese. Utilizzando un pacchetto chiamato subtools questi file sono stati convertiti in un dataset utilizzabile, formato da tutte le battute della serie. Il dataset è formato da 51 episodi.
+Per effettuare questo studio sono stati recuperati i dialoghi di ogni episodio tramite i sottotitoli in inglese. 
+
+Utilizzando un pacchetto chiamato subtools questi file sono stati convertiti in un dataset utilizzabile, formato da tutte le battute della serie. 
+
+Il dataset è formato da 51 episodi suddivisi in 5 stagioni.
 
 ## Frequenza delle parole
 
 Per andare a studiare la frequenza delle parole all'interno delle 5 stagioni di Rick e Morty si utilizza il pacchetto wordcloud2, per andare a creare una rappresentazione delle parole utilizzate maggiormente.
 
 Le parole più usate sono rappresentate con un font del testo più grande, mentre quelle meno presenti sono più piccole. Inoltre se le parole sono al centro del grafico sono maggiormente importanti.
-Inoltre due parole con una frequenza simile hanno uno stesso colore.
+
+Due parole con una frequenza simile hanno uno stesso colore.
 
 
-```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+```{r , echo=T, collapse=TRUE, warning=FALSE,message=FALSE}
 options(ggrepel.max.overlaps = Inf)
 dataF <- read_subtitles_season(dir = "./ddd/")
 ds_noTag <- clean_tags(dataF)
@@ -55,7 +62,7 @@ ds_noCap <- clean_captions(ds_noTag)
 ds_noCap <- clean_patterns(ds_noCap, "gonna")
 
 #cerchiamo le parole
-ds_singleWord <- unnest_tokens(ds_noCap, word, Text_content) %>% rename(word = "word") %>% select(Season, Episode, word) %>% anti_join(stop_words)
+ds_singleWord <- unnest_tokens(ds_noCap, word, Text_content) %>% rename(word = "word") %>% select(Season, Episode, word) %>% anti_join(stop_words, by="word")
 ds_senteces <- ds_noCap %>% rename(Sentence = "Text_content") %>% select(Season, Episode, Sentence)
 ```
 
@@ -73,13 +80,49 @@ wordcloud2(occorrences, size=0.9, minSize = 0.5, color='random-light', shape = '
 ```
 
 ## Frequenza delle parole
-I due termini maggiormente presenti sono il nome di Rick e di Morty che sostanzialmente sono i protagonisti di ogni episodio. Inoltre in molti episodi esistono più versioni di Morty e di Rick che si nominano a vicenda e questo comporta che ci sia una maggior presenza di questi termini.
+
+```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+ggplot(head(occorrences, 10), aes(x = reorder(word, -n), y = n, fill=word)) + 
+  geom_bar(stat = "identity", fill="#3495c9")
+```
+
+## Frequenza delle parole
+
+I due termini maggiormente presenti sono il nome di Rick e di Morty che sostanzialmente sono i protagonisti di ogni episodio. 
+
+Inoltre in molti episodi esistono più versioni di Morty e di Rick che si nominano a vicenda e questo comporta che ci sia una maggior presenza di questi termini.
 
 Inoltre gli altri termini molto presenti sono le esclamazioni che il nonno di Morty esclama come un intercalare.
 
+## Densità dei termini
+
+Quale densità e che distribuzione di frequenza assoluta possiedono i termini che compaiono nelle 5 stagioni?
+
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-ggplot(head(occorrences, 10), aes(x = reorder(word, -n), y = n)) + geom_bar(stat = "identity")
+
+density <- ggplot(occorrences, aes(x=n)) + geom_density(alpha=.3, color="darkblue") +
+  theme(panel.border = element_rect(colour = "black", fill=NA, size=0.5))
+
+freqAss <- ggplot(occorrences, aes(x=word, y=n, label=word)) + 
+  geom_point(aes(colour = cut(n, c(-Inf, 300, Inf))),
+             size = 2, show.legend=F) +
+  scale_color_manual(name = "n",
+                     values = c("(-Inf,300]" = "black",
+                                  "(300, Inf]" = "red")) +
+  theme(axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.border = element_rect(colour = "black", fill=NA, size=0.5))+
+  geom_text(aes(label=ifelse(n>300,as.character(word),'')),hjust=1,vjust=1.1)
+
+ggarrange(density, freqAss,
+          ncol = 2, nrow = 1)
 ```
+
+Il primo grafico rappresenta con quale densità compaiono i termini e vediamo che è un'iperbole in cui pochi termini compaiono molte volte e tanti termini compaiono poco.
+
+Nel secondo grafico verifichiamo la stessa cosa, osservando una grande quantità di punti rappresentanti le parole che hanno una frequenza assoluta molto bassa, e pochi termini, tipo il termine "Rick" e "Morty" che compaiono molto di più.
 
 ## Rick
 
@@ -115,52 +158,6 @@ ggplot(freq)+
 ```
 
 Osservando le frequenze del nome Summer, nell'episodio 2x07, Summer chiede aiuto a suo nonno Rick per uccidere un vampiro. Rispetto ad altri episodi il nome di Summer compare di più perchè è ambientato nella scuola che lei frequenta.
-
-## Analisi preliminare TOGLIERE?
-
-Come varia il numero di battute di ogni episodio per ogni stagione?
-
-```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-rM_numberBattute <- ds_senteces %>%
-  count(Season, index=Episode)
-  
-ggplot(rM_numberBattute, aes(index, n, fill = Season)) +
-  facet_wrap(~Season, ncol = 2, scales = "free_x")+
-  geom_line(aes(y = n), colour="blue", size=0.5, show.legend = FALSE)
-```
-
-Osservando il grafico si vede che l'andamento del numero di battute per ogni episodio è abbastanza costante. In generale si può osservare che gli ultimi episodi, in alcuni casi, contengono un numero minore di battute.
-
-## Densità dei termini
-
-Quale densità e che distribuzione di frequenza assoluta possiedono i termini che compaiono nelle 5 stagioni?
-
-```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
-
-density <- ggplot(occorrences, aes(x=n)) + geom_density(alpha=.3, color="darkblue") +
-  theme(panel.border = element_rect(colour = "black", fill=NA, size=0.5))
-
-freqAss <- ggplot(occorrences, aes(x=word, y=n, label=word)) + 
-  geom_point(aes(colour = cut(n, c(-Inf, 300, Inf))),
-             size = 2, show.legend=F) +
-  scale_color_manual(name = "n",
-                     values = c("(-Inf,300]" = "black",
-                                  "(300, Inf]" = "red")) +
-  theme(axis.text.x=element_blank(),
-        axis.ticks.x=element_blank(),
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),
-        panel.border = element_rect(colour = "black", fill=NA, size=0.5))+
-  geom_text(aes(label=ifelse(n>300,as.character(word),'')),hjust=1,vjust=1.1)
-
-ggarrange(density, freqAss,
-          ncol = 2, nrow = 1)
-```
-
-Il primo grafico rappresenta con quale densità compaiono i termini e vediamo che è un'iperbole in cui pochi termini compaiono molte volte e tanti termini compaiono poco.
-
-Nel secondo grafico verifichiamo la stessa cosa, osservando una grande quantità di punti rappresentanti le parole che hanno una frequenza assoluta molto bassa, e pochi termini, tipo il termine "Rick" e "Morty" che compaiono molto di più.
-
 
 ## Bigram analysis
 
@@ -214,7 +211,17 @@ bigrams_plot <- bigrams_plot %>% layout(yaxis = list(title = 'number of bigrams'
 
 #bigrams_plot
 ggplot(bigrams_for_plot, aes(fill=bigram, y=n, x=Season)) + 
-    geom_bar(position="stack", stat="identity")
+    geom_bar(position="stack", stat="identity") +
+    scale_fill_manual(values = c("god damn" = "#41cff2",
+                               "grandpa rick" = "#41aef2",
+                               "hey hey" = "#41a6f2",
+                               "hey rick" = "#419df2",
+                               "holy shit" = "#417ff2",
+                               "jesus christ" = "#4171f2",
+                               "rick sanchez" = "#4168f2",
+                               "wait wait" = "#415ff2",
+                               "whoa whoa" = "#414af2",
+                               "yeah yeah" = "#4d41f2"))
 ```
 
 
@@ -222,7 +229,9 @@ ggplot(bigrams_for_plot, aes(fill=bigram, y=n, x=Season)) +
 
 Il grafico è stato diviso per stagione e rappresenta la frequenza assoluta dei 10 bigram maggiormente presenti nei dialoghi.
 
-Si nota che i bigram maggiormente utilizzati, oltre ai nomi quali "Rick Sanchez", "Hey Rick" e "Grandpa Rick", sono tutte esclamazioni. Infatti se si osserva la frequenza con cui queste esclamazioni compaiono si vede che nelle ultime stagione è stato fatto un uso maggiore di esclamazioni negative, rispetto a quelle innocue come "yeah yeah".
+Si nota che i bigram maggiormente utilizzati, oltre ai nomi quali "Rick Sanchez", "Hey Rick" e "Grandpa Rick", sono tutte esclamazioni.
+
+Se si osserva la frequenza con cui queste esclamazioni compaiono si vede che nelle ultime stagione è stato fatto un uso maggiore di esclamazioni negative, rispetto a quelle innocue come "yeah yeah".
 
 ## Grafo
 
@@ -230,26 +239,27 @@ Rappresentazione grafica della connessione dei termini.
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 bigram_graph <- bigram_counts %>%
-  filter(n > 3) %>% 
+  filter(n > 4) %>% 
   as_tbl_graph()
 
 a <- grid::arrow(type = "closed", length = unit(.1, "inches"))
 
 # plot the graph
-ggraph(bigram_graph, layout = "fr") +
+grafico <- ggraph(bigram_graph, layout = "fr") +
   geom_edge_link(aes(edge_alpha = n), show.legend = FALSE,
                  arrow = a, end_cap = circle(.07, 'inches')) +
   geom_node_point(color = "lightblue", size = 1) +
   geom_node_text(aes(label = name), vjust = 1, hjust = 1) +
   theme_void()
 
-head(bigram_counts, 1000) %>%
+g <- head(bigram_counts, 1000) %>%
   graph_from_data_frame() %>%
   ggraph(layout = "fr") +
   geom_edge_link0()+
   geom_node_point(color = "lightblue", size = 1) +
-  geom_node_text(aes(label = name), vjust = 1, size=3, col = "darkgreen") +
   labs(title="Bigram Network")
+
+g
 ```
 
 ## Frequenza bigram in base al tf-idf
@@ -278,7 +288,9 @@ bigram_tf_idf %>%
 ```
 
 ## Frequenza bigram in base al tf-idf
-Dal grafico, diviso per stagioni, si vede che i bigram maggiomente presenti sono quelli che discriminano maggiormente la stagione. Per esempio nella stagione 2 è presente il bigram mini Rick che compare molte volte ma in un singolo episodio e questo lo rende un termine molto importante.
+Dal grafico, diviso per stagioni, si vede che i bigram maggiomente presenti sono quelli che discriminano maggiormente la stagione. 
+
+Nella stagione 2 è presente il bigram mini Rick che compare molte volte ma in un singolo episodio e questo lo rende un termine molto importante.
 
 Nelle altre stagione non c'è una grande rilevanza di termini.
 
@@ -546,7 +558,7 @@ ds_singleWord %>%
   theme_bw()
 ```
 
-Questo grafico ci conferma ulteriormente che le parolacce rivestono un ruolo molto importante perchè parole come shit, fuck o hell pesano in modo molto alto quando andiamo a fare un resoconto.
+Questo grafico conferma ulteriormente che le parolacce rivestono un ruolo molto importante perchè parole come shit, fuck o hell pesano in modo molto alto quando andiamo a fare un resoconto.
 
 ## Sentiment Analisy - Season
 Osservando i singoli episodi delle 5 stagioni, come è l'andamento dei sentimenti?
