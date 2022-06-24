@@ -5,6 +5,7 @@ date: '2022-06-27'
 output:
   ioslides_presentation:
     css: style.css
+  slidy_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -201,7 +202,7 @@ bigram_counts2 <- bigrams_united %>%
 
 Quali sono i bigram maggiormente presenti?
 
-```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
+```{r, echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 bigrams_for_plot = bigrams_united %>% semi_join(head(bigram_counts2, 10), by="bigram") %>%
   count(bigram, Season, sort=TRUE)
 
@@ -211,8 +212,11 @@ xform <- list(categoryorder = "array",
 bigrams_plot <- plot_ly(bigrams_for_plot, x = ~Season, y = ~n, type = 'bar', color = ~bigram)
 bigrams_plot <- bigrams_plot %>% layout(yaxis = list(title = 'number of bigrams'), barmode = 'stack', xaxis = xform)
 
-bigrams_plot
+#bigrams_plot
+ggplot(bigrams_for_plot, aes(fill=bigram, y=n, x=Season)) + 
+    geom_bar(position="stack", stat="identity")
 ```
+
 
 ## Bigram analysis
 
@@ -274,15 +278,11 @@ bigram_tf_idf %>%
 ```
 
 ## Frequenza bigram in base al tf-idf
-
 Dal grafico, diviso per stagioni, si vede che i bigram maggiomente presenti sono quelli che discriminano maggiormente la stagione. Per esempio nella stagione 2 è presente il bigram mini Rick che compare molte volte ma in un singolo episodio e questo lo rende un termine molto importante.
 
 Nelle altre stagione non c'è una grande rilevanza di termini.
 
 ## Correlazione Pairwise
-
-Oltre a vedere le coppie di termini più frequenti è possibile andare a studiare le parole che possiedono maggior correlazione, perchè compaiono nella stessa situazione ma non sono per forza adiacenti.
-
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 word_cor <- ds_singleWord %>% filter(word != "ah", word != "ha") %>% mutate(Sigla = paste(Season, Episode)) %>%
   add_count(word, Sigla) %>%
@@ -292,7 +292,6 @@ word_cor <- ds_singleWord %>% filter(word != "ah", word != "ha") %>% mutate(Sigl
 word_cor <- distinct(word_cor)
 word_cor <- word_cor %>% pairwise_cor(word, Sigla, sort = TRUE)
 ```
-
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 struct <- word_cor %>%
   filter(correlation > .15) %>%
@@ -307,22 +306,18 @@ struct +
   geom_node_point(colour=mcolor$mcolor, size = 3)+
   geom_node_text(aes(label = name), repel = TRUE, colour=mcolor$mcolor)
 ```
+Oltre a vedere le coppie di termini più frequenti è possibile andare a studiare le parole che possiedono maggior correlazione, perchè compaiono nella stessa situazione ma non sono per forza adiacenti.
 
 ## Correlazione
-
 Il grafo rappresenta i termini come nodi e lo spessore dell'arco che li collega come relazione tra di essi. I nodi in rosso sono i termini che hanno una frequenza assoluta maggiore all'interno dei dialoghi.
 
 Si può vedere che i 4 termini non hanno una relazione molto elevata con gli altri presenti all'interno del testo. 
 
 ## Misure di Centralità
-
 ```{r}
-
-#VEDIAMO LE CARATTERISTICHE DI QUESTO GRAFO GIGANTE
 struct <- bigram_counts %>%
   graph_from_data_frame() 
 options(ggrepel.max.overlaps = Inf)
-
 
 paths = distance_table(struct)$res
 names(paths) = 1:length(paths)
@@ -356,7 +351,6 @@ Centralità:
 C
 ```
 ## Misure di Centralità
-
 Quale è la distribuzione della distanza media tra due nodi qualsiasi?
 
 ```{r}
@@ -368,10 +362,8 @@ Si può notare che seppur la grandezza della rete sia abbastanza elevata (7109 n
 Il diametro, cioè la geodesica più lunga è di 19 passi.
 La centralità di vicinanza ha un valore molto basso, che è dovuto principalmente ai nodi che compaiono singolarmente, magari all'interno di una singola battuta effettuata da un personaggio.
 
-## è connessa?
-
+## GCC
 Nel grafo è presente una componente gigante?
-
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 # color in red the nodes in the giant component
 c = components(struct)
@@ -380,9 +372,7 @@ nodes = which(c$membership == which.max(c$csize))
 V(struct)$color = "white"
 V(struct)[nodes]$color = "black"
 plot(struct, vertex.size = 3, vertex.label=NA, edge.arrow.size=0.005, edge.arrow.width=0.0000001)
-
 ```
-
 Il grafo mostra la componente gigante formata dai bigram collegati tra di essi.
 Esiste quindi una componente gigante che prende la maggior parte di nodi. Il numero di nodi connessi è: 
 ```{r}
@@ -390,11 +380,9 @@ vcount(struct)-c$no
 ```
 
 ## Betweenness centrality
-
 Quali sono le parole che hanno un valore di correlazione maggiore se comparate a tutte le altre parole?
 
 Calcoliamo la centralità betweenness che va a controllare quanto una parola compara in mezzo ad altre. In sostanza va a verificare se il termine appare sulla maggior parte delle geodesiche presenti tra due termini.
-
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 word_cor_g <- word_cor %>%
   rename(word1 = item1, word2 = item2, n = correlation) %>%
@@ -432,7 +420,6 @@ betweenness
 Osservando la tabella dei 10 valori con un grado più elevato, si può notare che alcuni sono nomi, ma altri in realtà sono esclamazioni.
 
 ## Community detection
-
 Il community detection permette di trovare le divisioni naturali di una rete in un gruppo di vertici connessi, chiamate comunità. Tra queste comunità ci sono pochi archi, mentre ce ne sono un numero maggiore all'interno della comunità.
 
 Osserviamo i termini che secondo la centralità sono maggiormente importanti:
@@ -443,7 +430,6 @@ Osserviamo i termini che secondo la centralità sono maggiormente importanti:
 * god
 
 ## Community detection
-
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 word_cor <- ds_singleWord %>% filter(word != "ah", word != "ha") %>% mutate(Sigla = paste(Season, Episode)) %>%
   add_count(word, Sigla) %>%
@@ -469,8 +455,7 @@ plot(G, vertex.color = membership(community), vertex.size = 10, layout = coords,
 
 Possiamo notare che???????????
 
-##Sentiment Analisy
-
+## Sentiment Analisy
 Cerchiamo di effettuare un'analisi sui sentimenti e le emozioni che questa serie tv possono trasmettere a coloro che la guardano.
 
 Sappiamo che gli episodi hanno dei temi non felici, raccontano storie in cui spesso muoiono peronaggi e soprattutto fanno utilizzo di parolacce che comportano negatività.
@@ -484,10 +469,7 @@ Per l'analisi utilizzero 3 diverse scale di misura:
 * afinn: permette di dare una valutazione ad ogni termine che va da -5 a 5.
 
 ## Wordcloud
-
 Quali sono le parole che influenzano in maniera maggiore o minore i sentimenti in questa analisi?
-
-
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 bing <- get_sentiments("bing")
 
@@ -502,7 +484,6 @@ Notiamo che per quanto riguarda le parole negative abbiamo una prevalenza di esc
 Per quanto riguarda le parole negativi abbiamo delle parolacce come fucking, shit oppure fuck, che vengono pronunciate per la maggior parte da Rick ma in seguito molto anche da Morty.
 
 ## Comparison di numeri
-
 Quali sono le emozioni più presenti, e quale è il numero di parole che caratterizzano queste emozioni?
 
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
@@ -519,13 +500,10 @@ sentiments %>%
   labs(x="Sentiment", y="Frequency", title="How is the overall mood in Rick&Morty?") +
   coord_flip()
 ```
-
 Possiamo notare come in un classificatore binario le parole negative e positive siano più o meno lo stesso numero. Si vede subito che le emozioni più presenti all'interno della serie tv sono la fiduzia, la paura e altre emozioni più negative. 
 
 ## Sentimenti divisi tramite NRC
-
 Quali sono i termini che caratterizzano le emozioni?
-
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 ds_singleWord %>% 
   filter(word != "god") %>%
@@ -544,11 +522,9 @@ ds_singleWord %>%
 ```
 
 ## Sentimenti divisi tramite NRC
-
 Notiamo come le parolacce e le parole negative tipo "pistola", "morte", "uccisione" siano molto presenti. La serie tv è infatti abbastanza violeta e le scene di sparatorie sono molto comuni, come le scene in cui vengono usate delle pistole.
 
 ## Le parole che influenzano maggiormente il tutto, tramite afinn
-
 Vediamo ora le parole che globalmente danno il più grande contributo sul lato positivo e negativo.
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 afinn <- get_sentiments("afinn")
@@ -573,9 +549,7 @@ ds_singleWord %>%
 Questo grafico ci conferma ulteriormente che le parolacce rivestono un ruolo molto importante perchè parole come shit, fuck o hell pesano in modo molto alto quando andiamo a fare un resoconto.
 
 ## Sentiment Analisy - Season
-
 Osservando i singoli episodi delle 5 stagioni, come è l'andamento dei sentimenti?
-
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 rick_morty_sentiment2 <- ds_singleWord %>% filter(word != "god") %>%
   inner_join(get_sentiments("bing")) %>%
@@ -594,7 +568,6 @@ L'episodio 2x05 è l'unico sommariamente positivo e parla di una gara di canto i
 L'episodio 3x06 è l'episodio più negativo: parla di un viaggio rilassante alle terme in cui però la parte cattiva di Rick e poi quella di Morty scappano e quella di Morty vuole intossicare il mondo. Rappresenta proprio la negatività.
 
 ## Pos di tutti gli episodi
-
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
 a <- rick_morty_sentiment2
 ggplot(rick_morty_sentiment2 %>% mutate(Sigla = paste(a$Season,"x", a$index)),
@@ -606,8 +579,6 @@ ggplot(rick_morty_sentiment2 %>% mutate(Sigla = paste(a$Season,"x", a$index)),
   xlab("Sentiment")+ylab("Count") +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 ```
-
-
 
 ## Neg di tutti gli episodi
 ```{r , echo=FALSE, collapse=TRUE, warning=FALSE,message=FALSE}
@@ -623,4 +594,4 @@ ggplot(rick_morty_sentiment2 %>% mutate(Sigla = paste(a$Season, a$index)),
 ```
 
 ## Conclusione
-Possiamo concludere che
+Possiamo concludere CONCLUSIONE.
